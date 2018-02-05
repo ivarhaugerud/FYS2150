@@ -1,0 +1,127 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose,
+%preprint,
+%showpacs,preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-1}
+
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{relsize}
+\usepackage{amsmath,graphicx,varioref,verbatim,amsfonts,geometry}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+\usepackage{ulem}
+\usepackage{amssymb}
+\usepackage{soul}
+\usepackage{dsfont}
+\usepackage{commath}
+\usepackage{wrapfig}
+\usepackage[free-standing-units=true]{siunitx}
+\DeclareSIUnit\year{yr}
+\usepackage{gensymb}
+\newcommand{\ROM}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+\usepackage{physics}
+\usepackage{caption}
+\usepackage{bm}
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+%\preprint{APS/123-QED}
+
+\title{Tittel}% Force line breaks with \\
+
+\author{\textsc{Haugerud, Ivar Svalheim}}
+\affiliation{%
+ University of Oslo\\
+}%
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+We need to test if our system behaves as it should based on the equations we have in the theory section, which is derived in the appendix. To start with this we visualized the particles in the compartment. Since the visualizing demands more computer power than our computers can handle here at the university of Soby, we had to limit ourselves to only $100$ particles. We saw that the particles behaved as they should, and did bounce on the walls when they were meant to, and it looked like their kinetic energy was conserved. The Visualization does not work well on a pdf-file, we will therefor not include it in this document. But we included as still picture from from the animation. To test our system a bit more, we can plot if the particles which bounce on each side of the compartment cancel each other out during a simulation. A bounce on the top wall grants $+1$, while a bounce on the bottom wall grants $-1$.  As shown in it stays around $0$ during our simulation as it should. There is some uncertainty as expected with a system om $10^{5}$ particles. The system is looking good so far.
+\end{abstract}
+
+\pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
+                             % Classification Scheme.
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Seksjon}
+
+We assume that every cabinet will behave in the same way, and can therefor multiply this force by the number of cabinets on our rocket. This way we reduce the computing power, and increase the force in our rocket. This is what we use to calculate the amount of fuel we are bringing on the rocket. Here we assume a constant force, and a constant loss of molecules for every part of our journey. Ideally we would want to maximize the force and minimize the loss of molecules. The faster we loose molecules the more fuel we need to bring. After playing with the temperature, size of the hole, number of molecules, size of the box i kept finding a very close to linear for the different values. When we increased the number of molecules by a factor of $10$, the force got ten times larger, but the number of molecules ejected for each second increased just as much. The same thing happen with the other parameters. We were then left with the force and ejection speed described earlier.
+It is tough to decided how much fuel we need to bring as well. For each kilogram we give the rocket at the start it has to accelerate fuel into space, which requires more fuel. We therefor used the method of trying with different values and choosing the one with the best results. The illustration of this is shown in.
+Now we can use this to test how our empirical data compares to the analytic function. The analytic mean kinetic energy is $\SI{2.07e-19}{\joule}$, and the empirically measured kinetic energy is $\SI{2.07469e-19}{\joule}$.
+\subsection{\label{sec:level2}Subseksjon}
+
+Now that we have tested that our system is physical we can test the effectiveness of our rocket engine. Our rocket engine is set up as many small cubical compartments with a volume of $\SI{1e-19}{\meter^3}$ with a constant pressure of about $\SI{0.000334}{\kilogram\per\m^3}$. Since one compartment is so small, we have a lot of them. Exactly how many we will come back to later. For the moment we will only look at one, and assume the rest behave like this one. At the bottom of the compartments there is a hole where the molecules can fly trough. Using the conservation of momentum we know that ejecting a particle out grants the rocket the same momentum in the opposite direction. Since the rocket weighs a lot more than a hydrogen molecule we will need a lot of fuel. For the pressure to be constant when the particles are ejected out we have to have new particles coming in to the compartment continually. Since it is a larger chance that the particles with a high velocity reach the hole, and will therefor ruin the Gaussian distribution, see figure
+\begin{thebibliography}{9}
+
+
+\bibitem{squires}
+Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.
+
+
+
+ \end{thebibliography}
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******

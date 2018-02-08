@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  8 FEB 2018 00:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  8 FEB 2018 23:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -485,7 +485,10 @@ File: babel.def 2017/05/19 3.10 Babel common definitions
 \U@D=\dimen111
 )
 Package babel Info: Making " an active character on input line 113.
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
+Package: varioref 2016/02/16 v1.5c package for extended references (FMi)
+\c@vrcnt=\count108
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -505,7 +508,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count108
+\Gread@gobject=\count109
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
@@ -525,21 +528,43 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count110
+\Gm@cntv=\count111
+\c@Gm@tempcnt=\count112
+\Gm@bindingoffset=\dimen116
+\Gm@wd@mp=\dimen117
+\Gm@odd@mp=\dimen118
+\Gm@even@mp=\dimen119
+\Gm@layoutwidth=\dimen120
+\Gm@layoutheight=\dimen121
+\Gm@layouthoffset=\dimen122
+\Gm@layoutvoffset=\dimen123
+\Gm@dimlist=\toks26
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count109
-\output=\toks26
-\linenoprevgraf=\count110
-\linenumbersep=\dimen116
-\linenumberwidth=\dimen117
-\c@linenumber=\count111
-\c@pagewiselinenumber=\count112
-\c@LN@truepage=\count113
-\c@internallinenumber=\count114
-\c@internallinenumbers=\count115
-\quotelinenumbersep=\dimen118
-\bframerule=\dimen119
-\bframesep=\dimen120
+\linenopenalty=\count113
+\output=\toks27
+\linenoprevgraf=\count114
+\linenumbersep=\dimen124
+\linenumberwidth=\dimen125
+\c@linenumber=\count115
+\c@pagewiselinenumber=\count116
+\c@LN@truepage=\count117
+\c@internallinenumber=\count118
+\c@internallinenumbers=\count119
+\quotelinenumbersep=\dimen126
+\bframerule=\dimen127
+\bframesep=\dimen128
 \bframebox=\box43
 LaTeX Info: Redefining \\ on input line 3056.
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -551,10 +576,10 @@ Package xcolor Info: Package option `usenames' ignored on input line 216.
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks27
+\everycr=\toks28
 \minrowclearance=\skip51
 )
-\rownum=\count116
+\rownum=\count120
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -580,10 +605,9 @@ Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -611,22 +635,20 @@ Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen121
-\Hy@linkcounter=\count117
-\Hy@pagecounter=\count118
+\@linkdim=\dimen129
+\Hy@linkcounter=\count121
+\Hy@pagecounter=\count122
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count119
+\Hy@SavedSpaceFactor=\count123
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -639,12 +661,12 @@ Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
 LaTeX Info: Redefining \href on input line 5015.
-\c@Hy@tempcnt=\count120
+\c@Hy@tempcnt=\count124
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen122
-\Fld@menulength=\count121
-\Field@Width=\dimen123
-\Fld@charsize=\dimen124
+\XeTeXLinkMargin=\dimen130
+\Fld@menulength=\count125
+\Field@Width=\dimen131
+\Fld@charsize=\dimen132
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -654,17 +676,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count122
-\c@Item=\count123
-\c@Hfootnote=\count124
+\Hy@abspage=\count126
+\c@Item=\count127
+\c@Hfootnote=\count128
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count125
-\c@bookmark@seq@number=\count126
+\Fld@listcount=\count129
+\c@bookmark@seq@number=\count130
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -673,28 +695,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
-Package: varioref 2016/02/16 v1.5c package for extended references (FMi)
-\c@vrcnt=\count127
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks28
-\verbatim@line=\toks29
+\every@verbatim=\toks29
+\verbatim@line=\toks30
 \verbatim@in@stream=\read1
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count128
-\Gm@cntv=\count129
-\c@Gm@tempcnt=\count130
-\Gm@bindingoffset=\dimen125
-\Gm@wd@mp=\dimen126
-\Gm@odd@mp=\dimen127
-\Gm@even@mp=\dimen128
-\Gm@layoutwidth=\dimen129
-\Gm@layoutheight=\dimen130
-\Gm@layouthoffset=\dimen131
-\Gm@layoutvoffset=\dimen132
-\Gm@dimlist=\toks30
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box44
 \UL@hyphenbox=\box45
@@ -1916,36 +1921,32 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
 Class revtex4-1 Info: colortbl package is loaded. (Proceeding with fingers cros
-sed.) on input line 81.
+sed.) on input line 83.
 
 Class revtex4-1 Warning: Failed to patch the float package.
 
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 81.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 83.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 81.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 81.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 81.
-(./rapport1.aux
-
-LaTeX Warning: Label `fig5' multiply defined.
-
-)
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 83.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 83.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 83.
+(./rapport1.aux)
 \openout1 = `rapport1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count192
@@ -1974,24 +1975,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring ON on input line 81.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count198
-LaTeX Info: Redefining \Ref on input line 515.
-)
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
-(./rapport1.out) (./rapport1.out)
-\@outlinefile=\write4
-\openout4 = `rapport1.out'.
-
-LaTeX Info: Redefining \Ref on input line 81.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2000,15 +1983,15 @@ LaTeX Info: Redefining \Ref on input line 81.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* h-part:(L,W,R)=(28.90755pt, 556.4799pt, 28.90755pt)
+* v-part:(T,H,B)=(28.90755pt, 737.15489pt, 28.90755pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=556.47656pt
-* \oddsidemargin=19.8752pt
-* \evensidemargin=19.8752pt
-* \topmargin=-17.87262pt
+* \textwidth=556.4799pt
+* \textheight=737.15489pt
+* \oddsidemargin=-43.36244pt
+* \evensidemargin=-43.36244pt
+* \topmargin=-84.36244pt
 * \headheight=25.0pt
 * \headsep=16.0pt
 * \topskip=10.0pt
@@ -2026,6 +2009,24 @@ LaTeX Info: Redefining \Ref on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\AtBeginShipoutBox=\box72
+Package hyperref Info: Link coloring ON on input line 83.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count198
+LaTeX Info: Redefining \Ref on input line 515.
+)
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
+(./rapport1.out) (./rapport1.out)
+\@outlinefile=\write4
+\openout4 = `rapport1.out'.
+
+LaTeX Info: Redefining \Ref on input line 83.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1enc.dfu
@@ -2110,869 +2111,869 @@ File: siunitx-abbreviations.cfg 2017/05/19 v2.7g siunitx: Abbreviated units
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \of with sig. '' on line 81.
+. Defining command \of with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \highlight with sig. '' on line 81.
+. Defining command \highlight with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \per with sig. '' on line 81.
+. Defining command \per with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \raiseto with sig. '' on line 81.
+. Defining command \raiseto with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tothe with sig. '' on line 81.
+. Defining command \tothe with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kilogram with sig. '' on line 81.
+. Defining command \kilogram with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \metre with sig. '' on line 81.
+. Defining command \metre with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \meter with sig. '' on line 81.
+. Defining command \meter with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mole with sig. '' on line 81.
+. Defining command \mole with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \second with sig. '' on line 81.
+. Defining command \second with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ampere with sig. '' on line 81.
+. Defining command \ampere with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kelvin with sig. '' on line 81.
+. Defining command \kelvin with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \candela with sig. '' on line 81.
+. Defining command \candela with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \gram with sig. '' on line 81.
+. Defining command \gram with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \yocto with sig. '' on line 81.
+. Defining command \yocto with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \zepto with sig. '' on line 81.
+. Defining command \zepto with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \atto with sig. '' on line 81.
+. Defining command \atto with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \femto with sig. '' on line 81.
+. Defining command \femto with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pico with sig. '' on line 81.
+. Defining command \pico with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nano with sig. '' on line 81.
+. Defining command \nano with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micro with sig. '' on line 81.
+. Defining command \micro with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \milli with sig. '' on line 81.
+. Defining command \milli with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \centi with sig. '' on line 81.
+. Defining command \centi with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \deci with sig. '' on line 81.
+. Defining command \deci with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \deca with sig. '' on line 81.
+. Defining command \deca with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \deka with sig. '' on line 81.
+. Defining command \deka with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hecto with sig. '' on line 81.
+. Defining command \hecto with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kilo with sig. '' on line 81.
+. Defining command \kilo with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mega with sig. '' on line 81.
+. Defining command \mega with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \giga with sig. '' on line 81.
+. Defining command \giga with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tera with sig. '' on line 81.
+. Defining command \tera with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \peta with sig. '' on line 81.
+. Defining command \peta with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \exa with sig. '' on line 81.
+. Defining command \exa with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \zetta with sig. '' on line 81.
+. Defining command \zetta with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \yotta with sig. '' on line 81.
+. Defining command \yotta with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \becquerel with sig. '' on line 81.
+. Defining command \becquerel with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \degreeCelsius with sig. '' on line 81.
+. Defining command \degreeCelsius with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \coulomb with sig. '' on line 81.
+. Defining command \coulomb with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \farad with sig. '' on line 81.
+. Defining command \farad with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \gray with sig. '' on line 81.
+. Defining command \gray with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hertz with sig. '' on line 81.
+. Defining command \hertz with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \henry with sig. '' on line 81.
+. Defining command \henry with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \joule with sig. '' on line 81.
+. Defining command \joule with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \katal with sig. '' on line 81.
+. Defining command \katal with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \lumen with sig. '' on line 81.
+. Defining command \lumen with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \lux with sig. '' on line 81.
+. Defining command \lux with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newton with sig. '' on line 81.
+. Defining command \newton with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pascal with sig. '' on line 81.
+. Defining command \pascal with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \radian with sig. '' on line 81.
+. Defining command \radian with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \siemens with sig. '' on line 81.
+. Defining command \siemens with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \sievert with sig. '' on line 81.
+. Defining command \sievert with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \steradian with sig. '' on line 81.
+. Defining command \steradian with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tesla with sig. '' on line 81.
+. Defining command \tesla with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \volt with sig. '' on line 81.
+. Defining command \volt with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \watt with sig. '' on line 81.
+. Defining command \watt with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \weber with sig. '' on line 81.
+. Defining command \weber with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \arcmin with sig. '' on line 81.
+. Defining command \arcmin with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \arcminute with sig. '' on line 81.
+. Defining command \arcminute with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \arcsecond with sig. '' on line 81.
+. Defining command \arcsecond with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hectare with sig. '' on line 81.
+. Defining command \hectare with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hour with sig. '' on line 81.
+. Defining command \hour with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \litre with sig. '' on line 81.
+. Defining command \litre with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \liter with sig. '' on line 81.
+. Defining command \liter with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \minute with sig. '' on line 81.
+. Defining command \minute with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \percent with sig. '' on line 81.
+. Defining command \percent with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tonne with sig. '' on line 81.
+. Defining command \tonne with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \astronomicalunit with sig. '' on line 81.
+. Defining command \astronomicalunit with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \atomicmassunit with sig. '' on line 81.
+. Defining command \atomicmassunit with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \electronvolt with sig. '' on line 81.
+. Defining command \electronvolt with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \dalton with sig. '' on line 81.
+. Defining command \dalton with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \clight with sig. '' on line 81.
+. Defining command \clight with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \electronmass with sig. '' on line 81.
+. Defining command \electronmass with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \planckbar with sig. '' on line 81.
+. Defining command \planckbar with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \elementarycharge with sig. '' on line 81.
+. Defining command \elementarycharge with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \bohr with sig. '' on line 81.
+. Defining command \bohr with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hartree with sig. '' on line 81.
+. Defining command \hartree with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \angstrom with sig. '' on line 81.
+. Defining command \angstrom with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \barn with sig. '' on line 81.
+. Defining command \barn with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \bel with sig. '' on line 81.
+. Defining command \bel with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \decibel with sig. '' on line 81.
+. Defining command \decibel with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \knot with sig. '' on line 81.
+. Defining command \knot with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mmHg with sig. '' on line 81.
+. Defining command \mmHg with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nauticalmile with sig. '' on line 81.
+. Defining command \nauticalmile with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \neper with sig. '' on line 81.
+. Defining command \neper with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \squared with sig. '' on line 81.
+. Defining command \squared with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cubic with sig. '' on line 81.
+. Defining command \cubic with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cubed with sig. '' on line 81.
+. Defining command \cubed with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \A with sig. '' on line 81.
+. Defining command \A with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pA with sig. '' on line 81.
+. Defining command \pA with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nA with sig. '' on line 81.
+. Defining command \nA with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uA with sig. '' on line 81.
+. Defining command \uA with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mA with sig. '' on line 81.
+. Defining command \mA with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kA with sig. '' on line 81.
+. Defining command \kA with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Hz with sig. '' on line 81.
+. Defining command \Hz with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mHz with sig. '' on line 81.
+. Defining command \mHz with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kHz with sig. '' on line 81.
+. Defining command \kHz with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MHz with sig. '' on line 81.
+. Defining command \MHz with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \GHz with sig. '' on line 81.
+. Defining command \GHz with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \THz with sig. '' on line 81.
+. Defining command \THz with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mol with sig. '' on line 81.
+. Defining command \mol with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fmol with sig. '' on line 81.
+. Defining command \fmol with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pmol with sig. '' on line 81.
+. Defining command \pmol with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nmol with sig. '' on line 81.
+. Defining command \nmol with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \umol with sig. '' on line 81.
+. Defining command \umol with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mmol with sig. '' on line 81.
+. Defining command \mmol with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kmol with sig. '' on line 81.
+. Defining command \kmol with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \V with sig. '' on line 81.
+. Defining command \V with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pV with sig. '' on line 81.
+. Defining command \pV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nV with sig. '' on line 81.
+. Defining command \nV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uV with sig. '' on line 81.
+. Defining command \uV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mV with sig. '' on line 81.
+. Defining command \mV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kV with sig. '' on line 81.
+. Defining command \kV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ml with sig. '' on line 81.
+. Defining command \ml with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hL with sig. '' on line 81.
+. Defining command \hL with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mL with sig. '' on line 81.
+. Defining command \mL with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uL with sig. '' on line 81.
+. Defining command \uL with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fg with sig. '' on line 81.
+. Defining command \fg with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pg with sig. '' on line 81.
+. Defining command \pg with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ug with sig. '' on line 81.
+. Defining command \ug with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mg with sig. '' on line 81.
+. Defining command \mg with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \g with sig. '' on line 81.
+. Defining command \g with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kg with sig. '' on line 81.
+. Defining command \kg with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \amu with sig. '' on line 81.
+. Defining command \amu with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \W with sig. '' on line 81.
+. Defining command \W with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uW with sig. '' on line 81.
+. Defining command \uW with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mW with sig. '' on line 81.
+. Defining command \mW with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kW with sig. '' on line 81.
+. Defining command \kW with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MW with sig. '' on line 81.
+. Defining command \MW with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \GW with sig. '' on line 81.
+. Defining command \GW with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \J with sig. '' on line 81.
+. Defining command \J with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kJ with sig. '' on line 81.
+. Defining command \kJ with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \eV with sig. '' on line 81.
+. Defining command \eV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \meV with sig. '' on line 81.
+. Defining command \meV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \keV with sig. '' on line 81.
+. Defining command \keV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MeV with sig. '' on line 81.
+. Defining command \MeV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \GeV with sig. '' on line 81.
+. Defining command \GeV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \TeV with sig. '' on line 81.
+. Defining command \TeV with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kWh with sig. '' on line 81.
+. Defining command \kWh with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \m with sig. '' on line 81.
+. Defining command \m with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nm with sig. '' on line 81.
+. Defining command \nm with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \um with sig. '' on line 81.
+. Defining command \um with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mm with sig. '' on line 81.
+. Defining command \mm with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cm with sig. '' on line 81.
+. Defining command \cm with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \dm with sig. '' on line 81.
+. Defining command \dm with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \km with sig. '' on line 81.
+. Defining command \km with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \K with sig. '' on line 81.
+. Defining command \K with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \dB with sig. '' on line 81.
+. Defining command \dB with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \F with sig. '' on line 81.
+. Defining command \F with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fF with sig. '' on line 81.
+. Defining command \fF with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pF with sig. '' on line 81.
+. Defining command \pF with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \N with sig. '' on line 81.
+. Defining command \N with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mN with sig. '' on line 81.
+. Defining command \mN with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kN with sig. '' on line 81.
+. Defining command \kN with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MN with sig. '' on line 81.
+. Defining command \MN with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Pa with sig. '' on line 81.
+. Defining command \Pa with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kPa with sig. '' on line 81.
+. Defining command \kPa with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MPa with sig. '' on line 81.
+. Defining command \MPa with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \GPa with sig. '' on line 81.
+. Defining command \GPa with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mohm with sig. '' on line 81.
+. Defining command \mohm with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kohm with sig. '' on line 81.
+. Defining command \kohm with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Mohm with sig. '' on line 81.
+. Defining command \Mohm with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \s with sig. '' on line 81.
+. Defining command \s with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \as with sig. '' on line 81.
+. Defining command \as with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fs with sig. '' on line 81.
+. Defining command \fs with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ps with sig. '' on line 81.
+. Defining command \ps with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ns with sig. '' on line 81.
+. Defining command \ns with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \us with sig. '' on line 81.
+. Defining command \us with sig. '' on line 83.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ms with sig. '' on line 81.
+. Defining command \ms with sig. '' on line 83.
 .................................................
-LaTeX Info: Redefining \celsius on input line 81.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 81.
+LaTeX Info: Redefining \celsius on input line 83.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 83.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 81.
-Package gensymb Info: Using \Omega for \ohm on input line 81.
+LaTeX Info: Redefining \ohm on input line 83.
+Package gensymb Info: Using \Omega for \ohm on input line 83.
 
 Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 81.
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 83.
 Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input 
-line 81.
-Class revtex4-1 Info: Line numbering not turned on yet on input line 81.
+line 83.
+Class revtex4-1 Info: Line numbering not turned on yet on input line 83.
 \openout3 = `rapport1Notes.bib'.
 
-Class revtex4-1 Info: Overriding \@LN@LLerror on input line 81.
+Class revtex4-1 Info: Overriding \@LN@LLerror on input line 83.
 \c__siunitx_mathsf_int=\count199
-LaTeX Font Info:    Try loading font information for U+msa on input line 81.
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 81.
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -2981,897 +2982,151 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Class revtex4-1 Warning: If you want your PACS to appear in your output, use do
 cument class option showpacs.
 
-
-Underfull \hbox (badness 2799) in paragraph at lines 116--118
-\OT1/cmr/m/n/10 av-hen-gig av ma-te-ria-let og de geomet-ris-ke
- []
-
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 1314) in paragraph at lines 123--127
-\OT1/cmr/m/n/10 Her har spen-nin-gen inn en fre-kvens $\OML/cmm/m/it/10 !$ \OT1
-/cmr/m/n/10 og
- []
 
-<fig_1.pdf, id=76, 532.99126pt x 275.0275pt>
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 144.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
+<fig_1.pdf, id=129, 532.99126pt x 275.0275pt>
 File: fig_1.pdf Graphic file (type pdf)
 <use fig_1.pdf>
-Package pdftex.def Info: fig_1.pdf used on input line 139.
+Package pdftex.def Info: fig_1.pdf used on input line 164.
 (pdftex.def)             Requested size: 186.54973pt x 96.26106pt.
-<fig_2.png, id=78, 768.8725pt x 621.32124pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_2.png, id=131, 768.8725pt x 621.32124pt>
 File: fig_2.png Graphic file (type png)
 <use fig_2.png>
-Package pdftex.def Info: fig_2.png used on input line 146.
+Package pdftex.def Info: fig_2.png used on input line 172.
 (pdftex.def)             Requested size: 115.3259pt x 93.19415pt.
-<fig_3.png, id=81, 1273.75874pt x 972.63374pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_3.png, id=134, 1273.75874pt x 972.63374pt>
 File: fig_3.png Graphic file (type png)
 <use fig_3.png>
-Package pdftex.def Info: fig_3.png used on input line 154.
+Package pdftex.def Info: fig_3.png used on input line 182.
 (pdftex.def)             Requested size: 191.05556pt x 145.88876pt.
-! Undefined control sequence.
-<argument> \Mega 
-                 \Ohm 
-l.158 ...amme målingene for $R=\SI{1}{\Mega \Ohm}
-                                                  $ måtte F$45$ være amper...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \Mega \Ohm 
-                      
-l.158 ...amme målingene for $R=\SI{1}{\Mega \Ohm}
-                                                  $ måtte F$45$ være amper...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \Mega 
-                 \Ohm 
-l.158 ...amme målingene for $R=\SI{1}{\Mega \Ohm}
-                                                  $ måtte F$45$ være amper...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \Mega \Ohm 
-                      
-l.158 ...amme målingene for $R=\SI{1}{\Mega \Ohm}
-                                                  $ måtte F$45$ være amper...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<fig_4.png, id=83, 736.7525pt x 666.49pt>
+[2 <./fig_1.pdf> <./fig_2.png> <./fig_3.png>] <fig_4.png, id=149, 736.7525pt x 
+666.49pt>
 File: fig_4.png Graphic file (type png)
 <use fig_4.png>
-Package pdftex.def Info: fig_4.png used on input line 162.
+Package pdftex.def Info: fig_4.png used on input line 191.
 (pdftex.def)             Requested size: 221.02745pt x 199.94853pt.
+<fig_5.png, id=155, 1233.60875pt x 1011.78pt>
+File: fig_5.png Graphic file (type png)
+<use fig_5.png>
+Package pdftex.def Info: fig_5.png used on input line 201.
+(pdftex.def)             Requested size: 234.38809pt x 192.24019pt.
 
-Overfull \hbox (15.02515pt too wide) in paragraph at lines 162--163
+Overfull \hbox (12.25583pt too wide) in paragraph at lines 249--260
+ []$[]$ 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./fig_4.png> <./fig_5.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 261.
+
+
+LaTeX Warning: Reference `fig6' on page 4 undefined on input line 262.
+
+<fig_6.png, id=182, 1124.2pt x 843.15pt>
+File: fig_6.png Graphic file (type png)
+<use fig_6.png>
+Package pdftex.def Info: fig_6.png used on input line 265.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+
+Overfull \hbox (11.80937pt too wide) in paragraph at lines 265--266
  [][] 
  []
 
-<fig_5.png, id=87, 1233.60875pt x 1011.78pt>
-File: fig_5.png Graphic file (type png)
-<use fig_5.png>
-Package pdftex.def Info: fig_5.png used on input line 171.
-(pdftex.def)             Requested size: 185.03333pt x 151.76045pt.
 
-Underfull \hbox (badness 1122) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 som er et h^^Wandholdt multi-me-ter, og Fluke
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_7.png, id=189, 1124.2pt x 843.15pt>
+File: fig_7.png Graphic file (type png)
+<use fig_7.png>
+Package pdftex.def Info: fig_7.png used on input line 289.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+
+Overfull \hbox (11.80937pt too wide) in paragraph at lines 289--290
+ [][] 
  []
 
+<fig_8.png, id=191, 1124.2pt x 843.15pt>
+File: fig_8.png Graphic file (type png)
+<use fig_8.png>
+Package pdftex.def Info: fig_8.png used on input line 297.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
-Underfull \hbox (badness 1308) in paragraph at lines 136--176
- \OT1/cmr/m/n/10 N^^Wa som vi vis-te hvor-dan m^^Waleapparatene
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 over hele kret-sen ved $\OML/cmm/m/it/10 V[]$\OT1/cmr/m/n/10 , 
-spen-nings-fal-let
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--176
-
- []
-
-
-Underfull \hbox (badness 2277) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 Vi ^^\ns-ket n^^Wa ^^Wa gj^^\re m^^Walinger ved hjelp
- []
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 Ved at data-ma-ski-nen reg-ner spen-nings-fal-let
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 opp-le-ve tem-pe-ra-tur-for-and-ring, for ^^Wa se om
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 (AC). Vek-selstr^^\mmen skal kom-me fra en
- []
-
-
-Underfull \hbox (badness 4205) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 funk-sjons-ge-ne-ra-tor in-ne-bygd i oscil-losco-pet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 DA-omformer (digital-to-analog-omformer).
- []
-
-
-Underfull \hbox (badness 2529) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 Vi kun-ne hen-holds-vis lese av sig-na-let p^^Wa
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 i teori-de-len (sek-sjon [][]II[][] on pa-ge 1[][][][]) ska-per
-
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 ge-ne-ra-to-ren lo-ga-rit-misk fra $10$ til $10[]$ Hz,
- []
-
-
-Underfull \hbox (badness 1253) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 vek-selstr^^\mmen var p^^Wa $[] []$. For hver
- []
-
-
-Underfull \hbox (badness 3138) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 (anlog-to-digital-converter). Ka-pa-si-tan-sen til
- []
-
-
-Underfull \hbox (badness 4353) in paragraph at lines 136--176
-\OT1/cmr/m/n/10 kon-den-sa-to-ren var $[] []$, og mot-stan-den
+Overfull \hbox (11.80937pt too wide) in paragraph at lines 297--298
+ [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <./fig_1.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+[4 <./fig_6.png (PNG copy)>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 176.
+ on input line 304.
 
-[3 <./fig_2.png> <./fig_3.png> <./fig_4.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{table}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-<recently read> \midrule 
-                         
-l.206 \midrule
-              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \bottomrule 
-                            
-l.211 \bottomrule
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \midrule 
-                         
-l.222 \midrule
-              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.223  0.0042 \pm
-                  0.0015 &    4.22 \pm 0.03 &                  1.00 \pm 0.36...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.223  0.0042 \pm 0.0015 &
-                              4.22 \pm 0.03 &                  1.00 \pm 0.36...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.223  0.0042 \pm 0.0015 &    4.22 \pm
-                                       0.03 &                  1.00 \pm 0.36...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.223  0.0042 \pm 0.0015 &    4.22 \pm 0.03 &
-                                                               1.00 \pm 0.36...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.223 ...4.22 \pm 0.03 &                  1.00 \pm
-                                                   0.36 &      V_{inn} \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.223 ...m 0.03 &                  1.00 \pm 0.36 &
-                                                        V_{inn} \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.223 ...                  1.00 \pm 0.36 &      V_
-                                                  {inn} \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.224  0
-        .0046 \pm 0.0015 &    4.25 \pm 0.03 &                  0.92 \pm 0.31...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.224  0.0046 \pm
-                  0.0015 &    4.25 \pm 0.03 &                  0.92 \pm 0.31...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.224  0.0046 \pm 0.0015 &
-                              4.25 \pm 0.03 &                  0.92 \pm 0.31...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.224  0.0046 \pm 0.0015 &    4.25 \pm
-                                       0.03 &                  0.92 \pm 0.31...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.224  0.0046 \pm 0.0015 &    4.25 \pm 0.03 &
-                                                               0.92 \pm 0.31...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.224 ...4.25 \pm 0.03 &                  0.92 \pm
-                                                   0.31 &      V_R \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.224 ...m 0.03 &                  0.92 \pm 0.31 &
-                                                        V_R \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.224 ...                  0.92 \pm 0.31 &      V_
-                                                  R \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.225  0
-        .0060 \pm 0.0015 &    6.04 \pm 0.04 &                  1.01 \pm 0.26...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.225  0.0060 \pm
-                  0.0015 &    6.04 \pm 0.04 &                  1.01 \pm 0.26...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.225  0.0060 \pm 0.0015 &
-                              6.04 \pm 0.04 &                  1.01 \pm 0.26...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.225  0.0060 \pm 0.0015 &    6.04 \pm
-                                       0.04 &                  1.01 \pm 0.26...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.225  0.0060 \pm 0.0015 &    6.04 \pm 0.04 &
-                                                               1.01 \pm 0.26...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.225 ...6.04 \pm 0.04 &                  1.01 \pm
-                                                   0.26 &      V_{inn} \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.225 ...m 0.04 &                  1.01 \pm 0.26 &
-                                                        V_{inn} \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.225 ...                  1.01 \pm 0.26 &      V_
-                                                  {inn} \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226  0
-        .0066 \pm 0.0015 &    6.04 \pm 0.04 &                  0.92 \pm 0.21...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226  0.0066 \pm
-                  0.0015 &    6.04 \pm 0.04 &                  0.92 \pm 0.21...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226  0.0066 \pm 0.0015 &
-                              6.04 \pm 0.04 &                  0.92 \pm 0.21...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226  0.0066 \pm 0.0015 &    6.04 \pm
-                                       0.04 &                  0.92 \pm 0.21...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226  0.0066 \pm 0.0015 &    6.04 \pm 0.04 &
-                                                               0.92 \pm 0.21...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226 ...6.04 \pm 0.04 &                  0.92 \pm
-                                                   0.21 &      V_R \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226 ...m 0.04 &                  0.92 \pm 0.21 &
-                                                        V_R \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226 ...                  0.92 \pm 0.21 &      V_
-                                                  R \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.227  0
-        .0081 \pm 0.0015 &    8.22 \pm 0.05 &                  1.01 \pm 0.19...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.227  0.0081 \pm
-                  0.0015 &    8.22 \pm 0.05 &                  1.01 \pm 0.19...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.227  0.0081 \pm 0.0015 &
-                              8.22 \pm 0.05 &                  1.01 \pm 0.19...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.227  0.0081 \pm 0.0015 &    8.22 \pm
-                                       0.05 &                  1.01 \pm 0.19...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.227  0.0081 \pm 0.0015 &    8.22 \pm 0.05 &
-                                                               1.01 \pm 0.19...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.227 ...8.22 \pm 0.05 &                  1.01 \pm
-                                                   0.19 &      V_{inn} \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.227 ...m 0.05 &                  1.01 \pm 0.19 &
-                                                        V_{inn} \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.227 ...                  1.01 \pm 0.19 &      V_
-                                                  {inn} \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.228  0
-        .0089 \pm 0.0015 &    8.22 \pm 0.05 &                  0.92 \pm 0.16...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.228  0.0089 \pm
-                  0.0015 &    8.22 \pm 0.05 &                  0.92 \pm 0.16...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.228  0.0089 \pm 0.0015 &
-                              8.22 \pm 0.05 &                  0.92 \pm 0.16...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.228  0.0089 \pm 0.0015 &    8.22 \pm
-                                       0.05 &                  0.92 \pm 0.16...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.228  0.0089 \pm 0.0015 &    8.22 \pm 0.05 &
-                                                               0.92 \pm 0.16...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.228 ...8.22 \pm 0.05 &                  0.92 \pm
-                                                   0.16 &      V_R \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.228 ...m 0.05 &                  0.92 \pm 0.16 &
-                                                        V_R \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.228 ...                  0.92 \pm 0.16 &      V_
-                                                  R \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \bottomrule
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-<recently read> \bottomrule 
-                            
-l.229 \bottomrule
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (65.98799pt too wide) in paragraph at lines 219--231
- []$[]$ 
+[5 <./fig_7.png (PNG copy)> <./fig_8.png (PNG copy)>]
+Underfull \hbox (badness 1308) in paragraph at lines 317--321
+[]\OT1/cmr/m/n/10 Ut ifra data-en vist i fi-gur [][]7[][] kun-ne vi reg-net ut 
+at
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Hyper reference `fig6' on page 4 undefined on input line 233.
-
-
-LaTeX Warning: Reference `fig6' on page 4 undefined on input line 233.
-
-<fig_6.png, id=135, 1124.2pt x 843.15pt>
-File: fig_6.png Graphic file (type png)
-<use fig_6.png>
-Package pdftex.def Info: fig_6.png used on input line 236.
-(pdftex.def)             Requested size: 168.62273pt x 126.46704pt.
-[4 <./fig_5.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 240.
-
-
-LaTeX Warning: Hyper reference `' on page 5 undefined on input line 242.
-
-
-LaTeX Warning: Reference `' on page 5 undefined on input line 242.
-
-! Undefined control sequence.
-<recently read> \midrule 
-                         
-l.251 \midrule
-              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.252 ...s   &    1  &                  705.79 \pm
-                                                   2.41 &      705.7 \pm 2.5...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.252 ...  1  &                  705.79 \pm 2.41 &
-                                                        705.7 \pm 2.5 \cdot ...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.252 ...         705.79 \pm 2.41 &      705.7 \pm
-                                                   2.5 \cdot 10^{-4} \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.253  F
-        irkant &    50 &                  49.627 \pm 0.20 &      50.6 \pm 0....
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.253 ...ant &    50 &                  49.627 \pm
-                                                   0.20 &      50.6 \pm 0.00...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.253 ...  50 &                  49.627 \pm 0.20 &
-                                                        50.6 \pm 0.0024\\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.253 ...          49.627 \pm 0.20 &      50.6 \pm
-                                                   0.0024\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.254  S
-        agtann &    2  &                  1.1419 \pm 0.0214 &    1.149 \pm 3...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.254 ...ann &    2  &                  1.1419 \pm
-                                                   0.0214 &    1.149 \pm 3.5...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.254 ...2  &                  1.1419 \pm 0.0214 &
-                                                      1.149 \pm 3.5 \cdot 10...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.254 ...         1.1419 \pm 0.0214 &    1.149 \pm
-                                                   3.5 \cdot 10^{-4}  V_{inn...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.254 ... \pm 3.5 \cdot 10^{-4}  V_{inn} \\ \hline
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-<recently read> \bottomrule 
-                            
-l.255 \bottomrule
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (72.61191pt too wide) in paragraph at lines 248--257
- []$[]$ 
+Underfull \hbox (badness 1048) in paragraph at lines 317--321
+\OT1/cmr/m/n/10 Det at vi m^^Walte s^^Wa for-skjel-lig $\OML/cmm/m/it/10 ![]$ \
+OT1/cmr/m/n/10 ved de to for-skjel-li-ge
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
-
+Underfull \hbox (badness 3525) in paragraph at lines 322--327
+\OT1/cmr/m/n/10 Fra m^^Walingene har vi sett at man m^^Wa vite hvor-dan
  []
 
-[5 <./fig_6.png (PNG copy)>] (./rapport1.bbl) [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
+(./rapport1.bbl) [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
 (./rapport1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
 Package rerunfilecheck Info: File `rapport1.out' has not changed.
-(rerunfilecheck)             Checksum: AE4A2EDEE6958F6F1F5E2BB473BE77E9;928.
+(rerunfilecheck)             Checksum: A697D4FA13D53A9EAE9A84046B32067B;1794.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 22551 strings out of 492995
- 394312 string characters out of 6132705
- 508993 words of memory out of 5000000
- 25814 multiletter control sequences out of 15000+600000
+ 22555 strings out of 492995
+ 394957 string characters out of 6132705
+ 524378 words of memory out of 5000000
+ 25795 multiletter control sequences out of 15000+600000
  17410 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,47p,10382b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3891,13 +3146,14 @@ e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on rapport1.pdf (6 pages, 409797 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on rapport1.pdf (6 pages, 498919 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

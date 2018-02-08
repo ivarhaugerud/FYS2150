@@ -48,6 +48,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel-norsk/norsk.ldf
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel-norsk/norsk.ldf
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
@@ -70,6 +72,14 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -89,8 +99,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.st
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
@@ -105,12 +113,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/relsize/relsize.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
@@ -239,6 +243,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT fig_1.pdf
 INPUT ./fig_1.pdf
 INPUT ./fig_1.pdf
@@ -257,6 +263,12 @@ INPUT ./fig_5.png
 INPUT fig_6.png
 INPUT ./fig_6.png
 INPUT ./fig_6.png
+INPUT fig_7.png
+INPUT ./fig_7.png
+INPUT ./fig_7.png
+INPUT fig_8.png
+INPUT ./fig_8.png
+INPUT ./fig_8.png
 INPUT rapport1.bbl
 INPUT rapport1.bbl
 INPUT rapport1.aux
@@ -278,6 +290,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb

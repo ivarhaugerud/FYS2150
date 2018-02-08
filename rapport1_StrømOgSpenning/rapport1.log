@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  6 FEB 2018 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  8 FEB 2018 00:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1927,7 +1927,7 @@ Class revtex4-1 Info: mcite was not loaded (OK!) on input line 81.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 81.
 (./rapport1.aux
 
-LaTeX Warning: Label `fig2' multiply defined.
+LaTeX Warning: Label `fig5' multiply defined.
 
 )
 \openout1 = `rapport1.aux'.
@@ -2982,56 +2982,884 @@ Class revtex4-1 Warning: If you want your PACS to appear in your output, use do
 cument class option showpacs.
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 115--117
+Underfull \hbox (badness 2799) in paragraph at lines 116--118
 \OT1/cmr/m/n/10 av-hen-gig av ma-te-ria-let og de geomet-ris-ke
  []
 
-
-Underfull \hbox (badness 1314) in paragraph at lines 122--124
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 1314) in paragraph at lines 123--127
 \OT1/cmr/m/n/10 Her har spen-nin-gen inn en fre-kvens $\OML/cmm/m/it/10 !$ \OT1
 /cmr/m/n/10 og
  []
 
-<fig_1.pdf, id=28, 532.99126pt x 275.0275pt>
+<fig_1.pdf, id=76, 532.99126pt x 275.0275pt>
 File: fig_1.pdf Graphic file (type pdf)
 <use fig_1.pdf>
-Package pdftex.def Info: fig_1.pdf used on input line 129.
+Package pdftex.def Info: fig_1.pdf used on input line 139.
 (pdftex.def)             Requested size: 186.54973pt x 96.26106pt.
-<fig_2.png, id=30, 768.8725pt x 621.32124pt>
+<fig_2.png, id=78, 768.8725pt x 621.32124pt>
 File: fig_2.png Graphic file (type png)
 <use fig_2.png>
-Package pdftex.def Info: fig_2.png used on input line 136.
+Package pdftex.def Info: fig_2.png used on input line 146.
 (pdftex.def)             Requested size: 115.3259pt x 93.19415pt.
-
-LaTeX Warning: Hyper reference `fig_3' on page 1 undefined on input line 141.
-
-
-LaTeX Warning: Reference `fig_3' on page 1 undefined on input line 141.
-
-<fig_3.png, id=32, 1273.75874pt x 972.63374pt>
+<fig_3.png, id=81, 1273.75874pt x 972.63374pt>
 File: fig_3.png Graphic file (type png)
 <use fig_3.png>
-Package pdftex.def Info: fig_3.png used on input line 144.
+Package pdftex.def Info: fig_3.png used on input line 154.
 (pdftex.def)             Requested size: 191.05556pt x 145.88876pt.
+! Undefined control sequence.
+<argument> \Mega 
+                 \Ohm 
+l.158 ...amme målingene for $R=\SI{1}{\Mega \Ohm}
+                                                  $ måtte F$45$ være amper...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Underfull \hbox (badness 1308) in paragraph at lines 126--149
+! Undefined control sequence.
+<argument> \Mega \Ohm 
+                      
+l.158 ...amme målingene for $R=\SI{1}{\Mega \Ohm}
+                                                  $ måtte F$45$ være amper...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \Mega 
+                 \Ohm 
+l.158 ...amme målingene for $R=\SI{1}{\Mega \Ohm}
+                                                  $ måtte F$45$ være amper...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \Mega \Ohm 
+                      
+l.158 ...amme målingene for $R=\SI{1}{\Mega \Ohm}
+                                                  $ måtte F$45$ være amper...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<fig_4.png, id=83, 736.7525pt x 666.49pt>
+File: fig_4.png Graphic file (type png)
+<use fig_4.png>
+Package pdftex.def Info: fig_4.png used on input line 162.
+(pdftex.def)             Requested size: 221.02745pt x 199.94853pt.
+
+Overfull \hbox (15.02515pt too wide) in paragraph at lines 162--163
+ [][] 
+ []
+
+<fig_5.png, id=87, 1233.60875pt x 1011.78pt>
+File: fig_5.png Graphic file (type png)
+<use fig_5.png>
+Package pdftex.def Info: fig_5.png used on input line 171.
+(pdftex.def)             Requested size: 185.03333pt x 151.76045pt.
+
+Underfull \hbox (badness 1122) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 som er et h^^Wandholdt multi-me-ter, og Fluke
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 136--176
  \OT1/cmr/m/n/10 N^^Wa som vi vis-te hvor-dan m^^Waleapparatene
  []
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Underfull \hbox (badness 1635) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 over hele kret-sen ved $\OML/cmm/m/it/10 V[]$\OT1/cmr/m/n/10 , 
+spen-nings-fal-let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--176
+
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 Vi ^^\ns-ket n^^Wa ^^Wa gj^^\re m^^Walinger ved hjelp
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 Ved at data-ma-ski-nen reg-ner spen-nings-fal-let
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 opp-le-ve tem-pe-ra-tur-for-and-ring, for ^^Wa se om
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 (AC). Vek-selstr^^\mmen skal kom-me fra en
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 funk-sjons-ge-ne-ra-tor in-ne-bygd i oscil-losco-pet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 DA-omformer (digital-to-analog-omformer).
+ []
+
+
+Underfull \hbox (badness 2529) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 Vi kun-ne hen-holds-vis lese av sig-na-let p^^Wa
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 i teori-de-len (sek-sjon [][]II[][] on pa-ge 1[][][][]) ska-per
+
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 ge-ne-ra-to-ren lo-ga-rit-misk fra $10$ til $10[]$ Hz,
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 vek-selstr^^\mmen var p^^Wa $[] []$. For hver
+ []
+
+
+Underfull \hbox (badness 3138) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 (anlog-to-digital-converter). Ka-pa-si-tan-sen til
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 136--176
+\OT1/cmr/m/n/10 kon-den-sa-to-ren var $[] []$, og mot-stan-den
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./fig_1.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 176.
+
+[3 <./fig_2.png> <./fig_3.png> <./fig_4.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.197 \end{table}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+<recently read> \midrule 
+                         
+l.206 \midrule
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \bottomrule 
+                            
+l.211 \bottomrule
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \midrule 
+                         
+l.222 \midrule
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223  0.0042 \pm
+                  0.0015 &    4.22 \pm 0.03 &                  1.00 \pm 0.36...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223  0.0042 \pm 0.0015 &
+                              4.22 \pm 0.03 &                  1.00 \pm 0.36...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223  0.0042 \pm 0.0015 &    4.22 \pm
+                                       0.03 &                  1.00 \pm 0.36...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223  0.0042 \pm 0.0015 &    4.22 \pm 0.03 &
+                                                               1.00 \pm 0.36...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223 ...4.22 \pm 0.03 &                  1.00 \pm
+                                                   0.36 &      V_{inn} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223 ...m 0.03 &                  1.00 \pm 0.36 &
+                                                        V_{inn} \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223 ...                  1.00 \pm 0.36 &      V_
+                                                  {inn} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224  0
+        .0046 \pm 0.0015 &    4.25 \pm 0.03 &                  0.92 \pm 0.31...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224  0.0046 \pm
+                  0.0015 &    4.25 \pm 0.03 &                  0.92 \pm 0.31...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224  0.0046 \pm 0.0015 &
+                              4.25 \pm 0.03 &                  0.92 \pm 0.31...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224  0.0046 \pm 0.0015 &    4.25 \pm
+                                       0.03 &                  0.92 \pm 0.31...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224  0.0046 \pm 0.0015 &    4.25 \pm 0.03 &
+                                                               0.92 \pm 0.31...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224 ...4.25 \pm 0.03 &                  0.92 \pm
+                                                   0.31 &      V_R \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224 ...m 0.03 &                  0.92 \pm 0.31 &
+                                                        V_R \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224 ...                  0.92 \pm 0.31 &      V_
+                                                  R \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225  0
+        .0060 \pm 0.0015 &    6.04 \pm 0.04 &                  1.01 \pm 0.26...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225  0.0060 \pm
+                  0.0015 &    6.04 \pm 0.04 &                  1.01 \pm 0.26...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225  0.0060 \pm 0.0015 &
+                              6.04 \pm 0.04 &                  1.01 \pm 0.26...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225  0.0060 \pm 0.0015 &    6.04 \pm
+                                       0.04 &                  1.01 \pm 0.26...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225  0.0060 \pm 0.0015 &    6.04 \pm 0.04 &
+                                                               1.01 \pm 0.26...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...6.04 \pm 0.04 &                  1.01 \pm
+                                                   0.26 &      V_{inn} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...m 0.04 &                  1.01 \pm 0.26 &
+                                                        V_{inn} \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...                  1.01 \pm 0.26 &      V_
+                                                  {inn} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226  0
+        .0066 \pm 0.0015 &    6.04 \pm 0.04 &                  0.92 \pm 0.21...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226  0.0066 \pm
+                  0.0015 &    6.04 \pm 0.04 &                  0.92 \pm 0.21...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226  0.0066 \pm 0.0015 &
+                              6.04 \pm 0.04 &                  0.92 \pm 0.21...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226  0.0066 \pm 0.0015 &    6.04 \pm
+                                       0.04 &                  0.92 \pm 0.21...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226  0.0066 \pm 0.0015 &    6.04 \pm 0.04 &
+                                                               0.92 \pm 0.21...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226 ...6.04 \pm 0.04 &                  0.92 \pm
+                                                   0.21 &      V_R \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226 ...m 0.04 &                  0.92 \pm 0.21 &
+                                                        V_R \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226 ...                  0.92 \pm 0.21 &      V_
+                                                  R \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227  0
+        .0081 \pm 0.0015 &    8.22 \pm 0.05 &                  1.01 \pm 0.19...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227  0.0081 \pm
+                  0.0015 &    8.22 \pm 0.05 &                  1.01 \pm 0.19...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227  0.0081 \pm 0.0015 &
+                              8.22 \pm 0.05 &                  1.01 \pm 0.19...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227  0.0081 \pm 0.0015 &    8.22 \pm
+                                       0.05 &                  1.01 \pm 0.19...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227  0.0081 \pm 0.0015 &    8.22 \pm 0.05 &
+                                                               1.01 \pm 0.19...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227 ...8.22 \pm 0.05 &                  1.01 \pm
+                                                   0.19 &      V_{inn} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227 ...m 0.05 &                  1.01 \pm 0.19 &
+                                                        V_{inn} \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227 ...                  1.01 \pm 0.19 &      V_
+                                                  {inn} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.228  0
+        .0089 \pm 0.0015 &    8.22 \pm 0.05 &                  0.92 \pm 0.16...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.228  0.0089 \pm
+                  0.0015 &    8.22 \pm 0.05 &                  0.92 \pm 0.16...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.228  0.0089 \pm 0.0015 &
+                              8.22 \pm 0.05 &                  0.92 \pm 0.16...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.228  0.0089 \pm 0.0015 &    8.22 \pm
+                                       0.05 &                  0.92 \pm 0.16...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.228  0.0089 \pm 0.0015 &    8.22 \pm 0.05 &
+                                                               0.92 \pm 0.16...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.228 ...8.22 \pm 0.05 &                  0.92 \pm
+                                                   0.16 &      V_R \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.228 ...m 0.05 &                  0.92 \pm 0.16 &
+                                                        V_R \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.228 ...                  0.92 \pm 0.16 &      V_
+                                                  R \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \bottomrule
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+<recently read> \bottomrule 
+                            
+l.229 \bottomrule
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (65.98799pt too wide) in paragraph at lines 219--231
+ []$[]$ 
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./rapport1.bbl) [2 <./fig_1.pdf> <./fig_2.png> <./fig_3.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Hyper reference `fig6' on page 4 undefined on input line 233.
+
+
+LaTeX Warning: Reference `fig6' on page 4 undefined on input line 233.
+
+<fig_6.png, id=135, 1124.2pt x 843.15pt>
+File: fig_6.png Graphic file (type png)
+<use fig_6.png>
+Package pdftex.def Info: fig_6.png used on input line 236.
+(pdftex.def)             Requested size: 168.62273pt x 126.46704pt.
+[4 <./fig_5.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 240.
+
+
+LaTeX Warning: Hyper reference `' on page 5 undefined on input line 242.
+
+
+LaTeX Warning: Reference `' on page 5 undefined on input line 242.
+
+! Undefined control sequence.
+<recently read> \midrule 
+                         
+l.251 \midrule
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 ...s   &    1  &                  705.79 \pm
+                                                   2.41 &      705.7 \pm 2.5...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 ...  1  &                  705.79 \pm 2.41 &
+                                                        705.7 \pm 2.5 \cdot ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 ...         705.79 \pm 2.41 &      705.7 \pm
+                                                   2.5 \cdot 10^{-4} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253  F
+        irkant &    50 &                  49.627 \pm 0.20 &      50.6 \pm 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253 ...ant &    50 &                  49.627 \pm
+                                                   0.20 &      50.6 \pm 0.00...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253 ...  50 &                  49.627 \pm 0.20 &
+                                                        50.6 \pm 0.0024\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253 ...          49.627 \pm 0.20 &      50.6 \pm
+                                                   0.0024\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254  S
+        agtann &    2  &                  1.1419 \pm 0.0214 &    1.149 \pm 3...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254 ...ann &    2  &                  1.1419 \pm
+                                                   0.0214 &    1.149 \pm 3.5...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254 ...2  &                  1.1419 \pm 0.0214 &
+                                                      1.149 \pm 3.5 \cdot 10...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254 ...         1.1419 \pm 0.0214 &    1.149 \pm
+                                                   3.5 \cdot 10^{-4}  V_{inn...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254 ... \pm 3.5 \cdot 10^{-4}  V_{inn} \\ \hline
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+<recently read> \bottomrule 
+                            
+l.255 \bottomrule
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (72.61191pt too wide) in paragraph at lines 248--257
+ []$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+[5 <./fig_6.png (PNG copy)>] (./rapport1.bbl) [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
 (./rapport1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
 Package rerunfilecheck Info: File `rapport1.out' has not changed.
-(rerunfilecheck)             Checksum: 23D29D4D79F9E7513593FE7B09F2D24F;271.
+(rerunfilecheck)             Checksum: AE4A2EDEE6958F6F1F5E2BB473BE77E9;928.
 
 LaTeX Warning: There were undefined references.
 
@@ -3040,31 +3868,36 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22436 strings out of 492995
- 393186 string characters out of 6132705
- 497916 words of memory out of 5000000
- 25724 multiletter control sequences out of 15000+600000
+ 22551 strings out of 492995
+ 394312 string characters out of 6132705
+ 508993 words of memory out of 5000000
+ 25814 multiletter control sequences out of 15000+600000
  17410 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,39p,10382b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,47p,10382b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on rapport1.pdf (2 pages, 200367 bytes).
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on rapport1.pdf (6 pages, 409797 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

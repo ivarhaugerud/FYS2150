@@ -5,7 +5,7 @@ sns.set_style("whitegrid")
 blue, = sns.color_palette("muted", 1)
 
 freq_A = np.array([10, 100, 1000, 10000, 100000, int(1e6)  , 500, 5000, 50000]) #Hz
-freq_B = [10, 100, 1000, 10000, 100000, int(6*1e6), 500, 5000, 50000] #Hz
+freq_B =np.array([10, 100, 1000, 10000, 100000, int(6*1e6), 500, 5000, 50000]) #Hz
 amplitude_A = np.array([706.5, 695.5, 667.2, 664.9, 657.6, 603, 669.9, 665, 664.5])*1e-3 #volt
 amplitude_B = np.array([698.4, 585.7, 107.3, 10.93, 1.02, 630*1e-3, 207.3, 21.79, 2.169])*1e-3 #volt
 sigma_fa = np.array([500*1e-3, 6, 40, 600, 4*1e3, 200*1e3, 24.62, 0, 3.141])*1e-3
@@ -26,6 +26,53 @@ plt.rc('font', **font)
 ax = fig.add_subplot(111)
 ax.set_yscale('log')
 ax.set_xscale('log')
-ax.plot(10**(log_x), poly_foo)
+ax.plot(10**(log_x), poly_foo, "--")
 ax.errorbar(freq_A, amplitude_B/amplitude_A, yerr=sigma_av+sigma_bv, xerr=sigma_fa, fmt='o', ecolor='g', capthick=2)
 plt.show()
+"""
+def uncertenty_F75(x):
+    error = np.zeros(len(x))
+    for i in range(len(x)):
+        error[i] = (1.5/100)*x[i] + 0.1
+    return error
+
+def uncertenty_F45(x):
+    error = np.zeros(len(x))
+    for i in range(len(x)):
+        error[i] = (0.05/100)*x[i] + 0.0015
+    return error
+
+vr_10 = np.array([121.3, 102.1, 79])*1e-3
+vr_10_V =np.array([1.246, 1.0508, 0.81265])
+
+vr_1M = np.array([0.0046, 0.0066, 0.0089])*1e-3
+vr_1M_V =np.array([4.25, 6.04, 8.22])
+
+vi_10 = np.array([121.3, 102.0, 78.4])*1e-3
+vi_10_V =np.array([1.956, 1.6462, 1.2685])
+
+vi_1M = np.array([0.0042, 0.0060, 0.0081])*1e-3
+vi_1M_V =np.array([4.22, 6.04, 8.22])
+
+#print(uncertenty_F75(vr_10))
+print(uncertenty_F45(vr_1M))
+
+plt.plot(vr_10, vr_10_V)
+plt.plot(vi_10, vi_10_V)
+plt.plot(vr_10, vr_10_V, "ro")
+plt.plot(vi_10, vi_10_V, "bo")
+plt.show()
+
+plt.plot(vr_1M, vr_1M_V, "ro")
+plt.plot(vi_1M, vi_1M_V, "bo")
+plt.plot(vr_1M, vr_1M_V)
+plt.plot(vi_1M, vi_1M_V)
+plt.show()
+
+(a, b) = np.polyfit(vr_1M, vr_1M_V, 1)
+(a1, b1) = np.polyfit(vi_1M, vi_1M_V, 1)
+(a2, b2) = np.polyfit(vi_10, vi_10_V, 1)
+(a3, b3) = np.polyfit(vr_10, vr_10_V, 1)
+print(a, b, a1, b1)
+print(a2, b2, a3, b3)
+"""

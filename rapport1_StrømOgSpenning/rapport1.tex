@@ -84,17 +84,17 @@
 
 %\preprint{APS/123-QED}
 
-\title{Strøm og Spenning}
+\title{Måling av multimetere, temperaturmåling med termistor\\ og kretser med frekvensavhengig respons}
 
 \author{\textsc{Haugerud, Ivar Svalheim}}
 \affiliation{%
- University of Oslo\\
+ University i Oslo\\
 }%
 
 \date{\today}
 
 \begin{abstract}
-We need to test if our system behaves as it should based on the equations we have in the theory section, which is derived in the appendix. To start with this we visualized the particles in the compartment. Since the visualizing demands more computer power than our computers can handle here at the university of Soby, we had to limit ourselves to only $100$ particles. We saw that the particles behaved as they should, and did bounce on the walls when they were meant to, and it looked like their kinetic energy was conserved.
+Vi gjorde målinger på elektriske kretser og fant at den indre motstanden til F$45$ og F$75$ som voltmeter er henholdsvis $10.00\pm0.06$M$\Omega$ og $11.10\pm0.07$M$\Omega$. Dette må vi ta i betrakting når vi skal måle spenningsfallet over en motstand med resistanse av samme størrelsesorden som voltmeteret. Vi målte denne effekten og merket en kraftig forskjell på $0.08$M$\Omega$. For at F$45$ og F$75$ skal kunne måle motstand og strøm direkte må de selv sende de selv en strøm inn i kretsen. Av å sende en vekselstrøm i målte vi at den avleste verdien på et multimeter er lik RMS-verdien til signalet fra spenningsgeneratoren. En krets med vekselstrøm av høy frekvens og en kondensator, fungerer som et lavpass filter, siden signalene med høy frekvens vil bli redusert logaritimisk lineært med logaritmen av frekvensen. Eksperimentet viste at den karakteristiske frekvensen til systemet var $118.54 \pm  0.68$Hz. Dette stemmer ikke overens med hva teorien forutsier, og det burde derfor bli gjort flere eksperimenter på dette området.
 \end{abstract}
 
 \pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
@@ -205,6 +205,7 @@ Til slutt ønsker vi å se på forholdet mellom to spenningsfallet i en RC krets
 Som beskrevet i teoridelen (seksjon \ref{teori}) skaper kondensatoren en treghet i systemet hvis vi har en høy frekvens på spenningen i kretsen. For å gjøre målinger på denne effekten varierte vi frekvensen til et sinussignal fra spenningsgeneratoren logaritmisk fra $10$ til $10^6$ Hz, og gjorde noen ekstra målinger på området der vi merket forandring, som var for $500$, $5000$ og $50000$ Hz. Amplituden til signalet fra vekselstrømmen var på $\SI{706.5}{\milli \volt}$. For hver instilling noterte vi frekvens og amplitude til $V_{inn}$ og $V_{ut}$. Vi gjorde målingene først med oscilloscopet deretter med en AD-omformeren (anlog-to-digital-converter). Kapasitansen til kondensatoren var $\SI{100}{\nano\farad}$, og motstanden hadde resistans på $\SI{10}{\kilo\ohm}$.
 
 \section{Resultater}
+\subsection{Måling av multimetre}
 Resultater fra måling av kretsen vist i tabell \ref{table1}. Dataen i denne tabellen kommer fra avlesninger av kretsen vist i figur \ref{fig1}, der vi bare hadde måleapparatene F$45$ og F$75$ i krets med hverandre og varierte hva apparatene målte. Fra denne dataen kan vi se hvordan måleapparatet selv påvirker kretsen de selv er med i. \\
 \begin{table}[h!]
 \caption{Data fra elektrisk krets kunn med måleapparater  F$45$ og F$75$. Kretsen som dataen er hentet fra er vist i figur \ref{fig1}. Ut fra enhetene til verdiene målt finner du hva de målte av hverandre. Verdiene inne i klammeparantese på de to øverste målingene vier sensitivteten til F$75$.}\centering
@@ -226,6 +227,8 @@ $0.000 \pm 0.001$V       & $0  \pm 3 \cdot 10^{-6}$ A      & M        \\
 $0.000 \pm 0.001$V       & $0 \pm 3 \cdot 10^{-5}$ A       & F    \\
 \end{tabular}
 \end{table}
+\subsection{Motstand, likestrøm og likespenningsmålinger
+med multimeter}
 Kretsen vist i figur \ref{fig2} ble brukt til å måle resistansen til to motstander. Målingene vi gjorde er vist i tabell \ref{table2}. \\
 \begin{table}[h!]
 \centering
@@ -264,7 +267,7 @@ Dataen fra kretsen vist i figur \ref{fig4} ble sendt til datamaskinen hvor vi ku
   \centering
   \includegraphics[scale=0.25]{fig_6.png}
   \caption{Temperaturen til termistoren som en funksjon av tid. Hver sirkel representerer en måling. Vi kan med dette lettere se hvor rask endringen er. Den oransje linja under er en linje trukekt mellom hver måling.}
-  \label{fig6s}
+  \label{fig6}
 \end{figure}
 
 \subsection{Vekselspenning med frekvensgenerator, oscilloscop og multimeter}
@@ -275,23 +278,24 @@ I den elektriske kretsen vist i figur \ref{fig5} varierte vi formen på signalet
 \label{table5}
 \begin{tabular}{c c c c}
 \toprule
-    Signalform & Amplitude $V$ (V) & F$45$ $V$ (mV)  & RMS \\ \hline
+    Signalform & Amplitude $V$ (V) & F$45$ $V$ (mV)  & RMS(mV) \\ \hline
  Sinus   &    $1$  &                  $705.79 \pm 2.41$ &      $705.7 \pm 2.5 \cdot 10^{-4}$ \\
  Firkant &   $ 50$ &                  $49.627 \pm 0.20$ &      $50.6 \pm 0.0024$\\
  Sagtann &    $2$  &                  $1.1419 \pm 0.0214$ &    $1.149 \pm 3.5 \cdot 10^{-4}  $ \\
 \end{tabular}
 \end{table}
 \subsection{Krets med frekvensavhengig respons}
-Kretsen vist i figur \ref{fig5} ble først målt av oscilloscopet. Her målt vi $V_{ut}$, $V_{inn}$ og frekvensen $f$ til systemet. Målingene gjort er vist i figur \ref{fig7}. Her har vi funnet en lineærtilpassning til den $8$ høyeste frekvensene. Da fant vi at stigningstallet var på $ -0.817 /pm 0.063$, men siden vi plotter med logaritmiske akser tilsvarer dette et stigningstall på $0.152 \pm0.01$. Vi fant konstantleddet til å være $1.55 \pm  0.26$, men siden vi har logaritimske akser er det egentlig $35.61 \pm 9.26$. Fra denne tilpassnignskurven kan vi regne at den skjærer $\log_{10} \abs{{V_{ut}/V_{inn}}} = 0$ i
-$f = 10^{1.904 \pm 0.011} = 80.25 \pm 1.29$.
+Kretsen vist i figur \ref{fig5} ble først målt av oscilloscopet. Her målt vi $V_{ut}$, $V_{inn}$ og frekvensen $f$ til systemet. Målingene gjort er vist i figur \ref{fig7}. Her har vi funnet en lineærtilpassning til den $8$ høyeste frekvensene. Vi at stigningstallet var på $ -0.9363 \pm 0.063$. Vi fant konstantleddet til å være $1.9367 \pm  0.26$, men siden vi tok logaritmen av verdien går $V_{ut}/V_{inn}$ som $(35.61 \pm 9.26) \cdot 10^{-0.9363f \pm 0.063}$ . Fra denne tilpassnignskurven kan vi regne at $\log_{10} \abs{{V_{ut}/V_{inn}}} = 0$
+skjer ved $\omega = 10^{2.0684 \pm 0.0111} = 117.06 \pm 1.29$
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.25]{fig_7.png}
   \caption{Forhold mellom spenning inn og ut av kretsen, plottet med logaritmisk akser. Dataen er hentet fra et oscilloscop. Her er usikkerhetene en faktor $10^{-3}$ iforholdet til avleste verdi, og det er derfor ikke mulige å se error-barene.}
   \label{fig7}
 \end{figure}
-Når vi gjorde de samme målingene med AD-omformeren. Målingene er vist i figur \ref{fig8}. Her målt vi $V_{ut}$, $V_{inn}$ og frekvensen $f$ til systemet. Her har vi igjen funnet en lineærtilpassning til de $12$ siste punktene, det vil si etter knekken i grafen. Vi fant at stigningstallet var på $ -0.9093 /pm 0.025$, men siden vi plotter med logaritmiske akser tilsvarer dette et stigningstall på $0.123 \pm0.030$. Vi fant konstantleddet til å være $1.891 \pm  0.079$, men siden vi har logaritimske akser er det egentlig $77.75 \pm 6.12$. Fra denne tilpassnignskurven kan vi regne at $\log_{10} \abs{{V_{ut}/V_{inn}}} = 0$ i
-$\omega = 10^{2.079 \pm 0.005} = 120.03 \pm 0.62$Hz.
+Så gjorde vi de samme målingene med AD-omformeren. Målingene er vist i figur \ref{fig8}. Her målte vi $V_{ut}$, $V_{inn}$ og frekvensen $f$ til systemet. Her har vi funnet en lineærtilpassning til de $12$ siste punktene, det vil si etter knekken i grafen. Vi fant at stigningstallet var på $ -0.909 \pm 0.025$, og konstantleddet til å være $1.89 \pm  0.08$, men siden vi gjort det logaritimsk går $V_{ut}/V_{inn}$ som$ (77.75 \pm 6.12) \cdot 10^{-0.909f \pm 0.025}$.
+Fra tilpassnignskurven kan vi regne at $\log_{10} \abs{{V_{ut}/V_{inn}}} = 0$ i $\omega = 10^{2.079 \pm 0.005} = 120.03 \pm 0.62$Hz.
+Fra disse målingene fant vi at verdien for egenfrekvensen $\omega_0$ til systemet er på $118.54 \pm  0.68$Hz.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.25]{fig_8.png}
@@ -314,16 +318,15 @@ Av å måle verdier for termistormotstanden fra kretsen vist i figur \vref{fig3}
 Fra målingene vist i tabell \ref{table5} ser vi at verdien vi måler fra multimeteret er lik RMS verdien til signalet. RMS-veriden represneterer arealet som kvadratet av signalet dekker på en hel periode. Uttrykket for RMS-verdien til en funksjon er \eqref{rms}, ved å vite formen på signalet og amplitude kan vi regne ut hva målingene fra multimeteret kommer til å være. For multimeteret vil nøyaktigheten av målingene være avhengig av frekvensen til signalet. For eksmpel vil F$45$ ha en nøyaktighet på $5\% + 500$ hvis signalet er mellom $50-100$kHz, mens hvis signalet er på mellom $25-50$Hz er nøyaktigheten på $1\%+100$, det er altså en faktor $5$ forskjell i nøyaktigheten. Det er derfor mer nøyaktig å lese av verdien direkte fra oscilloscopet. \\
 Hvis vi hadde skrudd på en DC-komponent fra funksjonsgeneratoren i tillegg kunne vi ha funnet det på to forskjellige måter. Den første måten er at det hadde blitt en høyere avlesning på voltmeteret enn hva RMS-verdien til AC-signalet forutiser. Den andre måten er at vi kunne lese av verdien av \textit{hvile} amplituden, det vil si den amplituden AC-signalet svinger rundt, på dataskjermen koblet til funksjonsgeneratoren.
 \subsection{Krets med frekvensavhengig respons}
-Ut ifra dataen vist i figur \ref{fig7} kunne vi regnet ut at $\log_{10} \abs{{V_{ut}/V_{inn}}} = 0$ fant sted når $\omega = 80.25 \pm 2.67$ Hz. Dette betyr at for frekvenser som er mindre enn $80.25 \pm 2.67$ Hz vil vil ikke få en dempet respons grunnet treghet i kondensatoren. Men for frekvenser større enn dette vil vi endre forholdstallet mellom $V_{inn}$ og $V_{ut}$ med en faktor $0.152 \pm 0.01$ for en endring av frekvensen på $1$ Hz. Fra figuren ser vi at det siste datapunktet passer dårlig inn med resten av datapunktene. Dette gir oss grunn til å tro at det var en systematisk feil til stedet under målingen av dette datapunktet, og at dette forårsaket en lavere verdi for $\log_{10} \abs{{V_{ut}/V_{inn}}}$
-enn det burde være.  \\
-I teori-delen i seksjon \ref{teori} fant vi at konstantleddet vi finner for høye frekvenser skal være tilnærmet lik $\omega_0$. I kretsen vår brukte vi en resistanse på $10$k$\Omega$ og en kapasitans på $100$nF. Siden $\omega = 1/RC$, skal $\omega_0$, ifølge teorien, være $10^3$Hz. Vi har målt $\omega_0$ til å være $120.03 \pm 0.62$Hz ved bruk av AD-omformer, og $ 80.25 \pm 1.29$Hz ved bruk av picoscopet. Grunnet at de eksperimentelle målingene avviker med en faktor på $10$, må da ha vært noe som forårsaket en systematisk feil under målingene. Den systematiske feilen gjorde at datapunktene er feil, og ikke passer inn med det teorien forutsier, som gjør at vi finner en gal verdi for $\omega_0$. Derfor er verdien funnet i disse målingene feil, og man skal ikke trekke noen slutninger fra disse målingene. \\
+Ut ifra dataen vist i figur \ref{fig7} og figur \ref{fig8} kunne vi regnet ut at $\log_{10} \abs{{V_{ut}/V_{inn}}} = 0$ fant sted når $118.54 \pm 0.68$Hz Hz. Dette betyr at for frekvenser som er mindre enn $118.54 \pm 0.68$ Hz vil vil ikke få en dempet respons grunnet treghet i kondensatoren. Men frekvenser større enn dette vil vi få en redusert amplitude, og den blir kraftigere redusert jo større frekvensen er. Fra figuren ser vi at det siste datapunktet passer dårlig inn med resten av datapunktene. Dette gir oss grunn til å tro at det var en systematisk feil til stedet under målingen av dette datapunktet, og at dette ville forårsaket en lavere verdi for $\log_{10} \abs{{V_{ut}/V_{inn}}}$. Vi tok derfor valget å ikke ta med dette datapunktet i lineærregersjonen. Dette kan tyde på at det burde gjøres flere eksperimenter i dette frekvensområdet.\\
+I teori-delen i seksjon \ref{teori} fant vi at konstantleddet vi finner for høye frekvenser skal være tilnærmet lik $\omega_0$. I kretsen vår brukte vi en resistanse på $10$k$\Omega$ og en kapasitans på $100$nF. Siden $\omega = 1/RC$, skal $\omega_0$, ifølge teorien, være $10^3$Hz. Vi har målt $\omega_0$ til å være $118.54\pm0.68$Hz. Grunnet at de eksperimentelle målingene avviker med en faktor på $10$, må da ha vært noe som forårsaket en systematisk feil under målingene. Den systematiske feilen gjorde at datapunktene er feil, og ikke passer inn med det teorien forutsier, som gjør at vi finner en gal verdi for $\omega_0$. Derfor er verdien funnet i disse målingene feil, og man skal ikke trekke noen slutninger fra disse målingene. \\
 Det at vi målte så forskjellig $\omega_0$ ved de to forskjellige måltemetodene tyder også på at det var systematiske feil til stedet. Siden vi måler på samme krets, og med samme strøm, burde resultatet være likt. Den eneste forandringen er er at vi i det ene tilfellet henter dataen ved hjelp av picoscopet, og i det andre tilfellet ved hjelp av en AD-omformer.
 \section{Konklusjon}
 Ved å sette opp de elektriske kretsene vist i denne rapporten, har vi lært hvordan komponentene og måleapparatene virker i samspill med hverandre. Dette har vi gjort ved å gjøre målinger på spenning, strøm og motstand i kretsen, og få informasjon om egenskapene til kretsen ved hjelp av disse målingene. \\
 Fra målingene har vi sett at man må vite hvordan måleapparartene påvirker kretsen. Vi fant at den indre resistansen til voltmeteret i F$45$ var på $10.00 \pm 0.06$M$\Omega$, og indre resistansen til F$75$ var på $11.10 \pm 0.07$M$\Omega$. Måleapparater er selv en del av kretsen, og vil følgelig påvirke den, og dette vil påvirke verdiene man måler. Fra å vite den indre resistansen til voltmeteret kan vi finne ut til hvilken grad voltmeteret påvirker kretsen. Vi fant at for at et multimeter skal kunne måle resistanse eller strøm kommer den til å selv produsere en strøm i kretsen. \\For å måle resistansen vist i figur \ref{fig2} var det fordelaktig å måle resistansen over hele kretsen istedenfor over motstanden. Grunnen til dette var at resistansen til motstanden var av samme størrelsesorden som den indre resistansen til voltmeteret i paralell. Ved å måle resistansen over hele kretsen istedenfor i paralell fant vi at verdien til resistansen var $1.006\pm0.159$M$\Omega$. \\
 Ved å måle resistansen til en temperatursensitiv motstand, termistor, og vite forholdet mellom resistansen til motstanden og temperaturen \eqref{calc_temp} klarte vi å finne temperaturen til termistoren. \\
 Vi gjorde målinger på en krets med en spenningsgenator hvor vi kunne variere formen, amplituden og frekvensen til signalet fant vi at multimeteret målte at spenningen var lik RMS-verdien til formen av signalet. RMS-verdien er definert av \eqref{rms} og sier oss hva roten av arealet under grafen til spenningsformen kvadret over en full periode er, og det er denne verdien multimeteret måler. \\
-Den elektriske kretsen vist i figur \ref{fig8} fungerer som et lavpassfilter. Hvis man har en påtrykkt spenning med frekvens vil kondensatoren lades opp med ladninger, men hvis frekvensen er høy nok vil ikke kondensatoren rekke å bli ladet opp før spenningen har endret seg. Derfor vil signalene med høy frekvens få en sterkt dempet amplitude. Hvis vi plotter påtrykkt frevens mot potensialforskjell logaritmisk kan vi finne den karakteristiske frekvensen til systemet $\omega_0$ ved hjelp av lineær regresjon. Under oppsettningen av vårt eksperimentet ble noe gjort galt, og vi fant feil verdi for den karakteristiske frekvensen til systemet på grunn av systematiske feil i eksperimentet.
+Den elektriske kretsen vist i figur \ref{fig8} og figur \ref{fig7} fungerer som et lavpassfilter. Hvis man har en påtrykkt spenning med frekvens vil kondensatoren lades opp med ladninger, men hvis frekvensen er høy nok vil ikke kondensatoren rekke å bli ladet opp før spenningen har endret seg. Derfor vil signalene med høy frekvens få en sterkt dempet amplitude. Hvis vi plotter påtrykkt frevens mot potensialforskjell logaritmisk kan vi finne den karakteristiske frekvensen til systemet $\omega_0$ ved hjelp av lineær regresjon. Eksperimentet ga oss at denne verdien var på $118.54 \pm 0.68$Hz. Under oppsettningen av vårt eksperimentet ble noe gjort galt, og vi fant feil verdi for den karakteristiske frekvensen til systemet på grunn av systematiske feil i eksperimentet. Det burde bli gjort mer eksperimenter for å finne $\omega_0$ eksperimentelt.
 \begin{thebibliography}{9}
 \bibitem{squires}
 Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.

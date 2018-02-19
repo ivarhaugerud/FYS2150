@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex rapport1"] 1518127440 "rapport1.aux" "rapport1.bbl" "rapport1" 1518127520
+["bibtex rapport1"] 1518169886 "rapport1.aux" "rapport1.bbl" "rapport1" 1518169890
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/revtex/apsrev4-1.bst" 1480098436 71518 fec93f06df0c073f83d2330456bd19c2 ""
-  "rapport1.aux" 1518127519 11390 c6fde45c0a96102c5e7035e651d0b05f ""
-  "rapport1Notes.bib" 1518127520 103 48ad29797468f16e2853d8797278d7af ""
+  "rapport1.aux" 1518169889 11752 7bf69179e2e79e84ccacfca39d056258 ""
+  "rapport1Notes.bib" 1518169889 103 48ad29797468f16e2853d8797278d7af ""
   (generated)
   "rapport1.blg"
   "rapport1.bbl"
-["pdflatex"] 1518127517 "rapport1.tex" "rapport1.pdf" "rapport1" 1518127520
+["pdflatex"] 1518169887 "rapport1.tex" "rapport1.pdf" "rapport1" 1518169890
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1480098696 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1480098698 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -50,7 +50,6 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1480098701 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm" 1480098701 764 c98a2af25c99b73a368cf7336e255190 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1480098711 520 4889cce2180234b97cad636b6039c722 ""
-  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1480098733 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1480098733 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1480098733 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1480098733 32001 6aeea3afe875097b1eb0da29acd61e28 ""
@@ -168,15 +167,15 @@
   "fig_4.png" 1517992774 88186 64b9115dcd8dc3360725706d11eb2bfc ""
   "fig_5.png" 1518007250 47975 bea0f15815d6235c770ca19533d9b910 ""
   "fig_6.png" 1518045869 67938 0c467ff229ae75b59f95c0fcb3eb7f26 ""
-  "fig_7.png" 1518123615 30862 11df3c393d153d12ce8acf03a9a48ae5 ""
-  "fig_8.png" 1518123567 35040 6cf402d42f9eb3fdc95ef8d01e37dde2 ""
-  "rapport1.aux" 1518127519 11390 c6fde45c0a96102c5e7035e651d0b05f ""
-  "rapport1.bbl" 1518127441 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport1"
-  "rapport1.out" 1518127520 1794 a697d4fa13d53a9eae9a84046b32067b ""
-  "rapport1.tex" 1518127515 34938 6d0e23df20cac6409a675b86678fb8d2 ""
+  "fig_7.png" 1518169361 30862 094096106355a1c9fae3df19abb48ccd ""
+  "fig_8.png" 1518169309 35040 30f692a22428457178b1029141ca14da ""
+  "rapport1.aux" 1518169889 11752 7bf69179e2e79e84ccacfca39d056258 ""
+  "rapport1.bbl" 1518169887 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport1"
+  "rapport1.out" 1518169889 2059 d2829b43903adedbeee8d5da97fb9cf6 ""
+  "rapport1.tex" 1518169883 35853 95830bee32ed6dacd503e31cdfad8282 ""
   (generated)
   "rapport1Notes.bib"
-  "rapport1.out"
   "rapport1.pdf"
-  "rapport1.aux"
   "rapport1.log"
+  "rapport1.out"
+  "rapport1.aux"

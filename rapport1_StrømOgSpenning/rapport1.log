@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  8 FEB 2018 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  9 FEB 2018 10:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2979,6 +2979,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count266
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 104.
+
+
 Class revtex4-1 Warning: If you want your PACS to appear in your output, use do
 cument class option showpacs.
 
@@ -2994,7 +2998,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
-<fig_1.pdf, id=129, 532.99126pt x 275.0275pt>
+<fig_1.pdf, id=137, 532.99126pt x 275.0275pt>
 File: fig_1.pdf Graphic file (type pdf)
 <use fig_1.pdf>
 Package pdftex.def Info: fig_1.pdf used on input line 164.
@@ -3002,158 +3006,117 @@ Package pdftex.def Info: fig_1.pdf used on input line 164.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_2.png, id=131, 768.8725pt x 621.32124pt>
+<fig_2.png, id=139, 768.8725pt x 621.32124pt>
 File: fig_2.png Graphic file (type png)
 <use fig_2.png>
 Package pdftex.def Info: fig_2.png used on input line 172.
 (pdftex.def)             Requested size: 115.3259pt x 93.19415pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig_3.png, id=134, 1273.75874pt x 972.63374pt>
+<fig_3.png, id=142, 1273.75874pt x 972.63374pt>
 File: fig_3.png Graphic file (type png)
 <use fig_3.png>
 Package pdftex.def Info: fig_3.png used on input line 182.
 (pdftex.def)             Requested size: 191.05556pt x 145.88876pt.
-[2 <./fig_1.pdf> <./fig_2.png> <./fig_3.png>] <fig_4.png, id=149, 736.7525pt x 
+[2 <./fig_1.pdf> <./fig_2.png> <./fig_3.png>] <fig_4.png, id=159, 736.7525pt x 
 666.49pt>
 File: fig_4.png Graphic file (type png)
 <use fig_4.png>
 Package pdftex.def Info: fig_4.png used on input line 191.
 (pdftex.def)             Requested size: 221.02745pt x 199.94853pt.
-<fig_5.png, id=155, 1233.60875pt x 1011.78pt>
+<fig_5.png, id=165, 1233.60875pt x 1011.78pt>
 File: fig_5.png Graphic file (type png)
 <use fig_5.png>
 Package pdftex.def Info: fig_5.png used on input line 201.
 (pdftex.def)             Requested size: 234.38809pt x 192.24019pt.
-
-Overfull \hbox (12.25583pt too wide) in paragraph at lines 249--260
+[3 <./fig_4.png> <./fig_5.png>]
+Overfull \hbox (12.25583pt too wide) in paragraph at lines 252--263
  []$[]$ 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3 <./fig_4.png> <./fig_5.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 261.
-
-
-LaTeX Warning: Reference `fig6' on page 4 undefined on input line 262.
-
-<fig_6.png, id=182, 1124.2pt x 843.15pt>
+<fig_6.png, id=192, 1124.2pt x 843.15pt>
 File: fig_6.png Graphic file (type png)
 <use fig_6.png>
-Package pdftex.def Info: fig_6.png used on input line 265.
+Package pdftex.def Info: fig_6.png used on input line 268.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
-Overfull \hbox (11.80937pt too wide) in paragraph at lines 265--266
+Overfull \hbox (11.80937pt too wide) in paragraph at lines 268--269
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig_7.png, id=189, 1124.2pt x 843.15pt>
+<fig_7.png, id=199, 1124.2pt x 843.15pt>
 File: fig_7.png Graphic file (type png)
 <use fig_7.png>
-Package pdftex.def Info: fig_7.png used on input line 289.
+Package pdftex.def Info: fig_7.png used on input line 292.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
-Overfull \hbox (11.80937pt too wide) in paragraph at lines 289--290
+Overfull \hbox (11.80937pt too wide) in paragraph at lines 292--293
  [][] 
  []
 
-<fig_8.png, id=191, 1124.2pt x 843.15pt>
+<fig_8.png, id=201, 1124.2pt x 843.15pt>
 File: fig_8.png Graphic file (type png)
 <use fig_8.png>
-Package pdftex.def Info: fig_8.png used on input line 297.
+Package pdftex.def Info: fig_8.png used on input line 301.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
-Overfull \hbox (11.80937pt too wide) in paragraph at lines 297--298
+Overfull \hbox (11.80937pt too wide) in paragraph at lines 301--302
  [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
-
  []
 
 [4 <./fig_6.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 304.
-
-[5 <./fig_7.png (PNG copy)> <./fig_8.png (PNG copy)>]
-Underfull \hbox (badness 1308) in paragraph at lines 317--321
-[]\OT1/cmr/m/n/10 Ut ifra data-en vist i fi-gur [][]7[][] kun-ne vi reg-net ut 
-at
  []
 
-
-Underfull \hbox (badness 1048) in paragraph at lines 317--321
+[5 <./fig_7.png (PNG copy)> <./fig_8.png (PNG copy)>]
+Underfull \hbox (badness 1048) in paragraph at lines 321--324
 \OT1/cmr/m/n/10 Det at vi m^^Walte s^^Wa for-skjel-lig $\OML/cmm/m/it/10 ![]$ \
 OT1/cmr/m/n/10 ved de to for-skjel-li-ge
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 322--327
+Underfull \hbox (badness 3525) in paragraph at lines 325--330
 \OT1/cmr/m/n/10 Fra m^^Walingene har vi sett at man m^^Wa vite hvor-dan
  []
 
-(./rapport1.bbl) [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
+[6] (./rapport1.bbl) [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
 (./rapport1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
 Package rerunfilecheck Info: File `rapport1.out' has not changed.
-(rerunfilecheck)             Checksum: A697D4FA13D53A9EAE9A84046B32067B;1794.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: D2829B43903ADEDBEEE8D5DA97FB9CF6;2059.
  ) 
 Here is how much of TeX's memory you used:
- 22555 strings out of 492995
- 394957 string characters out of 6132705
- 524378 words of memory out of 5000000
- 25795 multiletter control sequences out of 15000+600000
+ 22559 strings out of 492995
+ 395000 string characters out of 6132705
+ 506378 words of memory out of 5000000
+ 25796 multiletter control sequences out of 15000+600000
  17410 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,47p,10382b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on rapport1.pdf (6 pages, 498919 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on rapport1.pdf (7 pages, 493607 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

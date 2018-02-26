@@ -1,37 +1,36 @@
 import pandas
 import io #Used as buffer
 
-def uncertenty(value, procent, uncertenty):
-    return value*procent/100 + uncertenty
+def uncertenty(value, percentage, uncertenty):
+    return value*percentage/100 + uncertenty
 
 def array_uncertenty(data):
-    print(np.shape(data))
-    print(data[:, 0])
     for i in range(len(data[:, 0])):
-        for j in range(int(len(data[0, : ])/2)):
-            data[2*j + 1, i] = uncertenty(data[int(2*j), i], 5, 0.1)
+        for j in range(int(len(data[0, :])*0.5)):
+            data[i, 2*j+1] = uncertenty(data[i, 2*j], 0, 0.03)
     return data
-
 
 def convertToLaTeX(df, alignment="c"):
     numColumns = df.shape[1]
     numRows = df.shape[0]
     output = io.StringIO()
     colFormat = ("%s|%s" % (alignment, alignment * numColumns))
-    #Write header
     output.write("\\begin{tabular}{%s}\n" % colFormat)
     output.write("   \\centering\n")
     output.write("   \\caption{ }\n")
     output.write("   \\label{ }\n")
     output.write("   \\hline\n")
     output.write("   ")
-    columnLabels = ["%s" % label for label in df.columns]
+    columnLabels = ["%s" % label for label in df.columns] #not bold headers
+    #columnLabels = ["\\textbf{%s}" % label for label in df.columns] #bold headers
     output.write("%s\n" % " & ".join(columnLabels))
     output.write("   \\hline\n")
 
     for i in range(numRows):
         output.write("   %s\\\\\n"
                      % (" & ".join([str(val) for val in df.ix[i]])))
+        output.write("\\textbf{%s} & %s\\\\\n"
+                     % (df.index[i], " & ".join([str(val) for val in df.ix[i]])))
 
     output.write("   \\hline\n")
     output.write("\\end{tabular}")
@@ -39,14 +38,14 @@ def convertToLaTeX(df, alignment="c"):
 
 if __name__ == "__main__":
     import numpy as np
-    array = np.array([[1, 0, 1, 0, 1, 0],
-                      [1, 0, 1, 0, 1, 0],
-                      [1, 0, 1, 0, 1, 0],
-                      [1, 0, 1, 0, 1, 0],
-                      [1, 0, 1, 0, 1, 0]])
-    #print(array)
-    #new_array = array_uncertenty(array)
-    rad_navn = ["1", "2", "3", "4", "5", "6"]
+    array = np.array([[11.725, 0],
+                      [28.365, 0],
+                      [88.700, 0],
+                      [80.245, 0]])
 
-    df = pandas.DataFrame(array, index=list("abcde"), columns=list(rad_navn))
+    new_array = array_uncertenty(array)
+    rad_navn = ["Avstand [mm]", "Usikkerhet [mm]"]
+    kolonne_navn = ["1", "2", "3", "4"]
+
+    df = pandas.DataFrame(new_array, index=list(kolonne_navn), columns=list(rad_navn))
     print(convertToLaTeX(df))

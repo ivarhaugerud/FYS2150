@@ -1,0 +1,3 @@
+m = e00;
+h = e1;
+[m, c, delta_c, delta_m] = function1(m, h)

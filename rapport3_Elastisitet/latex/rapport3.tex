@@ -1,4 +1,4 @@
-% ****** Start of file apssamp.tex ******
+Måling av utbredelseshastighet% ****** Start of file apssamp.tex ******
 %
 %   This file is part of the APS files in the REVTeX 4.1 distribution.
 %   Version 4.1r of REVTeX, August 2010
@@ -49,6 +49,7 @@
 \newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
 \usepackage{lipsum}
 \usepackage{dsfont}
+\usepackage{dirtytalk}
 \usepackage{commath}
 \usepackage[free-standing-units=true]{siunitx}
 
@@ -64,12 +65,14 @@
 \usepackage[mathlines]{lineno}% Enable numbering of text and display math
 
 \begin{document}
-\title{Elastisitet}
+\title{Måling av elastisitetsmodulen til messing stav med sirkulært tversnitt}
 \author{\textsc{Ivar Svalheim Haugerud}}
 \affiliation{ Universitetet i Oslo}
 \date{\today}
 
 \begin{abstract}
+  Vi beregner elastisitetsmodulen til en sylindrisk messingstav ved eksperimentelle målinger med to forskjellige utgangspunkter, i håp om å teste modellen for elastisitet. Den ene metoden ved å måle statisk nedbøying av stavens midtpunkt som funksjon av vekten som festes på punktet, mens staven hviler på to kniver. Den andre metoden ved å måle utbredelseshastigheten til frie longitudinelle svingninger i staven som oppstår ved et slag i aksial retning. De to verdiene er henholdsvis
+  $E = (1.101\pm0.001)\cross \SI{e11}{\pascal}$ og $E=(1.101\pm0.001)\cross \SI{e11}{\pascal}$. Differenasen mellom to de resultatene er $D=(8.678\pm5.321)\cross\SI{e8}{\pascal}$.
 \end{abstract}
 
 \pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
@@ -79,84 +82,179 @@
 \maketitle
 
 %\tableofcontents
-
+\section{Introduksjon}
+Eksperimentet i denne rapporten ble gjennomført i håp om å beregne elastistsmodulen til en sylindrisk messingstav på to måter, med forskjellig utgangspunkt, og ved dette teste kvaliteten på modellen for elastistet. En god modell burde kunne skrive flere fenomen med så få parametere som mulig. Vi skal derfor finne elastisitesparameteren, elastistsmodulen, ved å ta utgangspunkt i to forskjellige fenomener for å se om vi får samme verdi for elastistsmodulen.\\
+Det ene fenomenet er at objekter blir bøyd eller deformert på andre måter ned de blir utsatt for en kontinuerlig kraft. For å måle dette fester vi vekter midt mellom to punkter som staven hviler på og måler hvor mye staven blir bøyd . Med denne metoden finner vi sammenhengen mellom vekten vi bruker og avstanden staven blir nedbøyd.\\
+Den andre metoden er å finne utbredelseshastigheten til longitudinelle bølger i staven. Ifølge teorien er utbredelseshastigheten avhengig av tettheten og elastisiteten til materialet. Vi kommer ikke til å måle utbredelseshastigheten direkte, men heller å begrense oss til en bølgelengde, og finne frekvensen til denne, som gjør at vi kan regne oss fram til hastigheten.\\
+Dette er to fenomener som ifølge teorien bare beskrives av en parameter, som er et tegn på en god teori. Men teorien må selvfølgelig stemme med det vi observer for å være en god modell. Vi ønsker derfor å teste dette ved å måle elastistsmodulen med utgangspunkt i to forskjellige fenomener, som burde gi samme verdi for elastisitetsmodulen. Er de to verdiene vi finner innenfor usikkerhetene til hverandre har vi vist at det er en god modell. Hvis de to verdiene er ulike, utenfor usikkerhetene, kan det skyldes systematisk feil i eksperimentet eller feil i teorien. I dette tilfellet burde det bli gjennomført flere eksperimenter av samme type for å se nærmere på målingene.\\
+Hensikten med en god modell for elastisitet er lett å se nytten av. For eksmepel ønsker byggningsingeniører å forutsi hvor mye en struktur klarer å bære før det ikke er trygt lenger, og denne vitenskapen baserer seg på en god forståelse av elastisiteten til materialene man bruker. Om man måtte teste eksperimentelt for hvert hus, blokk, bil eller båt som blir bygd hvor mye det tåler før det ikke lenger er trygt, ville det vært ekstremt tidkrevende og uøkonomisk oppførsel. Med en god fysiskmodell vil man slippe dette, og vi kan leve livene våre uten å bekymre oss for at alt, fysisk, rundt oss kommer til å rase.
 \section{Teori}
-defleksjonen $h(m)$ til en bjelke, som støtter seg på to punkter med avstand $l$, som bærer en last på $mg$ i midten av bjelken gitt ved
+\subsection{Måling av nedbøying}
+Nedbøyingen $h(m)$ til en bjelke, som støtter seg på to punkter med avstand $l$, som bærer en last på $mg$ i midten av bjelken gitt ved
 \begin{equation}
   h(m) = \frac{mgl^3}{48EI}.\label{young}
 \end{equation}
 I dette uttrykket er $E$ elastisitetsmodulen og $I$ er arealtreghetsmomentet til bjelken, ikke massetreghetsmomentet som brukes i dynamikk. Arealtreghetsmomentet, også kalt andre arealmoment, er integralet over tversnittet til bjelken
-\begin{equation}
-  I = \int\int x^2 \diff y \diff x,
-\end{equation}hvor bjelken strekker seg ut i $z$-retning, og lasten virker i $x$-retning. For eksperimentet vi skal gjøre kommer bjelken til å være en sylinder. Vi kan derfor beregne arealtreghetsmomentet til en sylinder med radius $R$. Vi beregner integralet i sylinderkoordinater, og har derfor multiplisert med jacobideterminanten, og brukt at $x = r\sin{\theta}$. Vi får
-\begin{equation}
-  I = \int_0^{2\pi} \int_0^R r^2\sin^2{\theta}r \diff r \diff \theta = \frac{\pi r^4}{4} = \frac{\pi d^4}{64},
-\end{equation}der $d$ er diameteren. Setter vi dette inn i \eqref{young} får vi
 \begin{equation*}
-  h(m) = \frac{4mgl^3}{3\pi Ed^4}.
+  I = \int\int x^2 \diff x \diff y,
+\end{equation*}hvor bjelken strekker seg ut i $z$-retning, og lasten virker i $x$-retning. For eksperimentet vi skal gjøre kommer bjelken til å være en sylinder. Vi kan derfor beregne arealtreghetsmomentet til en sylinder med radius $R$. Vi beregner integralet i sylinderkoordinater, og multipliserer derfor med jacobideterminanten, og bruker at $x = r\sin{\theta}$. Vi får
+\begin{equation*}
+  I = \int_0^{2\pi} \int_0^R r^2\sin^2{\theta}r \diff r \diff \theta = \frac{\pi r^4}{4} = \frac{\pi d^4}{64},
+\end{equation*}
+der $d$ er diameteren. Setter vi dette inn i \eqref{young} får vi
+\begin{equation*}
+  h = \frac{4mgl^3}{3\pi Ed^4}.
 \end{equation*}
 Siden vi er interesert i å måle elastisitetsmodulen til bjelken kan vi løse for likningen for $E$ for å få
 \begin{equation}
   E = \frac{4mgl^3}{3\pi hd^4}. \label{young2}
 \end{equation}
-Under eksperimentet kommer vi til å finne $h(m)$, som vi forventer har en lineært forhold med lasten $m$
-\begin{equation}
-  h(m) = Am + B.
-\end{equation}
-Konstantleddet $B$ vil være tilnærmet lik null, og vi kan derfor erstatte $h/m$ med stigningstallet $A$ som vi vil beregne under målingene. Setter vi dette inn i \eqref{young2} får vi et uttrykk for elastisitetsmodulen til bjelken hvor vi kan måle alle de ukjente variablene
-\begin{equation}
-  E = \frac{4gl^3}{3\pi Ad^4}. \label{young3}
-\end{equation}
-Fra dette uttrykket kan vi beregne en verdi for elastisitetsmodulen.\\Vi ønsker å bruke en annen metode for å finne elastisitetsmodulen. Denne metoden for bestemmelse av E baserer seg på at utbredelseshastigheten $v$ for longitudinalbølger i en stav er gitt ved
+Under eksperimentet kommer vi til å måle nedbøyingen $h$ som en funksjon av lasten $m$, der vi forventer har en lineært forhold
 \begin{equation*}
-  v = \sqrt{\frac{E}{\rho}},\label{vel}
+  h(m) = \alpha m + \beta.
 \end{equation*}
-hvor $\rho$ er mediets tetthet. For å beregne $\rho$ kan vi måle massen og volumet til staven som er gitt av
+Konstantleddet $\beta$ vil være tilnærmet lik null siden staven ikke vil være bøyd med null last, og vi kan derfor erstatte $h/m$ med stigningstallet $\alpha$ som vi vil beregne under målingene. Setter vi dette inn i \eqref{young2} får vi et uttrykk for elastisitetsmodulen til en sylinderformet stav er
 \begin{equation}
-  \rho = \frac{4M}{\pi L d^2}.
+  E = \frac{4gL^3}{3\pi \alpha d^4}. \label{young3}
 \end{equation}
-Vi kan sette dette inn for $\rho$ i \eqref{vel} og løse for $E$, som gir oss
+Under eksperimentet kan vi måle alle de ukjente variablene i uttrykket slik at vi får en verdi for elastisitetsmodulen til messing.
+\subsection{Måling av utbredelseshastigheten til bølger}
+Vi ønsker å bruke en annen metode for å finne elastisitetsmodulen. Denne metoden for bestemmelse av E baserer seg på å finne utbredelseshastigheten $v$ for longitudinalbølger i en stav. Vi kan bruke dette som utgangspunkt siden utbredelseshastigheten er avhengig av elastistsmodulen ved
+\begin{equation}
+  v = \sqrt{\frac{E}{\rho}},\label{vel}
+\end{equation}
+hvor $\rho$ er mediets tetthet. Siden massetetthet er masse per volum kan vi finne $\rho$ ved å måle massen og volumet til staven, og beregne tettheten fra
+\begin{equation*}
+  \rho = \frac{4M}{\pi L d^2},
+\end{equation*}
+hvor $L$ er lengden på hele staven. Vi kan sette dette inn for $\rho$ i \eqref{vel} og løse for $E$, som gir oss
 \begin{equation}
   E = \frac{4Mv^2}{\pi L d^2}.\label{elast}
 \end{equation}
-For å kunne beregne elastisitetsmodulen mangler vi bare utbredelseshastigheten i staven. Denne kan vi bestemme ved å måle verdien til frekvens $f$ og bølgelengden $\lambda$, som gir oss hastigheten ved sammenhengen
+For å kunne beregne elastisitetsmodulen mangler vi bare utbredelseshastigheten i staven. Denne kan vi bestemme ved å måle verdien til frekvens $f$ og bølgelengden $\lambda$, som gir oss utbredelseshastigheten ved sammenhengen
 \begin{equation}
   v = \lambda f.\label{vlf}
 \end{equation}
-Både bølgelengde og frekvens kan bestemmes ved måling på en stående bølge i staven.
-Det kan vises at ved frie longitudinelle svingninger i en homogen stav med lengde $L$ opphengt i midtpunktet og med frie ender, får vi stående bølger slik at
-\begin{equation}
+%Både bølgelengde og frekvens kan bestemmes ved måling på en stående bølge i staven.
+Det kan vises at ved frie longitudinelle svingninger i en homogen stav med lengde $L$ opphengt i midtpunktet og med frie ender, får vi svingninger slik at
+\begin{equation*}
   L = \frac{n\lambda}{2},
-\end{equation}
-dette kan løses for $\lambda$, som gir oss
-\begin{equation}
+\end{equation*}
+der $n$ er et oddetall $n = 1, 3, 5, \ldots$ Dette kan løses for bølgelengden $\lambda$, som gir oss en sammenheng mellom bølelengden og lengden av staven
+\begin{equation*}
   \lambda = \frac{2L}{n},
+\end{equation*}
+Ved å slå staven i aksial retning dannes det flere egensvingninger i staven. Av disse svingningene er det den med lengst bølgelengde, $\lambda = 2L$, som blir mest dominerende som tiden går. Ved noen lenger til staven vil disse frekvensene gi hørbar lyd. Under eksperimentet kommer dette til å være tilfellet, og vi kan høre lyden fra frekvensen. Siden svingningen med lengst bølgelengde er den mest dominerende, og derfor hører tydeligst og lengst, vil det være den svingningen vi fokuserer på videre ved å velge $n=1$ og får
+\begin{equation}
+  \lambda = 2L.
 \end{equation}
-der $n$ er et oddetall $n = 1, 3, 5, ...$. Ved å slå staven i aksial retning dannes det flere egensvingninger i staven. Av disse stående bølgendene er det den med støst bølgelengde, $\lambda = 2L$, som blir sterkest. Denne bølgen vil også bli svakest dempet, og vil derfor etterhvert bli den dominerende bølgen i staven. Ved noen verdier for $L$ kan disse bølgene gi hørbar lyd. Vi kommer derfor til å bruke
-\begin{equation}
-  \lambda = 2L
-\end{equation}i beregningen av elastisitetsmodulen. Setter vi dette inn for bølgelengden i \eqref{vlf} og får vi
-\begin{equation}
+Setter vi dette inn for bølgelengden i \eqref{vlf} og får vi
+\begin{equation*}
   v = 2Lf,
-\end{equation}som vi kan sette inn for utbredelseshastigheten i \eqref{elast} får vi
+\end{equation*}
+som vi kan sette inn for utbredelseshastigheten i \eqref{elast} får vi
 \begin{equation}
-  E = \frac{16MLf^2}{\pi d^2}.\label{young5}.
+  E = \frac{16MLf^2}{\pi d^2}. \label{young5}
 \end{equation}
-Ved å kunne måle de geometriske størrelsene til stangen og frekvensen når vi slår på den klarer vi å beregne elastisitetsmodulen på en ny måte.
+Ved å kunne måle de geometriske størrelsene og massen til staven, og frekvensen når vi slår på den, klarer vi å beregne elastisitetsmodulen med utgangspunkt i et annet fenomen. Hvis man istedenfor ønsker å finne frekvensen kan man gjøre dette ved å vite elastisitetsmodulen, massen og de geometriske størelsene til staven ved
+\begin{equation}
+  f = \sqrt{\frac{\pi E d^2}{16ML}}. \label{young6}
+\end{equation}
+\subsection{Usikkerheter}
+På grunn av usikkerhet i målingene forventer vi ikke nøyaktig like svar for elastisitetsmodulen med de to metodene. Det er derfor viktig å vite usikkerhetene i de to metodene. Ved å bruke uttrykket for nedbøying av staven \eqref{young3} får vi at usikkerheten i elastisitetsmodulen er
+\begingroup\makeatletter\def\f@size{8.5}\check@mathfonts
+\begin{equation}
+  \Delta_{E_1} = E_1 \sqrt{\left(3\frac{\Delta_L}{L}\right)^2+\left(\frac{\Delta_g}{g}\right)^2+\left(\frac{\Delta_A}{A}\right)^2+\left(4\frac{\Delta_d}{d}\right)^2},\label{uncertenty1}
+\end{equation}
+\endgroup
+hvor konstantleddet forran $L$ og $d$ kommer fra eksponten de har i uttrykket.
+Usikkerheten ved å bruke utrrykket for elastistsmodulen ved måling av frekvens \eqref{young5} er
+\begingroup\makeatletter\def\f@size{8.5}\check@mathfonts
+\begin{equation}
+  \Delta_{E_2} = E_2 \sqrt{\left(\frac{\Delta_M}{M}\right)^2+\left(\frac{\Delta_L}{L}\right)^2+\left(2\frac{\Delta_f}{f}\right)^2+\left(2\frac{\Delta_d}{d}\right)^2}. \label{uncertenty2}
+\end{equation}
+\endgroup
+Som sagt forventer vi ikke at de to metodene skal gi at differanse til elastisitetsmodulen $$D=\abs{E_1-E_2}$$ skal være null, hvor $E_1$ og $E_2$ er de to forskjellige verdiene vi får i vår utregning av elastistsmodulen ved våre to forskjellige metoder. Men vi ønsker at differeansen $D$ skal være mindre enn usikkerheten i differansen $\Delta_D$. Når vi har gjort målingene må vi derfor sjekke om de tilfredstiller
+\begin{equation}
+  D < \Delta_D,
+\end{equation}
+der
+\begin{equation}
+  \Delta_D = \sqrt{\Delta_{E_1}^2 + \Delta_{E_2}^2}.
+\end{equation}
+Hvis målingene våre tilfrestiller denne ulikheten kommer årsaken til differansen $D$ fra usikkerheterer i målemetoden og tilfeldige feil. Hvis dette er tilfellet sier vi at det er
+\textit{overenstemmelse innenfor måleusikkerhetene}.
+Derimot hvis
+\begin{equation}
+  D > 2\Delta_D
+\end{equation}
+er det lite sansynlig at det bare er tilfeldige feil og usikkerheter i målinger som er årsaken til feilen, da er det mest sansynlig systematiske feil som har forårsaket forskjellen mellom de to svarene vi fikk for elastistsmodulen med de to metodene.
 \section{Metode}
+\subsection{Nedbøying av messingstav}
+I eksperimentet vårt bruker vi en messingstav med sirkulært tversnitt som er mye lenger enn diameteren sin. Vi ønsker først å måle elastisitetsmodulen ved å måle nedbøying av messingstaven når vi fester vekter på midten av staven. Oppsettet brukt i dette eksperimentet er vist i figur \vref{eksperiment}. I eksperimentet bruker vi en messingstav $E$ som hviler på to kniver $B$ og $C$. Midt på messingstaven er det festet en holder $F$ hvor vi setter loddene på. Ved måleuret $G$ kan vi måle bøyingen avmessingstaven. Hele eksperimentet foregår på en plate $A$.\\
+Før vi begynner eksperimentet er det viktig at at holderen $F$ er festet midt mellom de to knivene. Vi måler derfor avstanden mellom $B$ og $C$ og flyttet på staven slik at midten av staven var halvparten av denne avstanden fra $B$. For å sjekke at alt var gjort korrekt gjorde vi målingene på nytt, men nå målte vi avstanden fra $B$ til $F$ og fra $F$ til $B$ som gir oss mindre usikkerhet. Fra dette kunne vi finjustere posisjonen til staven til vi var sikkre på den var sentrert riktig. Itilegg er det viktig at punktet hvor nålen fra måleuret treffer normalt på flaten til sylinderen. For å være sikker på at den er normalt på kan vi bruke et vater og justere til vi er fornøyde.\\
+Målet vårt er å bruke \eqref{young3} til å beregne elastisutetsmodulen, og for å gjøre dette trenger vi å vite både lengden av staven og diameteren. Vi bruker derfor et skyvelær til måle diameteren til staven. Siden staven er mye lengere i lengden enn i bredden måtte vi bruke en tommestokk. Siden disse verdiene er i tredje og fjerde potens er det viktig å gjøre presise målinger, siden usikkerhetene her vil ha store utslag i usikkerheten i det endelige resultatet. Vi trenger også å finne en nøyaktig verdi tyngdeakselerasjonen $g$, og usikkerheten i denne verdien. Denne verdien kan variere avhengig av hvor på kloden man er, og vi må derfor finne en verdi for Oslo, Norge. \\
+Nå som eksperimentet er klart for måling, men før vi kan begynne må vi kalibrere loddene med presisjonsvektene. For å kalibrere loddene bruker vi en balansevekt, og setter den i likevekt med presisjonsvektene, for så å bytte presisjonsvektene ut med loddene og måle avviket mellom dem.
+Når dette er gjort er alt klart for å måle nedbøyingen av staven.\\
+Vi leser av nedbøyingen av staven som en funksjon av massen til loddene vi legger på festepunktet. Mellom hver måling tar vi av loddene og sjekker at utslaget til måleuret er tilbake til $0$-punktet. Massene vi har valgt å bruke går fra $0$ til $3.5$kg med en lineær økning på $0.5$kg. På disse målingene forventer vi et lineært forhold mellom vekten på loddene og nedbøyingen. For å bruke \eqref{young3} trenger vi stigningstallet til målepunktene, som vi kan beregne fra minste kvadraters metode på målingene. \\
 \begin{figure*}
   \centering
   \includegraphics[scale=0.17]{oppsett.png}
-  \caption{Eksperimentelt oppsett for målinger. Vi bruker en messingstang $E$ som hviler på to kniver $B$ og $C$. Midt på bjelken er det festet en flate $F$ hvor vi kan feste vekter, og vi kan måle avstanden den faller ned med måleuret $G$. Hele eksperimentet foregår på en plate $A$.}
+  \caption{Eksperimentelt oppsett for målinger.}
   \label{eksperiment}
 \end{figure*}
+\subsection{Måling av utbredelseshastigheten til bølger}
+For å beregne elastisitetsmodulen ved å måle frekvensen til trykkbølger i staven bruker vi likning \eqref{young5}. Vi trenger derfor å vite diameteren og lengen til staven, men disse verdiene har vi allerede målt. Vi kan derfor måle massen. For å veie bruker vi balansevekten som vi har kalibrert tidligere. For å holde staven stabil på vekten måler vi den med et balanse ledd som vi trekker fra den totale massen for å finne massen til staven. Vi lar staven henge horisontalt og gir den et slag aksialt på med en plastikk hammer. Dette slaget danner trykkbølger i staven hvor den mest dominerende vil være den med kortest bølgelengde. For å måle frekvensen er det to forskjellige fremgangsmåter, fouriertransformasjon eller svevning.\\
+For å bruke fouriertransformasjon bruker vi en mikrofon som vi setter nære staven. Fra et matlabprogram som leser signalene fra mikrofonen og tar en fouriertransformasjon av signalene, kan vi velge en samplingsfrekvens og en samplingstid for målingen. Etter slaget på staven venter vi litt før vi starter målingen med mikrofonen siden de andre frekvensene enn den med lengst bølgelengde dør ut først. Ved å finne en verdi for frekvensen med denne metoden har vi alle verdiene vi trenger for å beregne elastisitetsmodulen ved likning \eqref{young5}.\\
+For å bruke sveve-metoden antar vi en verdi for frekvensen til trykkbølgene og bruker denne frekvensen i en høytaler som sender en tone med samme frekvens. Hvis frekvensen vi hører fra høytaleren er nesten lik frekvensen vi hører fra å slå på staven vil det oppstå en effekt som kalles svevning. Denne svevningen er lett å høre, og jo nærmere frekvensene er hverandre vil tidsavstanden mellom to perioder i svevningen øke. For å gjøre det lettere å høre svevningen burde styrken fra høytaleren være rundt samme styrke som den fra staven. Vi kan med denne metoden endre på frekvensen til signalet fra høytaleren mens vi hører signalet fra staven. Hvis vi starter med en frekvens og endrer den slik at perioden på svevningen øker kan vi endre frekvens i samme retning til svevningen er helt borte. Når svevningen er helt borte har vi funnet frekvens til signalet. Med denne metoden er det vanskelig å beregne en usikkerhet i frekvensen. Å velge en frekvens til høytaleren kan gjøres ved å først bruke fouriertransformasjons-metoden ovenfor for å finne en frekvens, og så velge samme frekvens på høytaleren, eller bruke likning \eqref{young6} hvis man har elastisitetsmodulen.
+\section{Resultater}
+Målingene av messingstaven som vi brukte i eksperimentet, usikkerheten i målingene og måleinstrument, er vist i tabell \vref{stav}. Dette er all informasjonen vi trenger å vite om messingstaven, som vi trenger for begge metodene å måle elastistsmodulen på.
+\begin{table}[h!]
+\centering
+\caption{Målinger gjort av de geometriske størrelsene til messingstaven. Usikkerhetene er hentet fra databladet til måleinstrumentene, navnene på måleinstrumentene er vist i listen \vref{utstyr}.}
+\label{stav}
+\begin{tabular}{cccc}
+    Egenskap & Målt verdi      &    Usikkerhet & Målemetode \\
+    \hline
+    Lengde $L$ [m] & $1.490$    & $\pm 0.02$  & tommestokk  \\
+    Avstand kniver $l$ [m] & $1.365$ & $\pm0.01$ & tommestokk \\
+    Diameter $D$ [m] & $0.001596$    & $\pm000.7$ & skyvelær    \\
+    Masse $M$    [kg]  & $2.5173$   & $\pm0.004$   & balansevekt \\  \hline
+\end{tabular}
+\end{table}
+\subsection{Måling av nedbøying}
+For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien for Tyngdeakselerasjon $g$ er oppgitt i KILDENAVN \cite{tyngde}, hvor vi finner at $g=9.81\pm\SI{0.03}{\meter\per\second^2}$. Da er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet er $0.148\pm\SI{0.003}{\centi\meter\per\kilo\gram}$.
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.52]{nedbojing.pdf}
+  \caption{Målinger gjort av nedbøyingen av staven $h$ som funksjon av lasten $m$ vi fester på midten av staven. De røde sirklene er målepunktene, og den blå linja er minstekvadraters lineærtilpassning.}
+  \label{data}
+\end{figure}
+Ved å sette inn for diameteren og lengden fra tabell \vref{stav}, og tyngdeakselerasjonen og stigningstallet, inn i \eqref{young3} finner vi at $E=\SI{1.1012e11}{\pascal}$. Gjør vi det samme med målingene og deres usikkerhet, og setter de inn i \eqref{uncertenty1} får vi at usikkerheten $\Delta_E = ...$.
+\subsection{Måling av utbredelseshastigheten til bølger}
+Med denne metoden bruker vi likning \eqref{young5} for å beregne elastisitetsmodulen til messingstaven. For å beregne denne trenger vi igjen de geometriske størrelsene til staven vist i tabell \vref{stav}, men nå tregner vi ikke tyngdeakselerasjonen. Istedenfor tyngdeakselrasjonen trenger vi frekvensen som oppstår når vi slår på staven. Ved å bruke fouriertransformasjon får vi at frekvensen er $1207.6\pm\SI{0.4}{\hertz}$. Ved å lete etter svevninger i lyden fant vi at frekvensen til lyden var på $1208.6\pm\SI{0.4}{\hertz}$, vi bruker derfor $1207.6\pm\SI{0.4}{\hertz}$, som verdien for frekvensen i beregningen av elastistsmodulen siden vi stoler mest på ...
+Ved å sette inn verdien vi målte for frekvensen, samt verdien for masse, lengde og diameter fra tabell \vref{stav}, inn i \eqref{young5} får vi at elastisitetsmodulen er $E = \SI{1.0925e11}{\pascal}$. Usikkerheten beregner vi fra \eqref{uncertenty2}, og ved å sette inn usikkerhetene og verdiene i denne formelen får vi at $\Delta E = ...$.
+\section{Diskusjon}
+Under kalibreringen av vekten med presisjonslodddene var det en nøyaktighet på $0.1$ gram, men vi merket at balansevekten var svært sensitiv til hvor på vektene loddene var på plassert. Med asymetri målte vi en vektforskjell på $0.5$g, og det er derfor en større usikkerhet enn presisjonen til instrumentet. Det var lett å unngå assymetri når vi kalibrerte med ett presisjonslodd, men måtte vi bruke to var det vanskeligere å plasere dem riktig på vekten. På grunn av dette måtte vi derfor bruke en større usikkerhet i resultatene for kalibreringene, der vi trengte flere presisjonslodd, enn presisjonen til vekten.
+\section{Konklusjon}
+\subsubsection*{Utstyrsliste}
+\begin{itemize}
+\label{utstyr}
+\item aluminiumstav
+\item mikrofon
+\item tommestok
+\item skyvelær
+\item balansevekt
+\item opphengningsstativ
+\end{itemize}
 \begin{thebibliography}{9}
 \bibitem{squires}
 Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.
 \bibitem{oppgave}
 Fysisk institutt \emph{Elastisitet}, Universitetet i Oslo, februar 2018.
+\bibitem{tyngde}
+kilde med tyngdeakselerasjonen \emp{gravitasjon}, forlagnavn, mai 2020.
 \end{thebibliography}
-
 \end{document}
 %
 % ****** End of file apssamp.tex ******

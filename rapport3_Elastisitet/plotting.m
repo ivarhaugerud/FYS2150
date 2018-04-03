@@ -1,15 +1,20 @@
-%{
-vekt = linspace(0, 3.5, 8);
-utslag = [8.18, 7.45, 6.71, 6.03, 5.23, 4.49, 3.75, 2.99]-8.18;
+
+vekt = linspace(0, 3.5, 8); %kg
+utslag = [8.18, 7.45, 6.71, 5.98, 5.23, 4.49, 3.75, 2.99]-8.18;%mm
+usikker = [0, 1, 1, 1, 2, 3, 3, 3]*1e-3 %mm
 [m, c, delta_c, delta_m] = function1(vekt, utslag)
 
-figure(1)
-plot(vekt, utslag, 'ro');
+figure(2)
+%plot(vekt, utslag, 'ro');
+errorbar(vekt, utslag, usikker, 'o')
 hold on
-xlabel('vekt [kg]')
-ylabel('utslag [mm]')
+grid on
+title('Nedbooying av messingstav som funksjon av vekt','fontsize',16)
+xlabel('vekt [kg]', 'fontsize',16)
+ylabel('utslag [mm]', 'fontsize',16)
 plot(vekt, c+m*vekt)
-%}
+plot(vekt, c+(m+delta_m)*vekt)
+plot(vekt, c+(m-delta_m)*vekt)
 
 figure(1)
 scatter(fut, energi/max(energi), 15, 'filled')

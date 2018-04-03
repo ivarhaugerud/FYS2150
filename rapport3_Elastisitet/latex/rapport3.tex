@@ -216,26 +216,34 @@ Målingene av messingstaven som vi brukte i eksperimentet, usikkerheten i målin
 \begin{tabular}{cccc}
     Egenskap & Målt verdi      &    Usikkerhet & Målemetode \\
     \hline
-    Lengde $L$ [m] & $1.490$    & $\pm 0.02$  & tommestokk  \\
-    Avstand kniver $l$ [m] & $1.365$ & $\pm0.01$ & tommestokk \\
-    Diameter $D$ [m] & $0.001596$    & $\pm000.7$ & skyvelær    \\
-    Masse $M$    [kg]  & $2.5173$   & $\pm0.004$   & balansevekt \\  \hline
+    Lengde $L$ [m] & $1.490$    & $\pm 0.004$  & tommestokk  \\
+    Avstand kniver $l$ [m] & $1.365$ & $\pm0.004$ & tommestokk \\
+    Diameter $D$ [cm] & $1.596$    & $\pm0.001$ & skyvelær    \\
+    Masse $M$    [kg]  & $2.5173$   & $\pm0.0006$   & balansevekt \\  \hline
 \end{tabular}
 \end{table}
 \subsection{Måling av nedbøying}
-For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien for Tyngdeakselerasjon $g$ er oppgitt i KILDENAVN \cite{tyngde}, hvor vi finner at $g=9.81\pm\SI{0.03}{\meter\per\second^2}$. Da er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet er $0.148\pm\SI{0.003}{\centi\meter\per\kilo\gram}$.
-\begin{figure}
+For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien for Tyngdeakselerasjon $g$ er oppgitt i KILDENAVN \cite{tyngde}, hvor vi finner at $g=9.81\pm\SI{0.03}{\meter\per\second^2}$. Da er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet er $1.482\pm\SI{0.003}{\milli\meter\per\kilo\gram}$.
+\begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.52]{nedbojing.pdf}
+  \includegraphics[scale=0.4]{nedbojing.pdf}
   \caption{Målinger gjort av nedbøyingen av staven $h$ som funksjon av lasten $m$ vi fester på midten av staven. De røde sirklene er målepunktene, og den blå linja er minstekvadraters lineærtilpassning.}
   \label{data}
 \end{figure}
-Ved å sette inn for diameteren og lengden fra tabell \vref{stav}, og tyngdeakselerasjonen og stigningstallet, inn i \eqref{young3} finner vi at $E=\SI{1.1012e11}{\pascal}$. Gjør vi det samme med målingene og deres usikkerhet, og setter de inn i \eqref{uncertenty1} får vi at usikkerheten $\Delta_E = ...$.
+Ved å sette inn for diameteren og lengden fra tabell \vref{stav}, og tyngdeakselerasjonen og stigningstallet, inn i \eqref{young3} finner vi at $E=\SI{110\pm1}{\giga\pascal}$. Usikkerheten er beregnet fra likning \eqref{uncertenty1}, hvor vi har brukt usikkerheten i målingene nevnt ovenfor.
 \subsection{Måling av utbredelseshastigheten til bølger}
-Med denne metoden bruker vi likning \eqref{young5} for å beregne elastisitetsmodulen til messingstaven. For å beregne denne trenger vi igjen de geometriske størrelsene til staven vist i tabell \vref{stav}, men nå tregner vi ikke tyngdeakselerasjonen. Istedenfor tyngdeakselrasjonen trenger vi frekvensen som oppstår når vi slår på staven. Ved å bruke fouriertransformasjon får vi at frekvensen er $1207.6\pm\SI{0.4}{\hertz}$. Ved å lete etter svevninger i lyden fant vi at frekvensen til lyden var på $1208.6\pm\SI{0.4}{\hertz}$, vi bruker derfor $1207.6\pm\SI{0.4}{\hertz}$, som verdien for frekvensen i beregningen av elastistsmodulen siden vi stoler mest på ...
-Ved å sette inn verdien vi målte for frekvensen, samt verdien for masse, lengde og diameter fra tabell \vref{stav}, inn i \eqref{young5} får vi at elastisitetsmodulen er $E = \SI{1.0925e11}{\pascal}$. Usikkerheten beregner vi fra \eqref{uncertenty2}, og ved å sette inn usikkerhetene og verdiene i denne formelen får vi at $\Delta E = ...$.
+Med denne metoden bruker vi likning \eqref{young5} for å beregne elastisitetsmodulen til messingstaven. For å beregne denne trenger vi igjen de geometriske størrelsene til staven vist i tabell \vref{stav}, men nå tregner vi ikke tyngdeakselerasjonen. Istedenfor tyngdeakselrasjonen trenger vi frekvensen som oppstår når vi slår på staven.
+Vi gjorde flere målinger av frekvensen til bølgene som oppsto ved å slå på staven. Den fouriertransformerte av lyden mikrofonen tok opp på en av målingene er vist i figur \vref{fourier}. Fra å se på den fouriertransformerte ser vi at vi har en svært dominerende frekvens på $\SI{1207.1}{\hertz}$. Området rundt denne frekvens er tilnærmet lik null, og vi har litt støy for lave frekvenser under $\SI{100}{\hertz}$. Samplingstiden under eksperimentet var på $\SI{10}{\second}$ som gir oss en oppløsning på $\SI{0.1}{\hertz}$. Ved å ta med usikkerheten får vi derfor at frekvens til bølgen i staven er på $1207.1\pm\SI{0.1}{\hertz}$. Det ble gjort flere målinger av det samme, og på alle fikk vi samme frekvens.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.4]{fourier.pdf}
+  \caption{Den fouriertransformerte av lyden motatt fra mikrofonen for en av målingene. I figuren er det inkludert et zoomet inn område rundt der frekvens ligger for å vise fram oppløsningen på målingene.}
+  \label{fourier}
+\end{figure}
+Vi målte også frekvensen til bølgen ved å lete etter svevninger i lyden. Vi brukte derfor \eqref{young6} med elastisitetsmodulen vi fant ved å måle nedbøyingen til staven til å finne at grunnfrekvensen burde ligge på rundt $\SI{1211}{\hertz}$. Ved å bruke dette som startspunkt for å lete etter når perioden på svevningen økte eller minkte klarte vi å bestemme at frekvensen var på $\SI{1207.0}{\hertz}$. Under bruk av denne metoden brukte vi hørselen vår, og vi klarte å skille svevningen for frekvenser med en differanse på $\SI{0.2}{\hertz}$, vi får derfor en usikkerhet lik denne verdien. Ved svevning fant vi altså at frekvensen var på $1207\pm\SI{0.2}{\hertz}$.\\
+For å beregne elastisitetsmodulen kommer vi til å bruke verdien og usikkerheten vi fant for frekvensen ved å bruke mikorofon og fouriertransformasjon. Ved å sette inn denne verdien, samt verdien vi målte for masse, lengde og diameter, vist i tabell \vref{stav}, i \eqref{young5}, får vi at elastisitetsmodulen er $E = \SI{109.3\pm0.3}{\giga\pascal}$. Usikkerheten er beregnet fra \eqref{uncertenty2}, hvor vi har brukt usikkerheten i målingene nevnt ovenfor.
 \section{Diskusjon}
-Under kalibreringen av vekten med presisjonslodddene var det en nøyaktighet på $0.1$ gram, men vi merket at balansevekten var svært sensitiv til hvor på vektene loddene var på plassert. Med asymetri målte vi en vektforskjell på $0.5$g, og det er derfor en større usikkerhet enn presisjonen til instrumentet. Det var lett å unngå assymetri når vi kalibrerte med ett presisjonslodd, men måtte vi bruke to var det vanskeligere å plasere dem riktig på vekten. På grunn av dette måtte vi derfor bruke en større usikkerhet i resultatene for kalibreringene, der vi trengte flere presisjonslodd, enn presisjonen til vekten.
+Under kalibreringen av vekten med presisjonslodddene var det en nøyaktighet på $0.1$ gram, men vi merket at balansevekten var svært sensitiv til hvor på vektene loddene var på plassert. Med asymetri målte vi en vektforskjell på $0.6$g, og det er derfor en større usikkerhet enn presisjonen til instrumentet. Det var lett å unngå assymetri når vi kalibrerte med ett presisjonslodd, men måtte vi bruke to var det vanskeligere å plasere dem riktig på vekten. På grunn av dette måtte vi derfor bruke en større usikkerhet i resultatene for kalibreringene, der vi trengte flere presisjonslodd, enn presisjonen til vekten.
 \section{Konklusjon}
 \subsubsection*{Utstyrsliste}
 \begin{itemize}

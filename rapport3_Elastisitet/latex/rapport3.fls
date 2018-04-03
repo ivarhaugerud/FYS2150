@@ -246,6 +246,9 @@ INPUT ./oppsett.png
 INPUT nedbojing.pdf
 INPUT ./nedbojing.pdf
 INPUT ./nedbojing.pdf
+INPUT fourier.pdf
+INPUT ./fourier.pdf
+INPUT ./fourier.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT rapport3.bbl

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex rapport3"] 0 "rapport3.aux" "rapport3.bbl" "rapport3" 1522497321
+["bibtex rapport3"] 1522741846 "rapport3.aux" "rapport3.bbl" "rapport3" 1522742090
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/revtex/apsrev4-1.bst" 1480098436 71518 fec93f06df0c073f83d2330456bd19c2 ""
-  "rapport3.aux" 1522497271 6043 489add667bc55ef24418a9db2b188915 ""
-  "rapport3Notes.bib" 1522497271 103 48ad29797468f16e2853d8797278d7af ""
+  "rapport3.aux" 1522742066 6742 daeee0487185838b24cba9de9a6a7f69 ""
+  "rapport3Notes.bib" 1522742066 103 48ad29797468f16e2853d8797278d7af ""
   (generated)
-  "rapport3.bbl"
   "rapport3.blg"
-["pdflatex"] 1522497321 "rapport3.tex" "rapport3.pdf" "rapport3" 1522497321
+  "rapport3.bbl"
+["pdflatex"] 1522742090 "rapport3.tex" "rapport3.pdf" "rapport3" 1522742090
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1480098698 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1480098698 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -159,15 +159,16 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1504893732 4129591 b1a7ed87e25bd8fdaf5080304d300aaa ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "nedbojing.pdf" 1522421304 19391 3031e35578e2dff26931c621d3cc582b ""
+  "fourier.pdf" 1522688459 94702 0f2aa3fc6c5c36af036a9c45de18f526 ""
+  "nedbojing.pdf" 1522740194 4582 d4bc48938e09c463fd67dea8785a457b ""
   "oppsett.png" 1522073888 80168 604dc8c343c53499de308bf5a91fb355 ""
-  "rapport3.aux" 1522497271 6043 489add667bc55ef24418a9db2b188915 ""
-  "rapport3.bbl" 1522428210 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport3"
-  "rapport3.out" 1522497271 1187 ed551f704183f37c5206c516d07a8a0c ""
-  "rapport3.tex" 1522497320 22742 16f7032d4ff7994f9ebd78518ff8157c ""
+  "rapport3.aux" 1522742066 6742 daeee0487185838b24cba9de9a6a7f69 ""
+  "rapport3.bbl" 1522741846 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport3"
+  "rapport3.out" 1522742066 1187 75c462f9322ab23c7b093db627d059be ""
+  "rapport3.tex" 1522742089 24269 895e869123ca72ac7b9d2bd68c8f1021 ""
   (generated)
   "rapport3.out"
-  "rapport3Notes.bib"
   "rapport3.aux"
   "rapport3.log"
   "rapport3.pdf"
+  "rapport3Notes.bib"

@@ -1,4 +1,4 @@
-Måling av utbredelseshastighet% ****** Start of file apssamp.tex ******
+% ****** Start of file apssamp.tex ******
 %
 %   This file is part of the APS files in the REVTeX 4.1 distribution.
 %   Version 4.1r of REVTeX, August 2010
@@ -32,6 +32,8 @@ Måling av utbredelseshastighet% ****** Start of file apssamp.tex ******
 %bibnotes,
  amsmath,amssymb,
  aps,
+ norsk,
+ booktabs
 %pra,
 %prb,
 %rmp,
@@ -42,37 +44,95 @@ Måling av utbredelseshastighet% ****** Start of file apssamp.tex ******
 
 \usepackage[utf8]{inputenc}
 \usepackage[norsk]{babel}
+\usepackage{varioref}
 \usepackage{graphicx}% Include figure files
+\usepackage{enumitem}
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
+\usepackage[margin=0.9in]{geometry}
+\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{relsize}
+%\usepackage{booktabs}
+\usepackage{graphicx,verbatim,amsfonts,geometry}
+\usepackage{amsmath}
 \newcommand*\diff{\mathop{}\!\mathrm{d}}
 \newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
-\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{amssymb}
+\usepackage{soul}
 \usepackage{dsfont}
-\usepackage{dirtytalk}
 \usepackage{commath}
+\usepackage{wrapfig}
 \usepackage[free-standing-units=true]{siunitx}
-
-%ROMERSKE TALL med \rom
-\makeatletter
-\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
-
+\DeclareSIUnit\year{yr}
+\usepackage{gensymb}
+\newcommand{\ROM}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
 \usepackage{physics}
 \usepackage{caption}
-\usepackage{varioref}
 \usepackage{bm}
-\usepackage{hyperref}% add hypertext capabilities
-\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+\usepackage{gensymb}
+
+\makeatletter
+\newcounter{elimination@steps}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash$}p{#1}<{$}}
+\def\elimination@num@rights{}
+\def\elimination@num@variables{}
+\def\elimination@col@width{}
+\newenvironment{elimination}[4][0]
+{
+    \setcounter{elimination@steps}{0}
+    \def\elimination@num@rights{#1}
+    \def\elimination@num@variables{#2}
+    \def\elimination@col@width{#3}
+    \renewcommand{\arraystretch}{#4}
+    \start@align\@ne\st@rredtrue\m@ne
+}
+{
+    \endalign
+    \ignorespacesafterend
+}
+\newcommand{\eliminationstep}[2]
+{
+    \ifnum\value{elimination@steps}>0\sim\quad\fi
+    \left[
+        \ifnum\elimination@num@rights>0
+            \begin{array}
+            {@{}*{\elimination@num@variables}{R{\elimination@col@width}}
+            |@{}*{\elimination@num@rights}{R{\elimination@col@width}}}
+        \else
+            \begin{array}
+            {@{}*{\elimination@num@variables}{R{\elimination@col@width}}}
+        \fi
+            #1
+        \end{array}
+    \right]
+    &
+    \begin{array}{l}
+        #2
+    \end{array}
+    \addtocounter{elimination@steps}{1}
+}
+\makeatother
+% Document formatting
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{1.5mm}
 
 \begin{document}
-\title{Måling av elastisitetsmodulen til messing stav med sirkulært tversnitt}
+
+\title{Måling av elastisitetsmodulen til messingstav med sirkulært tversnitt}
 \author{\textsc{Ivar Svalheim Haugerud}}
 \affiliation{ Universitetet i Oslo}
 \date{\today}
 
 \begin{abstract}
-  Vi beregner elastisitetsmodulen til en sylindrisk messingstav ved eksperimentelle målinger med to forskjellige utgangspunkter, i håp om å teste modellen for elastisitet. Den ene metoden ved å måle statisk nedbøying av stavens midtpunkt som funksjon av vekten som festes på punktet, mens staven hviler på to kniver. Den andre metoden ved å måle utbredelseshastigheten til frie longitudinelle svingninger i staven som oppstår ved et slag i aksial retning. De to verdiene er henholdsvis
-  $E = (1.101\pm0.001)\cross \SI{e11}{\pascal}$ og $E=(1.101\pm0.001)\cross \SI{e11}{\pascal}$. Differenasen mellom to de resultatene er $D=(8.678\pm5.321)\cross\SI{e8}{\pascal}$.
+  Eksperimentelle målinger for å beregne elastisitetsmodulen til en sylindrisk messingstav ble gjennomført med to forskjellige utgangspunkter for å teste den fysiske modellen for elastisitet. Den ene metoden tok utgangspunkt i å måle statisk nedbøying av stavens midtpunkt som funksjon av belastning på midtpunktet til staven, mens staven hviler på to kniver. Den andre metoden baserte seg på å måle utbredelseshastigheten til frie longitudinelle svingninger i staven som oppstår ved slag i aksial retning. Det forventes at de to verdiene for elastisitetsmodulen er det samme for at det skal være en korrekt fysisk modell. De to verdiene for elastisiteten til messingstaven er henholdsvis
+  $E=\SI{110\pm1}{\giga\pascal}$ og $\SI{109.3\pm0.3}{\giga\pascal}$. Differenasen mellom to de resultatene er $\SI{0.7\pm1.1}{\giga\pascal}$. Siden differansen mellom de to verdiene er mindre enn usikkerheten i differansen er det overenstemmelse innenfor måleusikkerhetene.
 \end{abstract}
 
 \pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
@@ -84,10 +144,16 @@ Måling av utbredelseshastighet% ****** Start of file apssamp.tex ******
 %\tableofcontents
 \section{Introduksjon}
 Eksperimentet i denne rapporten ble gjennomført i håp om å beregne elastistsmodulen til en sylindrisk messingstav på to måter, med forskjellig utgangspunkt, og ved dette teste kvaliteten på modellen for elastistet. En god modell burde kunne skrive flere fenomen med så få parametere som mulig. Vi skal derfor finne elastisitesparameteren, elastistsmodulen, ved å ta utgangspunkt i to forskjellige fenomener for å se om vi får samme verdi for elastistsmodulen.\\
-Det ene fenomenet er at objekter blir bøyd eller deformert på andre måter ned de blir utsatt for en kontinuerlig kraft. For å måle dette fester vi vekter midt mellom to punkter som staven hviler på og måler hvor mye staven blir bøyd . Med denne metoden finner vi sammenhengen mellom vekten vi bruker og avstanden staven blir nedbøyd.\\
+Før vi går i nærmere detalj burde vi se mer på hva elastisitet er, og hva som menes med elastisitetsmodul. Elastisitet er egenskapen til et legme som gjør at legmet returnere til sin originale form etter å ha blitt utsatt  for ytre krefter \cite{gronn}. Dersom et legme kommer tilbake med nøyaktig samme form som før den ble utsatt for ytre krefter sier man at det er hundre prosent elastisk. Elastisiteten beskriver legmets evne til å oppta arbeid ved deformasjon, og bevare dette som potensiell energi som legmet bruker til å få sin opprinlige form når kraften opphører. Elastisitet blir også brukt om kollisjoner mellom legmer, hvor det beskriver hvor mye av bevegelsesenergien til legmene som er bevart mellom før og etter kollisjonen. Hvis det er et elastisk støt vil all kinetisk energi, hvis det er et uelastisk støt vil energi bli brukt til å deformere legmene i kollisjonen.\\
+
+Når noe blir utsatt for spenning (\textit{stress}) vil tøyingen (\textit{strain}) generelt sett øke lineært med spenningen til det når et punkt som kalles \textit{elastisitetsgrensen}. Øker spenningen over elastisitetsgrensen vil legme ikke komme tilbake til sin opprinlige form når kraften opphører, deformasjonen opphører å være elastisk  \cite{gronn}. Øker spenningen enda mer kan man nå \textit{bruddgrensen} hvor legeme brytes i stykker. I dette eksperimentet kommer vi bare til å jobbe med spenninger mindre enn den som trengs for å nå elastisitetsgrensen, og vi forventer derfor et lineært forhold mellom tøyingen og spenningen i målingene våre.
+
+Elastisitetsmodulen som vi kommer til å finne under eksperimentet, også kalt \textit{Young's modulus}, gir forholdet mellom spenningen som et legme blir utsatt for og den resulterende tøyingen til legmet. Og siden vi er under elastisitetsgrensen er forholdet lineært.
+
+Det ene fenomenet vi skal se på for å finne elastisitetsmodulen er at objekter blir bøyd eller deformert når de blir utsatt for en kontinuerlig kraft. For å måle dette fester vi vekter midt mellom to punkter som staven hviler på og måler hvor mye staven blir bøyd . Med denne metoden finner vi sammenhengen mellom vekten vi bruker og avstanden staven blir nedbøyd.\\
 Den andre metoden er å finne utbredelseshastigheten til longitudinelle bølger i staven. Ifølge teorien er utbredelseshastigheten avhengig av tettheten og elastisiteten til materialet. Vi kommer ikke til å måle utbredelseshastigheten direkte, men heller å begrense oss til en bølgelengde, og finne frekvensen til denne, som gjør at vi kan regne oss fram til hastigheten.\\
 Dette er to fenomener som ifølge teorien bare beskrives av en parameter, som er et tegn på en god teori. Men teorien må selvfølgelig stemme med det vi observer for å være en god modell. Vi ønsker derfor å teste dette ved å måle elastistsmodulen med utgangspunkt i to forskjellige fenomener, som burde gi samme verdi for elastisitetsmodulen. Er de to verdiene vi finner innenfor usikkerhetene til hverandre har vi vist at det er en god modell. Hvis de to verdiene er ulike, utenfor usikkerhetene, kan det skyldes systematisk feil i eksperimentet eller feil i teorien. I dette tilfellet burde det bli gjennomført flere eksperimenter av samme type for å se nærmere på målingene.\\
-Hensikten med en god modell for elastisitet er lett å se nytten av. For eksmepel ønsker byggningsingeniører å forutsi hvor mye en struktur klarer å bære før det ikke er trygt lenger, og denne vitenskapen baserer seg på en god forståelse av elastisiteten til materialene man bruker. Om man måtte teste eksperimentelt for hvert hus, blokk, bil eller båt som blir bygd hvor mye det tåler før det ikke lenger er trygt, ville det vært ekstremt tidkrevende og uøkonomisk oppførsel. Med en god fysiskmodell vil man slippe dette, og vi kan leve livene våre uten å bekymre oss for at alt, fysisk, rundt oss kommer til å rase.
+Hensikten med en god modell for elastisitet er lett å se nytten av. Elastisitet spiller en stor rolle for byggkonstruksjoner, for forståelsen av vibrasjoner, for forplantning av lyd og for studiet av kreftene mellom atomer eller molekyler i krystallgittere \cite{gronn}. For eksmepel ønsker byggningsingeniører å forutsi hvor mye en struktur klarer å bære før det ikke er trygt lenger, og denne vitenskapen baserer seg på en god forståelse av elastisiteten til materialene man bruker. Om man måtte teste eksperimentelt for hvert hus, blokk, bil eller båt som blir bygd hvor mye det tåler før det ikke lenger er trygt, ville det vært ekstremt tidkrevende og uøkonomisk oppførsel. Med en god fysiskmodell vil man slippe dette, og vi kan leve livene våre uten å bekymre oss for at alt, fysisk, rundt oss kommer til å rase.
 \section{Teori}
 \subsection{Måling av nedbøying}
 Nedbøyingen $h(m)$ til en bjelke, som støtter seg på to punkter med avstand $l$, som bærer en last på $mg$ i midten av bjelken gitt ved
@@ -117,7 +183,16 @@ Konstantleddet $\beta$ vil være tilnærmet lik null siden staven ikke vil være
 \begin{equation}
   E = \frac{4gL^3}{3\pi \alpha d^4}. \label{young3}
 \end{equation}
-Under eksperimentet kan vi måle alle de ukjente variablene i uttrykket slik at vi får en verdi for elastisitetsmodulen til messing.
+Under eksperimentet kan vi måle alle de ukjente variablene i uttrykket slik at vi får en verdi for elastisitetsmodulen til messing.\\
+%For å finne tyngdeakselerasjonen i Oslo bruker vi \textit{gravitational latitude formula} som tar hensyn til breddegrad og høyde over vannet. Man beregner da tyngdeakselrasjonen med
+%\begingroup\makeatletter\def\f@size{8.5}\check@mathfonts
+%\begin{align}
+%\begin{split}
+%  g =  &\SI{9.780327}{\meter s^{-2}}\left(1 + 0.0053024 \sin{2\Phi} – 0.0000058 \sin^2{2\Phi}\right)\\ &-\SI{3.086e-6}{s^{-2}} \cdot h,
+%\end{split}
+%\end{align}
+%\endgroup
+%der $h$ er høyden over havet, og $\Phi$ er breddegraden.
 \subsection{Måling av utbredelseshastigheten til bølger}
 Vi ønsker å bruke en annen metode for å finne elastisitetsmodulen. Denne metoden for bestemmelse av E baserer seg på å finne utbredelseshastigheten $v$ for longitudinalbølger i en stav. Vi kan bruke dette som utgangspunkt siden utbredelseshastigheten er avhengig av elastistsmodulen ved
 \begin{equation}
@@ -162,25 +237,25 @@ Ved å kunne måle de geometriske størrelsene og massen til staven, og frekvens
 \end{equation}
 \subsection{Usikkerheter}
 På grunn av usikkerhet i målingene forventer vi ikke nøyaktig like svar for elastisitetsmodulen med de to metodene. Det er derfor viktig å vite usikkerhetene i de to metodene. Ved å bruke uttrykket for nedbøying av staven \eqref{young3} får vi at usikkerheten i elastisitetsmodulen er
-\begingroup\makeatletter\def\f@size{8.5}\check@mathfonts
+\begingroup\makeatletter\def\f@size{7.5}\check@mathfonts
 \begin{equation}
   \Delta_{E_1} = E_1 \sqrt{\left(3\frac{\Delta_L}{L}\right)^2+\left(\frac{\Delta_g}{g}\right)^2+\left(\frac{\Delta_A}{A}\right)^2+\left(4\frac{\Delta_d}{d}\right)^2},\label{uncertenty1}
 \end{equation}
 \endgroup
 hvor konstantleddet forran $L$ og $d$ kommer fra eksponten de har i uttrykket.
 Usikkerheten ved å bruke utrrykket for elastistsmodulen ved måling av frekvens \eqref{young5} er
-\begingroup\makeatletter\def\f@size{8.5}\check@mathfonts
+\begingroup\makeatletter\def\f@size{7.5}\check@mathfonts
 \begin{equation}
   \Delta_{E_2} = E_2 \sqrt{\left(\frac{\Delta_M}{M}\right)^2+\left(\frac{\Delta_L}{L}\right)^2+\left(2\frac{\Delta_f}{f}\right)^2+\left(2\frac{\Delta_d}{d}\right)^2}. \label{uncertenty2}
 \end{equation}
 \endgroup
 Som sagt forventer vi ikke at de to metodene skal gi at differanse til elastisitetsmodulen $$D=\abs{E_1-E_2}$$ skal være null, hvor $E_1$ og $E_2$ er de to forskjellige verdiene vi får i vår utregning av elastistsmodulen ved våre to forskjellige metoder. Men vi ønsker at differeansen $D$ skal være mindre enn usikkerheten i differansen $\Delta_D$. Når vi har gjort målingene må vi derfor sjekke om de tilfredstiller
 \begin{equation}
-  D < \Delta_D,
+  D < \Delta_D, \label{usikk1}
 \end{equation}
 der
 \begin{equation}
-  \Delta_D = \sqrt{\Delta_{E_1}^2 + \Delta_{E_2}^2}.
+  \Delta_D = \sqrt{\Delta_{E_1}^2 + \Delta_{E_2}^2}. \label{usikk2}
 \end{equation}
 Hvis målingene våre tilfrestiller denne ulikheten kommer årsaken til differansen $D$ fra usikkerheterer i målemetoden og tilfeldige feil. Hvis dette er tilfellet sier vi at det er
 \textit{overenstemmelse innenfor måleusikkerhetene}.
@@ -193,14 +268,14 @@ er det lite sansynlig at det bare er tilfeldige feil og usikkerheter i målinger
 \subsection{Nedbøying av messingstav}
 I eksperimentet vårt bruker vi en messingstav med sirkulært tversnitt som er mye lenger enn diameteren sin. Vi ønsker først å måle elastisitetsmodulen ved å måle nedbøying av messingstaven når vi fester vekter på midten av staven. Oppsettet brukt i dette eksperimentet er vist i figur \vref{eksperiment}. I eksperimentet bruker vi en messingstav $E$ som hviler på to kniver $B$ og $C$. Midt på messingstaven er det festet en holder $F$ hvor vi setter loddene på. Ved måleuret $G$ kan vi måle bøyingen avmessingstaven. Hele eksperimentet foregår på en plate $A$.\\
 Før vi begynner eksperimentet er det viktig at at holderen $F$ er festet midt mellom de to knivene. Vi måler derfor avstanden mellom $B$ og $C$ og flyttet på staven slik at midten av staven var halvparten av denne avstanden fra $B$. For å sjekke at alt var gjort korrekt gjorde vi målingene på nytt, men nå målte vi avstanden fra $B$ til $F$ og fra $F$ til $B$ som gir oss mindre usikkerhet. Fra dette kunne vi finjustere posisjonen til staven til vi var sikkre på den var sentrert riktig. Itilegg er det viktig at punktet hvor nålen fra måleuret treffer normalt på flaten til sylinderen. For å være sikker på at den er normalt på kan vi bruke et vater og justere til vi er fornøyde.\\
-Målet vårt er å bruke \eqref{young3} til å beregne elastisutetsmodulen, og for å gjøre dette trenger vi å vite både lengden av staven og diameteren. Vi bruker derfor et skyvelær til måle diameteren til staven. Siden staven er mye lengere i lengden enn i bredden måtte vi bruke en tommestokk. Siden disse verdiene er i tredje og fjerde potens er det viktig å gjøre presise målinger, siden usikkerhetene her vil ha store utslag i usikkerheten i det endelige resultatet. Vi trenger også å finne en nøyaktig verdi tyngdeakselerasjonen $g$, og usikkerheten i denne verdien. Denne verdien kan variere avhengig av hvor på kloden man er, og vi må derfor finne en verdi for Oslo, Norge. \\
+Målet vårt er å bruke \eqref{young3} til å beregne elastisutetsmodulen, og for å gjøre dette trenger vi å vite både lengden av staven og diameteren. Vi bruker derfor et skyvelær til måle diameteren til staven. Siden staven er mye lengere i lengden enn i bredden måtte vi bruke en meterstokk. Siden disse verdiene er i tredje og fjerde potens er det viktig å gjøre presise målinger, siden usikkerhetene her vil ha store utslag i usikkerheten i det endelige resultatet. Vi trenger også å finne en nøyaktig verdi tyngdeakselerasjonen $g$, og usikkerheten i denne verdien. Denne verdien kan variere avhengig av hvor på kloden man er, og vi må derfor finne en verdi for Oslo, Norge. \\
 Nå som eksperimentet er klart for måling, men før vi kan begynne må vi kalibrere loddene med presisjonsvektene. For å kalibrere loddene bruker vi en balansevekt, og setter den i likevekt med presisjonsvektene, for så å bytte presisjonsvektene ut med loddene og måle avviket mellom dem.
 Når dette er gjort er alt klart for å måle nedbøyingen av staven.\\
 Vi leser av nedbøyingen av staven som en funksjon av massen til loddene vi legger på festepunktet. Mellom hver måling tar vi av loddene og sjekker at utslaget til måleuret er tilbake til $0$-punktet. Massene vi har valgt å bruke går fra $0$ til $3.5$kg med en lineær økning på $0.5$kg. På disse målingene forventer vi et lineært forhold mellom vekten på loddene og nedbøyingen. For å bruke \eqref{young3} trenger vi stigningstallet til målepunktene, som vi kan beregne fra minste kvadraters metode på målingene. \\
 \begin{figure*}
   \centering
   \includegraphics[scale=0.17]{oppsett.png}
-  \caption{Eksperimentelt oppsett for målinger.}
+  \caption{Eksperimentelt oppsett for målinger. Illustrasjon av staven som hviler på to knvier, med et måleur som måler nedbøyingen av stavens midtpunkt. På stavens midtpunkt fester vi loddene for å måle nedbøying som funksjon av belastningen.}
   \label{eksperiment}
 \end{figure*}
 \subsection{Måling av utbredelseshastigheten til bølger}
@@ -211,24 +286,33 @@ For å bruke sveve-metoden antar vi en verdi for frekvensen til trykkbølgene og
 Målingene av messingstaven som vi brukte i eksperimentet, usikkerheten i målingene og måleinstrument, er vist i tabell \vref{stav}. Dette er all informasjonen vi trenger å vite om messingstaven, som vi trenger for begge metodene å måle elastistsmodulen på.
 \begin{table}[h!]
 \centering
-\caption{Målinger gjort av de geometriske størrelsene til messingstaven. Usikkerhetene er hentet fra databladet til måleinstrumentene, navnene på måleinstrumentene er vist i listen \vref{utstyr}.}
+\caption{Målinger gjort av de geometriske størrelsene til messingstaven. Usikkerhetene er hentet fra databladet til måleinstrumentene.}
 \label{stav}
 \begin{tabular}{cccc}
-    Egenskap & Målt verdi      &    Usikkerhet & Målemetode \\
+    Egenskap & Målt verdi      &    Usikkerhet & Måleinstrument \\
     \hline
-    Lengde $L$ [m] & $1.490$    & $\pm 0.004$  & tommestokk  \\
-    Avstand kniver $l$ [m] & $1.365$ & $\pm0.004$ & tommestokk \\
-    Diameter $D$ [cm] & $1.596$    & $\pm0.001$ & skyvelær    \\
+    Lengde $L$ [m] & $1.490$    & $\pm 0.004$  & meterstokk  \\
+    Avstand kniver $l$ [m] & $1.365$ & $\pm0.004$ & meterstokk \\
+    Diameter $D$ [cm] & $1.596$    & $\pm0.003$ & skyvelær    \\
     Masse $M$    [kg]  & $2.5173$   & $\pm0.0006$   & balansevekt \\  \hline
 \end{tabular}
 \end{table}
 \subsection{Måling av nedbøying}
-For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien for Tyngdeakselerasjon $g$ er oppgitt i KILDENAVN \cite{tyngde}, hvor vi finner at $g=9.81\pm\SI{0.03}{\meter\per\second^2}$. Da er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet er $1.482\pm\SI{0.003}{\milli\meter\per\kilo\gram}$.
+For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien for Tyngdeakselerasjon $g$ beregner vi fra \textit{International gravitational formula (IGF)} som tar hensyn til breddegrad itillegg til høyde over havet. 
+
+oppgitt i KILDENAVN \cite{tyngde}, hvor vi finner at $g=9.81\pm\SI{0.03}{\meter\per\second^2}$. Da er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet er $1.482\pm\SI{0.003}{\milli\meter\per\kilo\gram}$.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.4]{nedbojing.pdf}
   \caption{Målinger gjort av nedbøyingen av staven $h$ som funksjon av lasten $m$ vi fester på midten av staven. De røde sirklene er målepunktene, og den blå linja er minstekvadraters lineærtilpassning.}
   \label{data}
+\end{figure}
+Siden det er vanskelig å se hvordan usikkerheten til målingene er iforhold til usikkerheten i stigningstallet i figuren ovenfor \vref{data} er differansen mellom målt utslag og lineærregresjonen plottet for alle målepunktene i figur \vref{data_usikker}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.4]{usikkerhet.pdf}
+  \caption{Absolutt differanse mellom målinger og lineærregresjonen til målingene.}
+  \label{data_usikker}
 \end{figure}
 Ved å sette inn for diameteren og lengden fra tabell \vref{stav}, og tyngdeakselerasjonen og stigningstallet, inn i \eqref{young3} finner vi at $E=\SI{110\pm1}{\giga\pascal}$. Usikkerheten er beregnet fra likning \eqref{uncertenty1}, hvor vi har brukt usikkerheten i målingene nevnt ovenfor.
 \subsection{Måling av utbredelseshastigheten til bølger}
@@ -242,18 +326,29 @@ Vi gjorde flere målinger av frekvensen til bølgene som oppsto ved å slå på 
 \end{figure}
 Vi målte også frekvensen til bølgen ved å lete etter svevninger i lyden. Vi brukte derfor \eqref{young6} med elastisitetsmodulen vi fant ved å måle nedbøyingen til staven til å finne at grunnfrekvensen burde ligge på rundt $\SI{1211}{\hertz}$. Ved å bruke dette som startspunkt for å lete etter når perioden på svevningen økte eller minkte klarte vi å bestemme at frekvensen var på $\SI{1207.0}{\hertz}$. Under bruk av denne metoden brukte vi hørselen vår, og vi klarte å skille svevningen for frekvenser med en differanse på $\SI{0.2}{\hertz}$, vi får derfor en usikkerhet lik denne verdien. Ved svevning fant vi altså at frekvensen var på $1207\pm\SI{0.2}{\hertz}$.\\
 For å beregne elastisitetsmodulen kommer vi til å bruke verdien og usikkerheten vi fant for frekvensen ved å bruke mikorofon og fouriertransformasjon. Ved å sette inn denne verdien, samt verdien vi målte for masse, lengde og diameter, vist i tabell \vref{stav}, i \eqref{young5}, får vi at elastisitetsmodulen er $E = \SI{109.3\pm0.3}{\giga\pascal}$. Usikkerheten er beregnet fra \eqref{uncertenty2}, hvor vi har brukt usikkerheten i målingene nevnt ovenfor.
+\subsection{Usikkerheter}
+Vi kan nå teste om ulikheten \eqref{usikk1} er tilfredstilt ved å beregne differansen mellom de to verdiene vi har for elastistetsmodulen, og usikkerheten i differeansen som er gitt av \eqref{usikk2}. Ved å gjøre disse beregningene finner vi at $D = \SI{0.7}{\giga\pascal}$, og at $\Delta D = \SI{1.1}{\giga\pascal}$. Altså er $D<\Delta D$, som betyr at differansenen mellom elastisitetsmodulen vi fikk med de to forskjellige metodene kommer av tilfeldige feil og måleusikkerheter.
 \section{Diskusjon}
-Under kalibreringen av vekten med presisjonslodddene var det en nøyaktighet på $0.1$ gram, men vi merket at balansevekten var svært sensitiv til hvor på vektene loddene var på plassert. Med asymetri målte vi en vektforskjell på $0.6$g, og det er derfor en større usikkerhet enn presisjonen til instrumentet. Det var lett å unngå assymetri når vi kalibrerte med ett presisjonslodd, men måtte vi bruke to var det vanskeligere å plasere dem riktig på vekten. På grunn av dette måtte vi derfor bruke en større usikkerhet i resultatene for kalibreringene, der vi trengte flere presisjonslodd, enn presisjonen til vekten.
+Under kalibreringen av vekten med presisjonslodddene kunne vi merke et utslag i balansevekten under en masseendring av $0.1$ gram, men vi merket at balansevekten var svært sensitiv til hvor på vektene loddene var på plassert. Med asymetri målte vi en vektforskjell på $0.6$g, og det er derfor en større usikkerhet i målingene enn presisjonen til instrumentet. Det var lett å unngå assymetri når vi kalibrerte med ett presisjonslodd, men måtte vi bruke to presisjonslodd i kalibreringen var det vanskeligere å garantere symetri på vekten. På grunn av dette ble usikkerheten til vekten, for loddene som trengte flere presisjonslodd for å kalibreres, større enn presisjonen til vekten.\\
+
+Målingene for nedbøyingen av staven som funksjon av belastningen er vist i figur \vref{data}. I denne figuren er det vanskelig å se hvordan målingene, og usikkerheten til målingene, står iforhold til stigningstallet og usikkerheten i stigningstallet. Dette er derfor vist tydeligere i figur \vref{data_usikker}. I denne figuren ser vi at alle målingene, utenom en, ligger innenfor usikkerheten. Dette gjelder uavhengig av om vi tar med usikkerheten i målingen eller ikke. Vi ser også at nedbøyingen til staven når lasten er på $\SI{1.5}{\kilo\gram}$ avviker, godt utenfor usikkerheter, fra lineærregresjonen. Det forventes at en $\sigma$ av målingene, det vil si rundt $68\%$, burde ligge innenfor usikkerheten i stigningstallet, og det gjør det, men det store avviket kan tyde på at det var noe systematisk feil som skjedde under målingen av nedbøyingen med akkurat denne lasten. Det hadde vært ønskelig å oppdage dette avviket under eksperimentet slik at vi kunne gjort flere målinger med denne lasten, og lett etter mulige feil som kan ha påvirket målingen.\\
+Utenom denne målingen er eksperimentet gjennomført godt beskyttet fra systematiske feil. Målingene av størrelsene til staven ble gjennomført flere ganger, lydopptak fra slaget på staven ble gjort flere ganger og vi fikk et lineært forhold mellom bøying av stav og belastning. Eksperimentet var godt kontrolert, og vi analyserte resultatene våre underveis for å sjekke at målingene ga mening før vi fortsatte. De tilfeldig feilene har påvirket målingene og vi har tatt hensyn til dette med usikkerheten til de to verdiene vi fant for elastistetsmodulen. Siden usikkerheten i differansen til elastistetmodulen er større enn differansen er det de tilfeldige feilene og måleusikkerhetene som forårsaker differansen. Vi kan derfor si at vi har overenstemmelse innenfor måleusikkerhetene. Dette gir oss en bekreftelse på at det ikke var merkbare systematiske feil tilstede under eksperimentet.
+\\De to metodene ga oss det samme svaret, men med litt over en faktor $3$ forskjell i usikkerheten mellom de to metodene. Årsaken til den store forskjellen i usikkerhet er at målingene gjort med meterstokk er mye mindre presise enn de andre målingene. På grunn av dette vil metoden som hviler mest på målinger gjort av en meterstokk ha de største usikkerhetene. For metoden som bruker målingen av nedbøyingen til staven er avstanden mellom knivene svært viktig for elastisitetsmodulen, og går derfor som avstanden i tredje potens. Metoden der man bruker utbredelseshastigheten til bølgen for å beregne elastisitetsmodulen kanseleres lengden i utregningen av uttrykket slik at lengden på staven går i første potens. Siden meterstokken er det desidert største bidraget til usikkerheten fører en faktor $3$ i bidraget fra denne usikkerheten til et stort utslag i den endelige usikkerheten. Det er dette som har forårsaket den store forskjellen i usikkerhetene til resultatet. Det burde derfor brukes en mer presis måte å beregne lengden til staven og avstanden mellom knivene neste gang eksperimentet blir gjennomført for å redusere denne usikkerheten.
 \section{Konklusjon}
+En god fysisk modell burde kunne beskrive flere fenomener med så få parametere som mulig. I dette eksperimentet har vi vist at modellen for elastisitet klarer netopp dette ved å beskrive nedbøyingen til en stav som funksjon av belastningen på midtpunktet, og utbredelseshastigheten til bølger i samme stav med samme parameter, elastisitetsmodulen.
+Ved å måle nedbøyingen som funksjon av last, og de geometriske størrelsene til staven, fant vi at elastisitetsmodulen er $E=\SI{110\pm1}{\giga\pascal}$.
+Ved å fokusere på en bestemt bølgelengde klarer vi å bestemme utbredelseshastigheten ved å måle frekvensen til lydbølgen med en mikrofon. Verdien til frekvensen sammen med massen, lengde og diameter gir oss muligheten til å beregne at elastisitetsmodulen er $\SI{109.3\pm0.3}{\giga\pascal}$.
+De to verdiene vi har funnet for elastisitetsmodulen har en differanse på $D = \SI{0.7\pm1.1}{\giga\pascal}$. Som vi ser er usikkerheten i differansen større en differansen, dette betyr at elastisitetsmodulene er like, men avviker på grunn av måleusikkerheter. Ved å ta utgangspunkt i to forskjellige fenomener har vi beregnet to forskjellige verdiene for elastisitetsmodulen som har overenstemmelse innenfor måleusikkerhetene.
 \subsubsection*{Utstyrsliste}
 \begin{itemize}
 \label{utstyr}
+\item meterstokk - Hultafors
+\item skyvelær - Cocraft Micrometer
+\item balansevekt - Ohaus Triple Beam Balance dial-o-gram
+\item Måleur - Baker
+\item opphengningsstativ
 \item aluminiumstav
 \item mikrofon
-\item tommestok
-\item skyvelær
-\item balansevekt
-\item opphengningsstativ
 \end{itemize}
 \begin{thebibliography}{9}
 \bibitem{squires}
@@ -261,8 +356,8 @@ Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.
 \bibitem{oppgave}
 Fysisk institutt \emph{Elastisitet}, Universitetet i Oslo, februar 2018.
 \bibitem{tyngde}
-kilde med tyngdeakselerasjonen \emp{gravitasjon}, forlagnavn, mai 2020.
+kilde med tyngdeakselerasjonen \emph{gravitasjon}, forlagnavn, mai 2020.
+\bibitem{gronn}
+Øyvind Grøn \emph{elastisitet – fysikk} \url{https://snl.no/elastisitet_-_fysikk} hentet 03.04.2018.
 \end{thebibliography}
 \end{document}
-%
-% ****** End of file apssamp.tex ******

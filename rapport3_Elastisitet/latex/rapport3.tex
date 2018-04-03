@@ -146,7 +146,7 @@
 Eksperimentet i denne rapporten ble gjennomført i håp om å beregne elastistsmodulen til en sylindrisk messingstav på to måter, med forskjellig utgangspunkt, og ved dette teste kvaliteten på modellen for elastistet. En god modell burde kunne skrive flere fenomen med så få parametere som mulig. Vi skal derfor finne elastisitesparameteren, elastistsmodulen, ved å ta utgangspunkt i to forskjellige fenomener for å se om vi får samme verdi for elastistsmodulen.\\
 Før vi går i nærmere detalj burde vi se mer på hva elastisitet er, og hva som menes med elastisitetsmodul. Elastisitet er egenskapen til et legme som gjør at legmet returnere til sin originale form etter å ha blitt utsatt  for ytre krefter \cite{gronn}. Dersom et legme kommer tilbake med nøyaktig samme form som før den ble utsatt for ytre krefter sier man at det er hundre prosent elastisk. Elastisiteten beskriver legmets evne til å oppta arbeid ved deformasjon, og bevare dette som potensiell energi som legmet bruker til å få sin opprinlige form når kraften opphører. Elastisitet blir også brukt om kollisjoner mellom legmer, hvor det beskriver hvor mye av bevegelsesenergien til legmene som er bevart mellom før og etter kollisjonen. Hvis det er et elastisk støt vil all kinetisk energi, hvis det er et uelastisk støt vil energi bli brukt til å deformere legmene i kollisjonen.\\
 
-Når noe blir utsatt for spenning (\textit{stress}) vil tøyingen (\textit{strain}) generelt sett øke lineært med spenningen til det når et punkt som kalles \textit{elastisitetsgrensen}. Øker spenningen over elastisitetsgrensen vil legme ikke komme tilbake til sin opprinlige form når kraften opphører, deformasjonen opphører å være elastisk  \cite{gronn}. Øker spenningen enda mer kan man nå \textit{bruddgrensen} hvor legeme brytes i stykker. I dette eksperimentet kommer vi bare til å jobbe med spenninger mindre enn den som trengs for å nå elastisitetsgrensen, og vi forventer derfor et lineært forhold mellom tøyingen og spenningen i målingene våre.
+Når noe blir utsatt for spenning (\textit{stress}) vil tøyingen (\textit{strain}) generelt sett øke lineært med spenningen til det når et punkt som kalles \textit{elastisitetsgrensen}. Øker spenningen over elastisitetsgrensen vil legme ikke komme tilbake til sin opprinlige form når kraften opphører, deformasjonen slutter å være elastisk  \cite{gronn}. Øker spenningen enda mer kan man nå \textit{bruddgrensen} hvor legeme brytes i stykker. I dette eksperimentet kommer vi bare til å jobbe med spenninger mindre enn den som trengs for å nå elastisitetsgrensen, og vi forventer derfor et lineært forhold mellom tøyingen og spenningen i målingene våre.
 
 Elastisitetsmodulen som vi kommer til å finne under eksperimentet, også kalt \textit{Young's modulus}, gir forholdet mellom spenningen som et legme blir utsatt for og den resulterende tøyingen til legmet. Og siden vi er under elastisitetsgrensen er forholdet lineært.
 
@@ -298,9 +298,8 @@ Målingene av messingstaven som vi brukte i eksperimentet, usikkerheten i målin
 \end{tabular}
 \end{table}
 \subsection{Måling av nedbøying}
-For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien for Tyngdeakselerasjon $g$ beregner vi fra \textit{International gravitational formula (IGF)} som tar hensyn til breddegrad itillegg til høyde over havet. 
-
-oppgitt i KILDENAVN \cite{tyngde}, hvor vi finner at $g=9.81\pm\SI{0.03}{\meter\per\second^2}$. Da er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet er $1.482\pm\SI{0.003}{\milli\meter\per\kilo\gram}$.
+For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien for Tyngdeakselerasjon $g$ beregner vi fra \textit{International gravitational formula (IGF)} som tar hensyn til breddegrad itillegg til høyde over havet \cite{gravity}. Ved å bruke at høyden over havet i fysikkbygget er $\SI{90}{\meter}$ og at Oslo har en breddegrad på $59.91\degree$, som gir oss at tyngdeakselrasjonen er $g=\SI{9.819\pm0.005}{\meter\per\second^2}$. Usikkerheten kommer fra modellen brukt til å beregne tyngdeakselrasjonen \cite{gravity}.
+Nå som vi har tyngdeakselerasjonen er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene av nedbøyingen. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet er $1.482\pm\SI{0.003}{\milli\meter\per\kilo\gram}$.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.4]{nedbojing.pdf}
@@ -355,8 +354,8 @@ De to verdiene vi har funnet for elastisitetsmodulen har en differanse på $D = 
 Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.
 \bibitem{oppgave}
 Fysisk institutt \emph{Elastisitet}, Universitetet i Oslo, februar 2018.
-\bibitem{tyngde}
-kilde med tyngdeakselerasjonen \emph{gravitasjon}, forlagnavn, mai 2020.
+\bibitem{gravity}
+W. J. Hinze, R. R. B. von Frese; A. H. Saad \emph{Gravity and Magnetic Exploration: Principles, Practices, and Applications}, Cambridge university press, 2013.
 \bibitem{gronn}
 Øyvind Grøn \emph{elastisitet – fysikk} \url{https://snl.no/elastisitet_-_fysikk} hentet 03.04.2018.
 \end{thebibliography}

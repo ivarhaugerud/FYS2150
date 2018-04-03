@@ -1,9 +1,12 @@
+%feature('DefaultCharacterSet', 'ISO-8859-1')
+slCharacterEncoding('ISO-8859-1')
 vekt = linspace(0, 3.5, 8); %kg
 utslag = [8.18, 7.45, 6.71, 6.02, 5.23, 4.49, 3.75, 2.99]-8.18;%mm
 usikker = [0, 1, 1, 1, 2, 3, 3, 3]*1e-3 %mm
 [m, c, delta_c, delta_m] = function1(vekt, utslag)
 
 figure(2)
+%plot(vekt, utslag, 'ro');
 errorbar(vekt, utslag, usikker, 'o')
 hold on
 grid on
@@ -26,6 +29,11 @@ box on
 axis([0 1500 -0.05 1.05])
 grid on
 plot(fut, energi/max(energi))
+
+%figure(2)
+%plot(t, data)
+
+
 
 [c index] = min(abs(fut-1207.2))
 %figure(3)
@@ -56,9 +64,9 @@ set(gca,'fontsize',16)
 title('Differanse mellom maalt utslag og lin.reg','fontsize',16)
 xlabel('vekt [kg]', 'fontsize',16)
 ylabel('utslag [mm]', 'fontsize',16)
-axis([-0.05 3.55 -0.005, 1.05*max(abs(utslag - (c+m*vekt)))])
+axis([-0.05 3.55 1.05* 1.05])
 p2 = plot(vekt, delta_m*vekt+delta_c)
-M2 = 'Usikkerhet lin.reg \Delta \beta + \Delta \alpha \cdot m'
+M2 = 'Usikkerhet lin.reg \Delta \beta + \Delta \alpha \cdot x'
 legend([p1; p2], M1, M2, 'Location','northeast', 'Interpreter','latex');
 
 

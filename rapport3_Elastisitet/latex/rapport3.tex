@@ -184,15 +184,14 @@ Konstantleddet $\beta$ vil være tilnærmet lik null siden staven ikke vil være
   E = \frac{4gL^3}{3\pi \alpha d^4}. \label{young3}
 \end{equation}
 Under eksperimentet kan vi måle alle de ukjente variablene i uttrykket slik at vi får en verdi for elastisitetsmodulen til messing.\\
-%For å finne tyngdeakselerasjonen i Oslo bruker vi \textit{gravitational latitude formula} som tar hensyn til breddegrad og høyde over vannet. Man beregner da tyngdeakselrasjonen med
-%\begingroup\makeatletter\def\f@size{8.5}\check@mathfonts
-%\begin{align}
-%\begin{split}
-%  g =  &\SI{9.780327}{\meter s^{-2}}\left(1 + 0.0053024 \sin{2\Phi} – 0.0000058 \sin^2{2\Phi}\right)\\ &-\SI{3.086e-6}{s^{-2}} \cdot h,
-%\end{split}
-%\end{align}
-%\endgroup
-%der $h$ er høyden over havet, og $\Phi$ er breddegraden.
+For å finne tyngdeakselerasjonen i Oslo bruker vi \textit{International gravitational formula (IGF)} som tar hensyn til breddegraden og høyde over havet under beregningen av tyngdeakselerasjonen \cite{gravity}. Man beregner da tyngdeakselrasjonen med
+\begin{align}
+\begin{split}
+  g &= 9.7803253\left[\frac{1+0.00193185\sin^2{\phi}}{\sqrt{1-0.006694\sin^2{\phi}}}\right]\text{m/s}^2\\
+      &- \SI{3.086e-6}{\second^{-2}}\cdot h \label{calc_g}
+\end{split}
+\end{align}
+der $h$ er høyden over havet, og $\phi$ er breddegraden.
 \subsection{Måling av utbredelseshastigheten til bølger}
 Vi ønsker å bruke en annen metode for å finne elastisitetsmodulen. Denne metoden for bestemmelse av E baserer seg på å finne utbredelseshastigheten $v$ for longitudinalbølger i en stav. Vi kan bruke dette som utgangspunkt siden utbredelseshastigheten er avhengig av elastistsmodulen ved
 \begin{equation}
@@ -210,7 +209,6 @@ For å kunne beregne elastisitetsmodulen mangler vi bare utbredelseshastigheten 
 \begin{equation}
   v = \lambda f.\label{vlf}
 \end{equation}
-%Både bølgelengde og frekvens kan bestemmes ved måling på en stående bølge i staven.
 Det kan vises at ved frie longitudinelle svingninger i en homogen stav med lengde $L$ opphengt i midtpunktet og med frie ender, får vi svingninger slik at
 \begin{equation*}
   L = \frac{n\lambda}{2},
@@ -298,7 +296,7 @@ Målingene av messingstaven som vi brukte i eksperimentet, usikkerheten i målin
 \end{tabular}
 \end{table}
 \subsection{Måling av nedbøying}
-For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien for Tyngdeakselerasjon $g$ beregner vi fra \textit{International gravitational formula (IGF)} som tar hensyn til breddegrad itillegg til høyde over havet \cite{gravity}. Ved å bruke at høyden over havet i fysikkbygget er $\SI{90}{\meter}$ og at Oslo har en breddegrad på $59.91\degree$, som gir oss at tyngdeakselrasjonen er $g=\SI{9.819\pm0.005}{\meter\per\second^2}$. Usikkerheten kommer fra modellen brukt til å beregne tyngdeakselrasjonen \cite{gravity}.
+For å bruke likning \eqref{young3} trenger vi å vite de geometriske størrelsene til staven vist i tabell \vref{stav}, itillegg til tyngdeakselerasjonen $g$. Verdien vi bruker for tyngdeakselerasjon beregner vi fra likning \eqref{calc_g}. Ved å bruke at høyden over havet til fysikkbygget er $\SI{90}{\meter}$ og at Oslo har en breddegrad på $59.91\degree$, får vi at tyngdeakselrasjonen er $g=\SI{9.819\pm0.005}{\meter\per\second^2}$. Usikkerheten kommer fra modellen brukt til å beregne tyngdeakselrasjonen \cite{gravity}.
 Nå som vi har tyngdeakselerasjonen er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene av nedbøyingen. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet er $1.482\pm\SI{0.003}{\milli\meter\per\kilo\gram}$.
 \begin{figure}[h!]
   \centering
@@ -328,11 +326,10 @@ For å beregne elastisitetsmodulen kommer vi til å bruke verdien og usikkerhete
 \subsection{Usikkerheter}
 Vi kan nå teste om ulikheten \eqref{usikk1} er tilfredstilt ved å beregne differansen mellom de to verdiene vi har for elastistetsmodulen, og usikkerheten i differeansen som er gitt av \eqref{usikk2}. Ved å gjøre disse beregningene finner vi at $D = \SI{0.7}{\giga\pascal}$, og at $\Delta D = \SI{1.1}{\giga\pascal}$. Altså er $D<\Delta D$, som betyr at differansenen mellom elastisitetsmodulen vi fikk med de to forskjellige metodene kommer av tilfeldige feil og måleusikkerheter.
 \section{Diskusjon}
-Under kalibreringen av vekten med presisjonslodddene kunne vi merke et utslag i balansevekten under en masseendring av $0.1$ gram, men vi merket at balansevekten var svært sensitiv til hvor på vektene loddene var på plassert. Med asymetri målte vi en vektforskjell på $0.6$g, og det er derfor en større usikkerhet i målingene enn presisjonen til instrumentet. Det var lett å unngå assymetri når vi kalibrerte med ett presisjonslodd, men måtte vi bruke to presisjonslodd i kalibreringen var det vanskeligere å garantere symetri på vekten. På grunn av dette ble usikkerheten til vekten, for loddene som trengte flere presisjonslodd for å kalibreres, større enn presisjonen til vekten.\\
-
+Under kalibreringen av vekten med presisjonslodddene kunne vi merke et utslag i balansevekten under en masseendring av $0.1$ gram, men vi merket at balansevekten var svært sensitiv til hvor på vektene loddene var på plassert. Med asymetri målte vi en vektforskjell på $0.6$g, og det er derfor en større usikkerhet i målingene enn presisjonen til instrumentet. Det var lett å unngå assymetri når vi kalibrerte med ett presisjonslodd, men måtte vi bruke to presisjonslodd i kalibreringen var det vanskeligere å garantere symetri på vekten. På grunn av dette ble usikkerheten til vekten, for loddene som trengte flere presisjonslodd for å kalibreres, større enn presisjonen til vekten. Denne usikkerheten, og usikkerheten fra stigningstallet $\alpha$, diameteren $d$ og tyngdeakselerasjonen $g$ er små iforhold til usikkerheten til målingene gjort med meterstokk. Neste gang eksperimentet skal gjennomføres burde man bruke en annen metode som fører til en mer presis lengde.\\
 Målingene for nedbøyingen av staven som funksjon av belastningen er vist i figur \vref{data}. I denne figuren er det vanskelig å se hvordan målingene, og usikkerheten til målingene, står iforhold til stigningstallet og usikkerheten i stigningstallet. Dette er derfor vist tydeligere i figur \vref{data_usikker}. I denne figuren ser vi at alle målingene, utenom en, ligger innenfor usikkerheten. Dette gjelder uavhengig av om vi tar med usikkerheten i målingen eller ikke. Vi ser også at nedbøyingen til staven når lasten er på $\SI{1.5}{\kilo\gram}$ avviker, godt utenfor usikkerheter, fra lineærregresjonen. Det forventes at en $\sigma$ av målingene, det vil si rundt $68\%$, burde ligge innenfor usikkerheten i stigningstallet, og det gjør det, men det store avviket kan tyde på at det var noe systematisk feil som skjedde under målingen av nedbøyingen med akkurat denne lasten. Det hadde vært ønskelig å oppdage dette avviket under eksperimentet slik at vi kunne gjort flere målinger med denne lasten, og lett etter mulige feil som kan ha påvirket målingen.\\
 Utenom denne målingen er eksperimentet gjennomført godt beskyttet fra systematiske feil. Målingene av størrelsene til staven ble gjennomført flere ganger, lydopptak fra slaget på staven ble gjort flere ganger og vi fikk et lineært forhold mellom bøying av stav og belastning. Eksperimentet var godt kontrolert, og vi analyserte resultatene våre underveis for å sjekke at målingene ga mening før vi fortsatte. De tilfeldig feilene har påvirket målingene og vi har tatt hensyn til dette med usikkerheten til de to verdiene vi fant for elastistetsmodulen. Siden usikkerheten i differansen til elastistetmodulen er større enn differansen er det de tilfeldige feilene og måleusikkerhetene som forårsaker differansen. Vi kan derfor si at vi har overenstemmelse innenfor måleusikkerhetene. Dette gir oss en bekreftelse på at det ikke var merkbare systematiske feil tilstede under eksperimentet.
-\\De to metodene ga oss det samme svaret, men med litt over en faktor $3$ forskjell i usikkerheten mellom de to metodene. Årsaken til den store forskjellen i usikkerhet er at målingene gjort med meterstokk er mye mindre presise enn de andre målingene. På grunn av dette vil metoden som hviler mest på målinger gjort av en meterstokk ha de største usikkerhetene. For metoden som bruker målingen av nedbøyingen til staven er avstanden mellom knivene svært viktig for elastisitetsmodulen, og går derfor som avstanden i tredje potens. Metoden der man bruker utbredelseshastigheten til bølgen for å beregne elastisitetsmodulen kanseleres lengden i utregningen av uttrykket slik at lengden på staven går i første potens. Siden meterstokken er det desidert største bidraget til usikkerheten fører en faktor $3$ i bidraget fra denne usikkerheten til et stort utslag i den endelige usikkerheten. Det er dette som har forårsaket den store forskjellen i usikkerhetene til resultatet. Det burde derfor brukes en mer presis måte å beregne lengden til staven og avstanden mellom knivene neste gang eksperimentet blir gjennomført for å redusere denne usikkerheten.
+\\De to metodene ga oss det samme svaret, men med litt over en faktor tre forskjell i usikkerheten mellom de to metodene. Årsaken til den store forskjellen i usikkerhet er at målingene gjort med meterstokk er mye mindre presise enn de andre målingene. På grunn av dette vil metoden som hviler mest på målinger gjort av en meterstokk ha de største usikkerhetene. For metoden som bruker målingen av nedbøyingen til staven er avstanden mellom knivene svært viktig for elastisitetsmodulen, og går derfor som avstanden i tredje potens. Metoden der man bruker utbredelseshastigheten til bølgen for å beregne elastisitetsmodulen kanseleres lengden i utregningen av uttrykket slik at lengden på staven går i første potens. Siden meterstokken er det desidert største bidraget til usikkerheten fører en faktor tre i bidraget fra denne usikkerheten til et stort utslag i den endelige usikkerheten. Det er dette som har forårsaket den store forskjellen i usikkerhetene til resultatet. Det burde derfor brukes en mer presis måte å beregne lengden til staven og avstanden mellom knivene neste gang eksperimentet blir gjennomført for å redusere denne usikkerheten.
 \section{Konklusjon}
 En god fysisk modell burde kunne beskrive flere fenomener med så få parametere som mulig. I dette eksperimentet har vi vist at modellen for elastisitet klarer netopp dette ved å beskrive nedbøyingen til en stav som funksjon av belastningen på midtpunktet, og utbredelseshastigheten til bølger i samme stav med samme parameter, elastisitetsmodulen.
 Ved å måle nedbøyingen som funksjon av last, og de geometriske størrelsene til staven, fant vi at elastisitetsmodulen er $E=\SI{110\pm1}{\giga\pascal}$.

@@ -125,7 +125,7 @@
 
 \begin{document}
 
-\title{Måling av elastisitetsmodulen til messingstav med sirkulært tversnitt}
+\title{Beregning av elastisitetsmodulen ved måling av nedbøying og ståendebølger i messingstav}
 \author{\textsc{Ivar Svalheim Haugerud}}
 \affiliation{ Universitetet i Oslo}
 \date{\today}
@@ -189,7 +189,7 @@ For å finne tyngdeakselerasjonen i Oslo bruker vi \textit{International gravita
 \end{align}
 der $h$ er høyden over havet, og $\phi$ er breddegraden.
 \subsection{Måling av utbredelseshastigheten til bølger}\label{teori-b}
-Vi ønsker å bruke en annen metode for å finne elastisitetsmodulen. Denne metoden for bestemmelse av E baserer seg på å finne utbredelseshastigheten $v$ for longitudinalbølger i en stav. Vi kan bruke dette som utgangspunkt siden utbredelseshastigheten er avhengig av elastistsmodulen ved
+Vi ønsker å bruke en annen metode for å finne elastisitetsmodulen. Denne metoden for bestemmelse av E baserer seg på å finne utbredelseshastigheten $v$ for longitudinelle svingninger i en homogen stav. Vi kan bruke dette som utgangspunkt siden utbredelseshastigheten er avhengig av elastistsmodulen ved
 \begin{equation}
   v = \sqrt{\frac{E}{\rho}},\label{vel}
 \end{equation}
@@ -213,7 +213,7 @@ der $n$ er et oddetall $n = 1, 3, 5, \ldots$ Dette kan løses for bølgelengden 
 \begin{equation*}
   \lambda = \frac{2L}{n},
 \end{equation*}
-Ved å slå staven i aksial retning dannes det flere egensvingninger i staven. Av disse svingningene er det den med lengst bølgelengde, $\lambda = 2L$, som blir mest dominerende som tiden går. Ved noen lengder for staven vil frekvensene til svingningene gi hørbar lyd. Under eksperimentet kommer dette til å være tilfellet, og vi kan høre lyden fra svingningene. Siden svingningen med lengst bølgelengde er den mest dominerende, og derfor den vi hører tydeligst og lengst, vil det være den svingningen vi fokuserer på videre. Vi velger derfor $n=1$ for utregningen, som gir oss
+Ved å slå staven i aksial retning dannes det flere ståendebølger i staven. Av disse svingningene er det den med lengst bølgelengde, $\lambda = 2L$, som blir mest dominerende som tiden går. Ved noen lengder for staven vil frekvensene til svingningene gi hørbar lyd. Under eksperimentet kommer dette til å være tilfellet, og vi kan høre lyden fra svingningene. Siden svingningen med lengst bølgelengde er den mest dominerende, og derfor den vi hører tydeligst og lengst, vil det være den svingningen vi fokuserer på videre. Vi velger derfor $n=1$ for utregningen, som gir oss
 \begin{equation}
   \lambda = 2L.
 \end{equation}
@@ -268,8 +268,8 @@ I eksperimentet vårt bruker vi en messingstav med sirkulært tversnitt som er m
   \caption{Eksperimentelt oppsett for målinger. Illustrasjon av staven som hviler på to knvier, med et måleur som måler nedbøyingen av stavens midtpunkt. På stavens midtpunkt fester vi loddene for å måle nedbøying som funksjon av belastningen.}
   \label{eksperiment}
 \end{figure*}
-Før vi begynner å måle nedbøyingen av staven er det viktig at at stavens midtpunkt er midt mellom de to knivene staven hviler på. Dette er nødvendig siden teorien vi skal teste forutsetter det. På sentrum av staven kommer holderen $F$ til å være festet, hvor vi legger lasten. Vi måler derfor avstanden mellom $B$ og $C$ og flyttet på staven slik at midten av staven er halvparten av denne avstanden fra $B$. For å sjekke at alt var gjort korrekt gjorde vi målingene på nytt, men nå målte vi avstanden fra $B$ til $F$ og fra $F$ til $B$ som gir oss mindre usikkerhet. Fra dette kunne vi finjustere posisjonen til staven til vi var sikkre på den var sentrert riktig. Itilegg er det viktig at punktet hvor nålen fra måleuret treffer er normalt på flaten til sylinderen. For å være sikker på at den er normalt på brukte vi et vater og justere vinkelen til det var vannrett.\\
-Målet vårt er å bruke likning \eqref{young3} til å beregne elastisutetsmodulen, og for å gjøre dette trenger vi å vite avstanden mellom knivene $B$ og $C$ som staven hviler på, og diameteren til staven. Vi bruker derfor et skyvelær til måle diameteren til staven. Siden avstanden mellom knivene er mye lengere enn diameteren til staven måtte vi bruke en meterstokk for å måle avstanden. Siden disse verdiene er i tredje og fjerde potens er det viktig å gjøre presise målinger, siden usikkerhetene her vil ha store utslag i usikkerheten i det endelige resultatet. Vi trenger også å finne en nøyaktig verdi tyngdeakselerasjonen $g$, og usikkerheten i denne verdien. Denne verdien kan variere avhengig av hvor på kloden man er, og vi må derfor finne en verdi for Oslo, Norge. \\
+Før vi begynner å måle nedbøyingen av staven er det viktig at at stavens midtpunkt er midt mellom de to knivene staven hviler på. Dette er nødvendig siden teorien vi skal teste forutsetter det. På sentrum av staven kommer holderen $F$ til å være festet, hvor vi legger lasten. Vi måler derfor avstanden mellom $B$ og $C$ og flyttet på staven slik at midten av staven er halvparten av denne avstanden fra $B$. For å sjekke at alt var gjort korrekt gjorde vi målingene på nytt, men nå målte vi avstanden fra $B$ til $F$ og fra $F$ til $B$ som gir oss mindre usikkerhet. Fra dette kunne vi finjustere posisjonen til staven til vi var sikkre på den var sentrert riktig. Itilegg er det viktig at punktet hvor nålen fra måleuret treffer er normalt på flaten til sylinderen. For å være sikker på at den er normalt på brukte vi et vater og justere vinkelen til det var vannrett. For å måle nedbøyingen brukte vi et måleur på grunn av den gode presisjonen og praktiske monteringen for eksperimentet.\\
+Målet vårt er å bruke likning \eqref{young3} til å beregne elastisutetsmodulen, og for å gjøre dette trenger vi å vite avstanden mellom knivene $B$ og $C$ som staven hviler på, og diameteren til staven. Vi bruker derfor et skyvelær til måle diameteren til staven, siden et skyvelær har mye mindre systematisk usikkerhet enn en linjal eller meterstokk. Siden avstanden mellom knivene er mye lengere enn diameteren til staven måtte vi bruke en meterstokk for å måle avstanden. Målinger med meterstokk fører desverre til større usikkerheter i resultatet siden måleinstrument ikke er like presist som andre. Siden avstanden mellom knivene og diameteren er i tredje og fjerde potens i \eqref{young3} er det viktig å gjøre presise målinger, siden usikkerhetene her vil ha store utslag i usikkerheten i det endelige resultatet. Vi trenger også å finne en nøyaktig verdi tyngdeakselerasjonen $g$, og usikkerheten i denne verdien. Denne verdien kan variere avhengig av hvor på kloden man er, og vi må derfor finne en verdi for Oslo, Norge. Mest sansynlig er usikkerheten i tyngdeakselrasjonen mye mindre enn målingene vi har gjort, spesielt med meterstokk, men man burde være  presis uansett.\\
 Når vi måler nedbøyingen av staven bruker vi lodd med kjent masse. For å få presise målinger må vi kalibrere massen til loddene ved å sammenlikne loddenes vekt med vekten til presisjonslodd. For å kalibrere loddene bruker vi en balansevekt, og setter den i likevekt med presisjonsvektene, for så å bytte presisjonsvektene ut med loddene vi bruker under eksperimentet og måle avviket mellom loddene og presisjonsloddene. Ved å bruke en balansevekt og denne metoden får vi en ekstremt god oppløsning i differansen mellom loddene og presisjonsloddene. Når dette er gjort er alt klart for å måle nedbøyingen av staven.\\
 Vi leser av nedbøyingen av staven som en funksjon av massen til loddene vi legger på festepunktet $F$. Mellom hver måling tar vi av loddene og sjekker at utslaget til måleuret er tilbake til $0$-punktet. Massene vi har valgt å bruke går fra $0$ til $3.5$kg med en lineær økning på $0.5$kg. På disse målingene forventer vi et lineært forhold mellom vekten på loddene og nedbøyingen. For å bruke likning \eqref{young3} trenger vi stigningstallet til målepunktene, som vi kan beregne fra minste kvadraters metode på målingene. \\
 \subsection{Måling av utbredelseshastigheten til bølger}
@@ -296,14 +296,14 @@ For å bruke likning \eqref{young3} trenger vi å vite diameteren til staven og 
 Nå er det eneste vi mangler for å finne elastistsmodulen stigningstallet $\alpha$ fra målingene av nedbøyingen. Målingene vi brukte for å beregne stigningstallet er vist i figur \vref{data}. Fra denne figuren finner vi at stigningstallet $\alpha$ er $1.482\pm\SI{0.003}{\milli\meter\per\kilo\gram}$. Usikkerheten kommer fra usikkerheten i lineærregresjonen med minste kvadraters metode.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.4]{nedbojing.pdf}
+  \includegraphics[scale=0.4]{nedbooying_c.pdf}
   \caption{Målinger gjort av nedbøyingen av staven $h$ som funksjon av lasten $m$ vi fester på midten av staven. De blå sirklene er målepunktene, og den oransje linja er minstekvadraters lineærtilpassning.}
   \label{data}
 \end{figure}
 Siden det er vanskelig å se hvordan usikkerheten til målingene er iforhold til usikkerheten i stigningstallet i figur \vref{data} er differansen mellom målt nedbøying og tilpasningslinjen fra lineærregresjonen plottet for alle målepunktene i figur \vref{data_usikker}.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.4]{usikkerhet.pdf}
+  \includegraphics[scale=0.4]{usikkerhet_c.pdf}
   \caption{Absolutt differanse mellom måling av nedbøying og tilpasningslinjen til målingene. Målepunktene er plottet med usikkerheten til målingene. Den oransje linjen er usikkerheten i stigningstallet $\Delta \alpha$ med konstanleddet $\Delta \beta$ for $m=0$.}
   \label{data_usikker}
 \end{figure}
@@ -313,7 +313,7 @@ Med denne metoden bruker vi likning \eqref{young5} for å beregne elastisitetsmo
 Vi gjorde flere målinger av frekvensen til bølgene som oppsto ved å slå på staven. Den fouriertransformerte av lyden mikrofonen tok opp på en av målingene er vist i figur \vref{fourier}. Fra å se på den fouriertransformerte ser vi at vi har en svært dominerende frekvens på $\SI{1207.1}{\hertz}$. Området rundt denne frekvens er tilnærmet lik null, og vi har litt støy for lave frekvenser under $\SI{100}{\hertz}$. Samplingstiden under eksperimentet var på $\SI{10}{\second}$ som gir oss en oppløsning på $\SI{0.1}{\hertz}$. Ved å ta med usikkerheten får vi derfor at frekvens til bølgen i staven er på $1207.1\pm\SI{0.1}{\hertz}$. Det ble gjort flere målinger frekvensen, og på alle fikk vi samme verdi.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.4]{fourier.pdf}
+  \includegraphics[scale=0.4]{fourier_c.pdf}
   \caption{Den fouriertransformerte av lyden motatt fra mikrofonen for en av målingene. I figuren er det inkludert et zoomet inn område rundt der frekvens vi er interesert i for å vise fram oppløsningen på målingene, det er samme enhet på aksene.}
   \label{fourier}
 \end{figure}
@@ -352,5 +352,7 @@ Fysisk institutt \emph{Elastisitet}, Universitetet i Oslo, februar 2018.
 W. J. Hinze, R. R. B. von Frese; A. H. Saad \emph{Gravity and Magnetic Exploration: Principles, Practices, and Applications}, Cambridge university press, 2013.
 \bibitem{gronn}
 Øyvind Grøn \emph{elastisitet – fysikk} \url{https://snl.no/elastisitet_-_fysikk} hentet 03.04.2018.
+\bibitem{wiki1}
+Wikipedia \emph{Young's modulus} \url{https://en.wikipedia.org/wiki/Young%27s_modulus} hentet 05.04.2018.
 \end{thebibliography}
 \end{document}

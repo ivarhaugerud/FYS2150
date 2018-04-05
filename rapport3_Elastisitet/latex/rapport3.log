@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  4 APR 2018 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  5 APR 2018 08:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3081,21 +3081,11 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <7.5> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <3.75> not available
 (Font)              size <5> substituted on input line 235.
 
-[3] <oppsett.png, id=137, 2727.18875pt x 966.61125pt>
+[3] <oppsett.png, id=136, 2727.18875pt x 966.61125pt>
 File: oppsett.png Graphic file (type png)
 <use oppsett.png>
 Package pdftex.def Info: oppsett.png used on input line 267.
 (pdftex.def)             Requested size: 463.61597pt x 164.32173pt.
-
-Underfull \hbox (badness 1102) in paragraph at lines 264--275
-\OT1/cmr/m/n/10 elas-tis-ut-ets-mo-du-len, og for ^^Wa gj^^\re det-te tren-ger
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 264--275
-\OT1/cmr/m/n/10 for ^^Wa m^^Wale av-stan-den. Si-den dis-se ver-di-ene er i
- []
-
 
 Underfull \hbox (badness 1527) in paragraph at lines 264--275
 \OT1/cmr/m/n/10 ka-li-bre-re mas-sen til lod-de-ne ved ^^Wa sam-men-lik-ne
@@ -3116,61 +3106,42 @@ Overfull \hbox (16.27814pt too wide) in paragraph at lines 285--293
  []$[]$ 
  []
 
+<nedbooying_c.pdf, id=158, 581.54564pt x 663.91537pt>
+File: nedbooying_c.pdf Graphic file (type pdf)
+<use nedbooying_c.pdf>
+Package pdftex.def Info: nedbooying_c.pdf used on input line 299.
+(pdftex.def)             Requested size: 232.61414pt x 265.56143pt.
+<usikkerhet_c.pdf, id=161, 611.31787pt x 657.96014pt>
+File: usikkerhet_c.pdf Graphic file (type pdf)
+<use usikkerhet_c.pdf>
+Package pdftex.def Info: usikkerhet_c.pdf used on input line 306.
+(pdftex.def)             Requested size: 244.52281pt x 263.17938pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<nedbojing.pdf, id=157, 614.295pt x 794.97pt>
-File: nedbojing.pdf Graphic file (type pdf)
-<use nedbojing.pdf>
-Package pdftex.def Info: nedbojing.pdf used on input line 299.
-(pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
-
-Overfull \hbox (12.6087pt too wide) in paragraph at lines 299--300
- [][] 
- []
-
-<usikkerhet.pdf, id=160, 614.295pt x 794.97pt>
-File: usikkerhet.pdf Graphic file (type pdf)
-<use usikkerhet.pdf>
-Package pdftex.def Info: usikkerhet.pdf used on input line 306.
-(pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
-
-Overfull \hbox (12.6087pt too wide) in paragraph at lines 306--307
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fourier.pdf, id=167, 614.295pt x 794.97pt>
-File: fourier.pdf Graphic file (type pdf)
-<use fourier.pdf>
-Package pdftex.def Info: fourier.pdf used on input line 316.
-(pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
-
-Overfull \hbox (12.6087pt too wide) in paragraph at lines 316--317
+Overfull \hbox (11.41788pt too wide) in paragraph at lines 306--307
  [][] 
  []
 
 [5 <./oppsett.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 322.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fourier_c.pdf, id=178, 593.45413pt x 649.02876pt>
+File: fourier_c.pdf Graphic file (type pdf)
+<use fourier_c.pdf>
+Package pdftex.def Info: fourier_c.pdf used on input line 316.
+(pdftex.def)             Requested size: 237.37744pt x 259.6069pt.
+
+Overfull \hbox (4.2725pt too wide) in paragraph at lines 316--317
+ [][] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 <./nedbojing.pdf> <./usikkerhet.pdf>]
+[6 <./nedbooying_c.pdf> <./usikkerhet_c.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 324.
-
-
-Package natbib Warning: Citation `wiki1' on page 7 undefined on input line 329.
-
 
 
 Underfull \hbox (badness 1742) in paragraph at lines 325--330
@@ -3208,7 +3179,7 @@ Underfull \hbox (badness 1308) in paragraph at lines 325--330
 \OT1/cmr/m/n/10 me-ter-stok-ken er det de-si-dert st^^\rste bi-dra-get til
  []
 
-[7 <./fourier.pdf>]
+[7 <./fourier_c.pdf>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 335.
@@ -3220,54 +3191,49 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 338.
-(./rapport3.bbl)
-
-Package natbib Warning: There were undefined citations.
-
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
+(./rapport3.bbl) [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 358.
 (./rapport3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 358.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 358.
 Package rerunfilecheck Info: File `rapport3.out' has not changed.
-(rerunfilecheck)             Checksum: 7B80D31636007DB7049CBF1B0D583364;1247.
+(rerunfilecheck)             Checksum: 70F1D507A018AD5A640F0276BD9CD263;1271.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.25pt have occured.
 
  ) 
 Here is how much of TeX's memory you used:
- 22972 strings out of 492995
- 402335 string characters out of 6132705
- 514088 words of memory out of 5000000
- 26206 multiletter control sequences out of 15000+600000
+ 22977 strings out of 492995
+ 402434 string characters out of 6132705
+ 515103 words of memory out of 5000000
+ 26210 multiletter control sequences out of 15000+600000
  19342 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,25n,39p,10382b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on rapport3.pdf (8 pages, 439800 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on rapport3.pdf (8 pages, 434942 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 51 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

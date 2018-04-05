@@ -8,9 +8,9 @@ errorbar(vekt, utslag, usikker, 'o')
 hold on
 grid on
 set(gca,'fontsize',16)
-title('Nedbooying av messingstav som funksjon av vekt','fontsize',16)
+title('Nedbooying av messingstav som funksjon av last','fontsize',16)
 xlabel('vekt [kg]', 'fontsize',16)
-ylabel('utslag [mm]', 'fontsize',16)
+ylabel('nedbooying [mm]', 'fontsize',16)
 plot(vekt, c+m*vekt)
 plot(vekt, c+(m+delta_m)*vekt)
 plot(vekt, c+(m-delta_m)*vekt)

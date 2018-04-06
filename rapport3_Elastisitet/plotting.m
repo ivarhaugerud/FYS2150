@@ -1,4 +1,5 @@
-vekt = linspace(0, 3.5, 8); %kg
+
+vekt = linspace(0, 3.5, 8)
 utslag = [8.18, 7.45, 6.71, 6.02, 5.23, 4.49, 3.75, 2.99]-8.18;%mm
 usikker = [0, 1, 1, 1, 2, 3, 3, 3]*1e-3 %mm
 [m, c, delta_c, delta_m] = function1(vekt, utslag)
@@ -10,7 +11,7 @@ grid on
 set(gca,'fontsize',16)
 title('Nedbooying av messingstav som funksjon av last','fontsize',16)
 xlabel('vekt [kg]', 'fontsize',16)
-ylabel('nedbooying [mm]', 'fontsize',16)
+ylabel('utslag [mm]', 'fontsize',16)
 plot(vekt, c+m*vekt)
 plot(vekt, c+(m+delta_m)*vekt)
 plot(vekt, c+(m-delta_m)*vekt)
@@ -27,7 +28,7 @@ axis([0 1500 -0.05 1.05])
 grid on
 plot(fut, energi/max(energi))
 
-[c index] = min(abs(fut-1207.2))
+[ah index] = min(abs(fut-1207.2))
 %figure(3)
 index = index -1 ;
 intervall= 3;
@@ -47,9 +48,9 @@ box on
 plot(x2, y2/max(y2))
 
 figure(3)
-p1 = errorbar(vekt, abs(utslag - (c+m*vekt)), usikker, 'o')
-%p1 = scatter(vekt,  abs(utslag - (c+m*vekt)), 'filled')
-M1 = 'Absolutt differanse'
+diff = abs(utslag - (c+m*vekt))
+p1 = errorbar(vekt, diff, usikker, 'o');
+M1 = 'Absolutt differanse';
 hold on
 grid on
 set(gca,'fontsize',16)
@@ -57,9 +58,29 @@ title('Differanse mellom maalt utslag og lin.reg','fontsize',16)
 xlabel('vekt [kg]', 'fontsize',16)
 ylabel('utslag [mm]', 'fontsize',16)
 axis([-0.05 3.55 -0.005, 1.05*max(abs(utslag - (c+m*vekt)))])
-p2 = plot(vekt, delta_m*vekt+delta_c)
-M2 = 'Usikkerhet lin.reg \Delta \beta + \Delta \alpha \cdot m'
+p2 = plot(vekt, delta_m*vekt+delta_c);
+M2 = 'Usikkerhet lin.reg \Delta \beta + \Delta \alpha \cdot m';
 legend([p1; p2], M1, M2, 'Location','northeast', 'Interpreter','latex');
 
+%{
+Y = transpose([8.18, 7.45, 6.71, 6.02, 5.23, 4.49, 3.75, 2.99])-8.18;%mm
+VEKT = linspace(0, 3.5, 8)
+usikker = (3-[0, 1, 1, 1, 2, 3, 3, 3])*1e-3 %mm
 
+W = diag(usikker)
+X = [1 VEKT(1); 1 VEKT(2); 1 VEKT(3); 1 VEKT(4); 1 VEKT(5); 1 VEKT(6); 1 VEKT(7); 1 VEKT(8)]
+WX = W*X
+size(W)
+size(Y)
+WY = W*Y
+WXTWX = transpose(WX)*(WX)
+size(WY)
+size(transpose(WX))
 
+WXTWY = transpose(WX)*WY
+beta = inv(WXTWX)*WXTWY
+
+plot(VEKT, Y, 'o')
+hold on
+plot(VEKT, beta(1)+VEKT*beta(2))
+%}

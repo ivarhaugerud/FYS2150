@@ -259,9 +259,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 INPUT oppsett.png
 INPUT ./oppsett.png
 INPUT ./oppsett.png
-INPUT nedbooying_c.pdf
-INPUT ./nedbooying_c.pdf
-INPUT ./nedbooying_c.pdf
+INPUT nedboojing_c.pdf
+INPUT ./nedboojing_c.pdf
+INPUT ./nedboojing_c.pdf
 INPUT usikkerhet_c.pdf
 INPUT ./usikkerhet_c.pdf
 INPUT ./usikkerhet_c.pdf

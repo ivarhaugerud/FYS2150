@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex rapport3"] 1522910579 "rapport3.aux" "rapport3.bbl" "rapport3" 1522910582
+["bibtex rapport3"] 1523038306 "rapport3.aux" "rapport3.bbl" "rapport3" 1523038390
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/revtex/apsrev4-1.bst" 1480098436 71518 fec93f06df0c073f83d2330456bd19c2 ""
-  "rapport3.aux" 1522910582 8214 98fe21debded994d2f01733edc065cd6 ""
-  "rapport3Notes.bib" 1522910582 103 48ad29797468f16e2853d8797278d7af ""
+  "rapport3.aux" 1523038389 8291 4f3ac46c10006c763010c45c3ba4ba7e ""
+  "rapport3Notes.bib" 1523038389 103 48ad29797468f16e2853d8797278d7af ""
   (generated)
-  "rapport3.bbl"
   "rapport3.blg"
-["pdflatex"] 1522910579 "rapport3.tex" "rapport3.pdf" "rapport3" 1522910582
+  "rapport3.bbl"
+["pdflatex"] 1523038387 "rapport3.tex" "rapport3.pdf" "rapport3" 1523038390
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1480098696 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1480098698 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -164,17 +164,17 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1504893732 4129591 b1a7ed87e25bd8fdaf5080304d300aaa ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "fourier_c.pdf" 1522910025 116364 7dfa0bf3a4b479ac3a3e2585c039d741 ""
-  "nedbooying_c.pdf" 1522909965 8777 26c958550b9a82afeaee63c22efbedec ""
+  "fourier_c.pdf" 1523037971 107445 296aeb4f9d2ebf4869b71bc18d6a457c ""
+  "nedboojing_c.pdf" 1523037928 8669 f95b859914ac8b72e907357670016a98 ""
   "oppsett.png" 1522073888 80168 604dc8c343c53499de308bf5a91fb355 ""
-  "rapport3.aux" 1522910582 8214 98fe21debded994d2f01733edc065cd6 ""
-  "rapport3.bbl" 1522910579 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport3"
-  "rapport3.out" 1522910582 1271 70f1d507a018ad5a640f0276bd9cd263 ""
-  "rapport3.tex" 1522910559 39737 85b77ae2ab6e54570e401548e2253d10 ""
-  "usikkerhet_c.pdf" 1522910065 10941 a7ea3dfc997f62016a1fc7ee11e8c706 ""
+  "rapport3.aux" 1523038389 8291 4f3ac46c10006c763010c45c3ba4ba7e ""
+  "rapport3.bbl" 1523038306 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport3"
+  "rapport3.out" 1523038389 1271 70f1d507a018ad5a640f0276bd9cd263 ""
+  "rapport3.tex" 1523038387 39872 bab446f7b500eda2c32e6ec0336b0d98 ""
+  "usikkerhet_c.pdf" 1523038235 28273 4cb11a64442525ac39932b68eb048daf ""
   (generated)
   "rapport3.pdf"
-  "rapport3Notes.bib"
-  "rapport3.aux"
-  "rapport3.log"
   "rapport3.out"
+  "rapport3.log"
+  "rapport3.aux"
+  "rapport3Notes.bib"

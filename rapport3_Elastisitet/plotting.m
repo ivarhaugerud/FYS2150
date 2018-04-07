@@ -1,7 +1,7 @@
 
 vekt = linspace(0, 3.5, 8)
 utslag = [8.18, 7.45, 6.71, 6.02, 5.23, 4.49, 3.75, 2.99]-8.18;%mm
-usikker = [0, 1, 1, 1, 2, 3, 3, 3]*1e-3 %mm
+usikker = [1, 1, 1, 1, 2, 3, 3, 3]*1e-3 %mm
 [m, c, delta_c, delta_m] = function1(vekt, utslag)
 
 figure(2)

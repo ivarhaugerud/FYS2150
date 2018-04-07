@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  6 APR 2018 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  7 APR 2018 12:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3081,14 +3081,29 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <7.5> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <3.75> not available
 (Font)              size <5> substituted on input line 235.
 
-[3] <oppsett.png, id=136, 2727.18875pt x 966.61125pt>
+[3] <oppsett.png, id=137, 2727.18875pt x 966.61125pt>
 File: oppsett.png Graphic file (type png)
 <use oppsett.png>
 Package pdftex.def Info: oppsett.png used on input line 267.
 (pdftex.def)             Requested size: 463.61597pt x 164.32173pt.
 
+Underfull \hbox (badness 1708) in paragraph at lines 264--275
+\OT1/cmr/m/n/10 i det en-de-li-ge re-sul-ta-tet, si-den m^^Waleinstrumentet
+ []
+
+
 Underfull \hbox (badness 1527) in paragraph at lines 264--275
 \OT1/cmr/m/n/10 ka-li-bre-re mas-sen til lod-de-ne ved ^^Wa sam-men-lik-ne
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 264--275
+\OT1/cmr/m/n/10 eks-pe-ri-men-tet, og m^^Wale av-vi-ket til ba-lanse-vek-ten
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 264--275
+\OT1/cmr/m/n/10 god oppl^^\sning i dif-fe-ran-sen mel-lom lod-de-ne og
  []
 
 
@@ -3106,7 +3121,12 @@ Overfull \hbox (16.27814pt too wide) in paragraph at lines 284--292
  []$[]$ 
  []
 
-<nedboojing_c.pdf, id=158, 509.101pt x 446.57942pt>
+
+Underfull \hbox (badness 4752) in paragraph at lines 279--293
+\OT1/cmr/m/n/10 pe-ri-men-tet, usik-ker-he-ten i m^^Walingene og ty-pen
+ []
+
+<nedboojing_c.pdf, id=164, 509.101pt x 446.57942pt>
 File: nedboojing_c.pdf Graphic file (type pdf)
 <use nedboojing_c.pdf>
 Package pdftex.def Info: nedboojing_c.pdf used on input line 298.
@@ -3116,13 +3136,13 @@ Overfull \hbox (1.08437pt too wide) in paragraph at lines 298--299
  [][] 
  []
 
-<usikkerhet_c.pdf, id=161, 612.33394pt x 478.89734pt>
+<usikkerhet_c.pdf, id=167, 612.42773pt x 557.4195pt>
 File: usikkerhet_c.pdf Graphic file (type pdf)
 <use usikkerhet_c.pdf>
 Package pdftex.def Info: usikkerhet_c.pdf used on input line 305.
-(pdftex.def)             Requested size: 244.92923pt x 191.55554pt.
+(pdftex.def)             Requested size: 244.96675pt x 222.96385pt.
 
-Overfull \hbox (11.8243pt too wide) in paragraph at lines 305--306
+Overfull \hbox (11.86182pt too wide) in paragraph at lines 305--306
  [][] 
  []
 
@@ -3130,20 +3150,23 @@ Overfull \hbox (11.8243pt too wide) in paragraph at lines 305--306
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fourier_c.pdf, id=176, 526.96373pt x 435.66365pt>
+<fourier_c.pdf, id=182, 503.12439pt x 414.06639pt>
 File: fourier_c.pdf Graphic file (type pdf)
 <use fourier_c.pdf>
 Package pdftex.def Info: fourier_c.pdf used on input line 314.
-(pdftex.def)             Requested size: 242.40625pt x 200.4077pt.
+(pdftex.def)             Requested size: 236.46849pt x 194.61122pt.
 
-Overfull \hbox (9.30132pt too wide) in paragraph at lines 314--315
+Overfull \hbox (3.36356pt too wide) in paragraph at lines 314--315
  [][] 
  []
 
-[6 <./nedboojing_c.pdf> <./usikkerhet_c.pdf> <./fourier_c.pdf>]
-Underfull \hbox (badness 1742) in paragraph at lines 323--328
-\OT1/cmr/m/n/10 til m^^Walingene, st^^War ifor-hold til stig-nings-tal-let og
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./nedboojing_c.pdf> <./usikkerhet_c.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 320.
 
 
 Underfull \hbox (badness 2951) in paragraph at lines 323--328
@@ -3161,8 +3184,18 @@ Underfull \hbox (badness 1005) in paragraph at lines 323--328
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 323--328
-\OT1/cmr/m/n/10 er det de-si-dert st^^\rste bi-dra-get til usik-ker-he-ten,
+Underfull \hbox (badness 1320) in paragraph at lines 323--328
+\OT1/cmr/m/n/10 er mye mind-re pre-si-se enn de and-re m^^Walingene.
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 323--328
+\OT1/cmr/m/n/10 ut-bre-del-ses-has-tig-he-ten til b^^\lgene for ^^Wa be-reg-ne
+ []
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 323--328
+\OT1/cmr/m/n/10 elas-ti-si-tets-mo-du-len, kan-se-le-res noen po-ten-ser av
  []
 
 
@@ -3170,7 +3203,7 @@ Underfull \hbox (badness 2189) in paragraph at lines 323--328
 \OT1/cmr/m/n/10 av-vi-ke, av-hen-gig av m^^Walemetode, tem-pe-ra-tur og
  []
 
-[7]
+[7 <./fourier_c.pdf>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 333.
@@ -3195,10 +3228,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 22976 strings out of 492995
- 402423 string characters out of 6132705
- 511155 words of memory out of 5000000
- 26209 multiletter control sequences out of 15000+600000
+ 22978 strings out of 492995
+ 402443 string characters out of 6132705
+ 519171 words of memory out of 5000000
+ 26211 multiletter control sequences out of 15000+600000
  19342 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,25n,39p,10382b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3221,10 +3254,10 @@ e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on rapport3.pdf (8 pages, 446940 bytes).
+Output written on rapport3.pdf (8 pages, 483404 bytes).
 PDF statistics:
- 347 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
+ 353 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
  51 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

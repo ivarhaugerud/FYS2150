@@ -1,0 +1,190 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose,
+%preprint,
+%showpacs,preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+ norsk,
+ booktabs
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-1}
+
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\usepackage{varioref}
+\usepackage{graphicx}% Include figure files
+\usepackage{enumitem}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage[margin=0.9in]{geometry}
+\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{relsize}
+%\usepackage{booktabs}
+\usepackage{graphicx,verbatim,amsfonts,geometry}
+\usepackage{amsmath}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+\usepackage{ulem}
+\usepackage{amssymb}
+\usepackage{soul}
+\usepackage{dsfont}
+\usepackage{commath}
+\usepackage{wrapfig}
+\usepackage[free-standing-units=true]{siunitx}
+\DeclareSIUnit\year{yr}
+\usepackage{gensymb}
+\newcommand{\ROM}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+\usepackage{physics}
+\usepackage{caption}
+\usepackage{bm}
+\usepackage{gensymb}
+
+\makeatletter
+\newcounter{elimination@steps}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash$}p{#1}<{$}}
+\def\elimination@num@rights{}
+\def\elimination@num@variables{}
+\def\elimination@col@width{}
+\newenvironment{elimination}[4][0]
+{
+    \setcounter{elimination@steps}{0}
+    \def\elimination@num@rights{#1}
+    \def\elimination@num@variables{#2}
+    \def\elimination@col@width{#3}
+    \renewcommand{\arraystretch}{#4}
+    \start@align\@ne\st@rredtrue\m@ne
+}
+{
+    \endalign
+    \ignorespacesafterend
+}
+\newcommand{\eliminationstep}[2]
+{
+    \ifnum\value{elimination@steps}>0\sim\quad\fi
+    \left[
+        \ifnum\elimination@num@rights>0
+            \begin{array}
+            {@{}*{\elimination@num@variables}{R{\elimination@col@width}}
+            |@{}*{\elimination@num@rights}{R{\elimination@col@width}}}
+        \else
+            \begin{array}
+            {@{}*{\elimination@num@variables}{R{\elimination@col@width}}}
+        \fi
+            #1
+        \end{array}
+    \right]
+    &
+    \begin{array}{l}
+        #2
+    \end{array}
+    \addtocounter{elimination@steps}{1}
+}
+\makeatother
+% Document formatting
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{1.5mm}
+
+\begin{document}
+
+\title{Solcelle}
+\author{\textsc{Ivar Svalheim Haugerud}}
+\affiliation{ Universitetet i Oslo}
+\date{\today}
+
+\begin{abstract}
+Hva er effektiviteten til en solcelle? La oss finne ut av det.
+\end{abstract}
+
+\pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
+                             % Classification Scheme.
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+\section{Introduksjon}
+Solveller gir oss energi og er nyttige
+\section{Teori}
+I 1905 viste Albert Einstein at fotoner er kvantiserte, og har en energi, $E$, som er propsjonal med frekvensen, $\nu$, til lyset
+\begin{equation}
+  E = h\nu = \frac{hc}{\lambda} \label{einstein},
+\end{equation}hvor $h$ er Planc's konstant og $c$ er lyshastigheten, og $\lambda$ er bølgelengden til yset. Det er denne energien solceller ønsker å utnytte.\\
+De fleste solceller er laget av halvledermateriale, for å forstå solceller må vi derfor forstå halvledere. Halvledere fungerer på grunn av kvanatiserte energinivåer til atomer. Elektroner i atomer oppbevarer seg på elektronskall som tilsvarer kvantetallet deres, $n\in\mathbb{N}$. For hvert energinivå er det oppdelt i underskall som blir bestemt av det azimutale kvantetallet $l \in \mathbb{N} < n$. I grunntilstanden til atomet fordeler elektronene seg i underskallet slik at de får lavest energi. Denne elektronkonfigurasjonen er forskjellig for forskjellig atomer, og bestemmer de kjemiske og fysiske prosessene til atomet. Bindinger mellom atomer avhenger av elektronene i de ytterste skallene, størst $n$, som kalles valenselektronene. Ved å tilføre elektroner energi vil kvantetallet deres øke, og de flytter seg til et høyere skall. Siden energinivåene er kvantiserte vil forflytningen være kvantisert. For like atomer er disse energinivåene identiske, men når vi har flere identiske atomer sammen oppstår det nye effekter, \textit{more is different}. De originiale energinivåene splittes opp til flere forskjellige energinivåer. Antall forskjellige energinivåer øker med antall atomer, og er det nok atomer tilstede vil det bli dannet et nesten kontinuerlig energibånd. Energibåndet som dannes av valenselektroner kalles valensbånd. Er valensbåndet fullt av andre elektroner kan ikke elektronene flytte på seg, på grunn av Paulis eksklusjonsprinsipp, for å danne strøm i valensbåndet. Det blir først mulig å danne strøm hvis elektronene blir eksitert til det neste ikke-okkuperte energibåndet, som er over valensbåndet, og kalles ledningsbåndet. For silisium som vi bruker i dette eksperimentet, og andre halvledere, er det et energiområde mellom valensbåndet og ledningsbåndet hvor elektronet ikke kan ha en energitilstand. Dette området kalles båndgapet, for silisium er størrelsen på båndgapet $\SI{1.12}{\electron\volt}$.\\
+Halvledere kan beholde krystallstrukturen sin, og forbedre sin elektriske ledningsevne ved å bli dopet av fremmedatomet. Doping innebærer at man erstatter en svært liten andel ($1/10^6$) av silisiumatomene med andre atomer, f.eks arsen. For at fremmedatomet skal binde seg til silisiumsgitteret trenger det fire valenselektroner. Arsen har fem valenselektroner, som gjør at det siste valenselektronet blir lett bundet til arsen-atomet som gjør at det lett kan binde seg til nabo silisium-atomet. Elektronet vil derfor fortsette å kunne bevege seg fra atom til atom inne i krystallen. Siden vi har økt antall elektroner kalles dette $n$-doping, $n$ for negativ. Ved å dope silisium med bor-atomer, som har tre valenselektroner, vil det danne en vandrene hull-strøm. Siden vi har redusert antall elektroner kalles dette $p$-doping, $p$ for positiv.\\
+Grensesjiktet mellom to halvledere, der den ene er $n$-dopet og den andre er $p$-dopet, kalles for en $pn$-overgang. I dette området, \textit{overgangssonen}, vil noen elektroner for den $n$-dopede halvlederen fylle hullene i den $p$-dopede halvlederen. Denne forflyningen av ladning fører til ladde ioner på hver sode av overgangssonen. Dette gjør at $p$-siden blir netto negativt ladd, og $n$-siden blir netto positivt ladd. Denne ladningsforskjellen mellom de to områdene vil dannet et elektrisk felt fra $n$-type til $p$-type området. Dette feltet vil hindre flere elektroner fra å bevege seg over overgangssonen. Elektronenes bevegelse kan kontrolleres ved å bruke en ytre påtrykt spenning over $pn$-overgangen.\\
+Vi har beskrevet hvordan halvledere virker, men ikke hvordan dette er relatert til solceller og lys. For å  forstå dette må vi se nøyere på overgangssonen til silisiumatomer. Ladningsforskjellen mellom de to områdene skaper et elektrisk felt som gjør at ladningene ikke klarer å flytte seg over, de har ikke nok energi. Får ett av elektronene tilført energi, ved å absorbere et foton, kan det løsnes fra kjernen og bevege seg fritt i krystallen. Mest sansnylig vil elektronet binne seg med det atomet det ble løsrevet fra, og vi er like langt. Er elektronet i overgangssonen vil feltets retning gjør at elektronene blir dratt over til $n$-området, og hullet i retning $p$-området. Spenningsforskjellen har separert elektronet fra hullet. Nå er det et atom på $p$-siden av overgangssonen som har mistet et elektron. Dette hullet kommer til å bli fylt av et annet elektron. På grunn av retningen til det elektriske feltet vil retningen hullet bevege seg i retning $p$-området. Som tiden går vil $p$-området få et overskudd av hull, og $n$-området et overskudd av elektroner. Dette danner igjen en spenningsforskjell mellom områdene. Nå er det $p$-siden som blir positivt ladd, og $n$-siden blir negativt ladd. Dette gjør at den tidligere spenningsforskjellen avtar, helt til det slutter å være transport av elektroner eller hull over overgangssonen. Har nå solcellen blitt ubrukelig? Nei, ved å koble $p$-området med $n$-området ved hjelp av en ytre ledning vil elektroner fra $n$-området strømme til hullene i $p$-området for å nøytralisere hull. Dette vil gjør at feltstyrken opprettholdes, og prosessen kan gjentas. Strømmen vil fortsette å gå, så lenge lys treffer solcellen.\\ Ikke alt lys vil klare å løsrive elektroner fra atomet. For silisium er energien som trengs $\SI{1.12}{\electron\volt}$. Ved å bruke relasjonen mellom energi og bølgelengde\eqref{einstein} finner vi at det kreves en bølgelengde mindre enn $\SI{1100}{\nano\meter}$ for å løsrive et elektron for å danne et elektron-hull par. Derfor vil alt lys med bølgelengde lengere enn $\SI{1100}{\nano\meter}$ ikke føre til noe strøm i solcellen. Spenningen i solcelle kretsen vil aldri kunne bli større enn energien som kreves å løserive et elektron, per elektron, $V<E/e$. For silisium vil dette bety at spenningen solcellen lager vil alltid være mindre enn $\SI{1.12}{\volt}$.
+En så lav spenning ville ikke klart å lade opp de fleste batterier for pratktisk nytte. Det er derfor ønskelig å endre på kretsen slik at det kan enten bli høyere spenning, eller høyere strøm i kretsen. For å få høyere spenning kan man koble flere enkeltsolceller i serie, ønskes det høyere strøm kobles det flere enkeltsolceller i parallell. Dette skal vi se nærmere på under eksperimentet.
+\\Solcellen i eksperimentet kommer til å være koblet i en elektrisk krets, og vi trenger derfor litt kretsteori for å forstå eksperimentet. Den viktigste relasjonen vi kommer til å bruke er Ohms lov
+\begin{equation}
+  V = RI,
+\end{equation}som sier at spenningsfallet $V$ er gitt av produktet mellom strømmen $I$ og resistansen $R$. Dette kan brukes for å finne effekttapet, $P$, til en komponent er gitt av produktet mellom spenningsfallet $V$ over komponenten og strømmen som går gjennom den
+\begin{equation}
+  P = VI = RI^2 = \frac{V^2}{R} \label{effekt1}.
+\end{equation}For å få lage den beste mulige solcelle burde effekten $P$ være så stor som mulig. Vi kommer derfor til å trenge noen viktige relasjoner for den maksimale effektiviteten $P_{max}$. Under eksperimentet kommer vi til å gjøre målinger for å finne strøm-spenningskarkateristikkentil solcellen. Vi kommer derfor til å finne solcellens spenning med uendelig stor belastning, det vil si \textit{open circuit}, $V_{oc}$. Og hvilken strøm som går i solcellen når kretsen er kortsluttet, det vil si \textit{short circuit}, $I_{sc}$. Det viser seg at forholdet mellom den maksimale effekten og produktet av $V_{oc}$ og $I_{sc}$ er konstant, og har fått navnet \texit{fill factor}.
+\begin{equation}
+  \frac{P_{max}}{V_{oc}I_{sc}} = FF.
+\end{equation}Dette er en nyttig relasjon når vi skal studere forholdet mellom effekter. Årsaken til dette er et fill factor er en karakteristikk av solcellen, og er ikke avhengig av eksterne forhold. Siden fill factor er tilnærmet lik konstant kan vi finne forholdet mellom to effekter ved å bruke definisjonen av fill factor
+\begin{equation}
+  \frac{\left(P_{max}\right)_1}{\left(P_{max}\right)_2} \approx \frac{\left(V_{oc}I_{sc}\right)_1}{\left(V_{oc}I_{sc}\right)_2}.
+\end{equation}Hvor måling $1$ og måling $2$ kan henvise til f.eks målinger av samme solcelle, men emd forskjellig belysning.
+\section{Eksperimentelt}
+Under hele eksperimentet kommer vi til å ha en solcelle i en fast avstand fra en lyskilde. Solcellen plasseren i et stativ på en optisk benk sammen med en lysbildeprosjektor. Avstanden mellom den lyskilden og solcellen er valgt slik at solcellene vi kommer til å bruke under eksperimentet kommer til å være fullstendig belyst. Eksperimentet foregår i ett mørkt rom for å kontrollere belysningen av solcellen.\\
+\subsection{Strøm-spenningskarkateristikk}
+Vi ønsker å måle strøm-spenningkarakteristikken for en belyst solcelle. Først skal vi finne karakteristikken med en ytre spenningskilde i kretsen, og senere uten en spenningskilde i kretsen.
+\subsubsection{Med ytre spenningskilde}
+For å finne strøm-spenningkarakteristikken med en ytre spenningskilde blir solcellen koblet i en krets sammen en varierende motstand, en spenningskilde på $5$ volt og to voltmetere. Kretsen er vist i figur \vref{krets1}. For å finne strøm-spenningkarakteristikken må vi måle spenningsfallet over solcellen, og strømmen som går gjennom solcellen. Spenningsfallet over solcellen blir målt av voltmeteret $V$ i figur \vref{krets1}, og strømmen i kretsen blir beregnet fra spenningsfallet over resistansen $R_L$, som vi leser av voltmeteret $V_L$. Under målingene varierer vi størrelsen på motstanden i kretsen, og gjør flere målinger for hver verdi av resistansen, for å begrense usikkerheten i målingene. Vi forventer et knekkpunkt i forholdet mellom strøm og spenning, og vi velger derfor verdier av resistansen slik at vi får mange målinger rundt knekkpunktet. Siden vi ønsker å måle strøm-spenningkarakteristikken både i lederretning (positiv strøm (HULL STRØM?)), og i sperreretning (negativ strøm), snur vi polariteten på spenningskilden når vi er fornøyd med målingene i lederretning, og gjentar prosessen.
+\subsubsection{Uten ytre spenningskilde}
+Vi ønsker nå å måle strøm-spenningskarkateristikken uten en ytre spenningskilde. Nå skal den eneste spenningskilden i kretsen være solcellen selv. For denne målingen bruker vi kretsen vist i figur \vref{krets2}. Vi skal igjen variere reistansen i motstanden $R_L$ mens vi måler strømmen gjennom, og spenningen over, solcellen. Siden vi også her forventer et knekkpunkt i strøm-spenningkarakteristikken velger vi verdier av motstanden slik at vi får flest målinger rundt dette knekkpunktet. Vi ønsker også å gjøre målinger for å finne spenningen når motstanden $R_L$ går mot uendelig $V_{oc}$. For å gjøre motstanden uendelig stor kobler vi motstanden ut av kretsen, slik at det umulig kan gå strøm gjennom. Verdien for strømmen som går gjennom kretsen når motstanden $R_L$ er null, det vil si $I_{sc}$ strømmen gjennom en åpen krets, finner vi ved å gjøre målinger mens vi lar $R_L$ gå mot null, men aldri bli nøyaktig lik null. Årsaken til at vi ikke kan sette $R_L$ lik null er at da mister vi muligheten til å beregne strømmen $I_{sc}$ i kretsen. Motstanden $R_L$ må være stor nok til at vi kan måle spenningen $V_L$ med en rimelig nøyaktighet.
+\subsection{Solcellens optimale belastning}
+Den optimale belastningen på en solcelle vil gi mest mulig effekt fra en belyst solcelle. Effekten beregnes fra å bruke likning \eqref{effekt1}. Det må derfor gjøres målinger av spenningen over motstanden, og strømmen gjennom den. Siden det bare er en komponent i kretsen, utenom solcellen, vil alt spenningsfallet skje over denne komponenten. Dette gjør at vi kan få all informasjonen vi trenger fra å måle spenningsfallet over motstanden, og vite resistansen. Derfor trenger vi nå bare ett voltmeter i kretsen, kretsen som ble brukt er vist i figur \vref{krets3}. Målingene for å finne optimal belastning blir gjort for samme solcelle, men med to forskjellige belysninger. Den ene belysningen er at solcellen er rettet direkte mot lyskilden for å få mest mulig bestråling. Den andre belysningen er at vi roterer solcellen rundt $\SI{60}{\degree}$ slik at strømmen i kretsen, med en lav verdi for $R_L$, er halvert.
+\subsection{Kombinasjon av enkeltsolceller i et solcellepanel}
+For å få høyere spenning fra en solcelle kobler man flere i serie, ønsker man høyere strøm kobler man dem i parallell. For å gjøre målinger på denne effekten bruker vi nå to solceller som kobles i lik avstand til lyskilden. Det er to forskjellige kretser som blir brukt under målingene. En med sollcellene i parallell, og en med solcellene i serie, disse to er vist i figur \vref{krets4}.
+%\subsubsection*{Utstyrsliste}
+%\begin{itemize}
+%\label{utstyr}
+%\item meterstokk - Hultafors
+%\end{itemize}
+\begin{thebibliography}{9}
+\bibitem{squires}
+Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.
+\end{thebibliography}
+\end{document}

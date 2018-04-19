@@ -1,7 +1,7 @@
 %load('varmeledning_600s.mat')
 start_index = 1;
 new_t = t(start_index:end)%-t(start_index-1);
-new_T = T(start_index:end, :);
+new_T = T(start_index:end, :)-272.13;
 
 h = figure(1);
 M=['os*+d']; %Plottesymboler

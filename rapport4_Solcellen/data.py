@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_style("whitegrid")
 blue, = sns.color_palette("muted", 1)
-"""
+
 def uncertenty(matrix):
     N = len(matrix[:, 0])
     large = 1000 #mV
@@ -83,6 +83,8 @@ plt.scatter(V, I)
 plt.scatter(Voc, 0, s=120, facecolors='none', edgecolors='r', label="$V_{oc}$")
 plt.scatter(V_value[0], I_value[0], s=120, facecolors='none', edgecolors='k', label="$I_{sc}$")
 plt.plot(V, I, "b--")
+print(V_value[0], I_value[0], "I")
+print(Voc, 0, "V")
 ax.set_xlabel("Spenning [mV]", fontsize=14)
 ax.set_ylabel("Strøm    [mA]", fontsize=14)
 plt.legend(loc="best")
@@ -112,7 +114,7 @@ ax.set_ylabel("Effekt    [W]", fontsize=14)
 plt.legend(loc="best")
 plt.savefig("pic/effekt.pdf")
 plt.show()
-"""
+
 
 #POSITIV RETNING
 R = np.array([5, 10, 50, 100, 1000])
@@ -128,8 +130,8 @@ plt.rc('font', **font)
 ax = fig.add_subplot(111)
 fig.suptitle(r"Strøm-spenning karakteristikk med yte spenning på 5V", fontsize=17, fontweight='bold')
 
-plt.plot(V, I, "ro", label="positiv lederretning")
-plt.plot(V, I, "r--")
+plt.plot(V/1000, I/1000, "ro", label="positiv lederretning")
+plt.plot(V/1000, I/1000, "r--")
 
 #NEGATIV RETNIGN
 R = np.array([1, 3, 10, 30, 100, 300, 1000])
@@ -137,11 +139,10 @@ Vl = np.array([-153.29, -452.81, -1407.6, -4192.2, -5554.6, -5578.7, -5586.5])
 V = np.array([-4932.6, -4634.0, -3617.3, -887.65, 463.82, 486.0, 493.27])
 I = Vl/R
 
-plt.plot(V, I, "bo", label="negativ lederretning")
-plt.plot(V, I, "b--")
-
-ax.set_xlabel("Spenning [mV]", fontsize=14)
-ax.set_ylabel("Strøm    [mA]", fontsize=14)
+plt.plot(V/1000, I/1000, "bo", label="negativ lederretning")
+plt.plot(V/1000, I/1000, "b--")
+ax.set_xlabel("Spenning [V]", fontsize=14)
+ax.set_ylabel("Strøm    [A]", fontsize=14)
 plt.legend(loc="best")
-plt.savefig("pic/ytre_spenning.pdf")
+plt.savefig("latex/ytre_spenning.pdf")
 plt.show()

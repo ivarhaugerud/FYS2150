@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set_style("whitegrid")
+blue, = sns.color_palette("muted", 1)
 """
 def uncertenty(matrix):
     N = len(matrix[:, 0])
@@ -65,22 +68,80 @@ VL_value, VL_unc = uncertenty(VL)
 V_value, V_unc = uncertenty(V)
 I_value = VL_value/R
 Voc = 497.86 #mV
+V = np.zeros(len(VL_value)+1)
+I = np.zeros(len(VL_value)+1)
+V[:-1] = V_value
+V[-1] = Voc
+I[:-1] = I_value
 
-plt.plot(V_value, I_value, "bo")
-plt.plot(Voc, 0, "bo")
-plt.plot(V_value[0], I_value[0], "ro")
-plt.plot(V_value, I_value, "b")
+fig = plt.figure(figsize=(7.0, 7.2), dpi=100)
+font = {"size"  : 14}
+plt.rc('font', **font)
+ax = fig.add_subplot(111)
+fig.suptitle(r"Strøm-spenning-karakteristikk for solcelle uten ytre spenning", fontsize=17, fontweight='bold')
+plt.scatter(V, I)
+plt.scatter(Voc, 0, s=120, facecolors='none', edgecolors='r', label="$V_{oc}$")
+plt.scatter(V_value[0], I_value[0], s=120, facecolors='none', edgecolors='k', label="$I_{sc}$")
+plt.plot(V, I, "b--")
+ax.set_xlabel("Spenning [mV]", fontsize=14)
+ax.set_ylabel("Strøm    [mA]", fontsize=14)
+plt.legend(loc="best")
+plt.savefig("pic/strøm_spenning_karr.pdf")
 plt.show()
 
 #NOT TILTED
-I = VL_value[:-1]/R[:-1]
-P = -I*V_value[:-1]
-"""
+P = -I*V*1e-3
+R_new = np.zeros(len(P))
 
 #TILTED 60 degree
 [R_belast, V_belast] = np.loadtxt("solcelle_optimal_belastning_60_grader.txt")
 I_belast = V_belast/R_belast
-P_belast = V_belast*I_belast
-plt.plot(R_belast, P_belast, "ro")
-plt.plot(R_belast, P_belast, "r")
+P_belast = V_belast*I_belast*1e-3
+
+fig = plt.figure(figsize=(7.0, 7.2), dpi=100)
+font = {"size"  : 14}
+plt.rc('font', **font)
+ax = fig.add_subplot(111)
+fig.suptitle(r"Effektivitet solcelle", fontsize=17, fontweight='bold')
+plt.scatter(R_belast[:-1], P_belast[:-1], s=90)
+plt.plot(R_belast[:-1], P_belast[:-1], "b--", label="Effektivitet $60\degree$")
+plt.scatter(R[:-1], P[:-2], s=90)
+plt.plot(R[:-1], P[:-2], "r--", label="Effektivitet $0\degree$")
+ax.set_xlabel("Motstand [$\Omega$]", fontsize=14)
+ax.set_ylabel("Effekt    [W]", fontsize=14)
+plt.legend(loc="best")
+plt.savefig("pic/effekt.pdf")
+plt.show()
+"""
+
+#POSITIV RETNING
+R = np.array([5, 10, 50, 100, 1000])
+Vl = np.array([4.3929, 4.4790, 4.563, 4.5786, 4.5933])*1e3
+V = np.array([652.21, 590.99, 525.63, 512.69, 500.03])
+I = Vl/R
+
+
+
+fig = plt.figure(figsize=(7.0, 7.2), dpi=100)
+font = {"size"  : 14}
+plt.rc('font', **font)
+ax = fig.add_subplot(111)
+fig.suptitle(r"Strøm-spenning karakteristikk med yte spenning på 5V", fontsize=17, fontweight='bold')
+
+plt.plot(V, I, "ro", label="positiv lederretning")
+plt.plot(V, I, "r--")
+
+#NEGATIV RETNIGN
+R = np.array([1, 3, 10, 30, 100, 300, 1000])
+Vl = np.array([-153.29, -452.81, -1407.6, -4192.2, -5554.6, -5578.7, -5586.5])
+V = np.array([-4932.6, -4634.0, -3617.3, -887.65, 463.82, 486.0, 493.27])
+I = Vl/R
+
+plt.plot(V, I, "bo", label="negativ lederretning")
+plt.plot(V, I, "b--")
+
+ax.set_xlabel("Spenning [mV]", fontsize=14)
+ax.set_ylabel("Strøm    [mA]", fontsize=14)
+plt.legend(loc="best")
+plt.savefig("pic/ytre_spenning.pdf")
 plt.show()

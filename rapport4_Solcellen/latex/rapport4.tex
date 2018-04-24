@@ -137,7 +137,7 @@
 \date{\today}
 
 \begin{abstract}
-Hva er effektiviteten til en solcelle? La oss finne ut av det.
+Eksperimentet i denne rapporten ble gjennomført i håp om å forstå hvordan å maksimere effekten til solceller, og hva den maksimale effekten er. For å forstå dette har det blitt gjort målinger av solceller under kontrollert belysning. Solcellene har vært i krets alene, i serie og i parllell under varierte lysforhold. Målingen av strøm-spenningkarakteristikken til solcellen, i positiv og negativ lederretning, viser at solceller oppfører seg som en diode. Fra å analysere støm-spenningkarakteristikken og beregne på effektivitet viser det seg at den optimale resistansbelastningen til en solcelle avhenger av belysningen til solcellen. Dette blir analysert videre ved å koble solceller i serie og parallell. Å koble solceller i parallell øker spenningen, å koble solceller i serie øker strømmen i kretsen, effekten vil være tilnærmet den samme. Derimot hvis en kobler solceller i parallell og bare belyser en solcelle får man en faktor $3.79$ økning i maksimal effekten. Seriekoblede solceller gir en faktor $2.05$ mer effekt av at begge solcellene er belyst, for parallell koblede øker effekten med $1.94$ av å en solcelle belyst iforhold til to. Ved å bruke et solarimeter ble det målt at effekten til solcellen brukt i dette eksperimentet er på $7.35\%$.
 \end{abstract}
 
 \pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
@@ -231,40 +231,47 @@ For å finne effekten til solcellen kommer vi til å bruke et solarimeter. Oppse
 \end{figure}
 \section{Resultater}
 \subsection{Strøm-spenningskarkateristikk}
-For å finne strøm-spenning-spenningkarakteristikken til solcellen målte vi strømmen gjennom og spenningen over solcellen. Målingene gjort strømmen og spenningen til en belyst solcelle, med en ytre spenningskilde på $\SI{5}{\volt}$, er vist i figur \vref{resultat_ytre_spenning}. Målinger i både positiv og negativ strømretning er vist i figuren. Kretsen brukt for disse målingene er vist i figur \vref{krets1}.
+For å finne strøm-spenning-spenningkarakteristikken til solcellen målte vi strømmen gjennom og spenningen over solcellen. Det ble brukt en ytre spenning på $\SI{5}{\volt}$, som ble målt til å være på $\SI{5.08\pm0.01}{\volt}$. Målingene gjort strømmen og spenningen til en belyst solcelle, med en ytre spenningskilde på $\SI{5.08\pm0.01}{\volt}$, er vist i figur \vref{resultat_ytre_spenning}. I denne figuren er både målinger i positiv og negativ strømretning vist. Kretsen brukt for generere og måle verdiene er vist i figur \vref{krets1}.\\
 \begin{figure}
   \centering
-  \includegraphics[scale=0.4]{ytre_spenning.pdf}
+  \includegraphics[scale=0.47]{ytre_spenning.pdf}
   \caption{Strøm-spenningskarkateristikken for en belyst solcelle med en ytre spenning på $5$ volt. Kretsen brukt for å gjøre disse målingene er vist i figur \vref{krets1}.}
   \label{resultat_ytre_spenning}
 \end{figure}
-Deretter lot vi solcellene arbeide på egenhånd, og gjorde målinger på strøm-spenningskarkateristikken uten noen ytre spenningskilde. Målingene vi gjorde er vist i figur \vref{resultat_uten_spenning}. Målingene for spenningen i en åpen krets, $V_{oc}$, og strømmen i en kortsluttet krets, $I_{sc}$, er markert i grafen. Verdien målt for $V_{oc}$ var $\SI{497.86}{\milli\volt}$, og verdien for $I_{sc}$ var $\SI{-145.821}{\milli\ampere}$.
+Deretter lot vi solcellene arbeide på egenhånd ved å fjerne den ytre spenningskilden. Målinger av strøm-spenningskarkateristikken uten noen ytre spenningskilde er vist i figur \vref{resultat_uten_spenning}. Målingene for spenningen i en åpen krets, $V_{oc}$, og strømmen i en kortsluttet krets, $I_{sc}$, er markert i grafen. Verdien målt for $V_{oc}$ var $\SI{497.9\pm0.2}{\milli\volt}$, og verdien for $I_{sc}$ var $\SI{-145\pm3}{\milli\ampere}$.\\
 \begin{figure}
   \centering
-  \includegraphics[scale=0.4]{strom_spenning_karr.pdf}
+  \includegraphics[scale=0.47]{strom_spenning_karr.pdf}
   \caption{Strøm-spenningskarkateristikken for en belyst solcelle uten en ytre spenningskilde. Kretsen brukt for å gjøre disse målingene er vist i figur \vref{krets2}.}
   \label{resultat_uten_spenning}
 \end{figure}
-\subsection{Solcellens optimale belastning}
-For å finne den optimale belastningen til solcellen målte vi strømmen gjennom og spenningen over solcellen. Vi gjennbruker derfor målingene fra strøm-spenningskarkateristikken vist tidligere, itilegg til nye målinger av en redusert belyst solcelle. Resultatet fra målingene er vist i figur \vref{maling_optimal_belast}. Den redusert belyste solcellen i figuren er dreid omlag $60\degree$ vekk fra lyskilden, dette resultert i omtrent halvert strøm for en lav resistanse $\approx 0.5\Omega$.
+For å kunne sammenlikne de to strøm-spenningskarkateristikkene er et begrenset område av verdiene vist i figur \vref{fig_ekstra}. Målingene med en ytre spenningskilde er målt i både negativ og positiv strømretning.
 \begin{figure}
   \centering
-  \includegraphics[scale=0.4]{effekt.pdf}
-  \caption{Effekten til solcellen som en funksjon av motstanden i kretsen. Det røde datasettet er med en solcelle som er optimalt belyst, og det blå er for en solcelle som er rotert $60\degree$ vekk fra lyskilden.}
+  \includegraphics[scale=0.47]{ytre_spenning_sammen.pdf}
+  \caption{Strøm-spenningskarkateristikken for belyst solcelle med ytre spenningskilde (figur \vref{krets1}) og uten ytre spenningskilde (figur \vref{krets2}). Den ytre spenningskilden er på $\SI{5.08\pm0.01}{\volt}$.}
+  \label{fig_ekstra}
+\end{figure}
+\subsection{Solcellens optimale belastning}
+For å finne den optimale belastningen til solcellen ble strømmen gjennom og spenningen over solcellen målt. Derfor ble målingene fra strøm-spenningskarkateristikken, vist i figur \vref{resultat_uten_spenning}, gjennbrukt, itilegg til nye målinger av en redusert belyst solcelle. Resultatet fra målingene er vist i figur \vref{maling_optimal_belast}. Den redusert belyste solcellen i figuren er dreid omlag $60\degree$ vekk fra lyskilden, dette resultert i omtrent halvert strøm for en lav resistanse $\approx 0.5\Omega$.
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.47]{effekt.pdf}
+  \caption{Effekten til solcellen som en funksjon av motstanden i kretsen. Det blå datasettet er med en solcelle som er optimalt belyst, og det røde er for en solcelle som er rotert $60\degree$ vekk fra lyskilden. I figuren er de maksimale verdiene for hvert sett med måling markert og vist verdien til.}
   \label{maling_optimal_belast}
 \end{figure}
-Målingene viser at man får en større effekt fra solcellen om de er rettet mot lyskilden. Solcellen klarer å få en effekt på $\SI{43.615}{\watt}$ når motstandslasten er på $\SI{3}{\Omega}$. For solcellen som er vendt $60\degree$ vekk fra lyskilden gir en maksimal effekt på $\SI{21.33}{\watt}$ med en motstand på $\SI{6}{\Omega}$.
+Solcellen klarer å få en effekt på $\SI{43.6\pm0.1}{\watt}$ når motstandslasten er på $\SI{3.00\pm0.01}{\Omega}$. For solcellen som er vendt $60\degree$ vekk fra lyskilden gir en maksimal effekt på $\SI{21.33\pm0.08}{\watt}$ med en motstand på $\SI{6.00\pm0.01}{\Omega}$.
 \newpage
 \subsection{Kombinasjon av enkeltsolceller i et solcellepanel}
-Ved denne målingen ønsker vi å finne forholdet mellom maksimal effekt for solceller under forskjellige koblinger og lysforhold. Fra å måle strømmen i en sluttet krets, og spenningen i en åpen krets, kan man finne forholdet mellom effekten i kretsen ved å bruke likning \eqref{maxP}. Vi gjorde derfor målinger på de to verdiene med solcellene koblet i paralell, og serie, med begge belyst, og med en belyst. Resulatene fra disse målingene er vist i tabell \vref{effekt2}.
+Denne målingen ble gjennomført for å måle forholdet mellom maksimal effekt for solceller under forskjellige koblinger og lysforhold. Fra å måle strømmen i en sluttet krets, og spenningen i en åpen krets, kan en finne forholdet mellom effekten i kretsen ved å bruke likning \eqref{maxP}. Det ble gjennomført målinger av de to verdiene med solcellene koblet i paralell, og serie, med begge belyst, og med en belyst. Resulatene fra målingene er vist i tabell \vref{effekt2}.
 \begin{table}[h]
 \renewcommand\arraystretch{1.3}
 \begin{adjustwidth}{-0.3in}{0.1in}
 \begin{tabular}{|l | *{3}{>{\centering}p{2cm}|}c|}
-\hline Kobling & \multicolumn{2}{c|}{Serie} & \multicolumn{2}{c|}{Parallell} \\
+\hline Kobling & \multicolumn{2}{c|}{Parallell} & \multicolumn{2}{c|}{Serie} \\
 \hline Måling & $V_{oc}$[mV]    &   $I_{sc}$ [mA]  &   $V_{oc}$ [mV]  &  \,\,\,\,\,\,$I_{sc}$ [mA]\,\,\,\,\,\, \\
-\hline Begge belyst & -499.82    &   -293.20  &   -1000.87  &  -139.62\\
-\hline En belyst    & -461.53    &   -155.17  &   -634.704  &  -427.60\\ \hline
+\hline Begge belyst & 499.8(3)    &   -293(3)  &   1000.9(9)  &  -139(2)\\
+\hline En belyst    & 461.53(2)    &   -155(2)  &   634.7(3)  &  -0.428(5)\\ \hline
 \end{tabular}
 \end{adjustwidth}
 \caption{Målinger gjort av spenningen i en åpen krets, og strømmen i en kortsluttet krets. Fra disse verdiene kan vi beregne forholdet mellom effektiviteten til de forskjellige tilfellene.}
@@ -273,7 +280,8 @@ Ved denne målingen ønsker vi å finne forholdet mellom maksimal effekt for sol
 Fra å bruke likning \eqref{maxP} på dataen vist i tabell \vref{effekt2} kan en beregne fram til informasjon om de relative effektene for forskjellige koblinger og lysforhold. Når vi har begge solcellene belyst får vi rundt $5\%$ mer effekt fra å ha solcellene i serie iforhold til i parallell. Derimot hvis bare en av solcellene er belyst får vi en faktor $3.79$ mer effekt fra å ha solcellene i parallell iforhold til å ha solcellene i seriekobling. For solceller koblet i serier viser det seg at forholdet mellom én belyst og begge belyst er en faktor $2.05$ mer effekt fra at begge er belyst iforhold til bare en belyst. Det samme forholdet gjelder for solceller i parallell, men motsatt vei, for parallell kobling får man en faktor $1.94$ mer effekt fra å ha én solcellene belyst iforhold til begge.
 \subsection{Solcellens effektivitet}
 Ved å plasere et solarimeter ved samme avstand til lyskilden som solcellen kan man beregne effektiviteten til solcellen. Solarimeteret som ble brukt under eksperimentet hadde kalibreringskonstant $a=\SI{11.13}{\micro\volt\meter^2\per\watt}$. Ved å bruke et skyvelær for å måle de forskjellige geometriske størrelsene til solcellen fant vi at arealet til solcellen var $\SI{96.27}{\centi\meter^2}$. Gjennomsnittet av flere målinger til spenningen over solarimeteret viste seg å være $\SI{686.2}{\milli\volt}$. Med disse målingene kan man bruke likning \eqref{kalibrering} til å vise at den innstråle effekten er
-$\SI{593.54}{\watt}$. Denne verdien, sammen med den maksimale effekten som har blitt målt fra solcellen, som vist i figur \vref{maling_optimal_belast}, er $\SI{43.615}{\watt}$, kan vi beregne effekten til solcellen med likning \eqref{effekt}. Vi finner at effekten til solcellen er $7.35\%$.
+$\SI{593.54}{\watt}$. Denne verdien, sammen med den maksimale effekten som har blitt målt fra solcellen, som vist i figur \vref{maling_optimal_belast}, er $\SI{43.615}{\watt}$, kan vi beregne effekten til solcellen med likning \eqref{effekt}. Vi finner at effekten til solcellen er $7.35\%$.\\Samtidig som spenningen over solarimeteret ble målt, ble det også gjort målinger av $I_{sc}$ og $V_{oc}$ til solcelle-kretsen. Dette ble gjort for å kunne sammenlikne disse verdiene med de tidligere målt i eksperimentet. Det ble målt at
+$V_{oc}$ lå på $\SI{502.38}{\milli\volt}$, og $I_{sc}$ på $\SI{161.14}{\milli\ampere}$.
 \section{Diskusjon}
 \subsection{Strøm-spenningkarakteristikk}
 Målingen av strøm-spenningkarakteristikk ble gjort med og uten en ytre spenningskilde. Fra å se på målingene med en ytre spenningskilde, vist i figur \vref{resultat_ytre_spenning}, kan man se en viktig egenskap med solceller. Solceller leder strøm i en retning, men ikke i en annen. Solcellen oppfører seg som en diode. Når strømmen går i positiv lederretningen har vi et positivt spenningsfall over solcellen, og positiv strøm i kretsen. Forholdet mellom strømmen og spenningsfallet ser ut til å øke eksponesielt. Av å snu polariteten på spenningskilden fikk vi målinger av strøm-spenningkarakteristikk i negativ lederrtening. Disse målepunktene sier oss at strømmen i kretsen går fort mot en lav og konstant verdi, som er uavhengig av spenningen over solcellen, når strømmen beveger seg i sperreretning. Når motstanden er minst skjer all spenningsfallet over solcellen, for høyere motstander nærmer strømmen i kretsen seg $0$, men går aldri over på grunn av polariteten på spenningskilden.\par
@@ -282,9 +290,12 @@ Målingene gjort av strøm-spenningskarkateristikken uten en ytre spenningskilde
 Fra å se på grafen vist i figur \vref{maling_optimal_belast} er det to ting å merke seg. Den første, og den mest naturlige, er at solcellen som blir mer belyst gir en større effekt. Den andre er at hvilken lastmotstand som resulterer i maksimale effekten avhenger av bestrålingen. For den fullt belyste solcellen er resistansen som resulterer i størst effekt $\SI{3}{\Omega}$, for den redusert belyste er resistansen $\SI{6}{\Omega}$. Dette er et viktig faktum ved solceller. Ønsker du størst mulig effekt fra solcellen burde lasten i kretsen variere med belysningen av solcellen. Den maksimale effektforskjellen er omtrent en faktor to forskjellig mellom den fullt og redusert belyste solcellen.
 \subsection{Kombinasjon av enkeltsolceller i et solcellepanel}
 Fra målingen vist i tabell \vref{effekt2} er det lett å se at det å koble flere solceller i parallell øker spenningen i kretsen, og koble solceller i serie øker strømmen. Begge disse egenskapen vil dobbles iforhold til den den andre koblingen. Fra tabellen kan en også se effekten av å bestråle to solceller iforhold til en, og hvordan koblingsmåte påvirker dette. For seriekobling halveres strømmen, men spenningen er nesten uforandret, når det blir belyst en solcelle istedenfor to. For parallellkobling synker både strøm og spenning. Spenningen blir litt under halvert, og strømmen er en faktor tre svakere.\par
-Ved å bruke likning \eqref{maxP} kan en beregne forholdet mellom effekten for de forskjellige tilfellene. Det er da viktig å huske på at denne likningen er en tilnærming. Fill factor antas å være en karakteristikk ved solcellen som ikke er avhengig av ytre forhold. Dette gjør at den er tilnærmet konstant, og denne tilnærmingen skaper en usikkerhet i forholdet mellom effektene. En ville fått en mer nøyaktig verdi for effekten ved å måle strøm-spenningkarakteristikken for solcellene under alle forholdene. Dette ble ikke gjort under eksperimentet fordi det ville vært mer tidkrevene. Fra å se på forholdet mellom effektene for de ulike koblingene og lysforholdene kan en gjøre flere slutninger om hvordan en kan jeg gjøre solceller mest effektive. Når to solceller er i parallell, men den ene er ubelyst, får man nesten fire ganger så mye effekt fra å ha solcellene i parallell iforhold til å dem koblet i serie. Årsaken til dette er at solceller oppfører seg som en diode når de ubelyst. Derfor vil kretsen kortsluttes når kunn den ene solcellen er belyst. For en parallellkobling vil dette ikke føre til at kretsen blir kortsluttet, siden den belyste solcellens påvirkning i kretsen ikke vil bli påvirket av den andre solcellen.
+Ved å bruke likning \eqref{maxP} kan en beregne forholdet mellom effekten for de forskjellige tilfellene. Det er da viktig å huske på at denne likningen er en tilnærming. Fill factor antas å være en karakteristikk ved solcellen som ikke er avhengig av ytre forhold. Dette gjør at den er tilnærmet konstant, og denne tilnærmingen skaper en usikkerhet i forholdet mellom effektene. En ville fått en mer nøyaktig verdi for effekten ved å måle strøm-spenningkarakteristikken for solcellene under alle forholdene. Dette ble ikke gjort under eksperimentet fordi det ville vært mer tidkrevene. Fra å se på forholdet mellom effektene for de ulike koblingene og lysforholdene kan en gjøre flere slutninger om hvordan en kan jeg gjøre solceller mest effektive. Når to solceller er i parallell, men den ene er ubelyst, får man nesten fire ganger så mye effekt fra å ha solcellene i parallell iforhold til å dem koblet i serie. Årsaken til dette er at solceller oppfører seg som en diode når de ubelyst. Derfor vil kretsen kortsluttes når kunn den ene solcellen er belyst. For en parallellkobling vil dette ikke føre til at kretsen blir kortsluttet, siden den belyste solcellens påvirkning i kretsen ikke vil bli påvirket av den andre solcellen.\\
+Etter å ha gjort målingene med de to solcellene målte vi virkningen på spenningen over resistansen av å bytte posisjonen til de to solcellene. Av å gjøre dette målte vi en spenningsforskjell på $\SI{3}{\milli\volt}$. Denne forskjellen har derfor blitt tatt med i usikkerhetsberegningene for de relative effektene.
 \subsection{Solcellens effekt}
-Under beregning av arealet tok vi hensyn til formen på solcellen, som en ser i figur \vref{lab1}, men vi tok ikke hensyn til fingrene på tverrs av solcellen. Årsaken til dette er at 
+Under beregning av arealet tok vi hensyn til formen på solcellen, som en ser i figur \vref{lab1}, men vi tok ikke hensyn til fingrene på tverrs av solcellen. Dette kan ha påvirket den endelige effekten, men utslaget til effekten av solcellen av å inkludere dette ville vært minimalt.\\
+Målingen av den maksimale effekten, og målingen av solarimeteret ble gjennomført med over en time mellomrom. Iløpet av denne tiden er det mulig det har vært noen uønskede forandringer på eksperimentet som kan ha forårsaket systematiske feil, for eksempel forandring av belysning i rommet, forandring av solcellens avstand til lyskilden eller intensiteten til lyskilden. Solcellen forventet å ha en effektivitet på rundt $10\%$, og det kan ha vært systematiske feil som disse som forårsaket avviket.
+\section{Konklusjon}
 %\subsubsection*{Utstyrsliste}
 %\begin{itemize}
 %\label{utstyr}

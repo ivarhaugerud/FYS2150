@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  26 APR 2018 10:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  26 APR 2018 16:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3027,130 +3027,134 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Class revtex4-1 Warning: If you want your PACS to appear in your output, use do
 cument class option showpacs.
 
-
-Underfull \hbox (badness 1502) in paragraph at lines 164--165
-\OT1/cmr/m/n/10 for til ^^Wa tren-ge noen vik-ti-ge re-la-sjo-ner for den
- []
-
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-<krets1.png, id=142, 1245.65375pt x 914.41624pt>
+<krets1.png, id=149, 1245.65375pt x 914.41624pt>
 File: krets1.png Graphic file (type png)
 <use krets1.png>
-Package pdftex.def Info: krets1.png used on input line 196.
+Package pdftex.def Info: krets1.png used on input line 199.
 (pdftex.def)             Requested size: 186.84pt x 137.15651pt.
-<krets2.png, id=145, 1100.11pt x 604.2575pt>
+[3] <krets2.png, id=156, 1100.11pt x 604.2575pt>
 File: krets2.png Graphic file (type png)
 <use krets2.png>
-Package pdftex.def Info: krets2.png used on input line 204.
+Package pdftex.def Info: krets2.png used on input line 207.
 (pdftex.def)             Requested size: 187.01622pt x 102.72241pt.
-[3 <./krets1.png>] <krets3.png, id=154, 1528.71124pt x 1006.76125pt>
+<krets3.png, id=159, 1528.71124pt x 1006.76125pt>
 File: krets3.png Graphic file (type png)
 <use krets3.png>
-Package pdftex.def Info: krets3.png used on input line 212.
+Package pdftex.def Info: krets3.png used on input line 215.
 (pdftex.def)             Requested size: 152.88008pt x 100.68202pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<krets4.png, id=157, 1243.64626pt x 1025.8325pt>
+<krets4.png, id=162, 1243.64626pt x 1025.8325pt>
 File: krets4.png Graphic file (type png)
 <use krets4.png>
-Package pdftex.def Info: krets4.png used on input line 220.
+Package pdftex.def Info: krets4.png used on input line 223.
 (pdftex.def)             Requested size: 198.98746pt x 164.13655pt.
-<lab1.jpg, id=162, 3238.0975pt x 2182.1525pt>
+[4 <./krets1.png> <./krets2.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 228.
+
+<lab1.jpg, id=177, 3238.0975pt x 2182.1525pt>
 File: lab1.jpg Graphic file (type jpg)
 <use lab1.jpg>
-Package pdftex.def Info: lab1.jpg used on input line 229.
+Package pdftex.def Info: lab1.jpg used on input line 232.
 (pdftex.def)             Requested size: 210.48372pt x 141.8449pt.
-[4 <./krets2.png> <./krets3.png> <./krets4.png>] <ytre_spenning.pdf, id=176, 50
-5.89pt x 520.34402pt>
+
+! Package varioref Error: \vref at page boundary 5-6 (may loop).
+
+See the varioref package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...le verdiene er vist i figur \vref{krets1}
+                                                  . \\
+Please check the pages in question. You might need to replace the \vref
+or \vpageref by a normal \(page)ref to stop LaTeX running forever.
+
+<ytre_spenning.pdf, id=180, 505.89pt x 520.34402pt>
 File: ytre_spenning.pdf Graphic file (type pdf)
 <use ytre_spenning.pdf>
-Package pdftex.def Info: ytre_spenning.pdf used on input line 238.
+Package pdftex.def Info: ytre_spenning.pdf used on input line 241.
 (pdftex.def)             Requested size: 237.76833pt x 244.56172pt.
 
-Overfull \hbox (4.66339pt too wide) in paragraph at lines 238--239
+Overfull \hbox (4.66339pt too wide) in paragraph at lines 241--242
  [][] 
  []
 
-<strom_spenning_karr.pdf, id=180, 505.89pt x 520.34402pt>
+<strom_spenning_karr.pdf, id=184, 505.89pt x 520.34402pt>
 File: strom_spenning_karr.pdf Graphic file (type pdf)
 <use strom_spenning_karr.pdf>
-Package pdftex.def Info: strom_spenning_karr.pdf used on input line 245.
+Package pdftex.def Info: strom_spenning_karr.pdf used on input line 248.
 (pdftex.def)             Requested size: 237.76833pt x 244.56172pt.
 
-Overfull \hbox (4.66339pt too wide) in paragraph at lines 245--246
+Overfull \hbox (4.66339pt too wide) in paragraph at lines 248--249
  [][] 
  []
 
-<ytre_spenning_sammen.pdf, id=184, 505.89pt x 520.34402pt>
+<ytre_spenning_sammen.pdf, id=188, 505.89pt x 520.34402pt>
 File: ytre_spenning_sammen.pdf Graphic file (type pdf)
 <use ytre_spenning_sammen.pdf>
-Package pdftex.def Info: ytre_spenning_sammen.pdf used on input line 252.
+Package pdftex.def Info: ytre_spenning_sammen.pdf used on input line 255.
 (pdftex.def)             Requested size: 237.76833pt x 244.56172pt.
 
-Overfull \hbox (4.66339pt too wide) in paragraph at lines 252--253
+Overfull \hbox (4.66339pt too wide) in paragraph at lines 255--256
  [][] 
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 235--256
+Underfull \hbox (badness 1565) in paragraph at lines 238--259
  \OT1/cmr/m/n/10 Der-et-ter lot vi sol-cel-le-ne ar-bei-de p^^Wa egenh^^Wand
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 235--256
-\OT1/cmr/m/n/10 stam-mer fra spred-nin-gen over fle-re m^^Walinger, og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--256
+Underfull \hbox (badness 10000) in paragraph at lines 238--259
  \OT1/cmr/m/n/10 For ^^Wa kun-ne sam-men-lik-ne de to str^^\m-
  []
 
-<effekt.pdf, id=191, 505.89pt x 520.34402pt>
+[5 <./krets3.png> <./krets4.png> <./lab1.jpg>] <effekt.pdf, id=205, 505.89pt x 
+520.34402pt>
 File: effekt.pdf Graphic file (type pdf)
 <use effekt.pdf>
-Package pdftex.def Info: effekt.pdf used on input line 260.
+Package pdftex.def Info: effekt.pdf used on input line 263.
 (pdftex.def)             Requested size: 237.76833pt x 244.56172pt.
 
-Overfull \hbox (4.66339pt too wide) in paragraph at lines 260--261
+Overfull \hbox (4.66339pt too wide) in paragraph at lines 263--264
  [][] 
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 257--265
+Underfull \hbox (badness 2735) in paragraph at lines 260--268
 \OT1/cmr/m/n/10 len ble str^^\mmen gjen-nom og spen-nin-gen over
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 257--265
+Underfull \hbox (badness 2460) in paragraph at lines 260--268
 \OT1/cmr/m/n/10 sol-cel-len m^^Walt. Der-for ble m^^Walingene fra str^^\m-
  []
 
-[5 <./lab1.jpg> <./ytre_spenning.pdf>]
+[6 <./ytre_spenning.pdf> <./strom_spenning_karr.pdf
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 265.
-
-
-Overfull \hbox (49.65431pt too wide) in paragraph at lines 270--276
- []$[]$  
- []
-
-[6 <./strom_spenning_karr.pdf> <./ytre_spenning_sammen.pdf
+pdfTeX warning: pdflatex (file ./strom_spenning_karr.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./ytre_spenning_sammen.pdf
 
 pdfTeX warning: pdflatex (file ./ytre_spenning_sammen.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
-> <./effekt.pdf
-
-pdfTeX warning: pdflatex (file ./effekt.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
 >]
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 282.
+Overfull \hbox (49.65431pt too wide) in paragraph at lines 273--279
+ []$[]$  
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 285.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -3167,7 +3171,7 @@ File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ! For immediate help type H <return>.
 !...............................................  
                                                   
-l.283 $\SI{593\pm(2)}{\milli\watt}
+l.286 $\SI{593\pm(2)}{\milli\watt}
                                   $. Denne verdien, sammen med den maksimale...
 
 |'''''''''''''''''''''''''''''''''''''''''''''''
@@ -3187,38 +3191,38 @@ l.283 $\SI{593\pm(2)}{\milli\watt}
 ! For immediate help type H <return>.
 !...............................................  
                                                   
-l.283 $\SI{593\pm(2)}{\milli\watt}
+l.286 $\SI{593\pm(2)}{\milli\watt}
                                   $. Denne verdien, sammen med den maksimale...
 
 |'''''''''''''''''''''''''''''''''''''''''''''''
 | Sign tokens can only come at the beginning of a number.
 |...............................................
 
-[7] [8]
+[7 <./effekt.pdf>] [8] [9]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 310.
+(hyperref)                than one, level fixed on input line 313.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 313.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 316.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 313.
-(./rapport4.bbl) [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 316.
+(./rapport4.bbl) [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
 (./rapport4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
 Package rerunfilecheck Info: File `rapport4.out' has not changed.
 (rerunfilecheck)             Checksum: 71BCD5C4564FBFAE204BB696D715D6DB;1800.
  ) 
 Here is how much of TeX's memory you used:
- 23179 strings out of 492995
- 405787 string characters out of 6132705
- 520903 words of memory out of 5000000
- 26387 multiletter control sequences out of 15000+600000
+ 23192 strings out of 492995
+ 405916 string characters out of 6132705
+ 512986 words of memory out of 5000000
+ 26397 multiletter control sequences out of 15000+600000
  18423 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,50p,10382b,1095s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3237,12 +3241,13 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on rapport4.pdf (9 pages, 1542165 bytes).
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on rapport4.pdf (10 pages, 1555560 bytes).
 PDF statistics:
- 602 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 621 PDF objects out of 1000 (max. 8388607)
+ 339 compressed objects within 4 object streams
+ 57 named destinations out of 1000 (max. 500000)
  254 words of extra memory for PDF output out of 10000 (max. 10000000)
 

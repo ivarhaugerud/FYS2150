@@ -125,7 +125,6 @@ V_belast_unc = np.zeros(len(V_belast))
 V_belast_unc[:-1] = V2_unc
 V_belast_unc[-1] = V2_unc[-1]
 R_belast_unc = uncertenty_resistance(R_belast)
-print(np.mean(V_belast_unc), np.mean(V2_unc), "mean uncertenty voltage")
 I_belast = V_belast/R_belast
 I_belast_unc = I_belast*np.sqrt((V_belast_unc/V_belast)**2 + (R_belast_unc/R_belast)**2)
 
@@ -142,7 +141,8 @@ plt.errorbar(R_belast[:-1], P_belast[:-1]*1e-3, xerr=R_belast_unc[:-1]*2, yerr=P
 plt.plot(R_belast[:-1], P_belast[:-1]*1e-3, "r--", linewidth=0.75)
 plt.scatter(R[6], P[6]*1e-3, s=120, facecolors='none', edgecolors='b', label=r"max $P_{0\degree}=43.6(1)$mW")
 plt.scatter(R_belast[6], P_belast[6]*1e-3, s=120, facecolors='none', edgecolors='r', label=r"max $P_{60\degree}=21.33(8)$mW")
-print(P_belast_unc[6])
+
+print(P_belast[6], R_belast[6], I_belast[6], I_belast_unc[6], "here")
 plt.errorbar(R[:-1], P[:-1]*1e-3, xerr=R_unc[:-1]*2, yerr=P_unc[:-1]*1e-3*2, fmt='bo', markersize='2', label="rotert $0\degree$")
 plt.plot(R[:-1], P[:-1]*1e-3, "b--", linewidth=0.75)
 ax.set_xlabel("Motstand [$\Omega$]", fontsize=14)

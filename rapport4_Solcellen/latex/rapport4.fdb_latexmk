@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex rapport4"] 1524775285 "rapport4.aux" "rapport4.bbl" "rapport4" 1524775285
+["bibtex rapport4"] 1524775750 "rapport4.aux" "rapport4.bbl" "rapport4" 1524775750
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/revtex/apsrev4-1.bst" 1480098436 71518 fec93f06df0c073f83d2330456bd19c2 ""
-  "rapport4.aux" 1524773591 15087 cb4c56bab594a8d329e855a8f91a8c1d ""
-  "rapport4Notes.bib" 1524773591 103 48ad29797468f16e2853d8797278d7af ""
+  "rapport4.aux" 1524775288 15087 42b9f501e250e31002f53fe553a100a0 ""
+  "rapport4Notes.bib" 1524775288 103 48ad29797468f16e2853d8797278d7af ""
   (generated)
   "rapport4.blg"
   "rapport4.bbl"
-["pdflatex"] 1524775286 "rapport4.tex" "rapport4.pdf" "rapport4" 1524775286
+["pdflatex"] 1524775750 "rapport4.tex" "rapport4.pdf" "rapport4" 1524775750
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1480098666 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1480098696 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -175,16 +175,16 @@
   "krets3.png" 1524209357 59286 ef6e13185a182cda2f170e4829c17edf ""
   "krets4.png" 1524209846 61865 79048a534e3b96d755f8d17a833239bc ""
   "lab1.jpg" 1524212504 1116320 f70a85cdf990b7d00bebbed6debec79b ""
-  "rapport4.aux" 1524773591 15087 cb4c56bab594a8d329e855a8f91a8c1d ""
-  "rapport4.bbl" 1524775286 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport4"
-  "rapport4.out" 1524773591 1813 0309c30ef1943299cdaab13eb8d1744a ""
-  "rapport4.tex" 1524775280 53395 ad827dbda1aba6b4e68450b774e92a24 ""
+  "rapport4.aux" 1524775288 15087 42b9f501e250e31002f53fe553a100a0 ""
+  "rapport4.bbl" 1524775750 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport4"
+  "rapport4.out" 1524775288 1813 0309c30ef1943299cdaab13eb8d1744a ""
+  "rapport4.tex" 1524775743 53587 e1fb6231c89732e54036fdfd3538ab34 ""
   "strom_spenning_karr_test.pdf" 1524773432 35079 fe4cf46aeff3583aab593879f2495278 ""
   "ytre_spenning.pdf" 1524593493 24329 583ee5f7f9050de4ec4654989f8527c7 ""
   "ytre_spenning_sammen.pdf" 1524593105 22557 ff6eb408354ec0779a87c151e3e9abd3 ""
   (generated)
-  "rapport4Notes.bib"
-  "rapport4.aux"
-  "rapport4.pdf"
   "rapport4.log"
+  "rapport4.pdf"
+  "rapport4.aux"
   "rapport4.out"
+  "rapport4Notes.bib"

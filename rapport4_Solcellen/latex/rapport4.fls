@@ -271,9 +271,9 @@ INPUT ./lab1.jpg
 INPUT ytre_spenning.pdf
 INPUT ./ytre_spenning.pdf
 INPUT ./ytre_spenning.pdf
-INPUT strom_spenning_karr.pdf
-INPUT ./strom_spenning_karr.pdf
-INPUT ./strom_spenning_karr.pdf
+INPUT strom_spenning_karr_test.pdf
+INPUT ./strom_spenning_karr_test.pdf
+INPUT ./strom_spenning_karr_test.pdf
 INPUT ytre_spenning_sammen.pdf
 INPUT ./ytre_spenning_sammen.pdf
 INPUT ./ytre_spenning_sammen.pdf

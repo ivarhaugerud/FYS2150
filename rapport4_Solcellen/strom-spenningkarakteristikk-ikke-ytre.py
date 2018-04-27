@@ -90,7 +90,7 @@ V2 = V2/1000
 I2 = I2/1000
 I2_unc = I2_unc/1000
 V2_unc = V2_unc/1000
-"""
+
 fig = plt.figure(figsize=(7.0, 7.2), dpi=100)
 font = {"size"  : 14}
 plt.rc('font', **font)
@@ -106,9 +106,9 @@ ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 ax.set_ylabel("Strøm    [A]", fontsize=14)
 plt.legend(loc='center left')
-plt.savefig("latex/strom_spenning_karr.pdf")
+#plt.savefig("latex/strom_spenning_karr.pdf")
 plt.show()
-"""
+
 #NOT TILTED
 
 I2 = I2*1000
@@ -171,10 +171,11 @@ plt.scatter(-V_belast[6],  I_belast[6], s=140, facecolors='none', edgecolors='b'
 
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
+print(V_belast[0], V_belast_unc[0], I_belast_unc[0], I_belast[0], "HERE")
 ax.set_ylabel("Strøm    [mA]", fontsize=14)
 #plt.legend(loc='upper left')
 #plt.legend(loc="best")
 plt.legend(bbox_to_anchor=(0.0, 0.5, 0.5, 0.5)) #), loc=3,
 #           ncol=2, mode="expand", borderaxespad=0.)
-plt.savefig("latex/strom_spenning_karr_test.pdf")
+#plt.savefig("latex/strom_spenning_karr_test.pdf")
 plt.show()

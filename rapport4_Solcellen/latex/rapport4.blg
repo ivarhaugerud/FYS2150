@@ -14,7 +14,6 @@ Warning--I didn't find a database entry for "snl"
 Warning--I didn't find a database entry for "oppgave"
 Warning--I didn't find a database entry for "snl2"
 Warning--I didn't find a database entry for "energy_alt"
-Warning--I didn't find a database entry for "ohm"
 Warning--I didn't find a database entry for "squires"
 Warning--I didn't find a database entry for "torbj"
 Warning--I didn't find a database entry for "wiki2"
@@ -32,7 +31,7 @@ Control: year (1) truncated
 Control: production of eprint (0) enabled
 You've used 2 entries,
             5847 wiz_defined-function locations,
-            1609 strings with 14704 characters,
+            1608 strings with 14701 characters,
 and the built_in function-call counts, 955 in all, are:
 = -- 12
 > -- 13
@@ -71,4 +70,4 @@ warning$ -- 1
 while$ -- 9
 width$ -- 0
 write$ -- 52
-(There were 9 warnings)
+(There were 8 warnings)

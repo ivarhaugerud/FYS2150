@@ -37,7 +37,7 @@ plt.rc('font', **font)
 ax = fig.add_subplot(111)
 fig.suptitle(r"Strøm-spenning karakteristikk med yte spenning på 5V", fontsize=17, fontweight='bold')
 
-plt.errorbar(Vp/1000, Ip/1000, yerr=Vp_unc/1000, xerr=Ip_unc/1000, fmt='bo', markersize='2', label="målepunkter")
+plt.errorbar(Vp/1000, Ip/1000, yerr=Vp_unc/1000, xerr=Ip_unc/1000, fmt='bo', markersize='2', label="positive lederretning")
 plt.plot(Vp/1000, Ip/1000, "b--", linewidth=0.75)
 
 #NEGATIV RETNIGN

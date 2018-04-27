@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex rapport4"] 1524814578 "rapport4.aux" "rapport4.bbl" "rapport4" 1524814862
+["bibtex rapport4"] 1524817236 "rapport4.aux" "rapport4.bbl" "rapport4" 1524817584
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/revtex/apsrev4-1.bst" 1480098436 71518 fec93f06df0c073f83d2330456bd19c2 ""
-  "rapport4.aux" 1524814580 15257 6b51b8f7d02a3a90152a6520a8c533f8 ""
-  "rapport4Notes.bib" 1524814580 103 48ad29797468f16e2853d8797278d7af ""
+  "rapport4.aux" 1524817239 15342 d6c6334c0622efecb7b289992396828b ""
+  "rapport4Notes.bib" 1524817239 103 48ad29797468f16e2853d8797278d7af ""
   (generated)
-  "rapport4.bbl"
   "rapport4.blg"
-["pdflatex"] 1524814862 "rapport4.tex" "rapport4.pdf" "rapport4" 1524814862
+  "rapport4.bbl"
+["pdflatex"] 1524817584 "rapport4.tex" "rapport4.pdf" "rapport4" 1524817584
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1480098666 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1480098696 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -170,22 +170,22 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1504893732 4129591 b1a7ed87e25bd8fdaf5080304d300aaa ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "effekt.pdf" 1524773431 29523 fb6ecf27315aa3ee365ab51c1b605f89 ""
+  "effekt.pdf" 1524816075 29523 4246a5f85072331a0cc5424467d0cd53 ""
   "krets1.png" 1524208168 55283 41d65286d13ecf2314b9c41230f36647 ""
   "krets2.png" 1524208706 30615 eb9c8bed0c1836a165ed15fc3ce920f3 ""
   "krets3.png" 1524209357 59286 ef6e13185a182cda2f170e4829c17edf ""
   "krets4.png" 1524209846 61865 79048a534e3b96d755f8d17a833239bc ""
   "lab1.jpg" 1524212504 1116320 f70a85cdf990b7d00bebbed6debec79b ""
-  "rapport4.aux" 1524814580 15257 6b51b8f7d02a3a90152a6520a8c533f8 ""
-  "rapport4.bbl" 1524814578 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport4"
-  "rapport4.out" 1524814580 1813 0309c30ef1943299cdaab13eb8d1744a ""
-  "rapport4.tex" 1524814861 54054 c4ae7055deba1cc49332e9a1f95f8de8 ""
-  "strom_spenning_karr_test.pdf" 1524773432 35079 fe4cf46aeff3583aab593879f2495278 ""
+  "rapport4.aux" 1524817239 15342 d6c6334c0622efecb7b289992396828b ""
+  "rapport4.bbl" 1524817236 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport4"
+  "rapport4.out" 1524817239 1813 0309c30ef1943299cdaab13eb8d1744a ""
+  "rapport4.tex" 1524817569 54166 96410b4127ba9b90c939013fd7820a82 ""
+  "strom_spenning_karr_test.pdf" 1524816438 35098 0549c7405a355b2e0a9cf18260810a5a ""
   "ytre_spenning.pdf" 1524593493 24329 583ee5f7f9050de4ec4654989f8527c7 ""
   "ytre_spenning_sammen.pdf" 1524593105 22557 ff6eb408354ec0779a87c151e3e9abd3 ""
   (generated)
   "rapport4.log"
   "rapport4.pdf"
-  "rapport4Notes.bib"
-  "rapport4.out"
   "rapport4.aux"
+  "rapport4.out"
+  "rapport4Notes.bib"

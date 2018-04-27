@@ -90,7 +90,7 @@ V2 = V2/1000
 I2 = I2/1000
 I2_unc = I2_unc/1000
 V2_unc = V2_unc/1000
-
+"""
 fig = plt.figure(figsize=(7.0, 7.2), dpi=100)
 font = {"size"  : 14}
 plt.rc('font', **font)
@@ -108,7 +108,7 @@ ax.set_ylabel("Strøm    [A]", fontsize=14)
 plt.legend(loc='center left')
 plt.savefig("latex/strom_spenning_karr.pdf")
 plt.show()
-
+"""
 #NOT TILTED
 
 I2 = I2*1000
@@ -131,7 +131,7 @@ I_belast_unc = I_belast*np.sqrt((V_belast_unc/V_belast)**2 + (R_belast_unc/R_bel
 
 P_belast = V_belast*I_belast
 P_belast_unc = P_belast*np.sqrt((V_belast_unc/V_belast)**2 + (I_belast_unc/I_belast)**2)*5
-
+"""
 fig = plt.figure(figsize=(7.0, 7.2), dpi=100)
 font = {"size"  : 14}
 plt.rc('font', **font)
@@ -152,26 +152,29 @@ plt.axis([0.1, 10.5, 0.1, 45])
 plt.savefig("latex/effekt.pdf")
 plt.show()
 
-
+"""
 fig = plt.figure(figsize=(7.0, 7.2), dpi=100)
 font = {"size"  : 14}
 plt.rc('font', **font)
 ax = fig.add_subplot(111)
 fig.suptitle(r"Strøm-spenning-karakteristikk for solcelle uten ytre spenning", fontsize=17, fontweight='bold')
-plt.errorbar(V2, I2, yerr=I2_unc, xerr=V2_unc, fmt='o', markersize='2', label=r"rotert - $0\degree$")
-plt.plot(V2[:-1], I2[:-1], "--", linewidth=0.75)
-plt.scatter(V2[-1], I2[-1], s=120, facecolors='none', edgecolors='r', label="$V_{oc}=497.9(2)$mV")
-plt.scatter(V2[0],  I2[0], s=120, facecolors='none', edgecolors='k', label="$I_{sc}=-145(3)$mA")
-plt.scatter(V2[6],  I2[6], s=120, facecolors='none', edgecolors='g', label=r"$(V_{max}, I_{max}) - 0 \degree$")
+plt.errorbar(V2, I2, yerr=I2_unc, xerr=V2_unc, fmt='o', markersize='2.5', label=r"rotert - $0\degree$")
+plt.plot(V2[:-1], I2[:-1], "--", linewidth=0.9)
+plt.scatter(V2[-1], I2[-1], s=140, facecolors='none', edgecolors='r', label="$V_{oc}=497.9(2)$mV")
+plt.scatter(V2[0],  I2[0], s=140, facecolors='none', edgecolors='k', label="$I_{sc}=-145(3)$mA")
+plt.scatter(V2[6],  I2[6], s=140, facecolors='none', edgecolors='g', label=r"$(V_{max}, I_{max}) - 0 \degree$")
 ax.set_xlabel("Spenning [mV]", fontsize=14)
 
-plt.errorbar(-V_belast[1:], I_belast[1:], xerr=V_belast_unc[1:], yerr=I_belast_unc[1:]*2, fmt='ro', markersize='2', label=r"rotert - $60\degree$")
-plt.plot(-V_belast[1:], I_belast[1:], "--", linewidth=0.75)
-plt.scatter(-V_belast[6],  I_belast[6], s=120, facecolors='none', edgecolors='b', label=r"$(V_{max}, I_{max}) - 60\degree$")
+plt.errorbar(-V_belast[1:], I_belast[1:], xerr=V_belast_unc[1:], yerr=I_belast_unc[1:]*2, fmt='ro', markersize='2.5', label=r"rotert - $60\degree$")
+plt.plot(-V_belast[1:], I_belast[1:], "--", linewidth=0.9)
+plt.scatter(-V_belast[6],  I_belast[6], s=140, facecolors='none', edgecolors='b', label=r"$(V_{max}, I_{max}) - 60\degree$")
 
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 ax.set_ylabel("Strøm    [mA]", fontsize=14)
-plt.legend(loc='upper left')
+#plt.legend(loc='upper left')
+#plt.legend(loc="best")
+plt.legend(bbox_to_anchor=(0.0, 0.5, 0.5, 0.5)) #), loc=3,
+#           ncol=2, mode="expand", borderaxespad=0.)
 plt.savefig("latex/strom_spenning_karr_test.pdf")
 plt.show()

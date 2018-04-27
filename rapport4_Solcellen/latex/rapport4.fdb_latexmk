@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex rapport4"] 1524775750 "rapport4.aux" "rapport4.bbl" "rapport4" 1524775750
+["bibtex rapport4"] 1524814578 "rapport4.aux" "rapport4.bbl" "rapport4" 1524814862
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/revtex/apsrev4-1.bst" 1480098436 71518 fec93f06df0c073f83d2330456bd19c2 ""
-  "rapport4.aux" 1524775288 15087 42b9f501e250e31002f53fe553a100a0 ""
-  "rapport4Notes.bib" 1524775288 103 48ad29797468f16e2853d8797278d7af ""
+  "rapport4.aux" 1524814580 15257 6b51b8f7d02a3a90152a6520a8c533f8 ""
+  "rapport4Notes.bib" 1524814580 103 48ad29797468f16e2853d8797278d7af ""
   (generated)
-  "rapport4.blg"
   "rapport4.bbl"
-["pdflatex"] 1524775750 "rapport4.tex" "rapport4.pdf" "rapport4" 1524775750
+  "rapport4.blg"
+["pdflatex"] 1524814862 "rapport4.tex" "rapport4.pdf" "rapport4" 1524814862
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1480098666 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1480098696 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -54,6 +54,7 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1480098701 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm" 1480098701 764 c98a2af25c99b73a368cf7336e255190 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1480098711 520 4889cce2180234b97cad636b6039c722 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1480098733 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1480098733 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1480098733 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1480098733 32001 6aeea3afe875097b1eb0da29acd61e28 ""
@@ -175,16 +176,16 @@
   "krets3.png" 1524209357 59286 ef6e13185a182cda2f170e4829c17edf ""
   "krets4.png" 1524209846 61865 79048a534e3b96d755f8d17a833239bc ""
   "lab1.jpg" 1524212504 1116320 f70a85cdf990b7d00bebbed6debec79b ""
-  "rapport4.aux" 1524775288 15087 42b9f501e250e31002f53fe553a100a0 ""
-  "rapport4.bbl" 1524775750 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport4"
-  "rapport4.out" 1524775288 1813 0309c30ef1943299cdaab13eb8d1744a ""
-  "rapport4.tex" 1524775743 53587 e1fb6231c89732e54036fdfd3538ab34 ""
+  "rapport4.aux" 1524814580 15257 6b51b8f7d02a3a90152a6520a8c533f8 ""
+  "rapport4.bbl" 1524814578 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport4"
+  "rapport4.out" 1524814580 1813 0309c30ef1943299cdaab13eb8d1744a ""
+  "rapport4.tex" 1524814861 54054 c4ae7055deba1cc49332e9a1f95f8de8 ""
   "strom_spenning_karr_test.pdf" 1524773432 35079 fe4cf46aeff3583aab593879f2495278 ""
   "ytre_spenning.pdf" 1524593493 24329 583ee5f7f9050de4ec4654989f8527c7 ""
   "ytre_spenning_sammen.pdf" 1524593105 22557 ff6eb408354ec0779a87c151e3e9abd3 ""
   (generated)
   "rapport4.log"
   "rapport4.pdf"
-  "rapport4.aux"
-  "rapport4.out"
   "rapport4Notes.bib"
+  "rapport4.out"
+  "rapport4.aux"

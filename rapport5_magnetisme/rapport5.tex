@@ -1,0 +1,156 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose,
+%preprint,
+%showpacs,preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-1}
+
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\usepackage{varioref}
+\usepackage{graphicx}% Include figure files
+\usepackage{enumitem}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage[margin=0.9in]{geometry}
+\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{relsize}
+%\usepackage{booktabs}
+\usepackage{graphicx,verbatim,amsfonts,geometry}
+\usepackage{amsmath}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+\usepackage{ulem}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{soul}
+\usepackage{dsfont}
+% allows for temporary adjustment of side margins
+\usepackage{chngpage}
+% just makes the table prettier (see \toprule, \bottomrule, etc. commands below)
+\usepackage{booktabs}
+
+\usepackage{commath}
+\usepackage{wrapfig}
+\usepackage[free-standing-units=true]{siunitx}
+\DeclareSIUnit\year{yr}
+\usepackage{gensymb}
+\newcommand{\ROM}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+\usepackage{physics}
+\usepackage{caption}
+\usepackage{bm}
+\usepackage{gensymb}
+%\usepackage[showframe,%Uncomment any one of the following lines to test
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+%\preprint{APS/123-QED}
+
+\title{Magnetisme}% Force line breaks with \\
+
+\author{Ivar Svalheim Haugerud}
+
+\affiliation{%
+ Universitetet i Oslo\\
+}%
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+Abstract. Magnetisme er kult, Skår er tøff.
+\end{abstract}
+
+\pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
+                             % Classification Scheme.
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Introduksjon}
+\section{\label{sec:level2}Teori}
+Hele den klassiske elektromagnetisme kan beskrives ved hjelp av fire partsielle differensiallikninger. Disse likningene beskriver elektriske $\bm{E}$ og magnetiske $\bm{B}$ felt, og forklarer Lorentz kraften, klassisk optikk og elektriske kretser. Likningene kan skrives på flere måter, og på flere former. I denne rapporten velger vi å bruke følgende:
+\begin{align}
+  \nabla \cdot \bm{E} &= \frac{\rho}{\epsilon_0} \\
+  \nabla \cdot \bm{B} &= 0 \\
+  \nabla \cross \bm{E} &= -\pdv{\bm{B}}{t} \\
+  \nabla \cross \bm{B} &= \mu_0\left(\bm{J} + \epsilon_0\pdv{\bm{E}}{t}\right)
+\end{align}
+I likningene er $\rho$ den elektriske tettheten, og $\epsilon$ er permittiviteten, som beskriver motstanden et medie har mot et påtrykt elektrisk felt. I disse likningene brukes $\epsilon_0$, som er en naturkonstant, som angir permittiviteten i vakum. $\mu$ er et mål på matrialers evne til å magnetiseres av et ytre påtrykket magnetfelt. I disse likningene brukes vakuumpermeabiliteten $\mu_0$ som er en naturkonstant, som angir permeabiliteten i vakum. Permeabitilteten i et materialet kan skrives som produktet av vakuumpermeabiliteten, og den relative permeabiliteten $\mu_r$. Fra dette kan en få den dimensjonsløse egenskapen magnetiske susceptibiliteten $\chi = \mu_r - 1$. Den magnetiske susceptibiliteten forteller oss om materialet er tiltrukket, eller frastøtet, av materialet. Den magnetiske susceptibiliteten beskrives hva slags magnetisk materialet vi ser på. Superledere er perfekte diamagneter, de setter opp et magnetfelt som eksakt kanselerer et påtrykt magnetfelt, $\chi=-1$. $\bm{J}$ beskriver strømtetthet, det vil si elektrisk strøm $I$ gjennom et flateareal $A$. \\
+Maxwell's likninger kobler sammen elektriske og magnetiske felt. Magnetiske felt stammer fra ladde partikkler i bevegelse. Elektronet har også en egenspinn, som gjør at eleketronet kan sees på som et dipol. I atomer beveger elektroner seg i bane rundt atomet, og danner et magnetfelt fra angulærmomentet. Hvordan angulærmomentet til de forskjllige elekronene rundt materialet er satt sammen, avgjør de magnetiske egenskapene til materialet atomet består av. Dette resulterer i forskjellige typer magnetiske materialer: diamagnetiske, paramagnetiske og ferromagnetiske.
+\subsection{Diamagnetisme}
+De aller fleste materialer er ikke magnetiske. Slike materialer kaller vi for diamagnetiske materialer, som klasifiseres ved at de ikke er magnetiske, uten en ytre påvirkning. Materialet kan bli magnetisert ved å påtrykke et ytre magnetfelt som vil elektronorbitalene deformeres. Ved Lenz regel vil dette motsette seg forandringen av feltstyrken. Dette betyr at diamagnetiske materialer danner et magnetfelt som motsetter seg det ytre påtrykte magnetfeltet. Dette betyr at den magnetiske susceptibiliteten til materialet er negativ $\chi < 0$. Lenz regel gjelder for alle atomer, og følgelig alle materialer, men denne effekten er svært liten iforhold til andre magnetiske effekter. Selv om den er liten er den viktig siden den påvirker alle materialer. Det kan vises, med utgangspunkt i potensiell energi for en magnetisk dipol, med dipolmoment $\mu$, i et magnetfelt, at den magnetiske kraften som virker er gitt av
+\begin{equation}
+  F_Z = -\frac{\chi}{2\mu_0}A\left(B_1^2 - B_2^2\right).
+\end{equation}
+Hvor $B_1$ og $B_2$ er magnetfeltet på tvers av symetriaksen til staven, i henholdsvis bunn og toppen av staven.
+\subsection{Paramagnetisme og ferromagnetisme}
+%Dette kommer blant annet av at elektroner foretrekker å motsatt spinn, etter Hund's regel.
+
+\section{\label{sec:level2}Eksperimentet}
+\section{\label{sec:level2}Resultater}
+
+
+
+\begin{thebibliography}{9}
+
+
+\bibitem{squires}
+Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.
+
+
+
+ \end{thebibliography}
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******

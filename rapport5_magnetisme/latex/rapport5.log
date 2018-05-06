@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  5 MAY 2018 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  5 MAY 2018 20:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1968,10 +1968,7 @@ Class revtex4-1 Info: mcite was not loaded (OK!) on input line 92.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 92.
 (./rapport5.aux
 
-LaTeX Warning: Label `sec:level2' multiply defined.
-
-
-LaTeX Warning: Label `sec:level2' multiply defined.
+LaTeX Warning: Label `eksperimentelt_oppsett2' multiply defined.
 
 )
 \openout1 = `rapport5.aux'.
@@ -3025,43 +3022,73 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Class revtex4-1 Warning: If you want your PACS to appear in your output, use do
 cument class option showpacs.
 
-! Undefined control sequence.
-l.135   \nable
-               \cross \bm{H} = 0.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] <
+oppsett1.png, id=105, 414.54875pt x 631.35875pt>
+File: oppsett1.png Graphic file (type png)
+<use oppsett1.png>
+Package pdftex.def Info: oppsett1.png used on input line 205.
+(pdftex.def)             Requested size: 157.53015pt x 239.91881pt.
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package natbib Warning: Citation `oppgave' on page 2 undefined on input line 15
-2.
+<oppsett2.png, id=111, 829.0975pt x 585.18625pt>
+File: oppsett2.png Graphic file (type png)
+<use oppsett2.png>
+Package pdftex.def Info: oppsett2.png used on input line 216.
+(pdftex.def)             Requested size: 248.73117pt x 175.55722pt.
 
-(./rapport5.bbl)
+Overfull \hbox (15.62624pt too wide) in paragraph at lines 216--217
+ [][] 
+ []
 
-Package natbib Warning: There were undefined citations.
 
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./oppsett1.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 221.
+
+
+LaTeX Warning: Hyper reference `eksperimentelt_oppsett3' on page 4 undefined on
+ input line 224.
+
+
+LaTeX Warning: Reference `eksperimentelt_oppsett3' on page 4 undefined on input
+ line 224.
+
+<oppsett3.png, id=127, 845.1575pt x 557.08125pt>
+File: oppsett3.png Graphic file (type png)
+<use oppsett3.png>
+Package pdftex.def Info: oppsett3.png used on input line 227.
+(pdftex.def)             Requested size: 253.54921pt x 167.12566pt.
+
+Overfull \hbox (20.44427pt too wide) in paragraph at lines 227--228
+ [][] 
+ []
+
+[4 <./oppsett2.png> <./oppsett3.png>] (./rapport5.bbl) [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
 (./rapport5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `rapport5.out' has not changed.
-(rerunfilecheck)             Checksum: D0F567D38BB36A14EA98446C9332D4C9;583.
+(rerunfilecheck)             Checksum: 25918FE188AF0D88FF9AEE53AC13A48B;835.
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22795 strings out of 492995
- 399602 string characters out of 6132705
- 516538 words of memory out of 5000000
- 26070 multiletter control sequences out of 15000+600000
+ 22863 strings out of 492995
+ 400433 string characters out of 6132705
+ 507164 words of memory out of 5000000
+ 26117 multiletter control sequences out of 15000+600000
  11827 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,38p,10382b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,47p,10382b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pf
 b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
@@ -3071,16 +3098,17 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on rapport5.pdf (2 pages, 165115 bytes).
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on rapport5.pdf (5 pages, 983657 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

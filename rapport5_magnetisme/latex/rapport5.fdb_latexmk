@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex rapport5"] 1525516913 "rapport5.aux" "rapport5.bbl" "rapport5" 1525517961
+["bibtex rapport5"] 1525546018 "rapport5.aux" "rapport5.bbl" "rapport5" 1525546022
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/revtex/apsrev4-1.bst" 1480098436 71518 fec93f06df0c073f83d2330456bd19c2 ""
-  "rapport5.aux" 1525517886 2053 cf569b4df8d5c058a61c2f1cca2fbbc3 ""
-  "rapport5Notes.bib" 1525517886 103 48ad29797468f16e2853d8797278d7af ""
+  "rapport5.aux" 1525546022 7007 f499379bc505dc542f7ae7ec8a9e5053 ""
+  "rapport5Notes.bib" 1525546022 103 48ad29797468f16e2853d8797278d7af ""
   (generated)
   "rapport5.bbl"
   "rapport5.blg"
-["pdflatex"] 1525517961 "rapport5.tex" "rapport5.pdf" "rapport5" 1525517961
+["pdflatex"] 1525546019 "rapport5.tex" "rapport5.pdf" "rapport5" 1525546022
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1480098696 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1480098698 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -45,6 +45,7 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1480098733 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1480098733 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1480098733 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1480098733 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1480098733 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1480098733 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -146,13 +147,16 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1504893732 4129591 b1a7ed87e25bd8fdaf5080304d300aaa ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "rapport5.aux" 1525517886 2053 cf569b4df8d5c058a61c2f1cca2fbbc3 ""
-  "rapport5.bbl" 1525516913 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport5"
-  "rapport5.out" 1525517886 583 d0f567d38bb36a14ea98446c9332d4c9 ""
-  "rapport5.tex" 1525517961 11226 b05a848f33631296ffef7936964bbee1 ""
+  "oppsett1.png" 1525529607 219785 44a8166bef2aad5e647b091be8c9f3ca ""
+  "oppsett2.png" 1525532194 709634 6688c1fc589e9068c20a289bf39c0d78 ""
+  "oppsett3.png" 1525544636 270256 00dcac46c35aca3243e4117d22eafbe5 ""
+  "rapport5.aux" 1525546022 7007 f499379bc505dc542f7ae7ec8a9e5053 ""
+  "rapport5.bbl" 1525546019 1983 c789b8b2e2ff60989c671635ad8473c2 "bibtex rapport5"
+  "rapport5.out" 1525546022 835 25918fe188af0d88ff9aee53ac13a48b ""
+  "rapport5.tex" 1525546015 22074 38101b7070cf073e13b9ccdcabbbb287 ""
   (generated)
-  "rapport5.pdf"
-  "rapport5.aux"
   "rapport5.out"
+  "rapport5.pdf"
   "rapport5Notes.bib"
+  "rapport5.aux"
   "rapport5.log"

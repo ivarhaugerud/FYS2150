@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  5 MAY 2018 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  6 MAY 2018 22:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1966,11 +1966,7 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 92.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 92.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 92.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 92.
-(./rapport5.aux
-
-LaTeX Warning: Label `eksperimentelt_oppsett2' multiply defined.
-
-)
+(./rapport5.aux)
 \openout1 = `rapport5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -3023,7 +3019,7 @@ Class revtex4-1 Warning: If you want your PACS to appear in your output, use do
 cument class option showpacs.
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] <
-oppsett1.png, id=105, 414.54875pt x 631.35875pt>
+oppsett1.png, id=109, 414.54875pt x 631.35875pt>
 File: oppsett1.png Graphic file (type png)
 <use oppsett1.png>
 Package pdftex.def Info: oppsett1.png used on input line 205.
@@ -3031,7 +3027,7 @@ Package pdftex.def Info: oppsett1.png used on input line 205.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<oppsett2.png, id=111, 829.0975pt x 585.18625pt>
+<oppsett2.png, id=115, 829.0975pt x 585.18625pt>
 File: oppsett2.png Graphic file (type png)
 <use oppsett2.png>
 Package pdftex.def Info: oppsett2.png used on input line 216.
@@ -3049,15 +3045,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 221.
 
-
-LaTeX Warning: Hyper reference `eksperimentelt_oppsett3' on page 4 undefined on
- input line 224.
-
-
-LaTeX Warning: Reference `eksperimentelt_oppsett3' on page 4 undefined on input
- line 224.
-
-<oppsett3.png, id=127, 845.1575pt x 557.08125pt>
+<oppsett3.png, id=132, 845.1575pt x 557.08125pt>
 File: oppsett3.png Graphic file (type png)
 <use oppsett3.png>
 Package pdftex.def Info: oppsett3.png used on input line 227.
@@ -3067,48 +3055,79 @@ Overfull \hbox (20.44427pt too wide) in paragraph at lines 227--228
  [][] 
  []
 
-[4 <./oppsett2.png> <./oppsett3.png>] (./rapport5.bbl) [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
+[4 <./oppsett2.png> <./oppsett3.png>]
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! siunitx error: "misplaced-uncertainty-token"
+! 
+! Misplaced uncertainty token ')'.
+! 
+! See the siunitx documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.236 ...¸ven er $\SI{10.05\pm0.03)}{\milli\meter}
+                                                  $. Dette resulterer i at t...
+
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The uncertainty in a number must be given between a set of delimiters as
+| defined by the
+|   'input-open-uncertainty' and 'input-close-uncertainty' options.
+|...............................................
+
+<chi_effekt.pdf, id=145, 542.025pt x 542.025pt>
+File: chi_effekt.pdf Graphic file (type pdf)
+<use chi_effekt.pdf>
+Package pdftex.def Info: chi_effekt.pdf used on input line 258.
+(pdftex.def)             Requested size: 271.01183pt x 271.01183pt.
+
+Overfull \hbox (37.90689pt too wide) in paragraph at lines 258--259
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./rapport5.bbl) [5] [6 <./chi_effekt.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
 (./rapport5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
 Package rerunfilecheck Info: File `rapport5.out' has not changed.
-(rerunfilecheck)             Checksum: 25918FE188AF0D88FF9AEE53AC13A48B;835.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 9525EEC3326DA2669C894802E659E1E3;897.
  ) 
 Here is how much of TeX's memory you used:
- 22863 strings out of 492995
- 400433 string characters out of 6132705
- 507164 words of memory out of 5000000
- 26117 multiletter control sequences out of 15000+600000
- 11827 words of font info for 45 fonts, out of 8000000 for 9000
+ 22915 strings out of 492995
+ 401008 string characters out of 6132705
+ 514408 words of memory out of 5000000
+ 26151 multiletter control sequences out of 15000+600000
+ 17109 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,47p,10382b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,47p,10382b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on rapport5.pdf (5 pages, 983657 bytes).
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on rapport5.pdf (6 pages, 1016566 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

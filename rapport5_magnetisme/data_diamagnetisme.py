@@ -1,30 +1,110 @@
 import numpy as np
 import matplotlib.pyplot as plt
 plt.minorticks_on()
-plt.style.use("bmh")
 
-def Chi(B1, B2, Fz, A):
+def chi1(B1, B2, Fz, A):
     mu0 = 4*np.pi*1e-7
     return -2*mu0*Fz/(A*(B1**2-B2**2))
 
-def Chi_B1(B1, Fz, A):
+def chi1_linear(B1, B2, Fz, A):
+    mu0 = 4*np.pi*1e-7
+    return -2*mu0*Fz/(A*(B1-B2))
+
+def chi2(B1, Fz, A):
     mu0 = 4*np.pi*1e-7
     return -2*mu0*Fz/(A*B1**2)
 
-def uncertenty_chi(delta_b1, b, delta_fz, fz, delta_A, A):
-    chi*np.sqrt((delta_b1/b)**2 + (delta_fz/fz)**2 + (delta_A/A)**2)
+def uncertenty_chi1(chi, delta_b1, b, delta_fz, fz, delta_A, A):
+    return chi*np.sqrt((2*delta_b1/b)**2 + (delta_fz/fz)**2 + (delta_A/A)**2)
+
+def uncertenty_chi2(chi, delta_b1, b, delta_fz, fz, delta_A, A, delta_b2, b2):
+    return chi*np.sqrt((2*delta_b1/b)**2 + (delta_fz/fz)**2 + (delta_A/A)**2 + (2*delta_b2/b2)**2)
+
+def uncertenty_chi1_linear(chi, delta_b1, b, delta_fz, fz, delta_A, A):
+    return chi*np.sqrt((delta_b1/b)**2 + (delta_fz/fz)**2 + (delta_A/A)**2)
+
+vismut_D = np.array([10.03, 10.06, 10.06, 10.03])*1e-3
+vismut_D_unc = np.sqrt(np.std(vismut_D)**2 + (1/20)**2)*1e-3
+R = np.mean(vismut_D)/2
+R_unc = vismut_D_unc/2
 
 I = np.linspace(0, 2.40, 13) #Ampere
+I_unc = 0.01*I+3*1e-3
+I_unc[-3:] = I[-3:]*0.01+30*1e-3
+
 B1 = np.array([18., 96.4, 185.5, 280.5, 356.4, 433.7, 505.3, 570.9, 628.8, 677.9, 719.6, 755.6, 788.5])*1e-3 # Tesla
+delta_B1 = B1*0.01 + 0.2*1e-3
+
 B2 = np.array([0.43, 0.70, 1.16, 1.60, 1.96, 2.29, 2.32, 2.45, 2.45, 2.36, 2.45, 2.36, 2.30])*1e-3 #Tesla
-Fz = np.array([0.0, 0.0, 0.02, 0.03, 0.06, 0.10, 0.13, 0.16, 0.20, 0.24, 0.26, 0.28, 0.31])*9.81*1e-3 #newton
+delta_B2 = B2*0.01 + 0.2*1e-3
 
-D = 10.03*1e-3 #M
-A = np.pi*(D/2)**2
-chi = Chi(B1, B2, Fz, A)
+Mz = np.array([0.001, 0.001, 0.02, 0.03, 0.06, 0.10, 0.13, 0.16, 0.20, 0.24, 0.26, 0.28, 0.31])*1e-3 #kg
+Fz = Mz*9.81 #Newton
 
-plt.plot(B1, Fz, "ro")
+delta_M = np.ones(len(Fz))*0.01*1e-3 #kg
+#delta_G = np.zeros(len(Fz))*9.81*1e-3 #m/s2
+delta_Fz = Fz*np.sqrt((delta_M/Mz)**2)# + (delta_G/9.81)**2)
+delta_Fz[0] = delta_Fz[2]
+delta_Fz[1] = delta_Fz[2]
+
+print(B2*1e3)
+print(delta_B2*1e3)
+A = np.pi*(R)**2
+delta_A = A*2*R_unc**2/R
+chi_b = chi1(B1, B2, Fz, A)
+chi_o = chi2(B1, Fz, A)
+delta_chi_b = uncertenty_chi2(chi_b, delta_B1, B1, delta_Fz, Fz, delta_A, A, delta_B2, B2)
+delta_chi_o = uncertenty_chi1(chi_o, delta_B1, B1, delta_Fz, Fz, delta_A, A)
+
+delta_chi_b[0] = delta_chi_b[2]*1.2
+delta_chi_b[1] = delta_chi_b[2]*1.1
+delta_chi_o[0] = delta_chi_o[2]*1.2
+delta_chi_o[1] = delta_chi_o[2]*1.1
+"""
+fig = plt.figure(figsize=(7.2, 7.8), dpi=100)
+plt.style.use("bmh")
+plt.minorticks_on()
+font = {"size"  : 14}
+plt.rc('font', **font)
+ax = fig.add_subplot(111)
+plt.errorbar(B1, Fz*1e3, xerr=delta_B1, yerr=delta_Fz*1e3, fmt='ko', markersize='3.5')
+ax.set_xlabel(r"Magnetfelt $B$ [T]", fontsize=14)
+ax.set_ylabel(r"Magnetisk kraft  $Fz$ [mN]", fontsize=14)
+plt.savefig("latex/Fz.pdf")
 plt.show()
 
-plt.plot(I, chi, "ro")
+fig = plt.figure(figsize=(7.2, 7.8), dpi=100)
+ax = fig.add_subplot(111)
+plt.style.use("bmh")
+plt.minorticks_on()
+font = {"size"  : 14}
+plt.rc('font', **font)
+plt.errorbar(B1, (chi_o-chi_b)*1e4, xerr=delta_B1, yerr=delta_chi_o*1e4, fmt='ko', markersize='3.5')
+ax.set_xlabel(r"Magnetfelt $B_1$ [T]", fontsize=14)
+ax.set_ylabel(r"Forskjell i magnetisk susceptibilitet $ \times 10^4$ $\Delta \chi$", fontsize=14)
+plt.savefig("latex/difference_b1b2.pdf")
+plt.show()
+"""
+
+last_elem = 8
+mean = np.mean(chi_o[-last_elem:])
+std = np.std(chi_o[-last_elem:])
+
+print(mean*1e4, std*1e4)
+fig = plt.figure(figsize=(7.5, 7.5), dpi=100)
+plt.style.use("bmh")
+plt.minorticks_on()
+#plt.rc('font', **font)
+ax = fig.add_subplot(111)
+for tick in ax.xaxis.get_major_ticks():
+    tick.label.set_fontsize(16)
+for tick in ax.yaxis.get_major_ticks():
+    tick.label.set_fontsize(16)
+plt.fill_between(x=B1[-last_elem:], y1=np.ones(last_elem)*(mean-std)*1e4, y2=np.ones(last_elem)*(mean+std)*1e4)
+plt.errorbar(B1, chi_o*1e4, xerr=delta_B1, yerr=delta_chi_o*1e4, fmt='ko', markersize='3.5')
+plt.axis([0, 0.81, -3, 0.8])
+#plt.errorbar(I, chi1_linear(B1, B2, Fz, A), xerr=I_unc, yerr=uncertenty_chi1_linear(chi1_linear(B1, B2, Fz, A), delta_B1, B1, delta_Fz, Fz, delta_A, A), fmt='ro', markersize='3.5')
+ax.set_xlabel(r"Magnetfelt $B_1$ [T]", fontsize=16)
+ax.set_ylabel(r"Magnetisk susceptibilitet  $\chi\times 10^{-4}$", fontsize=16)
+plt.savefig("latex/chi_effekt.pdf")
 plt.show()

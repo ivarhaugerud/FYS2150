@@ -54,7 +54,6 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[colorlinks]{hyperref}
 \usepackage{relsize}
-%\usepackage{booktabs}
 \usepackage{graphicx,verbatim,amsfonts,geometry}
 \usepackage{amsmath}
 \newcommand*\diff{\mathop{}\!\mathrm{d}}
@@ -189,14 +188,16 @@ hvor $\kappa$ er en kalibreringskonstant. Fra å integrere Faraday's induksjonsl
   \Delta B = \frac{\kappa\Delta S}{nA}.\label{deltab}
 \end{equation}
 \subsection{Faraday effekten}
-Faraday observerte at polarisasjonsretningen til lys, som har gått gjennom en krystall, endret seg
-med styrken på magnetfeltet som krystallen var plassert i. Lyset vi skal bruke er monokromatisk, planpolarisert lys, som reiser gjennom en krystall av lengde $L$, med et ytre magnet felt $B$. Dette gjør at polarisasjonsvinkelen $\theta$ er gitt av
+Faradayeffekten er et magneto-optisk fenomen hvor et plan av polarisert lys blir polarisert av å bevege seg gjennom et medium som er i et magnetisk felt. Mengden lyset blir polarisert er et produkt av lengden til mediet det reiser gjennom, $L$, styrken på magnetfeltet i mediet, $B$, og en proposjonalitetskonstant som kalles \textit{Verdet-konstanten}, $V$. Med dette blir uttrykket for polarisasjonsvinkelen
 \begin{equation}
-  \theta\left(B, L, \lambda\right) = V\left(\lambda\right)LB,\label{verdet}
+  \theta\left(B, L, \lambda\right) = V\left(\lambda\right)LB.\label{verdet}
 \end{equation}
-hvor $V$ er \textit{verdet} konstanten, som er uavhengig av lengden til krystallen og magnetfeltet, men er avhenig av bølgelengden til lyset, men er følgelig en konstant for en spesifikk bølgelengde.
-%Fra Gauss' lov for magneter \eqref{2} vet vi at den magnetiske flukstettheten er den samme på overflaten som på innsiden av materialet.
-%Dette kommer blant annet av at elektroner foretrekker å motsatt spinn, etter Hund's regel.
+Verdet-\textit{konstanten} er uavhengig av lengden til krystallen og magnetfeltet, men er avhenig av bølgelengden, $\lambda$, til lyset, og er følgelig bare en konstant for bestemte bølgelengder. \par
+Årsaken til Faraday effekten har sine røtter i den kvantemekaniske verden, men kan forklares, på et grunnleggende nivå, ved hjelp av klassisk elektrodynamikk. Elektrodynamikken spør at verdet-konstanten er en funksjon av bølgelengden til lyset, i vakum, og den deriverte av brytningsindeksen, $n$ over bølgelengden til lyset \cite{pedrotti_faraday_1990}.
+\begin{equation}
+  V = \frac{e\lambda}{2mc} \frac{\diff n}{\diff\lambda}.
+\end{equation}
+I likningen er $e$ elementærladningen, $m$ massen til et elektron, og $c$ lyshastigheten i vakum. Ved å finne en verdi for brytningsindeksen til flintglass som en funksjon av bølgelengden kan vi sammenlikne vår eksperimentelle verdi med hva den elektrodynamiske teorien forutsier.
 \section{\label{sec:level3}Eksperimentet}
 \subsection{Diamagnetisme}
 Vismut, som er det mest diamagnetiske metallet vi kjenner til. I dette eksperimentet ønsker vi å bestemme den magnetiske susceptibiliteten $\chi$ til en vismut stang. Dette gjøres ved å plasere en vismut stang i et homogent magnetfelt, og måle kraften som virker på vismut stangen. En illustrasjon av det eksperimentelle oppsetet er vist i figur \vref{eksperimentelt_oppsett1}. For å genere et magnetfelt ble det brukt to elektriske spoler på hver side av vismutstangen, som en ser i figur \vref{eksperimentelt_oppsett1}. På denne måten kunne vi variere strømmen i kretsen for å variere styrken på magnetfeltet. Vismutstangen ble plasert i magnetfeltet slik at bunden av stangen var i sentrum av de to spolene, slik en kan se i figuren.
@@ -233,37 +234,89 @@ Får å måle Faraday-effekten gjør vi ved å brukke optiske filtere, som bare 
 I eksperimentet økte vi strømstyrken med $\SI{0.5}{\ampere}$ fra $\SI{0}{\ampere}$ til $\SI{3.0}{\ampere}$, i både positiv og negativ strømretning. Styrken på magnetfeltet inne i flintglasset er en faktor $1.5$ mindre enn styrken på magnetfeltet målt midt mellom polene.
 \section{\label{sec:level4}Resultater}
 \subsection{Diamagnetisme}
-Ved å måle diameteren til vismut prøven på fire forskjellige punkter måle vi $\SI{10.03}{\milli\meter}$ to steder, og $\SI{10.06}{\milli\meter}$. Ved å ta hensyn til spredningen i disse målingene, og usikkerheten til skyvelæret brukt, finner vi at diameteren til vismut prøven er $\SI{10.05\pm0.03)}{\milli\meter}$. Dette resulterer i at tversnittet til vismutprøven er $\SI{79.3\pm0.2}{\milli\meter^2}$.\\
+Ved å måle diameteren til vismut prøven på fire forskjellige punkter måle vi $\SI{10.03}{\milli\meter}$ to steder, og $\SI{10.06}{\milli\meter}$. Ved å ta hensyn til spredningen i disse målingene, og usikkerheten til skyvelæret brukt, finner vi at diameteren til vismut prøven er $\SI{10.05\pm0.03}{\milli\meter}$. Dette resulterer i at tversnittet til vismutprøven er $\SI{79.3\pm0.2}{\milli\meter^2}$.\\
 Halvparten av målingene for strøm $I$, magnetfelt mellom spolene $B_1$, magnetfelt ved toppen av vismutprøven $B_2$, og kraften på vekten $F_z$, er vist i tabell \vref{table_vismut}.
 \begin{table}
   \centering
   \caption{Målinger av strøm $I$, magnetfelt mellom spolene $B_1$, magnetfelt ved toppen av vismutprøven $B_2$, og kraften på vekten $F_z$, for å beregne den magnetiske susceptibiliteten til vismutprøve. Halvparten av målingene er vist i tabellen. Usikkerhetene i tabellen kommer henholdsvis fra databladet til strømgeneratoren, spredning og oppløsning til hallsonden, spredning og oppløsning til hallsonden, og databladet til vekten.}
   \label{table_vismut}
-    \begin{tabular}{cccc}
-    $I$ {[}A{]} & $B_1$ {[}mT{]} & $B_2$ {[}mT{]} & $F_z$ {[}mN{]} \\
-    \botrule
+    \begin{tabular}{@{}llll@{}}\botrule
+    $I$ {[}A{]} & $B_1$ {[}mT{]} & $B_2$ {[}mT{]} & $F_z$ {[}mN{]} \\ \colrule 
     0.000(3)    & 18.0(3)        & 0.4(1)         & 0.00(10)      \\
     0.400(7)    & 185(2)         & 1.2(1)         & 0.02(10)      \\
     0.80(1)     & 356(4)         & 2.0(1)         & 0.06(10)      \\
     1.20(2)     & 505(5)         & 2.3(1)         & 1.3(1)        \\
     1.60(2)     & 628(6)         & 2.4(1)         & 2.0(1)        \\
     2.00(5)     & 719(7)         & 2.5(1)         & 2.6(1)        \\
-    2.40(5)     & 788(8)         & 2.3(1)         & 3.0(1)        \\
-    \botrule
+    2.40(5)     & 788(8)         & 2.3(1)         & 3.0(1)        \\\botrule
     \end{tabular}
 \end{table}
 Målingene av den magnetiske suceptibiliteten som funksjon av magnetfeltet mellom spolene er vist i figur \vref{resultat_chi}.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.5]{chi_effekt.pdf}
-  \caption{Den magnetiske susceptibiliteten $\chi$ som funksjon av magnetfeltet $B_1$ mellom spolene. Det blå området i grafen viser gjennomsnittet, og spredningen i gjennomsnittet til de siste målepunktene. Den gjennomsnittlige verdien for de $8$ siste målepunktene er $\langle \chi \rangle = -1.57(4)$.}
+  \caption{Den magnetiske susceptibiliteten $\chi$ som funksjon av magnetfeltet $B_1$ mellom spolene. Det blå området i grafen viser gjennomsnittet, og spredningen i gjennomsnittet til de siste målepunktene. Den gjennomsnittlige verdien for de $8$ siste målepunktene er $\chi = -1.57(4)$.}
   \label{resultat_chi}
 \end{figure}
-\begin{thebibliography}{9}
-\bibitem{squires}
-Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.
-\bibitem{oppgave}
-Univseritet i Oslo \emph{Magnetisme}, 2018
-\end{thebibliography}
-
+\subsection{Ferromagnetisme}
+Vi ønsker nå å studere de magnetiske egenskapene til jern med ved å måle styrken på magnetfeltet, mens jernklumpen er plasert i en spole. For å sammenlikne resultatene med teori trenger vi de geometriske størrelsene til de fire jernklumpene vi skal se på. Det ble derfor gjennomført målinger av diameter og høyde med et skyvelær, resultatene er vist  i tabell \vref{tot_ferro}.
+Ved å sende en strøm på $\SI{5}{\ampere}$ i sløyen generes det et magnetfelt inne i spolen. Vi bruker en hallsonde til å måle styrken på magnetfeltet, over flere målinger finner vi at styrken på magnetfeltet er $\SI{5.04\pm0.04}{\milli\tesla}$, usikkerheten kommer fra spredningen i målingene. \\
+Deretter ble det målt styrken på magnetfeltet med plastikkstativet inne i spolen. Endringen i styrken på magnetfeltet var innenfor usikkerheten til magnetfeltet. Plastikkstativet påvirker altså ikke magnetfeltet inne i spolen. \\
+De fire jernklumpene ble plassert på plastikkstativet, inne i spolen, med strømmen på. Ved å måle styrken på magnetfeltet på overflaten til jernklumpen med en hallsonden rettet parallellt med feltet, fikk vi målingene vist i tabell \vref{tot_ferro}.\par
+\begin{table*}\renewcommand{\arraystretch}{1.2}
+\centering
+\caption{I denne tabellen er det vist de geometriske størrelsene til jernklumpene, parallellt med rotasjonsakse ($a_{\parallel}$) og tangensialt på rotasjonsaksen ($a_{\perp}$). Fra disse måline kan en beregne avmagnetiseringsfaktoren parallellt med magnetfeltet ($D_{\parallel}$) og tangensialt på magnetfeltet ($D_{\perp}$). Usikkerheten til målingene kommer fra usikkerheten til skyvelæret, og usikkerhetn til avmagnetiseringsfaktoren kommer av \eqref{usikkerhet1}. Videre i tabellen vises styrken til magnetfeltet i kontakt med jernklumpen, når rotasjonsaksen til jernklumpen er parallell med magnetfeltet ($B\parallell$) og tangensialt på magnetfeltet ($B\perp$). Usikkerheten er beregnet fra databladet til hallsonden. For å teste teorien \eqref{ikke_enda} inkluderer tabellen $B_0/D_i$, som indikerer øvre grense for $B_i$, hvor $i$ enten indikerer parallell $\parallel$ eller ortogonalt $\perp$.}
+\label{tot_ferro}
+\begin{tabular}{@{}lllllllll@{}}
+\botrule
+Form & $a_{\parallel}$ {[}cm{]} $\quad$  & $a_{\perp}$ {[}cm{]} $\quad$  & $D_{\parallel}$ $\qquad \quad$ & $D_{\perp}$ $\qquad\quad$ &  $\bm{B}$  $\parallel$ {[}mT{]} $\quad$ & $\bm{B}$ $\perp$ {[}mT{]} $\quad$ & $B_0/D_{\parallel}$ [mT]$\quad$  & $B_0/D_{\perp}$ [mT]\\ \colrule 
+Skive      & 0.67(1)        & 5.99(2)           & 0.99(8)         & 0.005(4) & 5.50(1)                           & 17.58(4)         &    5.1(4)  &  1036(86)      \\
+Ellipsoide & 21.8(2)        & 0.96(1)           & 0.055(8)        & 0.50(5) & 50.5(1)                           & -                &   920(80)    & 10.1(8)       \\
+Sylinder   & 6.45(2)        & 0.98(1)           & 0.037(3)        & 0.48(4) & 19.65(4)                          & 7.74(2)          &   133(11)    &10.5(9)           \\
+Kule       & 6.32(2)        & 6.32(2)           & 0.33(3)         & 0.33(3) & 12.61(3)            & 12.61(3)                &   15(1)  & 15(1)        \\ \botrule
+\end{tabular}
+\end{table*}
+Vi kan også studere magnetfeltet rundt en jernklump ved å se på hysteresekurver. Under eksperimentet ble det brukt en sekundærspole med $n=135$ vindinger, og en diameteren til sekundærspolen var $\SI{6.5pm0.1}{\milli\meter}$, som gjør at arealet er $\SI{33\pm1}{\milli\meter^2}$. Kalibreringskonstanten $\kappa$ til spenningsgeneratoren var oppgit til å være $\SI{1.01}{\micro\weber}$. Fra disse verdiene kan vi beregne endringen i magnetfelt fra likning \eqref{deltas}, det eneste som mangler er $\Delta S$. Integralet fra spennignsgeneratoren $\Delta S$ ble vist gjennom koblingen til data dataakvisasjonsboksen, som gjorde at vi fikk direkte målinger av integralet til spenningsgeneratoren. Det eneste som trenkte å endres var styrken på strømmen $I$. Resultatene er vist grafisk i figur VREF. Et eksempel på målinger fra dataakvisasjonsboksen er vist i figur VREF.
+\subsection{Faraday-effekten}
+For å beregne verdet-konstanten ble det gjennomført målinger av polarisasjonsgraden til lys som funksjon av styrken på det ytre magnetfeltet. Disse målingene er vist i tabell \vref{faraday}. Fra å beregne stigningstallet til polarisasjonsvinkelen som funksjon av produktet mellom magnetfeltet og lengden på flintglasset \eqref{verdet} kunne vi beregne verdet-konstanten. Verdien til verdetkonstanten er vist for de tre forskjellige bølgelengdene er vist i tabellen.
+\begin{table}\renewcommand{\arraystretch}{1.1}
+  \centering
+  \caption{I denne tabellen er det vist målt vinkel for $\theta [\degree]$, for forskjellig styrke i magnetfelt, og forskjellig strømretning. Usikkerheten i vinkelen er lik $0.2\degree$ for alle målinger, siden dette var oppløsningen til måleapparatet. Nederest i tabellen er det beregnet stigningstall for målepunktene i både negativ og positiv strømretning for hver bølgelengde. Usikkerheten i stigningstallet kommer fra lineærregresjonen.}
+  \label{faraday}
+  \begin{tabular}{|l|S|S|S|S|S|S|}
+    \colrule
+      Bølgelengde $\lambda$ [nm] &
+      \multicolumn{2}{|c|}{$440$} &
+      \multicolumn{2}{c|}{$580$} &
+      \multicolumn{2}{c|}{$595$} \\
+      \colrule 
+      $B$ [mT] & \multicolumn{6}{c|}{Vinkel $\theta\pm0.2$ [$\degree$] } \\   \colrule 
+      43(1)  & 1.8 & 1.4 & 1.8 & 1.4 & 2.0 & 1.6 \\
+      63(1)  & 2.8 & 2.2 & 2.6 & 2.0 & 2.8 & 2.6 \\
+      83(2)  & 3.8 & 3.0 & 3.0 & 2.8 & 3.6 & 3.2 \\
+      102(2) & 4.2 & 4.0 & 4.0 & 3.4 & 4.4 & 4.2 \\
+      119(3) & 5.2 & 4.8 & 4.4 & 4.0 & 5.2 & 4.8 \\ \colrule 
+      Strømretning & {$I_+$} & {$I_-$} & {$I_+$} & {$I_-$} & {$I_+$} & {$I_-$} \\ \colrule
+      Stigningstall [k/Tm] &
+      \multicolumn{2}{|c}{$1.5\pm0.1$} &
+      \multicolumn{2}{|c}{$1.4\pm0.1$} &
+      \multicolumn{2}{|c|}{$1.2\pm0.1$} \\
+      \colrule
+  \end{tabular}
+\end{table}
+Et sett av målinger er vist i figur \vref{fig_verdet}. Figuren viser polarisasjonsvinkel $\theta$ som funksjon av produktet mellom magnetfelt og lengden på flintkrystallen. For målingene vist i figuren er det brukt lys med bølgelengde $\lambda=\SI{580}{\nano\meter}$. Det skraverte området i figuren viser usikkerheten i stigningstallet, og den stiplede linjen viser gjennomsnittet til stigningstallet, som blir verdien for verdet konstanten ved denne bølgelengden.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.38]{faraday_effekt.pdf}
+  \caption{Målinger for polarisasjonsvinkel $\theta$ som funksjon av absolutverdien til produktet mellom styrken til magnetfeltet og lengden av flintkrystallen, for bølgelengde på $\lambda=\SI{580}{\nano\meter}$. Fra målepunktene beregnes det stigningstallet ved hjelp av lineærregresjon, som er verdet-konstanten. For denne bølgelengden var verdetkonstanten $1.4\pm0.1$k/Tm}
+  \label{eksperimentelt_oppsett1}
+\end{figure}
+%\begin{thebibliography}{9}
+%\bibitem{squires}
+%Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.
+%\bibitem{oppgave}
+%Univseritet i Oslo \emph{Magnetisme}, 2018
+%\end{thebibliography}
+\bibliography{citations.bib}{}
+\bibliographystyle{plain}
 \end{document}

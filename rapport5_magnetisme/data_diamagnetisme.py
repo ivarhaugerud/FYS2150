@@ -33,10 +33,10 @@ I_unc = 0.01*I+3*1e-3
 I_unc[-3:] = I[-3:]*0.01+30*1e-3
 
 B1 = np.array([18., 96.4, 185.5, 280.5, 356.4, 433.7, 505.3, 570.9, 628.8, 677.9, 719.6, 755.6, 788.5])*1e-3 # Tesla
-delta_B1 = B1*0.01 + 0.2*1e-3
+delta_B1 = B1*0.002 + 0.001*1e-3
 
 B2 = np.array([0.43, 0.70, 1.16, 1.60, 1.96, 2.29, 2.32, 2.45, 2.45, 2.36, 2.45, 2.36, 2.30])*1e-3 #Tesla
-delta_B2 = B2*0.01 + 0.2*1e-3
+delta_B2 = B2*0.002 + 0.001*1e-3
 
 Mz = np.array([0.001, 0.001, 0.02, 0.03, 0.06, 0.10, 0.13, 0.16, 0.20, 0.24, 0.26, 0.28, 0.31])*1e-3 #kg
 Fz = Mz*9.81 #Newton
@@ -47,8 +47,8 @@ delta_Fz = Fz*np.sqrt((delta_M/Mz)**2)# + (delta_G/9.81)**2)
 delta_Fz[0] = delta_Fz[2]
 delta_Fz[1] = delta_Fz[2]
 
-print(B2*1e3)
-print(delta_B2*1e3)
+print(Fz)
+print(delta_Fz/Fz)
 A = np.pi*(R)**2
 delta_A = A*2*R_unc**2/R
 chi_b = chi1(B1, B2, Fz, A)
@@ -60,7 +60,7 @@ delta_chi_b[0] = delta_chi_b[2]*1.2
 delta_chi_b[1] = delta_chi_b[2]*1.1
 delta_chi_o[0] = delta_chi_o[2]*1.2
 delta_chi_o[1] = delta_chi_o[2]*1.1
-"""
+
 fig = plt.figure(figsize=(7.2, 7.8), dpi=100)
 plt.style.use("bmh")
 plt.minorticks_on()
@@ -72,7 +72,7 @@ ax.set_xlabel(r"Magnetfelt $B$ [T]", fontsize=14)
 ax.set_ylabel(r"Magnetisk kraft  $Fz$ [mN]", fontsize=14)
 plt.savefig("latex/Fz.pdf")
 plt.show()
-
+"""
 fig = plt.figure(figsize=(7.2, 7.8), dpi=100)
 ax = fig.add_subplot(111)
 plt.style.use("bmh")
@@ -103,7 +103,7 @@ for tick in ax.yaxis.get_major_ticks():
 plt.fill_between(x=B1[-last_elem:], y1=np.ones(last_elem)*(mean-std)*1e4, y2=np.ones(last_elem)*(mean+std)*1e4)
 plt.errorbar(B1, chi_o*1e4, xerr=delta_B1, yerr=delta_chi_o*1e4, fmt='ko', markersize='3.5')
 plt.axis([0, 0.81, -3, 0.8])
-#plt.errorbar(I, chi1_linear(B1, B2, Fz, A), xerr=I_unc, yerr=uncertenty_chi1_linear(chi1_linear(B1, B2, Fz, A), delta_B1, B1, delta_Fz, Fz, delta_A, A), fmt='ro', markersize='3.5')
+#plt.errorbar(B1, chi1_linear(B1, B2, Fz, A)*1e4, xerr=delta_B1, yerr=uncertenty_chi1_linear(chi1_linear(B1, B2, Fz, A), delta_B1, B1, delta_Fz, Fz, delta_A, A)*1e4, fmt='ro', markersize='3.5')
 ax.set_xlabel(r"Magnetfelt $B_1$ [T]", fontsize=16)
 ax.set_ylabel(r"Magnetisk susceptibilitet  $\chi\times 10^{-4}$", fontsize=16)
 plt.savefig("latex/chi_effekt.pdf")

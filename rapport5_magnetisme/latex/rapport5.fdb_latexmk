@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex rapport5"] 1525728384 "rapport5.aux" "rapport5.bbl" "rapport5" 1525728384
+["bibtex rapport5"] 1525807322 "rapport5.aux" "rapport5.bbl" "rapport5" 1525810832
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "citations.bib" 1525728117 18231 b76f7f65633e56b9ebca602f0f76b5ec ""
-  "rapport5.aux" 1525728362 13840 d4267ff4d3310854602aa4b79d1769f5 ""
-  "rapport5Notes.bib" 1525728357 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "rapport5.aux" 1525807324 13907 8480e57a5fe40483103bcd529b250268 ""
+  "rapport5Notes.bib" 1525807323 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "rapport5.blg"
   "rapport5.bbl"
-["pdflatex"] 1525728384 "rapport5.tex" "rapport5.pdf" "rapport5" 1525728384
+["pdflatex"] 1525810832 "rapport5.tex" "rapport5.pdf" "rapport5" 1525810832
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1480098666 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1480098696 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -174,17 +174,17 @@
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1504893732 4129591 b1a7ed87e25bd8fdaf5080304d300aaa ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
   "chi_effekt.pdf" 1525686835 21873 73ef5895e24c4d78f3f0fc4083ecabd0 ""
-  "faraday_effekt.pdf" 1525722885 17276 88f2bac7b6c924de2e1a5c2869ebee61 ""
+  "faraday_effekt.pdf" 1525796457 24845 c281e9ae10e02ac4a2467297023f42c9 ""
   "oppsett1.png" 1525529607 219785 44a8166bef2aad5e647b091be8c9f3ca ""
   "oppsett2.png" 1525532194 709634 6688c1fc589e9068c20a289bf39c0d78 ""
   "oppsett3.png" 1525544636 270256 00dcac46c35aca3243e4117d22eafbe5 ""
-  "rapport5.aux" 1525728362 13840 d4267ff4d3310854602aa4b79d1769f5 ""
-  "rapport5.bbl" 1525728384 264 f6804a05a8dd9dec480bed66114c1b4b "bibtex rapport5"
-  "rapport5.out" 1525728362 1026 cef91af1c8a365cc631a2a169ba4e083 ""
-  "rapport5.tex" 1525728355 32239 fb47e3138b52e820e3284e6c5ce82625 ""
+  "rapport5.aux" 1525807324 13907 8480e57a5fe40483103bcd529b250268 ""
+  "rapport5.bbl" 1525807322 264 f6804a05a8dd9dec480bed66114c1b4b "bibtex rapport5"
+  "rapport5.out" 1525807324 963 d2aa4ce74cf7ad83842791be776de878 ""
+  "rapport5.tex" 1525810831 38095 41ccfd6f36b6b4a78c1fec5c63d723e8 ""
   (generated)
+  "rapport5Notes.bib"
   "rapport5.aux"
+  "rapport5.log"
   "rapport5.pdf"
   "rapport5.out"
-  "rapport5.log"
-  "rapport5Notes.bib"

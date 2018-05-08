@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  7 MAY 2018 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  8 MAY 2018 22:20
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3022,77 +3022,71 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Class revtex4-1 Warning: If you want your PACS to appear in your output, use do
 cument class option showpacs.
 
+
+Package natbib Warning: Citation `SNL' on page 1 undefined on input line 119.
+
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `oppgave' on page 2 undefined on input line 15
-1.
+8.
 
 [2]
-
-Package natbib Warning: Citation `pedrotti_faraday_1990' on page 3 undefined on
- input line 196.
-
-
-Underfull \hbox (badness 2057) in paragraph at lines 196--197
+Underfull \hbox (badness 2057) in paragraph at lines 211--212
 \OT1/cmr/m/n/10 er en funk-sjon av b^^\lgelengden til ly-set, i va-
  []
 
-<oppsett1.png, id=116, 414.54875pt x 631.35875pt>
+<oppsett1.png, id=109, 414.54875pt x 631.35875pt>
 File: oppsett1.png Graphic file (type png)
 <use oppsett1.png>
-Package pdftex.def Info: oppsett1.png used on input line 206.
+Package pdftex.def Info: oppsett1.png used on input line 221.
 (pdftex.def)             Requested size: 157.53015pt x 239.91881pt.
 
-Package natbib Warning: Citation `oppgave' on page 3 undefined on input line 20
-7.
+Package natbib Warning: Citation `oppgave' on page 3 undefined on input line 22
+2.
 
 
-Package natbib Warning: Citation `oppgave' on page 3 undefined on input line 20
-7.
+Package natbib Warning: Citation `oppgave' on page 3 undefined on input line 22
+2.
 
-[3 <./oppsett1.png>] <oppsett2.png, id=131, 829.0975pt x 585.18625pt>
+[3] <oppsett2.png, id=131, 829.0975pt x 585.18625pt>
 File: oppsett2.png Graphic file (type png)
 <use oppsett2.png>
-Package pdftex.def Info: oppsett2.png used on input line 217.
+Package pdftex.def Info: oppsett2.png used on input line 232.
 (pdftex.def)             Requested size: 248.73117pt x 175.55722pt.
 
-Overfull \hbox (15.62624pt too wide) in paragraph at lines 217--218
+Overfull \hbox (15.62624pt too wide) in paragraph at lines 232--233
  [][] 
  []
 
 
-Package natbib Warning: Citation `oppgave' on page 4 undefined on input line 21
-8.
+Package natbib Warning: Citation `oppgave' on page 4 undefined on input line 23
+3.
 
 
-Package natbib Warning: Citation `oppgave' on page 4 undefined on input line 21
-8.
+Package natbib Warning: Citation `oppgave' on page 4 undefined on input line 23
+3.
 
-<oppsett3.png, id=137, 845.1575pt x 557.08125pt>
+[4 <./oppsett1.png> <./oppsett2.png>] <oppsett3.png, id=146, 845.1575pt x 557.0
+8125pt>
 File: oppsett3.png Graphic file (type png)
 <use oppsett3.png>
-Package pdftex.def Info: oppsett3.png used on input line 228.
+Package pdftex.def Info: oppsett3.png used on input line 243.
 (pdftex.def)             Requested size: 253.54921pt x 167.12566pt.
 
-Overfull \hbox (20.44427pt too wide) in paragraph at lines 228--229
+Overfull \hbox (20.44427pt too wide) in paragraph at lines 243--244
  [][] 
  []
 
 
-Package natbib Warning: Citation `oppgave' on page 4 undefined on input line 23
-0.
+Package natbib Warning: Citation `oppgave' on page 5 undefined on input line 24
+5.
 
 
-Package natbib Warning: Citation `oppgave' on page 4 undefined on input line 23
-0.
+Package natbib Warning: Citation `oppgave' on page 5 undefined on input line 24
+5.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <./oppsett2.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 235.
 
 
 ! Package inputenc Error: Unicode char   (U+2029)
@@ -3102,30 +3096,29 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.244 ... {[}mT{]} & $F_z$ {[}mN{]} \\ \colrule 
+l.259 ... {[}mT{]} & $F_z$ {[}mN{]} \\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<chi_effekt.pdf, id=149, 542.025pt x 542.025pt>
+<chi_effekt.pdf, id=150, 542.025pt x 542.025pt>
 File: chi_effekt.pdf Graphic file (type pdf)
 <use chi_effekt.pdf>
-Package pdftex.def Info: chi_effekt.pdf used on input line 257.
-(pdftex.def)             Requested size: 271.01183pt x 271.01183pt.
-
-Overfull \hbox (37.90689pt too wide) in paragraph at lines 257--258
- [][] 
- []
-
+Package pdftex.def Info: chi_effekt.pdf used on input line 272.
+(pdftex.def)             Requested size: 216.80615pt x 216.80615pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 <./oppsett3.png> <./chi_effekt.pdf>]
+[5 <./oppsett3.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 280.
+
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.268 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.283 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3134,12 +3127,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `usikkerhet1' on page 6 undefined on input line 268.
+LaTeX Warning: Reference `usikkerhet1' on page 6 undefined on input line 283.
 
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.268 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.283 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3148,15 +3141,15 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `ikke_enda' on page 6 undefined on input line 268.
+LaTeX Warning: Reference `ikke_enda' on page 6 undefined on input line 283.
 
 
-LaTeX Warning: Reference `usikkerhet1' on page 6 undefined on input line 268.
+LaTeX Warning: Reference `usikkerhet1' on page 6 undefined on input line 283.
 
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.268 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.283 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3165,7 +3158,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `ikke_enda' on page 6 undefined on input line 268.
+LaTeX Warning: Reference `ikke_enda' on page 6 undefined on input line 283.
 
 
 ! Package inputenc Error: Unicode char   (U+2029)
@@ -3175,7 +3168,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 ...ad$  & $B_0/D_{\perp}$ [mT]\\ \colrule 
+l.287 ...ad$  & $B_0/D_{\perp}$ [mT]\\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3193,7 +3186,7 @@ or  <return>  to continue without it.
 ! For immediate help type H <return>.
 !...............................................  
                                                   
-l.279 ...�rspolen var $\SI{6.5pm0.1}{\milli\meter}
+l.294 ...�rspolen var $\SI{6.5pm0.1}{\milli\meter}
                                                   $, som gjør at arealet er...
 
 |'''''''''''''''''''''''''''''''''''''''''''''''
@@ -3201,7 +3194,7 @@ l.279 ...�rspolen var $\SI{6.5pm0.1}{\milli\meter}
 | the token 'p' is not set up as a valid part of a number.
 |...............................................
 
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 279.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 294.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -3214,7 +3207,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.292       \colrule 
+l.307       \colrule 
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3228,7 +3221,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.293 ...eta\pm0.2$ [$\degree$] } \\   \colrule 
+l.308 ...ta\pm0.003$ [radianer] } \\   \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3242,51 +3235,63 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.298 ....8 & 4.4 & 4.0 & 5.2 & 4.8 \\ \colrule 
+l.313 ...77 & 0.070 & 0.091 & 0.084 \\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+Overfull \hbox (91.10626pt too wide) in paragraph at lines 301--321
+ []$[]$ 
+ []
+
+
 LaTeX Warning: Hyper reference `fig_verdet' on page 6 undefined on input line 3
-07.
+22.
 
 
-LaTeX Warning: Reference `fig_verdet' on page 6 undefined on input line 307.
+LaTeX Warning: Reference `fig_verdet' on page 6 undefined on input line 322.
 
-<faraday_effekt.pdf, id=223, 505.89pt x 520.34402pt>
+<faraday_effekt.pdf, id=166, 505.89pt x 520.34402pt>
 File: faraday_effekt.pdf Graphic file (type pdf)
 <use faraday_effekt.pdf>
-Package pdftex.def Info: faraday_effekt.pdf used on input line 310.
+Package pdftex.def Info: faraday_effekt.pdf used on input line 325.
 (pdftex.def)             Requested size: 192.24019pt x 197.73277pt.
-(./rapport5.bbl
-Underfull \hbox (badness 1275) in paragraph at lines 281--1
+
+Underfull \hbox (badness 1275) in paragraph at lines 296--329
 []\OT1/cmr/m/n/10 For ^^Wa be-reg-ne verdet-konstanten ble det gjen-
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `test_chi' on page 6 undefined on input line 332.
 
+[6 <./chi_effekt.pdf>]
 
-LaTeX Warning: Reference `LastBibItem' on page 6 undefined on input line 1.
+LaTeX Warning: Reference `' on page 7 undefined on input line 335.
+
+(./rapport5.bbl [7 <./faraday_effekt.pdf>]
+Underfull \hbox (badness 1043) in paragraph at lines 4--7
+ |   []   |   []   |   []   |   []\OT1/cmr/m/n/9 , 58(6):542--545, Ju-ne
+ []
 
 )
 
 Package natbib Warning: There were undefined citations.
 
-[6] [7] [8 <./faraday_effekt.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
-(./rapport5.aux
+[8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
+(./rapport5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+Package rerunfilecheck Warning: File `rapport5.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
-Package rerunfilecheck Info: File `rapport5.out' has not changed.
-(rerunfilecheck)             Checksum: CEF91AF1C8A365CC631A2A169BA4E083;1026.
+Package rerunfilecheck Info: Checksums for `rapport5.out':
+(rerunfilecheck)             Before: D2AA4CE74CF7AD83842791BE776DE878;963
+(rerunfilecheck)             After:  B1FC73A30C422CC063442546A755DFD5;1146.
 
 LaTeX Warning: There were undefined references.
 
@@ -3295,10 +3300,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22966 strings out of 492995
- 402295 string characters out of 6132705
- 524916 words of memory out of 5000000
- 26188 multiletter control sequences out of 15000+600000
+ 22982 strings out of 492995
+ 402435 string characters out of 6132705
+ 524951 words of memory out of 5000000
+ 26199 multiletter control sequences out of 15000+600000
  18122 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,14n,50p,10382b,1097s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3326,10 +3331,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on rapport5.pdf (8 pages, 1078547 bytes).
+Output written on rapport5.pdf (8 pages, 1092093 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

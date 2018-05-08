@@ -116,6 +116,9 @@ Abstract. Magnetisme er kult, Skår er tøff.
 %\tableofcontents
 
 \section{\label{sec:level1}Introduksjon}
+Magnetisme er et fenomen mennsker har vist om, og utnyttet i lang tid. Thales fra Milet kjent til de magnetiske egenskapene til magnetjernstein \cite{SNL}, mer enn $500$ år før kristus. En anvendelsene av magnet ble ikke funnet før på $800$-tallet, for å navigere med kompass. Det tok  $1000$ år til før en beskrivelse av magneter ved Faraday og Maxwell, som virkelig tok anvendelsen til en ny skala. Fysikeres forståelse av magnetisme har gjort mulig den teknologiske revolusjonen som påvirker dagliglivet vårt. Datamaskinen jeg skriver dette på ville ikke fungert uten anvendelsen av magnetisme på en liten skala. Elektriske motorer, generatorer, medisinsk teknologi og mobiltelefoner er bare noen få eksempler på anvendelser av magnetisme. Selv om magnetisme er en anvendelig teori, er det også en fundamental teori. Det er bevegelsen av ladde partikler som danner magnetiske felt, og er en del av alle fysisk teorier. Atomer danner et magnetfelt, og flere atomer sammen kan danne sterkere magnetfelt. Det er magnetismens effekt i og av materialer vi skal studere i denne rapporten.\par
+Eksperimentet i denne rapporten ble gjennomført i håp om å forstå magnetiske materialer, og magnetismens effekt på lys.\\
+Eksperimentet består av tre deler. Vi ønsker å beregne den magnetiske suceptibiliteten til en vismutstang ved å bruke et eksternt magnetfelt, og måle den magnetiske krafen som virker på vistmutstangen. Deretter skal vi studere ferromagnetiske materialer ved å måle magnetiseringen av jern. Tilslutt skal vi se på hvordan polarisert, monokromatisk, lys endrer polarisasjonsvinkel av å bevege seg gjennom et ytre magnetfelt, dette kalles Faraday-effekten.
 \section{\label{sec:level2}Teori}
 Hele den klassiske elektromagnetisme kan beskrives ved hjelp av fire partsielle differensiallikninger. Disse likningene beskriver elektriske $\bm{E}$ og magnetiske $\bm{B}$ felt, og forklarer Lorentz kraften, klassisk optikk og elektriske kretser. Likningene kan skrives på flere måter, og på flere former. I denne rapporten velger vi å bruke følgende:
 \begin{align}
@@ -143,13 +146,17 @@ De aller fleste materialer er ikke magnetiske. Slike materialer kaller vi for di
 \begin{equation}
   F_Z = -\frac{\chi}{2\mu_0}A\left(B_1^2 - B_2^2\right). \label{vismut}
 \end{equation}
-Hvor $B_1$ og $B_2$ er magnetfeltet på tvers av symetriaksen til stangen, i henholdsvis bunn og toppen av stangen, og $A$ er tversnittsarealet.
+Hvor $B_1$ og $B_2$ er magnetfeltet på tvers av symetriaksen til stangen, i henholdsvis bunn og toppen av stangen, og $A$ er tversnittsarealet. Under eksperimentet ønsker vi å se om tilnærmingen $B_2=\SI{0}{\tesla}$ er en god tilnærming under beregningen av $\chi$. Det kan vises at endringen i suceptibiliteten $\Delta \chi$ ved denne antagelsen er gitt av
+\begin{equation}
+  \frac{\Delta \chi}{\chi} = \frac{B_2^2}{B_1^2}. \label{test_chi}
+\end{equation}
+Dette uttrykket kan vi bruke for å teste om tilnærmingen $B_2=0$ er riktig god eller ikke.
 \subsection{Paramagnetisme og ferromagnetisme}
 I diamagnetiske materialer kanselerte spinnet til elektronene slik at netto angulært moment er tilnærmet null. For andre materialer, hvor spinnet til elektronene ikke kanselerer hverandre, vil det bevegelsen til elektronene danne et netto magnetisk moment $\mu$. Er den gjennomsnittlige orienteringen til atomenes magnetfelt i en bestemt retning, vil summen av alle magnetfeltene danne et magnetisk felt som kan merkes utenfor mediet. Dette betyr at materialet er \textit{magnetisert}, som beskrives med paramteren $\bm{M} = \diff\bm{\mu}/\diff V$, hvor $\bm{\mu}$ er det magnetiske moment, og $V$ er et volumelement. Materialer som oppfører seg slik klasseifiseres som paramagnetiske og ferromagnetiske materialer.\par
 Paramagnetiske materialer vil ikke kunne danne et magnetfelt alene, og får det kun fra et ytre påtrykt magnetisk felt. Det ytre påtrykte magnetfelt vil få alle de magnetiske dipolene til å rette seg inn samme retning. Fjernes feltet vil orienteringen bli tilfeldig igjen, og materialet vil ikke lenger danne et magnetisk felt. Magnetiseringen av materialet er omtrent proposjonalt med styrken på det ytre påtrykte magnetfeltet $\bm{H}$, $\bm{M} = \chi\bm{H}$, hvor den magnetiske susceptibiliteten $0<\chi\ll1$. En paramagnet forsterker det påtrykte magnetfeltet.
 \par
 Ferromagnetiske materialer oppfører seg som paramagnetiske materialer, men størrelsen på magnetiseringen er mye større. Forsterkningen av det ytre påtrykte magnetfeltet kan være opp mot en faktor $10 000$ sterkere \cite{oppgave}. Den sterke magnetiseringen fører til at de atomære dipolene klarer å oppretholde magnetfeltet sitt, etter at det ytre magnetfeltet er fjernet. Dette betyr at man kan lage en permanentmagnet ved å magnetisere et ferromagnetisk materiale. For ferromagneter er den magnetiske susceptibiliteten ikke en materialkonstant. Det er ikke et lineært forhold mellom det ytre påtrykte magnetfeltet og den magnetiske susceptibiliteten, susceptibiliteten er avhengig av geometrien til materialet, og styrken på det påtrykte magnetfeltet.
-\subsection{Avmagnetisering}
+\par
 For å avmagnetisere et ferromagnetisk materiale tregns det et magnetisk felt, styrken på mangetfeltet som trengs kalles avmagnetiseringsfeltet $\bm{H}_d$, er gitt av
 \begin{equation}
   H_{i, d} = D_iM_i,
@@ -177,13 +184,21 @@ Hvor $A=1/(1-D)$, og $D$ er enten $D_{\parallel}$ eller $D_{\perp}$. Dette gjør
 \begin{equation}
   \chi = \frac{M}{H} = \frac{B-B_0}{B_0-DB}.
 \end{equation}
-Som gjør at vi kan måle størrelser som lar oss beregne en verdi for den magnetiske susceptibiliteten.
+Som gjør at vi kan måle størrelser som lar oss beregne en verdi for den magnetiske susceptibiliteten. Siden ferromagneter ikke har har en konstant verdi for suceptibiliteten, vil suceptibiliteten være en funksjon av den magnetiske flukstettheten. Selv om vi ikke kan finne et analytisk uttrykk for $B(B_0)$ kan vi finne en øvre grense for $B$
+\begin{equation}
+  B_0 < B_i < \frac{B_i}{D_i}
+\end{equation}
+hvor indeksen $i$ viser til symetriaksen til jernklumpen er parallell med eller ortogonalt på retningen til magnetfiltet.
+\\Under eksperimentet kommer magneten til å bli plassert i en spole med $N$ vinninger, og lengde $L$, med en strøm $I$ som går gjennom. Da vil den magnetiske flukstettheten i sentrum av spolen være gitt av
+\begin{equation}
+  B = \frac{\mu_0NI}{L}.
+\end{equation}Den teoretiske verdien kan vi teste mot målingene vi gjør av den magnetiske flukstettheten under eksperimentet.
 \par
-I eksperimentet kommer vi til å måle den magnetiske flukstetheten på en mer inndirekte måte ved hjelp av Faraday effekten. For å gjøre dette kommer vi til å bruke en spenningsgenerator som gir oss integralet av forskjellen i elektrisk potensial $\epsilon$, mellom endepunktene av sekundærspolen
+I eksperimentet kommer vi til å måle den magnetiske flukstetheten på en mer direkte måte ved å studere magnetiseringen av jern med Faraday's induksjonslov \eqref{3}. For å gjøre dette kommer vi til å bruke en spenningsgenerator som gir oss integralet av forskjellen i elektrisk potensial $\epsilon$, mellom endepunktene av sekundærspolen
 \begin{equation}
   \Delta S = \frac{1}{\kappa}\int_{t_0}^{t}\epsilon \diff \tau, \label{deltas}
 \end{equation}
-hvor $\kappa$ er en kalibreringskonstant. Fra å integrere Faraday's induksjonslov \eqref{3} får man en lineær sammenheng mellom endringen av magnetisk fluks $\Delta \Phi$ og spenningsgeneratoren $\Delta S$. Fra å vite tversnittsarealet $A$, og antall vindinger $n$ kan en da beregne endringen i magnetisk flukstetthet
+hvor $\kappa$ er en kalibreringskonstant. Spenningen over strømsløyen vil generere et tidsvarierende magnetfelt \eqref{3}. Fra å integrere Faraday's induksjonslov \eqref{3} finner man en lineær sammenheng mellom endringen av magnetisk fluks $\Delta \Phi$ og spenningsgeneratoren $\Delta S$. Fra å vite tversnittsarealet $A$, og antall vindinger $n$ kan en da beregne endringen i magnetisk flukstetthet
 \begin{equation}
   \Delta B = \frac{\kappa\Delta S}{nA}.\label{deltab}
 \end{equation}
@@ -254,7 +269,7 @@ Halvparten av målingene for strøm $I$, magnetfelt mellom spolene $B_1$, magnet
 Målingene av den magnetiske suceptibiliteten som funksjon av magnetfeltet mellom spolene er vist i figur \vref{resultat_chi}.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.5]{chi_effekt.pdf}
+  \includegraphics[scale=0.4]{chi_effekt.pdf}
   \caption{Den magnetiske susceptibiliteten $\chi$ som funksjon av magnetfeltet $B_1$ mellom spolene. Det blå området i grafen viser gjennomsnittet, og spredningen i gjennomsnittet til de siste målepunktene. Den gjennomsnittlige verdien for de $8$ siste målepunktene er $\chi = -1.57(4)$.}
   \label{resultat_chi}
 \end{figure}
@@ -290,27 +305,34 @@ For å beregne verdet-konstanten ble det gjennomført målinger av polarisasjons
       \multicolumn{2}{c|}{$580$} &
       \multicolumn{2}{c|}{$595$} \\
       \colrule 
-      $B$ [mT] & \multicolumn{6}{c|}{Vinkel $\theta\pm0.2$ [$\degree$] } \\   \colrule 
-      43(1)  & 1.8 & 1.4 & 1.8 & 1.4 & 2.0 & 1.6 \\
-      63(1)  & 2.8 & 2.2 & 2.6 & 2.0 & 2.8 & 2.6 \\
-      83(2)  & 3.8 & 3.0 & 3.0 & 2.8 & 3.6 & 3.2 \\
-      102(2) & 4.2 & 4.0 & 4.0 & 3.4 & 4.4 & 4.2 \\
-      119(3) & 5.2 & 4.8 & 4.4 & 4.0 & 5.2 & 4.8 \\ \colrule 
+      $B$ [mT] & \multicolumn{6}{c|}{Vinkel $\theta\pm0.003$ [radianer] } \\   \colrule 
+      43(1)  & 0.031 & 0.024 & 0.031 & 0.024 & 0.035 & 0.028 \\
+      63(1)  & 0.049 & 0.038 & 0.045 & 0.035 & 0.049 & 0.045 \\
+      83(2)  & 0.066 & 0.052 & 0.052 & 0.049 & 0.062 & 0.056 \\
+      102(2) & 0.073 & 0.070 & 0.070 & 0.059 & 0.077 & 0.073 \\
+      119(3) & 0.091 & 0.084 & 0.077 & 0.070 & 0.091 & 0.084 \\ \colrule 
       Strømretning & {$I_+$} & {$I_-$} & {$I_+$} & {$I_-$} & {$I_+$} & {$I_-$} \\ \colrule
-      Stigningstall [k/Tm] &
-      \multicolumn{2}{|c}{$1.5\pm0.1$} &
-      \multicolumn{2}{|c}{$1.4\pm0.1$} &
-      \multicolumn{2}{|c|}{$1.2\pm0.1$} \\
+      Stigningstall [radianer/Tm] &
+      \multicolumn{2}{|c}{$26\pm2$} &
+      \multicolumn{2}{|c}{$24\pm1$} &
+      \multicolumn{2}{|c|}{$20\pm2$} \\
       \colrule
   \end{tabular}
 \end{table}
 Et sett av målinger er vist i figur \vref{fig_verdet}. Figuren viser polarisasjonsvinkel $\theta$ som funksjon av produktet mellom magnetfelt og lengden på flintkrystallen. For målingene vist i figuren er det brukt lys med bølgelengde $\lambda=\SI{580}{\nano\meter}$. Det skraverte området i figuren viser usikkerheten i stigningstallet, og den stiplede linjen viser gjennomsnittet til stigningstallet, som blir verdien for verdet konstanten ved denne bølgelengden.
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \centering
   \includegraphics[scale=0.38]{faraday_effekt.pdf}
   \caption{Målinger for polarisasjonsvinkel $\theta$ som funksjon av absolutverdien til produktet mellom styrken til magnetfeltet og lengden av flintkrystallen, for bølgelengde på $\lambda=\SI{580}{\nano\meter}$. Fra målepunktene beregnes det stigningstallet ved hjelp av lineærregresjon, som er verdet-konstanten. For denne bølgelengden var verdetkonstanten $1.4\pm0.1$k/Tm}
   \label{eksperimentelt_oppsett1}
 \end{figure}
+\section{Diskusjon}
+\subsection{Diamagnetisme}
+Verdiene brukt for å beregne den magnetiske suceptibiliteten er vist i figur \vref{resultat_chi}. Som vi ser i figuren avtar usikkerhetn som styrken på strømmen øker. Dette er fordi den relative usikkerheten til vekten er stor når utslaget på vekten er lite. For å beregne verdien til $\chi$ bruker vi derfor en vektet midlig på de $8$ siste punktene. Målingene med høyere usikkerhet blir vektet lavere i beregningen av gjennomsnittet til de siste $8$ målingene. Dette resultert i at verdien til den magnetiske suceptibiliteten blie $\chi =$.
+I tabell \vref{table_vismut} er målingene gjort for å beregne den magnetiske suceptibiliteten vist. Fra verdiene ser vi at kraften som virker på vismutstangen øker med styrken på magnetfeltet. Som strømmen i spolene øker, øker kraften på den magnetiske flukstettheten. Den magnetiske flukstettheten mellom spolene $B_1$ øker nesten lineært med strømstyrken, men mot slutten avtar stigningen svakt. Styrken på magnetfeltet på den andre enden av staven går mot en konstant verdi på rundt $\SI{2.4}{\milli\tesla}$, når strømmen når $\SI{1.20}{\ampere}$. Fra å bruke likning \eqref{test_chi} kan vi teste effekten av å sette $B_2=\SI{0}{\tesla}$. Verdien til $\chi$ blir mer nøyaktig, jo sterke magnetfeltet er, vi bruker derfor verdien til den magnetiske flukstettheten for strømmen $I=\SI{2.4}{\ampere}$. Dette gir oss en endring av $\chi$ på SETT INN VERDI HER. Altså har det tilnærmet ingen effekt ved å inkludere $B_2$ i beregningen av suceptibiliteten. Faktisk vil økningen av usikkerheten øke med $...$ ved å inkludere $B_2$, som er større enn endringen i suceptibiliteten. Det vil derfor gi mer presise resultater ved å ikke inkludere $B_2$, enn å gjøre det, selv om dette er nærmere det analytiske uttrykket.
+\subsection{Ferromagnetisme}
+Målingene gjort for de fire forskjellige jernklumpene er vist i tabell \vref{tot_ferro}. Denne tabellen inkluderer målingene av lengden til de fire jernklumpene, parallellt med, og tangensialt på, symetriaksen.
+Fra tabellen ser vi at lengden til ellipsoiden parallellt med symmetriaksen har en mye større usikkerhet enn de andre lengdene. Årsaken til dette er at dette målet måtte bli gjort med en meterstokk istedenfor et skyvelær, som gir oss en mye større usikkerhet. Denne usikkerheten manififisterer seg ikke merkbart i de følgende usikkerheten for ellipsoiden. Fra lengden til jernklumpene kunne vi beregne avmagnetiseringsfaktoren til jerklumpen parallelt med, og ortogonalt på rotasjonsaksen. Disse brukes til å finne den øvre grensen for magnetfeltet når symetriaksen til jerklumpen er plassert henholdsvis parallellt med og ortogonalt på magnetfeltet ved likning \eqref{}.
 %\begin{thebibliography}{9}
 %\bibitem{squires}
 %Squires, G.L. \emph{Practical Physics}, Cambridge University Press, 2001.

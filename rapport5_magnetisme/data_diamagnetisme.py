@@ -96,7 +96,7 @@ std = np.sqrt(np.mean(delta_chi_o[-last_elem:])**2 + std**2)
 print(std, "STD")
 print(np.mean(delta_chi_o[-last_elem:]), "average unc")
 print(mean*1e4, std*1e4)
-fig = plt.figure(figsize=(7.5, 7.5), dpi=100)
+fig = plt.figure(figsize=(7.6, 7.2), dpi=100)
 plt.style.use("bmh")
 plt.minorticks_on()
 #plt.rc('font', **font)
@@ -127,7 +127,7 @@ unc_delta_chi = delta_chi*np.sqrt((delta_B2[-last_elem:]/B2[-last_elem:])**2 + (
 
 last_elem = 7
 
-fig = plt.figure(figsize=(7.5, 7.5), dpi=100)
+fig = plt.figure(figsize=(7.6, 7.2), dpi=100)
 plt.style.use("bmh")
 plt.minorticks_on()
 #plt.rc('font', **font)

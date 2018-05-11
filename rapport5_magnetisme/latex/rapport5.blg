@@ -4,53 +4,52 @@ The top-level auxiliary file: rapport5.aux
 The style file: plain.bst
 Database file #1: rapport5Notes.bib
 Database file #2: citations.bib.bib
-Warning--I didn't find a database entry for "SNL"
-Warning--I didn't find a database entry for "oppgave"
+Warning--I didn't find a database entry for "plastikk_sucept"
 Warning--to sort, need author or key in noauthor_magnetic_2018
 Warning--to sort, need author or key in noauthor_magnetic_nodate
 Warning--empty author in noauthor_magnetic_nodate
 Warning--empty journal in noauthor_magnetic_nodate
 Warning--empty year in noauthor_magnetic_nodate
 Warning--empty author in noauthor_magnetic_2018
-You've used 3 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            516 strings with 4329 characters,
-and the built_in function-call counts, 689 in all, are:
-= -- 66
-> -- 15
-< -- 0
-+ -- 7
-- -- 4
-* -- 57
-:= -- 107
-add.period$ -- 7
-call.type$ -- 3
-change.case$ -- 11
+            524 strings with 4400 characters,
+and the built_in function-call counts, 1169 in all, are:
+= -- 112
+> -- 29
+< -- 1
++ -- 13
+- -- 8
+* -- 78
+:= -- 191
+add.period$ -- 13
+call.type$ -- 5
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 31
-empty$ -- 64
-format.name$ -- 4
-if$ -- 140
+cite$ -- 11
+duplicate$ -- 57
+empty$ -- 105
+format.name$ -- 8
+if$ -- 247
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 16
-num.names$ -- 2
-pop$ -- 14
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 26
+num.names$ -- 6
+pop$ -- 22
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 14
 quote$ -- 0
-skip$ -- 21
+skip$ -- 41
 stack$ -- 0
-substring$ -- 40
-swap$ -- 2
-text.length$ -- 0
+substring$ -- 52
+swap$ -- 9
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 20
 warning$ -- 6
-while$ -- 4
-width$ -- 4
-write$ -- 28
-(There were 8 warnings)
+while$ -- 9
+width$ -- 6
+write$ -- 49
+(There were 7 warnings)

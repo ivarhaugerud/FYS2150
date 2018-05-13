@@ -13,6 +13,19 @@ def get_H0(I):
     N = 344
     return I*N/L
 
+def linear_regresion(x, y):
+    n = len(x)
+    D = np.sum(np.square(x)) - (np.sum(x)**2)/n
+    E = np.sum(x*y) - np.sum(x)*np.sum(y)/n
+    F = np.sum(np.square(y)) - (np.sum(y)**2)/n
+
+    delta_m = np.sqrt((1/(n-2))*(D*F-E**2)/(D**2))
+    delta_c = np.sqrt(1/(n-2)*(D/n+np.mean(x)**2)*(D*F-E**2)/(D**2))
+    m = E/D
+    c = np.mean(y)-m*np.mean(x)
+
+    return m, c, delta_m, delta_c
+
 I_primary = np.linspace(4.5, 0.0, 10)
 delta_I_prim = 0.001+0.5*I_primary/100
 
@@ -60,6 +73,8 @@ delta_H0[-1] = delta_H0[-2]
 M = B/mu_0 - H0
 delta_M = np.sqrt((delta_B/mu_0)**2 + delta_H0**2)
 
+m, c, delta_m, delta_c = linear_regresion(H0, M*1e-4)
+
 fig = plt.figure(figsize=(7.6, 7.2), dpi=100)
 plt.style.use("bmh")
 plt.minorticks_on()
@@ -67,6 +82,8 @@ font = {"size"  : 18}
 plt.rc('font', **font)
 ax = fig.add_subplot(111)
 plt.plot(H0, M*1e-4, "--", linewidth=0.7)
+#plt.plot(H0, c+H0*m, "--")
+#plt.fill_between(x=H0, y1=c-delta_c+(m-delta_m)*H0, y2=c+delta_c+(m+delta_m)*H0, edgecolor='black', alpha=0.175, color="green")
 plt.errorbar(H0, M*1e-4, yerr=delta_M*1e-4, xerr=delta_H0, fmt='o', markersize='3.5')
 plt.tick_params(labelsize=18)
 ax.set_xlabel(r"$H$-felt fra primærspolen $H_0$ [A/m]", fontsize=18)

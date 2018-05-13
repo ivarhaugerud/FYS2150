@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  13 MAY 2018 17:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  14 MAY 2018 00:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3079,27 +3079,49 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [3]
-Underfull \hbox (badness 1077) in paragraph at lines 234--237
+Underfull \hbox (badness 1077) in paragraph at lines 235--238
 \OT1/cmr/m/n/10 Hvor $^^A\OML/cmm/m/it/10 E[]$ \OT1/cmr/m/n/10 og $^^A\OML/cmm/
 m/it/10 E[]$ \OT1/cmr/m/n/10 er usik-ker-he-ten til den eks-
  []
 
-<oppsett1.png, id=153, 414.54875pt x 631.35875pt>
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 239.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 241.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 241.
+<oppsett1.png, id=157, 414.54875pt x 631.35875pt>
 File: oppsett1.png Graphic file (type png)
 <use oppsett1.png>
-Package pdftex.def Info: oppsett1.png used on input line 242.
+Package pdftex.def Info: oppsett1.png used on input line 257.
 (pdftex.def)             Requested size: 157.53015pt x 239.91881pt.
-[4 <./oppsett1.png>] <oppsett2.png, id=169, 829.0975pt x 585.18625pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 264.
+
+<oppsett2.png, id=172, 829.0975pt x 585.18625pt>
 File: oppsett2.png Graphic file (type png)
 <use oppsett2.png>
-Package pdftex.def Info: oppsett2.png used on input line 253.
+Package pdftex.def Info: oppsett2.png used on input line 268.
 (pdftex.def)             Requested size: 198.98746pt x 140.44756pt.
-<oppsett3.png, id=178, 845.1575pt x 557.08125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./oppsett1.png> <./oppsett2.png>] <oppsett3.png, id=188, 845.1575pt x 557.0
+8125pt>
 File: oppsett3.png Graphic file (type png)
 <use oppsett3.png>
-Package pdftex.def Info: oppsett3.png used on input line 264.
+Package pdftex.def Info: oppsett3.png used on input line 279.
 (pdftex.def)             Requested size: 228.19557pt x 150.41394pt.
-[5 <./oppsett2.png>]
 
 ! Package inputenc Error: Unicode char   (U+2029)
 (inputenc)                not set up for use with LaTeX.
@@ -3108,34 +3130,32 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.279 ... {[}mT{]} & $F_z$ {[}mN{]} \\ \colrule 
+l.294 ... {[}mT{]} & $F_z$ {[}mN{]} \\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<chi_effekt.pdf, id=193, 549.25201pt x 520.34402pt>
+<chi_effekt.pdf, id=197, 549.25201pt x 520.34402pt>
 File: chi_effekt.pdf Graphic file (type pdf)
 <use chi_effekt.pdf>
-Package pdftex.def Info: chi_effekt.pdf used on input line 293.
+Package pdftex.def Info: chi_effekt.pdf used on input line 308.
 (pdftex.def)             Requested size: 247.16112pt x 234.15263pt.
 
-Overfull \hbox (14.05618pt too wide) in paragraph at lines 293--294
+Overfull \hbox (14.05618pt too wide) in paragraph at lines 308--309
  [][] 
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 272--297
-[]\OT1/cmr/m/n/10 Ved ^^Wa m^^Wale dia-me-te-ren til vis-mut pr^^\ven p^^Wa
+Underfull \hbox (badness 3746) in paragraph at lines 287--312
+\OT1/cmr/m/n/10 for-skjel-li-ge punk-ter, fant vi at dia-me-te-ren var
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[6 <./oppsett3.png>]
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.300 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.315 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3146,7 +3166,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.300 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.315 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3157,7 +3177,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.300 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.315 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3173,13 +3193,12 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.304 ...ad$  & $B_0/D_{\perp}$ [mT]\\ \colrule 
+l.319 ...ad$  & $B_0/D_{\perp}$ [mT]\\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[6 <./oppsett3.png>]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !
@@ -3192,7 +3211,7 @@ or  <return>  to continue without it.
 ! For immediate help type H <return>.
 !...............................................  
                                                   
-l.315 ...�rspolen var $\SI{6.5pm0.1}{\milli\meter}
+l.330 ...ameteren på $\SI{6.5pm0.1}{\milli\meter}
                                                   $, som gjør at arealet er...
 
 |'''''''''''''''''''''''''''''''''''''''''''''''
@@ -3200,38 +3219,33 @@ l.315 ...�rspolen var $\SI{6.5pm0.1}{\milli\meter}
 | the token 'p' is not set up as a valid part of a number.
 |...............................................
 
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 315.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 330.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) <magnetic_secondary_hysterese.pdf, id=215, 549.25201pt x 520.34402pt>
+) <magnetic_secondary_hysterese.pdf, id=218, 549.25201pt x 520.34402pt>
 File: magnetic_secondary_hysterese.pdf Graphic file (type pdf)
 <use magnetic_secondary_hysterese.pdf>
-Package pdftex.def Info: magnetic_secondary_hysterese.pdf used on input line 31
-8.
+Package pdftex.def Info: magnetic_secondary_hysterese.pdf used on input line 33
+3.
 (pdftex.def)             Requested size: 247.16112pt x 234.15263pt.
 
-Overfull \hbox (14.05618pt too wide) in paragraph at lines 318--319
+Overfull \hbox (14.05618pt too wide) in paragraph at lines 333--334
  [][] 
  []
 
-<magnetisering.pdf, id=219, 549.25201pt x 520.34402pt>
+<magnetisering.pdf, id=222, 549.25201pt x 520.34402pt>
 File: magnetisering.pdf Graphic file (type pdf)
 <use magnetisering.pdf>
-Package pdftex.def Info: magnetisering.pdf used on input line 325.
+Package pdftex.def Info: magnetisering.pdf used on input line 340.
 (pdftex.def)             Requested size: 247.16112pt x 234.15263pt.
 
-Overfull \hbox (14.05618pt too wide) in paragraph at lines 325--326
+Overfull \hbox (14.05618pt too wide) in paragraph at lines 340--341
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7 <./chi_effekt.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 329.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3244,7 +3258,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.341       \colrule 
+l.356       \colrule 
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3258,7 +3272,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.342 ...eta\pm0.3$ [$\degree$] } \\   \colrule 
+l.357 ...eta\pm0.3$ [$\degree$] } \\   \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3272,679 +3286,52 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.347 ... & 4.4 & -4.0 & 5.2 & -4.8 \\ \colrule 
+l.362 ... & 4.4 & -4.0 & 5.2 & -4.8 \\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (2.12424pt too wide) in paragraph at lines 335--354
+Overfull \hbox (2.12424pt too wide) in paragraph at lines 350--369
  []$[]$ 
  []
 
-<faraday_effekt.pdf, id=306, 549.25201pt x 520.34402pt>
+<faraday_effekt.pdf, id=229, 549.25201pt x 520.34402pt>
 File: faraday_effekt.pdf Graphic file (type pdf)
 <use faraday_effekt.pdf>
-Package pdftex.def Info: faraday_effekt.pdf used on input line 358.
+Package pdftex.def Info: faraday_effekt.pdf used on input line 373.
 (pdftex.def)             Requested size: 247.16112pt x 234.15263pt.
 
-Overfull \hbox (14.05618pt too wide) in paragraph at lines 358--359
+Overfull \hbox (14.05618pt too wide) in paragraph at lines 373--374
  [][] 
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 330--364
-[]\OT1/cmr/m/n/10 For ^^Wa be-reg-ne verdet-konstanten ble det gjen-
+Underfull \hbox (badness 1019) in paragraph at lines 345--379
+[]\OT1/cmr/m/n/10 For ^^Wa be-reg-ne Verdet-konstanten ble det gjen-
  []
 
-[8 <./magnetic_secondary_hysterese.pdf> <./magnetisering.pdf
+[7 <./chi_effekt.pdf>] [8 <./magnetic_secondary_hysterese.pdf> <./magnetisering
+.pdf
 
 pdfTeX warning: pdflatex (file ./magnetisering.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
 >]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 366.
+ on input line 381.
 
 [9 <./faraday_effekt.pdf>]
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-token-in-number"
-! 
-! Invalid token '\protect ' in numerical input.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-
-|'''''''''''''''''''''''''''''''''''''''''''''''
-| Numbers can only contain tokens defined using the 'input-...' options:
-| the token '\protect ' is not set up as a valid part of a number.
-|...............................................
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-number"
-! 
-! Invalid numerical input '-1.66e\protect \begingroup \immediate \write
-! \@unused   \def \MessageBreak  
- \let \protect \edef  Your command was
-! ignored.\MessageBreak Type  I <command> <return>  to replace it with another
-! command,\MessageBreak or  <return>  to continue without it.  \errhelp \let
-! \def \MessageBreak  
-(inputenc)                 \def   \errmessage  Package
-! inputenc Error: Unicode char − (U+2212)\MessageBreak not set up for use
-! with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H
-! <return>  for immediate help   \endgroup 04'.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.372 ...r_magnetic_nodate}) er $\SI{-1.66e−04}$
-                                                  . Det er derfor et avvik p...
-
-|'''''''''''''''''''''''''''''''''''''''''''''''
-| The input given as a number does not make logical sense. This happens, for
-| example, if a number only contains a sign.
-|...............................................
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...-1.66e−04}$. Det er derfor et avvik på
-                                                   $0.001$ mellom den målte...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...-1.66e−04}$. Det er derfor et avvik på
-                                                   $0.001$ mellom den målte...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no � in font cmex10!
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...erfor et avvik på $0.001$ mellom den må
-                                                  lte verdien av suceptibili...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...erfor et avvik på $0.001$ mellom den må
-                                                  lte verdien av suceptibili...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...eten og verdien funnet i tabeller, ved å
-                                                   ta med usikkerheten. Dett...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...eten og verdien funnet i tabeller, ved å
-                                                   ta med usikkerheten. Dett...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \ae invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...ikkerheten. Dette innebærer et avvik på
-                                                   $0.6\%$ mellom den målte...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...ikkerheten. Dette innebærer et avvik på
-                                                   $0.6\%$ mellom den målte...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...ærer et avvik på $0.6\%$ mellom den må
-                                                  lte verdien, og den funnet...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...ærer et avvik på $0.6\%$ mellom den må
-                                                  lte verdien, og den funnet...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \ae invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 .... Avviket er lite, men kan ha vært forå
-                                                  rsaket av en systematisk f...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 .... Avviket er lite, men kan ha vært forå
-                                                  rsaket av en systematisk f...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...mentet. Under eksperimentet prøvde vi å
-                                                   plasere vismutstaven midt...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...mentet. Under eksperimentet prøvde vi å
-                                                   plasere vismutstaven midt...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...kraftigst mulig magnetfelt. Vi passet på
-                                                   at vismutprøven ikke hvi...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...kraftigst mulig magnetfelt. Vi passet på
-                                                   at vismutprøven ikke hvi...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ... i kontakt med noe annet, som kunne forå
-                                                  rsaket friksjon, som ville...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ... i kontakt med noe annet, som kunne forå
-                                                  rsaket friksjon, som ville...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...et friksjon, som ville gitt et utslag på
-                                                   vekten, men det kan ha sk...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...et friksjon, som ville gitt et utslag på
-                                                   vekten, men det kan ha sk...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...nder eksperimentet fordet. Det gikk også
-                                                   en tid mellom den magneti...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...nder eksperimentet fordet. Det gikk også
-                                                   en tid mellom den magneti...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...ske flukstettheten mellom spolene ble må
-                                                  lt, og vismutprøven ble u...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...ske flukstettheten mellom spolene ble må
-                                                  lt, og vismutprøven ble u...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...ret seg iløpet av denne tiden, eller må
-                                                  lingen vår med hall-sonde...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...ret seg iløpet av denne tiden, eller må
-                                                  lingen vår med hall-sonde...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...øpet av denne tiden, eller målingen vå
-                                                  r med hall-sonden ikke var...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...øpet av denne tiden, eller målingen vå
-                                                  r med hall-sonden ikke var...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ... stødig nok. Dette er noen eksempler på
-                                                   systematiske feil som kan...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ... stødig nok. Dette er noen eksempler på
-                                                   systematiske feil som kan...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...er på systematiske feil som kan ha forå
-                                                  rsaket avvik mellom verdie...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...er på systematiske feil som kan ha forå
-                                                  rsaket avvik mellom verdie...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...a forårsaket avvik mellom verdien vi må
-                                                  lte for suceptibiliteten, ...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...a forårsaket avvik mellom verdien vi må
-                                                  lte for suceptibiliteten, ...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...eraturavhengig, og temperaturen brukt nå
-                                                  r suceptibiliteten var fun...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...eraturavhengig, og temperaturen brukt nå
-                                                  r suceptibiliteten var fun...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 372.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.372 ...e nødvendigvis den samme brukt under vå
-                                                  rt eksperiment.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.372 ...e nødvendigvis den samme brukt under vå
-                                                  rt eksperiment.
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.373 \subsection
-                 {Ferromagnetisme}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-Missing character: There is no � in font cmex10!
-
-Underfull \hbox (badness 1237) in paragraph at lines 372--373
-[]\OT1/cmr/m/n/10 Den mag-ne-tis-ke sucep-ti-bi-li-te-ten ble m^^Walt til ^^Wa
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 372--373
-\OT1/cmr/m/n/10 te mot and-res m^^Walinger av den sam-me veri-den.
- []
-
-
-Overfull \hbox (3268.97282pt too wide) in paragraph at lines 372--373
-\OML/cmm/m/it/10 :Deterderforetavvikp[]$\OT1/cmr/m/n/10 0.001$\OML/cmm/m/it/10 
-mellomdenm[]lteverdienavsuceptibilitetenogverdienfunnetitabeller; ved[]tamedusi
-kkerheten:Detteinneb\OT1/cmr/m/n/10 ^^Z\OML/cmm/m/it/10 reretavvikp[]$\OT1/cmr/
-m/n/10 0.6%$\OML/cmm/m/it/10 mellomdenm[]lteverdien; ogdenfunnetitabeller:Avvik
-eterlite; menkanhav\OT1/cmr/m/n/10 ^^Z\OML/cmm/m/it/10 rtfor[]rsaketavensystema
-tiskfeilundereksperimentet:Undereksperimentetpr\OT1/cmr/m/n/10 ^^\\OML/cmm/m/it
-/10 vdevi[]plaserevismutstavenmidtmellomspolene; slikatdetbleutsattforkraftigst
-muligmagnetfelt:Vipassetp[]atvismutpr\OT1/cmr/m/n/10 ^^\\OML/cmm/m/it/10 venikk
-ehvilteintilspolene; ellervarikontaktmednoeannet; somkunnefor[]rsaketfriksjon; 
-somvillegittetutslagp[]vekten; mendetkanhaskjeddundereksperimentetfordet:Detgik
-kogs[]entidmellomdenmagnetiskeflukstetthetenmellomspoleneblem[]lt; ogvismutpr\O
-T1/cmr/m/n/10 ^^\\OML/cmm/m/it/10 venbleutsattforfeltet:Magnetfeltetkanhaforand
-retsegil\OT1/cmr/m/n/10 ^^\\OML/cmm/m/it/10 petavdennetiden; ellerm[]lingenv[]r
-medhall \OMS/cmsy/m/n/10 ^^@
- []
-
-
-Overfull \hbox (1239.90906pt too wide) in paragraph at lines 372--373
-\OML/cmm/m/it/10 sondenikkevarst\OT1/cmr/m/n/10 ^^\\OML/cmm/m/it/10 dignok:Dett
-eernoeneksemplerp[]systematiskefeilsomkanhafor[]rsaketavvikmellomverdienvim[]lt
-eforsuceptibiliteten; ogverdienfunnetitabeller:Itilleggersuceptibilitetentemper
-aturavhengig; ogtemperaturenbruktn[]rsuceptibilitetenvarfunnetitabellenevarikke
-n\OT1/cmr/m/n/10 ^^\\OML/cmm/m/it/10 dvendigvisdensammebruktunderv[]rteksperime
-nt:$ 
- []
-
 
 Package natbib Warning: Citation `plastikk_sucept' on page 10 undefined on inpu
-t line 375.
+t line 391.
 
-[10]
+[10] [11]
 ! Undefined control sequence.
 <recently read> \aprox 
                        
-l.389 ...g en høy avmagnetiseringsfaktor ($\aprox
+l.407 ...g en høy avmagnetiseringsfaktor ($\aprox
                                                    1$). Forsterkningen av ma...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3952,27 +3339,33 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-(./rapport5.bbl [11])
+(./rapport5.bbl)
 
 Package natbib Warning: There were undefined citations.
 
 [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
 (./rapport5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 394.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 394.
-Package rerunfilecheck Info: File `rapport5.out' has not changed.
-(rerunfilecheck)             Checksum: D4F7AC1E1B7E962A94DDE1AE1AA0D2AE;1328.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
+
+Package rerunfilecheck Warning: File `rapport5.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `rapport5.out':
+(rerunfilecheck)             Before: BE9D2D4323DD92FFC4AFB83311E1E709;1388
+(rerunfilecheck)             After:  78743BAE39F72661EBB637BCBF77FE82;1388.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 
 
  ) 
 Here is how much of TeX's memory you used:
- 23172 strings out of 492995
- 405766 string characters out of 6132705
- 525216 words of memory out of 5000000
- 26370 multiletter control sequences out of 15000+600000
+ 23200 strings out of 492995
+ 406222 string characters out of 6132705
+ 531494 words of memory out of 5000000
+ 26394 multiletter control sequences out of 15000+600000
  18122 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,14n,51p,10382b,936s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4000,10 +3393,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on rapport5.pdf (12 pages, 1153388 bytes).
+Output written on rapport5.pdf (12 pages, 1153260 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 212 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 622 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

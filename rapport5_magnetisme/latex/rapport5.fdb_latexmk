@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex rapport5"] 1526053535 "rapport5.aux" "rapport5.bbl" "rapport5" 1526053535
+["bibtex rapport5"] 1526226990 "rapport5.aux" "rapport5.bbl" "rapport5" 1526226990
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "citations.bib" 1526051606 20715 def03c1b5715a5ce16e2a79641fa864e ""
-  "rapport5.aux" 1526052488 19671 d177d7e44733a15c2adff237d2373bea ""
-  "rapport5Notes.bib" 1526052480 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "citations.bib" 1526223105 20906 6cea5ddcdae5f9430d9502e5305e142c ""
+  "rapport5.aux" 1526226682 21422 9fc5a9816bfdf67be03748bb0f458c92 ""
+  "rapport5Notes.bib" 1526226664 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "rapport5.bbl"
   "rapport5.blg"
-["pdflatex"] 1526053535 "rapport5.tex" "rapport5.pdf" "rapport5" 1526053535
+["pdflatex"] 1526226990 "rapport5.tex" "rapport5.pdf" "rapport5" 1526226990
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1480098666 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1480098696 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -174,20 +174,20 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1504893732 4129591 b1a7ed87e25bd8fdaf5080304d300aaa ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "chi_effekt.pdf" 1526045465 28070 a382f4bbe1b1243b6d365584c2ee7249 ""
-  "faraday_effekt.pdf" 1526051029 22349 3a84946a96ff98e979214251a09fcd34 ""
+  "chi_effekt.pdf" 1526225490 28070 88521594670e838e685d9b2f8c9d779a ""
+  "faraday_effekt.pdf" 1526224480 23330 fa8b2d3154b6a6c6cdff24a3f3423a6b ""
   "magnetic_secondary_hysterese.pdf" 1526050378 17834 97e4eca934faa67e1509a1528caa2108 ""
   "magnetisering.pdf" 1526050384 21020 10397cc65a11acb217023e187d40ea76 ""
   "oppsett1.png" 1525529607 219785 44a8166bef2aad5e647b091be8c9f3ca ""
   "oppsett2.png" 1525532194 709634 6688c1fc589e9068c20a289bf39c0d78 ""
   "oppsett3.png" 1525544636 270256 00dcac46c35aca3243e4117d22eafbe5 ""
-  "rapport5.aux" 1526052488 19671 d177d7e44733a15c2adff237d2373bea ""
-  "rapport5.bbl" 1526053535 652 c02d9ea5d2a53435c280982a7d197e88 "bibtex rapport5"
-  "rapport5.out" 1526052488 1328 d4f7ac1e1b7e962a94dde1ae1aa0d2ae ""
-  "rapport5.tex" 1526053532 57491 66236b02adab33f839f400ab69a1f574 ""
+  "rapport5.aux" 1526226682 21422 9fc5a9816bfdf67be03748bb0f458c92 ""
+  "rapport5.bbl" 1526226990 784 db6babd06132e32649d96470c256367e "bibtex rapport5"
+  "rapport5.out" 1526226682 1328 d4f7ac1e1b7e962a94dde1ae1aa0d2ae ""
+  "rapport5.tex" 1526226988 61267 5ffd88ea370f7eee638e0a211c957d3c ""
   (generated)
-  "rapport5.aux"
   "rapport5Notes.bib"
-  "rapport5.out"
-  "rapport5.pdf"
   "rapport5.log"
+  "rapport5.pdf"
+  "rapport5.aux"
+  "rapport5.out"

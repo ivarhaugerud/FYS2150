@@ -2,6 +2,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.minorticks_on()
 
+def linear_regresion(x, y):
+    n = len(x)
+    D = np.sum(np.square(x)) - (np.sum(x)**2)/n
+    E = np.sum(x*y) - np.sum(x)*np.sum(y)/n
+    F = np.sum(np.square(y)) - (np.sum(y)**2)/n
+
+    delta_m = np.sqrt((1/(n-2))*(D*F-E**2)/(D**2))
+    delta_c = np.sqrt(1/(n-2)*(D/n+np.mean(x)**2)*(D*F-E**2)/(D**2))
+    m = E/D
+    c = np.mean(y)-m*np.mean(x)
+
+    return m, c, delta_m, delta_c
+
 def chi1(B1, B2, Fz, A):
     mu0 = 4*np.pi*1e-7
     return -2*mu0*Fz/(A*(B1**2-B2**2))
@@ -89,6 +102,7 @@ ax.set_ylabel(r"Forskjell i magnetisk susceptibilitet $ \times 10^4$ $\Delta \ch
 plt.savefig("latex/difference_b1b2.pdf")
 plt.show()
 """
+
 last_elem = 7
 mean = -1.5695e-4#np.mean(chi_o[-last_elem:])
 std = np.std(chi_o[-last_elem:])
@@ -127,6 +141,12 @@ unc_delta_chi = delta_chi*np.sqrt((delta_B2[-last_elem:]/B2[-last_elem:])**2 + (
 
 last_elem = 7
 
+m, c, delta_m, delta_c = linear_regresion(I[-last_elem:], chi_lin[-last_elem:])
+print(m, c, delta_m, delta_c, "HERE")
+
+m, c, delta_m, delta_c = linear_regresion(I[-last_elem:], chi_b[-last_elem:])
+print(m, c, delta_m, delta_c, "HERE")
+print()
 fig = plt.figure(figsize=(7.6, 7.2), dpi=100)
 plt.style.use("bmh")
 plt.minorticks_on()

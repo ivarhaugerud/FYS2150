@@ -37,7 +37,7 @@ def uncertenty_chi1_linear(chi, delta_b1, b, delta_b2, b2, delta_fz, fz, delta_A
     return chi*np.sqrt((delta_b1/b)**2 + (delta_fz/fz)**2 + (delta_A/A)**2 + (delta_b2/b2)**2)
 
 vismut_D = np.array([10.03, 10.06, 10.06, 10.03])*1e-3
-vismut_D_unc = np.sqrt(np.std(vismut_D)**2 + (1/20)**2)*1e-3
+vismut_D_unc = np.sqrt(np.std(vismut_D)**2 + (0.3/10.05)**2)*1e-3
 R = np.mean(vismut_D)/2
 R_unc = vismut_D_unc/2
 
@@ -60,10 +60,9 @@ delta_Fz = Fz*np.sqrt((delta_M/Mz)**2)# + (delta_G/9.81)**2)
 delta_Fz[0] = delta_Fz[2]
 delta_Fz[1] = delta_Fz[2]
 
-print(Fz)
-print(delta_Fz/Fz)
 A = np.pi*(R)**2
 delta_A = A*2*R_unc**2/R
+print(A, delta_A, "A HERE")
 chi_b = chi1(B1, B2, Fz, A)
 chi_o = chi2(B1, Fz, A)
 chi_lin = chi1_linear(B1, B2, Fz, A)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  14 MAY 2018 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  14 MAY 2018 18:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3023,82 +3023,36 @@ Class revtex4-1 Warning: If you want your PACS to appear in your output, use do
 cument class option showpacs.
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-! Undefined control sequence.
-<argument> \naon 
-                 \meter ^2
-l.212 ...en konstant lik $\SI{8920}{\naon\meter^2}
-                                                  $. Denne funksjonen gir de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \hbox (badness 10000) in paragraph at lines 207--214
 
-! Undefined control sequence.
-\l__siunitx_print_arg_tl ->\naon 
-                                 \meter \__siunitx_unit_format_literal_power...
-l.212 ...en konstant lik $\SI{8920}{\naon\meter^2}
-                                                  $. Denne funksjonen gir de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\l__siunitx_print_arg_tl ->\naon 
-                                 \meter \__siunitx_unit_format_literal_power...
-l.212 ...en konstant lik $\SI{8920}{\naon\meter^2}
-                                                  $. Denne funksjonen gir de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\l__siunitx_print_arg_tl ->\naon 
-                                 \meter \__siunitx_unit_format_literal_power...
-l.212 ...en konstant lik $\SI{8920}{\naon\meter^2}
-                                                  $. Denne funksjonen gir de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\l__siunitx_print_arg_tl ->\naon 
-                                 \meter \__siunitx_unit_format_literal_power...
-l.212 ...en konstant lik $\SI{8920}{\naon\meter^2}
-                                                  $. Denne funksjonen gir de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ []
 
 [3]
-Underfull \hbox (badness 1077) in paragraph at lines 235--238
+Underfull \hbox (badness 1077) in paragraph at lines 236--239
 \OT1/cmr/m/n/10 Hvor $^^A\OML/cmm/m/it/10 E[]$ \OT1/cmr/m/n/10 og $^^A\OML/cmm/
 m/it/10 E[]$ \OT1/cmr/m/n/10 er usik-ker-he-ten til den eks-
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 239.
+(hyperref)                than one, level fixed on input line 240.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 241.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 242.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 241.
-<oppsett1.png, id=157, 414.54875pt x 631.35875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 242.
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+ []\OT1/cmr/m/n/10 Spenningsgeneratoren (TTi TG1006 DDS
+ []
+
+<oppsett1.png, id=156, 414.54875pt x 631.35875pt>
 File: oppsett1.png Graphic file (type png)
 <use oppsett1.png>
-Package pdftex.def Info: oppsett1.png used on input line 257.
+Package pdftex.def Info: oppsett1.png used on input line 260.
 (pdftex.def)             Requested size: 157.53015pt x 239.91881pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3106,22 +3060,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [4]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 264.
+ on input line 266.
 
-<oppsett2.png, id=172, 829.0975pt x 585.18625pt>
+<oppsett2.png, id=171, 829.0975pt x 585.18625pt>
 File: oppsett2.png Graphic file (type png)
 <use oppsett2.png>
-Package pdftex.def Info: oppsett2.png used on input line 268.
+Package pdftex.def Info: oppsett2.png used on input line 271.
 (pdftex.def)             Requested size: 198.98746pt x 140.44756pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5 <./oppsett1.png> <./oppsett2.png>] <oppsett3.png, id=188, 845.1575pt x 557.0
+[5 <./oppsett1.png> <./oppsett2.png>] <oppsett3.png, id=187, 845.1575pt x 557.0
 8125pt>
 File: oppsett3.png Graphic file (type png)
 <use oppsett3.png>
-Package pdftex.def Info: oppsett3.png used on input line 279.
+Package pdftex.def Info: oppsett3.png used on input line 282.
 (pdftex.def)             Requested size: 228.19557pt x 150.41394pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 ! Package inputenc Error: Unicode char   (U+2029)
 (inputenc)                not set up for use with LaTeX.
@@ -3130,32 +3084,39 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.294 ... {[}mT{]} & $F_z$ {[}mN{]} \\ \colrule 
+l.297 ... {[}mT{]} & $F_z$ {[}mN{]} \\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<chi_effekt.pdf, id=197, 549.25201pt x 520.34402pt>
+<chi_effekt.pdf, id=196, 549.25201pt x 520.34402pt>
 File: chi_effekt.pdf Graphic file (type pdf)
 <use chi_effekt.pdf>
-Package pdftex.def Info: chi_effekt.pdf used on input line 308.
+Package pdftex.def Info: chi_effekt.pdf used on input line 311.
 (pdftex.def)             Requested size: 247.16112pt x 234.15263pt.
 
-Overfull \hbox (14.05618pt too wide) in paragraph at lines 308--309
+Overfull \hbox (14.05618pt too wide) in paragraph at lines 311--312
  [][] 
  []
 
 
-Underfull \hbox (badness 3746) in paragraph at lines 287--312
+Underfull \hbox (badness 3746) in paragraph at lines 290--315
 \OT1/cmr/m/n/10 for-skjel-li-ge punk-ter, fant vi at dia-me-te-ren var
  []
 
 [6 <./oppsett3.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 315.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.315 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.318 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3166,7 +3127,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.315 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.318 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3177,7 +3138,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...lell med magnetfeltet ($B\parallell 
                                                   $) og tangensialt på magn...
-l.315 ...ll $\parallel$ eller ortogonalt $\perp$.}
+l.318 ...ll $\parallel$ eller ortogonalt $\perp$.}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3193,7 +3154,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.319 ...ad$  & $B_0/D_{\perp}$ [mT]\\ \colrule 
+l.322 ...ad$  & $B_0/D_{\perp}$ [mT]\\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3211,7 +3172,7 @@ or  <return>  to continue without it.
 ! For immediate help type H <return>.
 !...............................................  
                                                   
-l.330 ...ameteren på $\SI{6.5pm0.1}{\milli\meter}
+l.333 ...ameteren på $\SI{6.5pm0.1}{\milli\meter}
                                                   $, som gjør at arealet er...
 
 |'''''''''''''''''''''''''''''''''''''''''''''''
@@ -3219,31 +3180,52 @@ l.330 ...ameteren på $\SI{6.5pm0.1}{\milli\meter}
 | the token 'p' is not set up as a valid part of a number.
 |...............................................
 
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 330.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 333.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) <magnetic_secondary_hysterese.pdf, id=218, 549.25201pt x 520.34402pt>
+) <magnetic_secondary_hysterese.pdf, id=217, 549.25201pt x 520.34402pt>
 File: magnetic_secondary_hysterese.pdf Graphic file (type pdf)
 <use magnetic_secondary_hysterese.pdf>
 Package pdftex.def Info: magnetic_secondary_hysterese.pdf used on input line 33
-3.
+6.
 (pdftex.def)             Requested size: 247.16112pt x 234.15263pt.
 
-Overfull \hbox (14.05618pt too wide) in paragraph at lines 333--334
+Overfull \hbox (14.05618pt too wide) in paragraph at lines 336--337
  [][] 
  []
 
-<magnetisering.pdf, id=222, 549.25201pt x 520.34402pt>
+
+LaTeX Warning: Hyper reference `hysterese' on page 7 undefined on input line 34
+0.
+
+
+LaTeX Warning: Reference `hysterese' on page 7 undefined on input line 340.
+
+
+LaTeX Warning: Hyper reference `delta_delta_B' on page 7 undefined on input lin
+e 340.
+
+
+LaTeX Warning: Reference `delta_delta_B' on page 7 undefined on input line 340.
+
+
+<Hysterese.png, id=219, 896.34875pt x 564.1075pt>
+File: Hysterese.png Graphic file (type png)
+<use Hysterese.png>
+Package pdftex.def Info: Hysterese.png used on input line 343.
+(pdftex.def)             Requested size: 224.08664pt x 141.02652pt.
+<magnetisering.pdf, id=223, 549.25201pt x 520.34402pt>
 File: magnetisering.pdf Graphic file (type pdf)
 <use magnetisering.pdf>
-Package pdftex.def Info: magnetisering.pdf used on input line 340.
+Package pdftex.def Info: magnetisering.pdf used on input line 350.
 (pdftex.def)             Requested size: 247.16112pt x 234.15263pt.
 
-Overfull \hbox (14.05618pt too wide) in paragraph at lines 340--341
+Overfull \hbox (14.05618pt too wide) in paragraph at lines 350--351
  [][] 
  []
 
+[7 <./chi_effekt.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -3258,7 +3240,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.356       \colrule 
+l.366       \colrule 
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3272,7 +3254,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.357 ...eta\pm0.3$ [$\degree$] } \\   \colrule 
+l.367 ...eta\pm0.3$ [$\degree$] } \\   \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3286,52 +3268,98 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.362 ... & 4.4 & -4.0 & 5.2 & -4.8 \\ \colrule 
+l.372 ... & 4.4 & -4.0 & 5.2 & -4.8 \\ \colrule 
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (2.12424pt too wide) in paragraph at lines 350--369
+Overfull \hbox (7.00615pt too wide) in paragraph at lines 360--379
  []$[]$ 
  []
 
-<faraday_effekt.pdf, id=229, 549.25201pt x 520.34402pt>
+<faraday_effekt.pdf, id=312, 549.25201pt x 520.34402pt>
 File: faraday_effekt.pdf Graphic file (type pdf)
 <use faraday_effekt.pdf>
-Package pdftex.def Info: faraday_effekt.pdf used on input line 373.
+Package pdftex.def Info: faraday_effekt.pdf used on input line 383.
 (pdftex.def)             Requested size: 247.16112pt x 234.15263pt.
 
-Overfull \hbox (14.05618pt too wide) in paragraph at lines 373--374
+Overfull \hbox (14.05618pt too wide) in paragraph at lines 383--384
  [][] 
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 345--379
+Underfull \hbox (badness 1019) in paragraph at lines 355--389
 []\OT1/cmr/m/n/10 For ^^Wa be-reg-ne Verdet-konstanten ble det gjen-
  []
 
-[7 <./chi_effekt.pdf>] [8 <./magnetic_secondary_hysterese.pdf> <./magnetisering
-.pdf
-
-pdfTeX warning: pdflatex (file ./magnetisering.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
->]
+[8 <./magnetic_secondary_hysterese.pdf> <./Hysterese.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 381.
+ on input line 389.
 
-[9 <./faraday_effekt.pdf>]
+[9 <./magnetisering.pdf> <./faraday_effekt.pdf
+
+pdfTeX warning: pdflatex (file ./faraday_effekt.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>]
 
 Package natbib Warning: Citation `plastikk_sucept' on page 10 undefined on inpu
-t line 391.
+t line 401.
 
-[10] [11]
+[10]
+Underfull \hbox (badness 1028) in paragraph at lines 410--416
+\OT1/cmr/m/n/10 gra-den n^^War str^^\mretningen er neg-a-tiv kon-se-kvent
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 410--416
+\OT1/cmr/m/n/10 blir mag-ne-ti-sert, og den-ne mag-ne-ti-se-rin-gen sit-ter
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 410--416
+\OT1/cmr/m/n/10 alts^^Wa Verdet-konstanten, si-den det-te kunn av-gj^^\r
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 410--416
+\OT1/cmr/m/n/10 men-lik-nes med den teo-re-tisk for-ven-te-de ver-di-en,
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 410--416
+\OT1/cmr/m/n/10 for b^^\lgelengdene $440\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 580\
+OML/cmm/m/it/10 ; [] []$\OT1/cmr/m/n/10 . Dis-se ver-di-ene
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 410--416
+\OT1/cmr/m/n/10 der-for Verdet-konstanten for den-ne b^^\lgelengden
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 410--416
+\OT1/cmr/m/n/10 vin-ke-len har en oppl^^\sning p^^Wa $0\OML/cmm/m/it/10 :\OT1/c
+mr/m/n/10 2[]$, f^^\lgelig vil
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 410--416
+\OT1/cmr/m/n/10 feil til-ste-det un-der eks-pe-ri-men-tet, og m^^Walingene
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--416
+
+ []
+
+[11]
 ! Undefined control sequence.
 <recently read> \aprox 
                        
-l.407 ...g en høy avmagnetiseringsfaktor ($\aprox
+l.419 ...g en høy avmagnetiseringsfaktor ($\aprox
                                                    1$). Forsterkningen av ma...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3339,33 +3367,30 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-(./rapport5.bbl)
+(./rapport5.bbl [12])
 
 Package natbib Warning: There were undefined citations.
 
-[12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 424.
 (./rapport5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 424.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 424.
+Package rerunfilecheck Info: File `rapport5.out' has not changed.
+(rerunfilecheck)             Checksum: A52C1516F92270B0730DDA98B62D17AD;1388.
 
-Package rerunfilecheck Warning: File `rapport5.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `rapport5.out':
-(rerunfilecheck)             Before: BE9D2D4323DD92FFC4AFB83311E1E709;1388
-(rerunfilecheck)             After:  78743BAE39F72661EBB637BCBF77FE82;1388.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 
 
  ) 
 Here is how much of TeX's memory you used:
- 23200 strings out of 492995
- 406222 string characters out of 6132705
- 531494 words of memory out of 5000000
- 26394 multiletter control sequences out of 15000+600000
+ 23204 strings out of 492995
+ 406276 string characters out of 6132705
+ 524873 words of memory out of 5000000
+ 26397 multiletter control sequences out of 15000+600000
  18122 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,14n,51p,10382b,936s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3393,10 +3418,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on rapport5.pdf (12 pages, 1153260 bytes).
+Output written on rapport5.pdf (13 pages, 1218581 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
+ 628 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
  73 named destinations out of 1000 (max. 500000)
- 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

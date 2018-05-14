@@ -34,7 +34,7 @@ c = 1.1986e-04
 delta_c = 0.0034
 """
 
-B = np.array([43, 63, 83, 102, 119])*1e-3/1.5 #Tesla
+B = np.array([43, 63, 83, 102, 119])*1e-3#/1.5 #Tesla
 uncertenty_B = B*0.002 + 0.001*1e-3
 """
 plt.plot(B, theta_580_p, "ro")

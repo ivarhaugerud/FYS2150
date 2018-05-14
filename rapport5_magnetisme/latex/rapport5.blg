@@ -11,45 +11,45 @@ Warning--empty author in noauthor_magnetic_nodate
 Warning--empty journal in noauthor_magnetic_nodate
 Warning--empty year in noauthor_magnetic_nodate
 Warning--empty author in noauthor_magnetic_2018
-You've used 6 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            528 strings with 4476 characters,
-and the built_in function-call counts, 1375 in all, are:
-= -- 132
-> -- 36
+            524 strings with 4400 characters,
+and the built_in function-call counts, 1169 in all, are:
+= -- 112
+> -- 29
 < -- 1
-+ -- 16
-- -- 10
-* -- 88
-:= -- 230
-add.period$ -- 16
-call.type$ -- 6
-change.case$ -- 23
++ -- 13
+- -- 8
+* -- 78
+:= -- 191
+add.period$ -- 13
+call.type$ -- 5
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 67
-empty$ -- 122
-format.name$ -- 10
-if$ -- 288
+cite$ -- 11
+duplicate$ -- 57
+empty$ -- 105
+format.name$ -- 8
+if$ -- 247
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 31
-num.names$ -- 8
-pop$ -- 26
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 26
+num.names$ -- 6
+pop$ -- 22
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 14
 quote$ -- 0
-skip$ -- 48
+skip$ -- 41
 stack$ -- 0
-substring$ -- 57
-swap$ -- 10
+substring$ -- 52
+swap$ -- 9
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
+type$ -- 20
 warning$ -- 6
-while$ -- 11
-width$ -- 7
-write$ -- 59
+while$ -- 9
+width$ -- 6
+write$ -- 49
 (There were 7 warnings)

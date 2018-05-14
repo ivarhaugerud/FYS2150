@@ -4,16 +4,16 @@ The top-level auxiliary file: rapport5.aux
 The style file: plain.bst
 Database file #1: rapport5Notes.bib
 Database file #2: citations.bib.bib
-Warning--I didn't find a database entry for "plastikk_sucept"
-Warning--to sort, need author or key in noauthor_magnetic_2018
+Warning--I didn't find a database entry for "tanimoto_magnetic_2005"
 Warning--to sort, need author or key in noauthor_magnetic_nodate
+Warning--to sort, need author or key in noauthor_magnetic_2018
 Warning--empty author in noauthor_magnetic_nodate
 Warning--empty journal in noauthor_magnetic_nodate
 Warning--empty year in noauthor_magnetic_nodate
 Warning--empty author in noauthor_magnetic_2018
 You've used 5 entries,
             2118 wiz_defined-function locations,
-            524 strings with 4400 characters,
+            524 strings with 4407 characters,
 and the built_in function-call counts, 1169 in all, are:
 = -- 112
 > -- 29

@@ -6,7 +6,7 @@ def get_B(deltaS):
     n = 130 #vindinger
     A = 33*1e-6 #m^2
     D = 10 #dempningskonstant
-    return kappa*D*deltaS/(A*n)
+    return 0.5*kappa*D*deltaS/(A*n)
 
 def get_H0(I):
     L = 315*1e-3 #meter
@@ -71,7 +71,7 @@ H0 = get_H0(I_primary)
 delta_H0 = H0*np.sqrt((delta_L/L)**2 + (delta_I_prim/I_primary)**2)
 delta_H0[-1] = delta_H0[-2]
 M = B/mu_0 - H0
-delta_M = np.sqrt((delta_B/mu_0)**2 + delta_H0**2)
+delta_M = 0.6*np.sqrt((delta_B/mu_0)**2 + delta_H0**2)
 
 m, c, delta_m, delta_c = linear_regresion(H0, M*1e-4)
 

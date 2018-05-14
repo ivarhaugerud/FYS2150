@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  14 MAY 2018 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  14 MAY 2018 22:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3054,7 +3054,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
  []\OT1/cmr/m/n/10 Spenningsgeneratoren (TTi TG1006 DDS
  []
 
-<oppsett1.png, id=153, 414.54875pt x 631.35875pt>
+<oppsett1.png, id=155, 414.54875pt x 631.35875pt>
 File: oppsett1.png Graphic file (type png)
 <use oppsett1.png>
 Package pdftex.def Info: oppsett1.png used on input line 255.
@@ -3067,12 +3067,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 261.
 
-<oppsett2.png, id=168, 829.0975pt x 585.18625pt>
+<oppsett2.png, id=170, 829.0975pt x 585.18625pt>
 File: oppsett2.png Graphic file (type png)
 <use oppsett2.png>
 Package pdftex.def Info: oppsett2.png used on input line 266.
 (pdftex.def)             Requested size: 198.98746pt x 140.44756pt.
-[5 <./oppsett1.png> <./oppsett2.png>] <oppsett3.png, id=185, 845.1575pt x 557.0
+[5 <./oppsett1.png> <./oppsett2.png>] <oppsett3.png, id=187, 845.1575pt x 557.0
 8125pt>
 File: oppsett3.png Graphic file (type png)
 <use oppsett3.png>
@@ -3095,7 +3095,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<chi_effekt.pdf, id=194, 549.25201pt x 520.34402pt>
+<chi_effekt.pdf, id=196, 549.25201pt x 520.34402pt>
 File: chi_effekt.pdf Graphic file (type pdf)
 <use chi_effekt.pdf>
 Package pdftex.def Info: chi_effekt.pdf used on input line 308.
@@ -3136,7 +3136,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 330.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) <magnetic_secondary_hysterese.pdf, id=214, 549.25201pt x 520.34402pt>
+) <magnetic_secondary_hysterese.pdf, id=216, 549.25201pt x 520.34402pt>
 File: magnetic_secondary_hysterese.pdf Graphic file (type pdf)
 <use magnetic_secondary_hysterese.pdf>
 Package pdftex.def Info: magnetic_secondary_hysterese.pdf used on input line 33
@@ -3147,12 +3147,25 @@ Overfull \hbox (14.05618pt too wide) in paragraph at lines 334--335
  [][] 
  []
 
-<Hysterese.png, id=219, 896.34875pt x 564.1075pt>
+
+! Package varioref Error: \vref at page boundary 7-8 (may loop).
+
+See the varioref package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.338 ...tt målepunkt i figur \vref{data_delta_B}
+                                                  . Fra å studere magnetise...
+
+Please check the pages in question. You might need to replace the \vref
+or \vpageref by a normal \(page)ref to stop LaTeX running forever.
+
+<Hysterese.png, id=221, 896.34875pt x 564.1075pt>
 File: Hysterese.png Graphic file (type png)
 <use Hysterese.png>
 Package pdftex.def Info: Hysterese.png used on input line 341.
 (pdftex.def)             Requested size: 224.08664pt x 141.02652pt.
-<magnetisering.pdf, id=223, 549.25201pt x 520.34402pt>
+<magnetisering.pdf, id=225, 549.25201pt x 520.34402pt>
 File: magnetisering.pdf Graphic file (type pdf)
 <use magnetisering.pdf>
 Package pdftex.def Info: magnetisering.pdf used on input line 348.
@@ -3219,7 +3232,7 @@ Overfull \hbox (7.00615pt too wide) in paragraph at lines 358--377
  []$[]$ 
  []
 
-<faraday_effekt.pdf, id=313, 549.25201pt x 520.34402pt>
+<faraday_effekt.pdf, id=314, 549.25201pt x 520.34402pt>
 File: faraday_effekt.pdf Graphic file (type pdf)
 <use faraday_effekt.pdf>
 Package pdftex.def Info: faraday_effekt.pdf used on input line 381.
@@ -3244,83 +3257,68 @@ LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
 pdfTeX warning: pdflatex (file ./faraday_effekt.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 395--397
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 []\OT1/cmr/m/n/10 Susceptibiliteteten ble m^^Walt til ^^Wa v^^Z-re
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 395--397
-\OT1/cmr/m/n/10 and-res m^^Walinger av den sam-me veri-den. su-s-cep-
- []
-
-
-Underfull \hbox (badness 5563) in paragraph at lines 395--397
-\OT1/cmr/m/n/10 bi-li-te-te-ten tem-pe-ra-tur-av-hen-gig, og tem-pe-ra-tu-ren
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 395--397
-\OT1/cmr/m/n/10 eks-pe-ri-ment, den-ne tem-pe-ra-tu-ren fant jeg ikke i
- []
-
-
-Package natbib Warning: Citation `plastikk_sucept' on page 10 undefined on inpu
-t line 399.
+Package natbib Warning: Citation `tanimoto_magnetic_2005' on page 10 undefined 
+on input line 398.
 
 [10]
-Underfull \hbox (badness 1028) in paragraph at lines 408--414
+Underfull \hbox (badness 1028) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 gra-den n^^War str^^\mretningen er neg-a-tiv kon-se-kvent
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 408--414
+Underfull \hbox (badness 1072) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 blir mag-ne-ti-sert, og den-ne mag-ne-ti-se-rin-gen sit-ter
  []
 
 
-Underfull \hbox (badness 1286) in paragraph at lines 408--414
+Underfull \hbox (badness 1286) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 alts^^Wa Verdet-konstanten, si-den det-te kunn av-gj^^\r
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 408--414
+Underfull \hbox (badness 1924) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 men-lik-nes med den teo-re-tisk for-ven-te-de ver-di-en,
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 408--414
+Underfull \hbox (badness 1406) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 for b^^\lgelengdene $440\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 580\
 OML/cmm/m/it/10 ; [] []$\OT1/cmr/m/n/10 . Dis-se ver-di-ene
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 408--414
+Underfull \hbox (badness 1112) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 ty-der p^^Wa at det har skjed-de en sys-te-ma-tisk feil
  []
 
 
-Underfull \hbox (badness 2875) in paragraph at lines 408--414
+Underfull \hbox (badness 2875) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 der-for Verdet-konstanten for den-ne b^^\lgelengden
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 408--414
+Underfull \hbox (badness 1755) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 vin-ke-len har en oppl^^\sning p^^Wa $0\OML/cmm/m/it/10 :\OT1/c
 mr/m/n/10 2[]$, f^^\lgelig vil
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 408--414
+Underfull \hbox (badness 1389) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 el-ler at usik-ker-he-ten i ett m^^Walepunkt over-lap-per
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 408--414
+Underfull \hbox (badness 2744) in paragraph at lines 407--413
 \OT1/cmr/m/n/10 feil til-ste-det un-der eks-pe-ri-men-tet, og m^^Walingene
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--414
+Underfull \hbox (badness 10000) in paragraph at lines 407--413
 
  []
 
@@ -3329,10 +3327,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--414
 Package natbib Warning: There were undefined citations.
 
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
 (./rapport5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 422.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
 Package rerunfilecheck Info: File `rapport5.out' has not changed.
 (rerunfilecheck)             Checksum: A52C1516F92270B0730DDA98B62D17AD;1388.
 
@@ -3342,40 +3340,41 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
  ) 
 Here is how much of TeX's memory you used:
  23198 strings out of 492995
- 406202 string characters out of 6132705
- 524807 words of memory out of 5000000
+ 406209 string characters out of 6132705
+ 524828 words of memory out of 5000000
  26393 multiletter control sequences out of 15000+600000
  18122 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,14n,51p,10382b,934s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on rapport5.pdf (13 pages, 1218742 bytes).
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on rapport5.pdf (13 pages, 1222753 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 410 compressed objects within 5 object streams
+ 634 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
  71 named destinations out of 1000 (max. 500000)
  225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -37,7 +37,7 @@ plt.rc('font', **font)
 ax = fig.add_subplot(111)
 fig.suptitle(r"Strøm-spenning karakteristikk med yte spenning på 5V", fontsize=17, fontweight='bold')
 
-plt.errorbar(Vp/1000, Ip/1000, yerr=Vp_unc/1000, xerr=Ip_unc/1000, fmt='bo', markersize='2', label="positive lederretning")
+plt.errorbar(Vp/1000, Ip/1000, yerr=Vp_unc/1000, xerr=Ip_unc/1000, fmt='bo', markersize='3.5', label="positive lederretning")
 plt.plot(Vp/1000, Ip/1000, "b--", linewidth=0.75)
 
 #NEGATIV RETNIGN
@@ -52,7 +52,7 @@ Vn_unc = np.sqrt(uncertenty_volt(Vn) + (0.1862*1.5)**2)
 In = Vln/Rn
 In_unc = In*np.sqrt(np.square(Vln_unc/Vln)+np.square(R_uncn/Rn))
 
-plt.errorbar(Vn/1000, In/1000, yerr=Vn_unc/1000, xerr=In_unc/1000, fmt='ro', markersize='2', label="negativ lederretning")
+plt.errorbar(Vn/1000, In/1000, yerr=Vn_unc/1000, xerr=In_unc/1000, fmt='ro', markersize='3.5', label="negativ lederretning")
 plt.plot(Vn/1000, In/1000, "r--", linewidth=0.75)
 ax.set_xlabel("Spenning [V]", fontsize=14)
 ax.set_ylabel("Strøm    [A]", fontsize=14)

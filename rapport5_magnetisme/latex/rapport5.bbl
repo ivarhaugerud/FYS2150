@@ -2,6 +2,7 @@
 
 \bibitem{noauthor_magnetic_nodate}
 Magnetic {Properties} of {Solids}.
+\newblock \url{http://hyperphysics.phy-astr.gsu.edu/hbase/Tables/magprop.html}.
 
 \bibitem{noauthor_magnetic_2018}
 Magnetic susceptibility.
@@ -22,5 +23,13 @@ Fysisk institutt.
 G.~L. Squires.
 \newblock Practicle physics.
 \newblock {\em Cambride Univserity Press}, 4(5):29--52, 2001.
+
+\bibitem{tanimoto_magnetic_2005}
+Yoshifumi Tanimoto, Masao Fujiwara, Manabu Sueda, Katsuya Inoue, and Motoko
+  Akita.
+\newblock Magnetic {Levitation} of {Plastic} {Chips}: {Applications} for
+  {Magnetic} {Susceptibility} {Measurement} and {Magnetic} {Separation}.
+\newblock {\em Japanese Journal of Applied Physics}, 44(9R):6801, September
+  2005.
 
 \end{thebibliography}

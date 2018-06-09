@@ -1,4 +1,4 @@
-
+%{
 vekt = linspace(0, 3.5, 8)
 utslag = [8.18, 7.45, 6.71, 6.02, 5.23, 4.49, 3.75, 2.99]-8.18;%mm
 usikker = [1, 1, 1, 1, 2, 3, 3, 3]*1e-3 %mm
@@ -61,18 +61,21 @@ axis([-0.05 3.55 -0.005, 1.05*max(abs(utslag - (c+m*vekt)))])
 p2 = plot(vekt, delta_m*vekt+delta_c);
 M2 = 'Usikkerhet lin.reg \Delta \beta + \Delta \alpha \cdot m';
 legend([p1; p2], M1, M2, 'Location','northeast', 'Interpreter','latex');
+%}
 
-%{
-Y = transpose([8.18, 7.45, 6.71, 6.02, 5.23, 4.49, 3.75, 2.99])-8.18;%mm
-VEKT = linspace(0, 3.5, 8)
-usikker = (3-[0, 1, 1, 1, 2, 3, 3, 3])*1e-3 %mm
-
+Y = [-1.58403167e-04  -1.52728118e-04 -1.57370757e-04  -1.62479688e-04  -1.56210471e-04  -1.52578463e-04 -1.55123431e-04]
+VEKT = ([1.2  1.4  1.6  1.8  2.   2.2  2.4])
+%Y = transpose([8.18, 7.45, 6.71, 6.02, 5.23, 4.49, 3.75, 2.99])-8.18;%mm
+%VEKT = linspace(0, 3.5, 8)
+%usikker = (3-[0, 1, 1, 1, 2, 3, 3, 3])*1e-3 %mm
+usikker = (-1.42013544e-05 -[-1.22013544e-05  -9.56507078e-06 -7.89371693e-06  -6.80115739e-06  -6.04054436e-06  -5.48334686e-06 -5.04235394e-06])
+  
 W = diag(usikker)
-X = [1 VEKT(1); 1 VEKT(2); 1 VEKT(3); 1 VEKT(4); 1 VEKT(5); 1 VEKT(6); 1 VEKT(7); 1 VEKT(8)]
+X = [1 VEKT(1); 1 VEKT(2); 1 VEKT(3); 1 VEKT(4); 1 VEKT(5); 1 VEKT(6); 1 VEKT(7)]%; 1 VEKT(8)]
 WX = W*X
 size(W)
 size(Y)
-WY = W*Y
+WY = W*transpose(Y)
 WXTWX = transpose(WX)*(WX)
 size(WY)
 size(transpose(WX))
@@ -83,4 +86,5 @@ beta = inv(WXTWX)*WXTWY
 plot(VEKT, Y, 'o')
 hold on
 plot(VEKT, beta(1)+VEKT*beta(2))
-%}
+mean(beta(1)+VEKT*beta(2))
+usikker

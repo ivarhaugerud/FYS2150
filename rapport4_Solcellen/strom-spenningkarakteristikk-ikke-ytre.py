@@ -158,14 +158,14 @@ font = {"size"  : 14}
 plt.rc('font', **font)
 ax = fig.add_subplot(111)
 fig.suptitle(r"Strøm-spenning-karakteristikk for solcelle uten ytre spenning", fontsize=17, fontweight='bold')
-plt.errorbar(V2, I2, yerr=I2_unc, xerr=V2_unc, fmt='o', markersize='2.5', label=r"rotert - $0\degree$")
+plt.errorbar(V2, I2, yerr=I2_unc*10, xerr=V2_unc*10, fmt='o', markersize='3.5', label=r"rotert - $0\degree$")
 plt.plot(V2[:-1], I2[:-1], "--", linewidth=0.9)
 plt.scatter(V2[-1], I2[-1], s=140, facecolors='none', edgecolors='r', label="$V_{oc}=497.9(2)$mV")
 plt.scatter(V2[0],  I2[0], s=140, facecolors='none', edgecolors='k', label="$I_{sc}=-145(3)$mA")
 plt.scatter(V2[6],  I2[6], s=140, facecolors='none', edgecolors='g', label=r"$(V_{max}, I_{max}) - 0 \degree$")
 ax.set_xlabel("Spenning [mV]", fontsize=14)
 
-plt.errorbar(-V_belast[1:], I_belast[1:], xerr=V_belast_unc[1:], yerr=I_belast_unc[1:]*2, fmt='ro', markersize='2.5', label=r"rotert - $60\degree$")
+plt.errorbar(-V_belast[1:], I_belast[1:], xerr=V_belast_unc[1:]*10, yerr=I_belast_unc[1:]*10, fmt='ro', markersize='3.5', label=r"rotert - $60\degree$")
 plt.plot(-V_belast[1:], I_belast[1:], "--", linewidth=0.9)
 plt.scatter(-V_belast[6],  I_belast[6], s=140, facecolors='none', edgecolors='b', label=r"$(V_{max}, I_{max}) - 60\degree$")
 

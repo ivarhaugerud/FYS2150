@@ -13,7 +13,8 @@
 \usepackage{listings}
 \usepackage{varioref}
 \usepackage{booktabs}
-
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 \usepackage{cleveref}
 \usepackage{bm}
 
@@ -192,15 +193,16 @@ Equation \eqref{relate_units} can be solved for Planck's constant $h$ in SI unit
   \item Linear voltage regulator (ON semiconductor LM317)
   \item Weight  (Pro scale XC 500)
   \item Voltage generator (Delta Elektronika SM 3004-D)
-
+  \item Teslameter (TEL-Atomic TeslaMeter 2000)
 \end{itemize}
 \subsection{\textsc{System}}
-An illustration of the watt balance is shown in \cref{fig:watt_balance}, where the most important parts are highlighted and given a reference letter. They include the two magnets, the two coils, both lasers and the shadow sensor. Most of the weight except from these parts and the wires were made from LEGO. The lever is not connected to the main LEGO structure, but rests on a smooth LEGO surface with two LEGO knives. The diameter of the LEGO knives are $\SI{0.72}{\milli\meter}$. This lets the lever with connected mass pans and magnets oscillate freely while the structure and coils stand still.
+An illustration of the watt balance is shown in \cref{fig:watt_balance}, where the most important parts are highlighted and given a reference letter. They include the two magnets, the two coils, both lasers and the shadow sensor. Most of the weight except from these parts and the wires were made from LEGO. The lever is not connected to the main LEGO structure, but rests on a smooth LEGO surface with two LEGO knives. The diameter of the LEGO knives are $\SI{0.72\pm0.01}{\milli\meter}$. This lets the lever with connected mass pans and magnets oscillate freely while the structure and coils stand still.
+To be able to reset the system to the same initial state every time, we also added a LEGO shaft on the arm that fit into a grove on the structure. This improvement was done for the second experiment, to reduce probability of deviations after a calibration.
 
 \begin{figure}
   \centering
   \includegraphics[scale=0.37]{LEGO_watt_fig.png}
-  \caption{Illustration of the LEGO watt balance. The important parts of the experimental setup is shown clearly with name.}
+  \caption{Illustration of the LEGO watt balance. The important parts of the experimental setup is shown clearly with the name of different parts. The figure is from the original NIST article \cite{chao_lego_2015}.}
   \label{fig:watt_balance}
 \end{figure}
 
@@ -210,10 +212,10 @@ An illustration of the watt balance is shown in \cref{fig:watt_balance}, where t
 \begin{figure*}
   \centering
   \includegraphics[scale=0.30]{coil_circuit.png}
-  \caption{Circuit diagram for the coil $A$ and $B$. This diagram shows the setup for both measurements and driving of the two coils.  }
+  \caption{Circuit diagram for the coil $A$ and $B$. This diagram shows the setup for both measurements and driving of the two coils. The figure is from the original NIST article \cite{chao_lego_2015}.}
   \label{fig:coil_circuit}
 \end{figure*}
-The coils were made of plastic and had around $10 000$ windings of $0.1$mm copper wire over $6$cm. The coils had an inner diameter of $2.6$cm to not hinder the magnets movement, but still keep the distance to the windings small. When choosing the coil there is a trade off between high inductance and high resistance. More windings gives a higher inductance, but increases the resistance. For the coils used in this experiment we need a high inductance, and then had to settle for a high resistance, measured to be $\SI{335}{\ohm}$. As we can see in \vref{fig:watt_balance} we use two identical coils, one for each magnet. The two different coils, $A$, and $B$, have different purposes. Coil $A$ is the driver coil. It will have a known, sinusoidal, current through the wires in order to force the movement of the magnets to make measurements in velocity mode. Coil $B$ on the other hand, will be used both as a reader coil in velocity mode and as the counteracting coil in force mode. The measurements from the reader coil was directed to a data acquisition box, with Matlab scripts for calibration routines and measurements. The circuit for the coils is shown in \vref{fig:coil_circuit}. \par
+The coils were made of plastic and had around $10 000$ windings of $0.1$mm copper wire over $6$cm. The coils had an inner diameter of $2.6$cm to not hinder the magnets movement, but still keep the distance to the windings small. When choosing the coil there is a trade off between high inductance and high resistance. More windings gives a higher inductance, but increases the resistance. For the coils used in this experiment we need a high inductance, and then had to settle for a high resistance, measured to be $\SI{335.2\pm0.3}{\ohm}$. As we can see in \vref{fig:watt_balance} we use two identical coils, one for each magnet. The two different coils, $A$, and $B$, have different purposes. Coil $A$ is the driver coil. It will have a known, sinusoidal, current through the wires in order to force the movement of the magnets to make measurements in velocity mode. Coil $B$ on the other hand, will be used both as a reader coil in velocity mode and as the counteracting coil in force mode. The measurements from the reader coil was directed to a data acquisition box, with Matlab scripts for calibration routines and measurements. The circuit for the coils is shown in \vref{fig:coil_circuit}. \par
 The neodymium magnets moving inside the coils are two identical magnets facing each other with the same pole. This makes the magnetic field point radially outwards, which is necessary for the Lorentz force \eqref{lorentz_force1} to be directed up and down.
 
 
@@ -222,17 +224,17 @@ The neodymium magnets moving inside the coils are two identical magnets facing e
 \begin{figure*}
   \centering
   \includegraphics[scale=0.30]{laser_shadow_circuit.png}
-  \caption{Circuit diagram for measuring the output of the shadow sensor, as well as giving a stable voltage to the laser.}
+  \caption{Circuit diagram for measuring the output of the shadow sensor, as well as giving a stable voltage to the laser. The figure is from the original NIST article \cite{chao_lego_2015}.}
   \label{fig:circuit_laser}
 \end{figure*}
 
-To know the vertical position of the magnets it is sufficient to know the angle of lever. To measure this angle a laser is placed by the lever as shown in \cref{fig:watt_balance}. The laser sends out light with a wavelength of $\SI{650}{\nano\meter}$, which is registered by the shadow sensor, also shown in \cref{fig:watt_balance}. The movement of the lever will be measured by the amount of light the shadow sensor receives from the laser. The position of the laser and the shadow sensor has to be carefully placed as to not get saturated by the maximum or minimum amplitude of the lever. If this is the case the measurements a lot of information would be lost. An illustration of the laser and shadow sensor is shown in \cref{fig:shadow_sens}.
+To know the vertical position of the magnets it is sufficient to know the angle of lever. The angle is measured by a laser placed by the lever, as illustrated in \cref{fig:shadow_sens}. The laser sends out light with a wavelength of $\SI{650.0\pm0.5}{\nano\meter}$, which is partially blocked and then registered by the shadow sensor, also shown in \cref{fig:shadow_sens}. Assuming a proportional relationship between angle and received light, we can then track the movement of the lever. The position of the laser and the shadow sensor has to be carefully placed as to not get saturated by the maximum or minimum amplitude of the lever. If this is the case the measurements a lot of information would be lost.
 
 \subsubsection{\textsc{Data acquisition}}
-To read the measurements from the coils and the shadow sensor we used two data acquisition boxes (DAQ). The use of the two DAQ boxes is shown in the circuits, \vref{fig:coil_circuit} and \vref{fig:circuit_laser}. Using the programming language MatLab we were able to send controlled signals to both the coil and the laser. For the laser the DAQ box delivered a constant voltage of $\SI{0.35}{\volt}$. For the driver coil the DAQ box had to deliver a sinusoidal voltage with the same frequency in resonance with the system. The DAQ box made it possible to analyse the data during the experiment, as well as easily controlling the voltages over the circuit.
+To read the measurements from the coils and the shadow sensor we used two data acquisition boxes (DAQ). The use of the two DAQ boxes is shown in the circuits, \vref{fig:coil_circuit} and \vref{fig:circuit_laser}. Using Matlab we were able to send controlled currents to both the coil and the light diode. For the diode the DAQ box delivered a constant voltage of, which was calibrated such that the diode input was zero when the lever was in the resting position. For the driver coil the DAQ box had to deliver a sinusoidal voltage at the resonance frequency of the system, to get a good stable motion without beats. The DAQ box let us analyze the data during the experiment, in addition to easily controlling the voltages over the circuit.
 
 \subsection{Calibrating shadow sensor}
-To find the relationship between the amount of light received from the shadow sensor and the angle of the lever, a laser was placed on top of the lever. The laser was directed towards a wall, at a known, long distance, away from the rotational axis of the lever. By having the lever stationary at a certain angle and measuring the output from the shadow sensor and the position of the laser relative to the equilibrium position, we can measure the relationship between the output of the shadow sensor and the angle of the lever. The electrical circuit to measure the output of the shadow sensor, and drive the laser, is shown in \vref{fig:circuit_laser}.
+To find the relationship between the amount of light received from the shadow sensor and the angle of the lever, a laser was placed on top of the lever. The laser was directed towards a wall, at a known, long distance, in the $y$-direction seen in \cref{fig:watt_balance}. By having the lever stationary at a certain angle and measuring the output from the shadow sensor and the position of the laser relative to the equilibrium position, we can measure the relationship between the output of the shadow sensor and the angle of the lever. The electrical circuit to measure the output of the shadow sensor, and drive the laser, is shown in \vref{fig:circuit_laser}.
 
 \begin{figure}[h!]
   \centering
@@ -243,12 +245,13 @@ To find the relationship between the amount of light received from the shadow se
 
 \subsection{Velocity mode}
 The calibration of the shadow sensor gives us the relationship between the output of the shadow sensor, and the angle of the arm. By measuring the length from the pivot point to the magnets we can find the $z$-component of the position of the magnets from reading the output from the shadow sensor. By derivating this position with respect to time, we can find the velocity of the magnets. \\
-For the system to be set in motion a sinusoidal current is passing through the driving coil. The frequency of the sinusoidal signal is found by taking using Fourier transform on the movement of the arm, to find the resonance frequency of the system, and choosing this as the signal frequency. When this frequency is found, we choose an amplitude which where the movement of the arm does not saturate the shadow sensor. To measure $\left(BL\right)_v$ the least squares method is used to find the best fit linear equation between the voltage induced in the reader coil against the velocity calculated by the numerical derivative from the shadow sensor. The slope of the straight line is then calculated to obtain  $\left(BL\right)_v$ with equation \eqref{voltage}.
+For the system to be set in motion a sinusoidal current is sent through the driving coil, preferably at the resonance frequency to get stable oscillations. The resonance frequency of the system is found by trial and error; we apply a suitably chosen driver frequency and do a Fourier transform of the resulting motion. This is done until we get one clean peak with maximal amplitude.
+ When this frequency is found, we choose an amplitude on the driver voltage where the movement of the arm does not saturate the shadow sensor. To measure $\left(BL\right)_v$ the least squares method is used to find the best fit linear equation between the voltage induced in the reader coil against the velocity calculated by the numerical derivative from the shadow sensor. The slope of the straight line is then calculated to obtain  $\left(BL\right)_v$ with equation \eqref{voltage}.
 
 
 
 \subsection{Force mode}
-In force mode the driving coil is used to apply a constant force to one of the magnets. This force will neglect the gravitational force acting on an object on the other arm of the lever. To make the electromagnetic force cancel out the mechanical force we measure the output of the shadow sensor as we change the magnitude of the voltage difference over the driving coil. The magnitude can be changed until the output of the shadow sensor is equal to the output at equilibrium without the forces. To change the output voltage we use a voltage generator. This processes can be automated using a PID-control, but for this part of the experiment we chose the more practical option.
+In force mode a current is passed through one coil to apply a constant force to one of the magnets. This force will counteract the gravitational forces acting on both mass pans. To make the electromagnetic force cancel out the mechanical force we measure the output of the shadow sensor as we manually change the magnitude of the voltage difference over the driving coil. The magnitude can be changed until the output of the shadow sensor is equal to the output at equilibrium without the forces. To change the output voltage we use a voltage generator. This processes can be automated using a PID-control, but for this part of the experiment we chose the more practical option.
 This measurements has to be done in several steps. We start with no weight on either arm, and the system in equilibrium. A tare mass $m_\tau$ is placed on one of the mass pans. This takes the system out of the null-position, and a current $I$ is applied to cancel the gravitational force due to the mass \eqref{force_mode_force}. \\
 Then a secondary mass $m$ is placed on the opposite arm, and a new current $I_2$ is found to put the system in it's null position. This is done multiple times to control any drift in the measurements. When one is satisfied equation \eqref{multiple_measur} is used to relate the current, the known mass and the gravitational constant to the magnetic field times the length of the wire in force mode $(BL)_F$.\\
 This is the last piece needed, and we are now able to find the mass $m$ using equation \eqref{mass}.
@@ -256,7 +259,7 @@ This is the last piece needed, and we are now able to find the mass $m$ using eq
 
 \section{Results}
 \subsection{Calibrating shadow sensor}
-To calibrate the shadow sensor we measured the voltage output from the shadow sensor while measuring the laser position against a wall. By knowing the distance from the rotational axis to the wall, and measuring the change in the position of the laser, we found a linear relationship between the position of the laser and the output of the shadow sensor. The measurements are shown in \vref{fig:result_shadow_sens}. By using the least squares method we find that the best fit line has a constant term of $c = \SI{0.8\pm0.1}{\centi\meter}$, and a slope of $m = \SI{0.337\pm0.004}{\centi\meter/\milli\volt}$. The distance from the rotational axis to the wall/c was measured with a laser distance measurer to be $\SI{0.0}{\meter}$.
+To calibrate the shadow sensor we measured the voltage output from the shadow sensor while measuring the laser position against a wall. By knowing the distance from the rotational axis to the wall, and measuring the change in the position of the laser, we found a linear relationship between the position of the laser and the output of the shadow sensor. The measurements are shown in \vref{fig:result_shadow_sens}. By using the least squares method we find that the best fit line has a constant term of $c = \SI{0.8\pm0.1}{\centi\meter}$, and a slope of $m = \SI{0.337\pm0.004}{\centi\meter/\milli\volt}$. The distance from the rotational axis to the wall/c was measured with a laser distance measurer to be $\SI{7.083\pm0.006}{\meter}$.
 
 \begin{figure}[htpb]
   \centering
@@ -267,14 +270,14 @@ To calibrate the shadow sensor we measured the voltage output from the shadow se
 
 \subsection{Velocity mode}
 
-The resonance frequency of the system was set equal to $\SI{0.48}{\hertz}$, and an amplitude of $\SI{0.2}{\volt}$ was used to create the oscillations. The phase space of velocity mode measurement can be seen in \cref{fig:phase_space}, where position and velocity is represented by the voltages output from the light sensitive diode and the reader coil respectively.
+The driving frequency of the coil was set equal to $\SI{0.48}{\hertz}$, with an amplitude of $\SI{0.2}{\volt}$ was used to create the oscillations. The phase space of velocity mode measurement can be seen in \cref{fig:phase_space}, where position and velocity is represented by the voltages output from the light sensitive diode and the reader coil respectively.
 \begin{figure}[htpb]
     \centering
     \includegraphics[scale=0.44]{phasespace.png}
     \caption{Diode voltage versus induced coil voltage, with a frequency of $\SI{0.48}{\hertz}$ and amplitude of $\SI{0.2}{\volt}$ volt on the driver coil over $200$ seconds.}
     \label{fig:phase_space}
 \end{figure}
-The velocity of the magnets can be calculated by using the relationship between the output from the shadow sensor with the movement of the laser on the wall, \vref{fig:result_shadow_sens}. Using the length of one unit of LEGO as a measurement we found that the distance to the magnets from the rotational axis was $\SI{17.5}{\centi\meter}$. With this we were then able to calculate the velocity of the magnets over time. The induced coil voltage is shown versus the velocity of the magnets in \vref{fig:vel_vs_coil}.
+The velocity of the magnets can be calculated by using the relationship between the output from the shadow sensor with the movement of the laser on the wall, \vref{fig:result_shadow_sens}. Using the length of one unit of LEGO as a measurement we found that the distance to the magnets from the rotational axis was $\SI{17.50\pm0.01}{\centi\meter}$. With this we were then able to calculate the velocity of the magnets over time. The induced coil voltage is shown versus the velocity of the magnets in \vref{fig:vel_vs_coil}.
 \begin{figure}[htpb]
     \centering
     \includegraphics[scale=0.44]{vel_vs_coil.png}
@@ -298,17 +301,17 @@ We use a tare mass, $m_\tau$, and an unknown mass, $m$, and find the current req
 \label{force_results}
 \begin{tabular}{@{}lllll@{}}
 \toprule
-Weight distribution & Equalibrium current & $m_\tau = 6.73$g, $m=3.07$g & $m_\tau = 1.32$g, $m=0.67$g & $m_\tau = 1.32$g, $m=0.70$g \\ \midrule
-0 - $m$  & $I_1$           & 0.1152 A                    & 0.0248 A                    & 0.0259 A                    \\
-$m_\tau - m$   & $I_2$     & -0.1367 A                   & -0.0242 A                   & -0.0230 A                   \\
-$0 - m$      & $I_3$        & 0.1180 A                    & 0.0248 A                   & 0.0256 A                    \\
-$m_\tau - m$  & $I_4$       & -0.1351 A                   & -0.0242 A                   & -0.0232 A                   \\
-$0-m$        &$I_5$       & 0.1173 A                    & 0.0245 A                    & 0.0258 A    \\ \midrule Using equation \eqref{multiple_measur} & I & 0.253 A & 0.0489 A & 0.0489 A \\ \bottomrule
+Weight distribution & Equilibrium current & $m_\tau = 6.73$g, $m=3.07$g & $m_\tau = 1.32$g, $m=0.67$g & $m_\tau = 1.32$g, $m=0.70$g \\ \midrule
+0 - $m$  & $I_1$           & 0.115(1) A                    & 0.0248(2) A                    & 0.0259 A                    \\
+$m_\tau - m$   & $I_2$     & -0.137(1) A                   & -0.0242(2) A                   & -0.0230(2) A                   \\
+$0 - m$      & $I_3$        & 0.118(1) A                    & 0.0248(2) A                   & 0.0256(2) A                    \\
+$m_\tau - m$  & $I_4$       & -0.135(1) A                   & -0.0242(2) A                   & -0.0232(2) A                   \\
+$0-m$        &$I_5$       & 0.117(1) A                    & 0.0245(2) A                    & 0.0258(2) A    \\ \midrule Using equation \eqref{multiple_measur} & I & 0.253(1) A & 0.0489(2) A & 0.0489(2) A \\ \bottomrule
 \end{tabular}
 \end{table*}
 
 \subsection{Calculating the mass and Planck's constant}
-Using the relationship between the induced voltage in the reader coil and the velocity of the magnets, shown in \eqref{fig:slope}, and the measurements of the current for different masses, seen in \vref{force_results}, we can calculate the mass of the object using equation \eqref{mass}. The value we use for the gravitational acceleration is $\SI{9.819}{\meter/\second^2}$. The value of the current used depends on the mass, and can be found in \vref{force_results}, the value of $V/v$ is the same for all measurements, $\SI{0.250\pm0.002}{\tesla/\meter}$. These values combined makes it possible to calculate the mass, as well as Planck's constant. The values calculated are shown in \vref{final_result}. %https://www.sensorsone.com/local-gravity-calculator/
+Using the relationship between the induced voltage in the reader coil and the velocity of the magnets, shown in \eqref{fig:slope}, and the measurements of the current for different masses, seen in \vref{force_results}, we can calculate the mass of the object using equation \eqref{mass}. The value we use for the gravitational acceleration is $\SI{9.819\pm0.003}{\meter/\second^2}$. This value was found using The value of the current used depends on the mass, and can be found in \vref{force_results}, the value of $V/v$ is the same for all measurements, $\SI{0.250\pm0.002}{\tesla/\meter}$. These values combined makes it possible to calculate the mass, as well as Planck's constant. The values calculated are shown in \vref{final_result}. %https://www.sensorsone.com/local-gravity-calculator/
 
 
 \begin{table}[]
@@ -324,14 +327,30 @@ Real mass {[}g{]} & Measured mass {[}g{]} & Planck's constant {[}\%{]} \\ \midru
 \end{tabular}
 \end{table}
 
-
 \section{Discussion}
+\subsection{Calibrating shadow senso}
+The laser measurements shown in \vref{result_shadow_sens} followed a linear relationship with the shadow sensor voltage, as expected. Using the least squares method \cite{squires} we acquire the slope of the data, which we then used to calculate the angle of the arms for a given value from the shadow sensor. The calibration of the shadow sensor was done right before measuring velocity mode, and therefore the lighting in the room should not have changed during the short time interval. Therefor we have no reason to believe that the calibration was done incorrectly.\\
+Between the calibration of the laser, and running velocity mode, one change to the system had to be made. The laser which was placed on top of the arm had to be removed. During the experiment the removing of the laser was done as carefully as possible to not effect the state of the system. We believe that this was achieved, using the system to reset the position to the same position, and that the calibration of the laser was correct to use during velocity mode. \\
+In figure \vref{fig:vel_vs_coil} we see that the maximum velocity of the magnets is approximatly $\pm\SI{1.5}{\centi\meter/\second}$, which corresponds well with the maximum velocity found using the driving frequency and the maximum amplitude of the system.
+\subsection{Velocity mode}
+The movement of the arm in phase space, \vref{phase_space}, is almost an ellipsoid, as it should be for a harmonic oscillator. But we can see that the movement is not completely symmetrical. The ellipsoid is stretched out in the upper right, and lower left. This is the same effect as we see in \vref{vel_vs_coil}. We believe that it is the coils causing the difference in the movement.
+%When calculating the slope we use the induced voltage over the reader coil. It is here we believe the problem lies.
+When doing measurements in velocity mode, with the two coils, we found that switching the seemingly identical coils gave different results. When plotting induced voltage over time, one of the coils had a bump in induced voltage when the arm passed it's equilibrium point, while the other did not. Due to this we used the coil with the bump as the driver coil, and not the reader coil, hoping this would remove the problem. This was studied closer by using a teslameter to measure the magnetic flux density inside the coils. We found that the coil giving a bump had an inhomogeneous magnetic flux density when a constant current was passed through the wire, especially compared to the other coil. The coils should be identical, but the inhomogeneous magnetic field shows that the windings might not be as evenly spaced as we first thought. Another reason for the deviation can be that the soldering of one of the coils was done incorrectly, and that the electrical contact between the coils and the rest of the system is not optimal. \\
+In \vref{fig:vel_vs_coil}, which we use to calculate the slope, the path is not a straight line, but a closed, pointy, ellipsoidal shape. The fact that the movement is not a straight line means that the movement is asymmetrical. It is not the same for the magnets whether they move up or down. This fact results in a slope which is different depending on the direction of movement, which is not ideal. The deviation of the slope is on around $\SI{0.1}{\tesla/\meter}$. When finding a value for the slope, we decided to use the bottom slope, shown in \vref{fig:vel_vs_coil}, due to it being the straightest line, with the least uncertainty in the slope. What is the reason for the asymmetrical property of the system? The arm is balancing on a knife, made from LEGO, which is resting on a smooth LEGO surface. It is possible that the unsharpness of the knife, and the unsmoothness of the resting surface is the reason. It would therefore be interesting to repeat the experiment in the future, with a better knife and surface, possibly not made from LEGO. Another reason could be the the two coils are not identical. That the same reason which makes the bump in the induced voltage, makes one of the coil prefer a specific direction for the magnets. Another problem with the coils is the design.
+\\The important problem with the spoil is the design.
+The current design of the coils is not optimal. Though spreading the coils around a large area gives a more homogeneous field inside the coil when applying a current, it weakens the magnetic flux density. In reader mode, we instead want to maximize the number of windings where the magnetic flux density of the dipole magnets is largest, which is in the plane separating the two magnets. By having more windings heavily concentrated at the equilibrium position of the magnets would be optimal. This is equal to the design in the original NIST article \cite{chao_lego_2015}, which is shown in \vref{LEGO_watt_fig}. This effect is the main reason we believe that our results deviates from the correct results. The design and defects of the coils results in the value of $BL$, measured in velocity mode, is wrong.
+\subsection{Force mode}
+In force mode the only measurements needed are that off the current needed to cancel the force due to the uneven mass distribution. The value for acceleration due to gravity could not result in deviation by a factor of two. When finding the equilibrium position of the system we found the current which resulted in the output value of the shadow sensor being zero. Of course the system would at all time be oscillating, but the oscillating would be small enough around equilibrium for us to conclude that the current current was correct.\\
+As we can see in \vref{force_results} the current required is approximately the same for when the mass distribution is the same. There is not room for much error in force mode, and we believe we were able to remove the possible systematic errors during the experiment.
+\subsection{Calculating the mass and Planck's constant}
+As we saw in the results section, there were systematical errors at hand during this experiment, which resulted in the deviation of around a factor of two. We conclude that the reason for the deviation is the non-optimal coils. The magnetic field is not concentrated, and dense enough, for the magnets to experience the optimal force, and induction in the coils. We sadly have to conclude that the experiment was a failure. We were able to measure the mass of the wanted objects, but not precisely. A deviation by a factor of two is not good enough for the redefinition of the kilo gram.
 
-\subsection{Coil design}
-
-The current design of the coils is not optimal. Though spreading the coils around a large area gives a more homogeneous field inside the coil when applying a current, it weakens the magnetic flux density. In reader mode, we instead want to maximize the number of windings where the magnetic flux density of the dipole magnets is largest, which is in the plane separating the two magnets. Instead, the design in the original NIST article \cite{chao_lego_2015} is probably better.
 
 \section{Conclusion}
-\bibliography{citations.bib}{}
+A simplified version of the watt balance, which will be used to redefine the kilo gram, was made in the hopes of achieving high accurate mass measurements, and finding a value for Planck's constant. The LEGO watt balance has two different measurement modes, velocity and force mode. The two modes gives us the electro-magnetic and mechanical power. The two values can combine, canceling out the hard to measure values of the system, which can be solved for the unknown mass used during the experiment.\\
+
+Sadly the LEGO version of the watt balance did not live up to the expectations. The system was able to measure masses, and small changes in mass, but the values deviated from the proper values by a factor of two. The reason for the deviation we believe has it's roots in the design of the coils used in the watt balance. We were able to measure a difference in the magnetic flux density, and a difference in the induced voltage by the moving magnets, in the two coils. The design of the coil is neither optimal, a future experiment should have the windings of the coil denser, resulting in a less homogeneous magnetic field, but much more powerfull in the desired areas. The LEGO watt balance did not live up to the expectations.
+
 \bibliographystyle{plain}
+\bibliography{citations.bib}{}
 \end{document}

@@ -5,45 +5,45 @@ The style file: plain.bst
 Database file #1: rapport6Notes.bib
 Database file #2: citations.bib.bib
 Warning--empty journal in August
-You've used 2 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            510 strings with 4369 characters,
-and the built_in function-call counts, 815 in all, are:
-= -- 71
-> -- 61
+            515 strings with 4434 characters,
+and the built_in function-call counts, 1030 in all, are:
+= -- 90
+> -- 68
 < -- 0
-+ -- 25
-- -- 22
-* -- 73
-:= -- 150
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 17
++ -- 28
+- -- 24
+* -- 81
+:= -- 188
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 21
-empty$ -- 45
-format.name$ -- 22
-if$ -- 151
+cite$ -- 4
+duplicate$ -- 33
+empty$ -- 67
+format.name$ -- 24
+if$ -- 197
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 17
+int.to.str$ -- 3
+missing$ -- 4
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 25
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 18
 quote$ -- 0
-skip$ -- 15
+skip$ -- 21
 stack$ -- 0
-substring$ -- 36
-swap$ -- 1
+substring$ -- 41
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 10
 warning$ -- 1
-while$ -- 6
-width$ -- 3
-write$ -- 22
+while$ -- 8
+width$ -- 4
+write$ -- 32
 (There was 1 warning)

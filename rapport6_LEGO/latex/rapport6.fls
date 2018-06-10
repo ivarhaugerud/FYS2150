@@ -94,6 +94,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/varioref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/cleveref/cleveref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/cleveref/cleveref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
@@ -304,6 +306,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplro8t.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/palatino/pplro8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplro8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -390,8 +395,7 @@ INPUT slope.png
 INPUT ./slope.png
 INPUT ./slope.png
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
-INPUT rapport6.bbl
-INPUT rapport6.bbl
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -400,6 +404,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
+INPUT rapport6.bbl
+INPUT rapport6.bbl
 INPUT rapport6.aux
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
@@ -410,5 +417,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb

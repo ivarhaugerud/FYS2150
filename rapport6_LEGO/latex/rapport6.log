@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  10 JUN 2018 00:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  10 JUN 2018 15:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1554,6 +1554,17 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count162
 \@lastruleclass=\count163
 \@thisrulewidth=\dimen162
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip57
+\f@ncyO@elh=\skip58
+\f@ncyO@erh=\skip59
+\f@ncyO@olh=\skip60
+\f@ncyO@orh=\skip61
+\f@ncyO@elf=\skip62
+\f@ncyO@erf=\skip63
+\f@ncyO@olf=\skip64
+\f@ncyO@orf=\skip65
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 Package cleveref Info: `varioref' support loaded on input line 2453.
@@ -1579,8 +1590,8 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen163
 \extrarowheight=\dimen164
 \NC@list=\toks27
-\extratabsurround=\skip57
-\backup@length=\skip58
+\extratabsurround=\skip66
+\backup@length=\skip67
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.st
 y
 Package: l3keys2e 2017/05/13 LaTeX2e option processing using LaTeX3 keys
@@ -1608,8 +1619,8 @@ Package: l3keys2e 2017/05/13 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_unit_prefix_base_int=\count178
 \l__siunitx_unit_prefix_gram_int=\count179
 \l__siunitx_number_product_int=\count180
-\c__siunitx_one_fill_skip=\skip59
-\l__siunitx_table_unit_align_skip=\skip60
+\c__siunitx_one_fill_skip=\skip68
+\l__siunitx_table_unit_align_skip=\skip69
 \l__siunitx_table_exponent_dim=\dimen168
 \l__siunitx_table_integer_dim=\dimen169
 \l__siunitx_table_mantissa_dim=\dimen170
@@ -1623,8 +1634,8 @@ Package: l3keys2e 2017/05/13 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_post_box=\box65
 \l__siunitx_table_mantissa_box=\box66
 \l__siunitx_table_result_box=\box67
-\l__siunitx_table_number_align_skip=\skip61
-\l__siunitx_table_text_align_skip=\skip62
+\l__siunitx_table_number_align_skip=\skip70
+\l__siunitx_table_text_align_skip=\skip71
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1905,34 +1916,34 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Class revtex4-1 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 89.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 89.
+lass! (Proceeding with fingers crossed.) on input line 90.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 90.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 89.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 89.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 89.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 90.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 90.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 90.
 (./rapport6.aux)
 \openout1 = `rapport6.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 90.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 89.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 90.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1999,44 +2010,44 @@ File: siunitx-abbreviations.cfg 2017/05/19 v2.7g siunitx: Abbreviated units
 )
 \symgns@font=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ppl/m/n --> TS1/ppl/bx/n on input line 89.
-Package gensymb Info: Math companion symbols declared on input line 89.
-LaTeX Info: Redefining \degree on input line 89.
-LaTeX Info: Redefining \celsius on input line 89.
+(Font)                  TS1/ppl/m/n --> TS1/ppl/bx/n on input line 90.
+Package gensymb Info: Math companion symbols declared on input line 90.
+LaTeX Info: Redefining \degree on input line 90.
+LaTeX Info: Redefining \celsius on input line 90.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 89.
-LaTeX Info: Redefining \ohm on input line 89.
-Package gensymb Info: Using \textohm for \ohm on input line 89.
-LaTeX Info: Redefining \micro on input line 89.
-Package gensymb Info: Using \textmu for \micro on input line 89.
+erthousand on input line 90.
+LaTeX Info: Redefining \ohm on input line 90.
+Package gensymb Info: Using \textohm for \ohm on input line 90.
+LaTeX Info: Redefining \micro on input line 90.
+Package gensymb Info: Using \textmu for \micro on input line 90.
 \openout3 = `rapport6Notes.bib'.
 
 \c__siunitx_mathsf_int=\count188
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 89.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 90.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 89.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 90.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 89.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 90.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 89.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 90.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 89.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 90.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 89.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 90.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
@@ -2045,128 +2056,186 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 Class revtex4-1 Warning: Assuming \noaffiliation for authors.
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 100.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <12> not available
-(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 100.
+(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 101.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 102.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 103.
 <Prototype_mass_drifts.jpg, id=1, 792.9625pt x 501.875pt>
 File: Prototype_mass_drifts.jpg Graphic file (type jpg)
 <use Prototype_mass_drifts.jpg>
-Package pdftex.def Info: Prototype_mass_drifts.jpg used on input line 108.
+Package pdftex.def Info: Prototype_mass_drifts.jpg used on input line 109.
 (pdftex.def)             Requested size: 241.84715pt x 153.06781pt.
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Pro
 totype_mass_drifts.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 167.
+LaTeX Warning: Command \textendash invalid in math mode on input line 168.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 176.
+LaTeX Warning: Command \textendash invalid in math mode on input line 177.
+
+Package cleveref Info: loaded `english' language definitions on input line 182.
 
 [2]
-Underfull \hbox (badness 6252) in paragraph at lines 192--193
+Underfull \hbox (badness 6252) in paragraph at lines 193--194
  []\T1/ppl/m/n/10 Linear volt-age reg-u-la-tor (ON semi-con-duc-tor
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <9> not available
-(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 197.
-<LEGO_watt_fig.png, id=19, 746.79pt x 616.3025pt>
+(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 198.
+<LEGO_watt_fig.png, id=20, 746.79pt x 616.3025pt>
 File: LEGO_watt_fig.png Graphic file (type png)
 <use LEGO_watt_fig.png>
-Package pdftex.def Info: LEGO_watt_fig.png used on input line 202.
+Package pdftex.def Info: LEGO_watt_fig.png used on input line 204.
 (pdftex.def)             Requested size: 276.30797pt x 228.02835pt.
 
-Overfull \hbox (30.30797pt too wide) in paragraph at lines 202--203
+Overfull \hbox (30.30797pt too wide) in paragraph at lines 204--205
  [][] 
  []
 
-<coil_circuit.png, id=21, 1200.485pt x 439.6425pt>
+<coil_circuit.png, id=22, 1200.485pt x 439.6425pt>
 File: coil_circuit.png Graphic file (type png)
 <use coil_circuit.png>
-Package pdftex.def Info: coil_circuit.png used on input line 212.
+Package pdftex.def Info: coil_circuit.png used on input line 214.
 (pdftex.def)             Requested size: 360.14828pt x 131.89375pt.
-<laser_shadow_circuit.png, id=22, 1258.7025pt x 462.72874pt>
+<laser_shadow_circuit.png, id=23, 1258.7025pt x 462.72874pt>
 File: laser_shadow_circuit.png Graphic file (type png)
 <use laser_shadow_circuit.png>
-Package pdftex.def Info: laser_shadow_circuit.png used on input line 224.
+Package pdftex.def Info: laser_shadow_circuit.png used on input line 226.
 (pdftex.def)             Requested size: 377.61366pt x 138.81969pt.
-[3 <./LEGO_watt_fig.png>] <shadow_sensor.pdf, id=27, 954.56625pt x 493.845pt>
+Package cleveref Info: loaded `english' language definitions on input line 230.
+
+[3 <./LEGO_watt_fig.png>] <shadow_sensor.pdf, id=28, 954.56625pt x 493.845pt>
 File: shadow_sensor.pdf Graphic file (type pdf)
 <use shadow_sensor.pdf>
-Package pdftex.def Info: shadow_sensor.pdf used on input line 239.
+Package pdftex.def Info: shadow_sensor.pdf used on input line 241.
 (pdftex.def)             Requested size: 200.46483pt x 103.7105pt.
-[4 <./coil_circuit.png> <./laser_shadow_circuit.png> <./shadow_sensor.pdf
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package cleveref Info: loaded `english' language definitions on input line 258.
+
+[4 <./coil_circuit.png>] <laser_data.png, id=33, 562.2606pt x 421.575pt>
+File: laser_data.png Graphic file (type png)
+<use laser_data.png>
+Package pdftex.def Info: laser_data.png used on input line 266.
+(pdftex.def)             Requested size: 253.01492pt x 189.70699pt.
+
+Overfull \hbox (7.01492pt too wide) in paragraph at lines 266--267
+ [][] 
+ []
+
+<phasespace.png, id=34, 562.2606pt x 421.575pt>
+File: phasespace.png Graphic file (type png)
+<use phasespace.png>
+Package pdftex.def Info: phasespace.png used on input line 276.
+(pdftex.def)             Requested size: 247.39543pt x 185.49356pt.
+
+Overfull \hbox (1.39543pt too wide) in paragraph at lines 276--277
+ [][] 
+ []
+
+<vel_vs_coil.png, id=35, 562.2606pt x 421.575pt>
+File: vel_vs_coil.png Graphic file (type png)
+<use vel_vs_coil.png>
+Package pdftex.def Info: vel_vs_coil.png used on input line 283.
+(pdftex.def)             Requested size: 247.39543pt x 185.49356pt.
+
+Overfull \hbox (1.39543pt too wide) in paragraph at lines 283--284
+ [][] 
+ []
+
+<slope.png, id=36, 562.2606pt x 421.575pt>
+File: slope.png Graphic file (type png)
+<use slope.png>
+Package pdftex.def Info: slope.png used on input line 290.
+(pdftex.def)             Requested size: 247.39543pt x 185.49356pt.
+
+Overfull \hbox (1.39543pt too wide) in paragraph at lines 290--291
+ [][] 
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 294.
+
+[5 <./laser_shadow_circuit.png> <./shadow_sensor.pdf
 
 pdfTeX warning: pdflatex (file ./shadow_sensor.pdf): PDF inclusion: invalid oth
 er resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <laser_data.png, id=58, 562.2606pt x 421.575pt>
-File: laser_data.png Graphic file (type png)
-<use laser_data.png>
-Package pdftex.def Info: laser_data.png used on input line 263.
-(pdftex.def)             Requested size: 253.01492pt x 189.70699pt.
-
-Overfull \hbox (7.01492pt too wide) in paragraph at lines 263--264
- [][] 
- []
-
-<phasespace.png, id=59, 562.2606pt x 421.575pt>
-File: phasespace.png Graphic file (type png)
-<use phasespace.png>
-Package pdftex.def Info: phasespace.png used on input line 273.
-(pdftex.def)             Requested size: 247.39543pt x 185.49356pt.
-
-Overfull \hbox (1.39543pt too wide) in paragraph at lines 273--274
- [][] 
- []
-
-<vel_vs_coil.png, id=60, 562.2606pt x 421.575pt>
-File: vel_vs_coil.png Graphic file (type png)
-<use vel_vs_coil.png>
-Package pdftex.def Info: vel_vs_coil.png used on input line 280.
-(pdftex.def)             Requested size: 247.39543pt x 185.49356pt.
-
-Overfull \hbox (1.39543pt too wide) in paragraph at lines 280--281
- [][] 
- []
-
-<slope.png, id=61, 562.2606pt x 421.575pt>
-File: slope.png Graphic file (type png)
-<use slope.png>
-Package pdftex.def Info: slope.png used on input line 287.
-(pdftex.def)             Requested size: 247.39543pt x 185.49356pt.
-
-Overfull \hbox (1.39543pt too wide) in paragraph at lines 287--288
- [][] 
- []
-
-[5 <./laser_data.png (PNG copy)>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 291.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 314.
+> <./laser_data.png (PNG copy)>]
+Package cleveref Info: loaded `english' language definitions on input line 315.
 
 [6 <./phasespace.png (PNG copy)> <./vel_vs_coil.png (PNG copy)> <./slope.png (P
-NG copy)>] (./rapport6.bbl) [7] (./rapport6.aux)
+NG copy)>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 317.
+
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 332.
+
+LaTeX Warning: Reference `result_shadow_sens' on page 1 undefined on input line
+ 332.
+
+
+LaTeX Warning: Reference `result_shadow_sens' on page 1 undefined on input line
+ 332.
+
+
+LaTeX Warning: Reference `phase_space' on page 1 undefined on input line 336.
+
+
+LaTeX Warning: Reference `phase_space' on page 1 undefined on input line 336.
+
+
+LaTeX Warning: Reference `vel_vs_coil' on page 1 undefined on input line 336.
+
+
+LaTeX Warning: Reference `vel_vs_coil' on page 1 undefined on input line 336.
+
+
+LaTeX Warning: Reference `LEGO_watt_fig' on page 1 undefined on input line 341.
+
+
+
+LaTeX Warning: Reference `LEGO_watt_fig' on page 1 undefined on input line 341.
+
+
+Package cleveref Info: loaded `english' language definitions on input line 342.
+
+[7]
+Underfull \hbox (badness 1019) in paragraph at lines 350--351
+\T1/ppl/m/n/10 val-ues of the sys-tem, which can be solved for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+(./rapport6.bbl)
+Package cleveref Info: loaded `english' language definitions on input line 356.
+
+[8] (./rapport6.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.26395pt have occured.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 19391 strings out of 492995
- 356643 string characters out of 6132705
- 433603 words of memory out of 5000000
- 22694 multiletter control sequences out of 15000+600000
- 83368 words of font info for 193 fonts, out of 8000000 for 9000
+ 19585 strings out of 492995
+ 359150 string characters out of 6132705
+ 447652 words of memory out of 5000000
+ 22882 multiletter control sequences out of 15000+600000
+ 85885 words of font info for 196 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,40p,10384b,1042s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,43p,10384b,1042s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
@@ -2177,11 +2246,12 @@ ve/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/20
 exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/urw/palatino/uplri8a.pfb>
-Output written on rapport6.pdf (7 pages, 2046218 bytes).
+1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/p
+alatino/uplri8a.pfb>
+Output written on rapport6.pdf (8 pages, 2066839 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 114 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

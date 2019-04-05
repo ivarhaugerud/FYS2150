@@ -20,6 +20,7 @@
 %
 \documentclass[%
  reprint,
+nofootinbib,
 %superscriptaddress,
 %groupedaddress,
 %unsortedaddress,
@@ -30,10 +31,7 @@
 %nofootinbib,
 %nobibnotes,
 %bibnotes,
- amsmath,amssymb,
- aps,
- norsk,
- booktabs
+aps,
 %pra,
 %prb,
 %rmp,
@@ -43,91 +41,59 @@
 ]{revtex4-1}
 
 \usepackage[utf8]{inputenc}
-\usepackage[norsk]{babel}
-\usepackage{varioref}
+\usepackage[english]{babel}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{ mathrsfs }
+\usepackage{amssymb}
 \usepackage{graphicx}% Include figure files
-\usepackage{enumitem}
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
-\usepackage[margin=0.9in]{geometry}
-\usepackage[mathlines]{lineno}% Enable numbering of text and display math
-%\linenumbers\relax % Commence numbering lines
-
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage[colorlinks]{hyperref}
-\usepackage{relsize}
-%\usepackage{booktabs}
-\usepackage{graphicx,verbatim,amsfonts,geometry}
 \usepackage{amsmath}
-\newcommand*\diff{\mathop{}\!\mathrm{d}}
-\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
-\usepackage{ulem}
-\usepackage{amssymb}
-\usepackage{multirow}
-\usepackage{soul}
-\usepackage{dsfont}
-% allows for temporary adjustment of side margins
-\usepackage{chngpage}
-% just makes the table prettier (see \toprule, \bottomrule, etc. commands below)
+\usepackage{varioref}
+\usepackage{booktabs}
+\usepackage[bottom]{footmisc}
+
+\usepackage{physics}
+
+\usepackage{algpseudocode}
+\usepackage{listings}
+
 \usepackage{booktabs}
 
-\usepackage{commath}
-\usepackage{wrapfig}
-\usepackage[free-standing-units=true]{siunitx}
-\DeclareSIUnit\year{yr}
-\usepackage{gensymb}
-\newcommand{\ROM}[1]{%
+\usepackage{tikz}
+
+\newcommand{\RN}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
-\usepackage{physics}
-\usepackage{caption}
-\usepackage{bm}
-\usepackage{gensymb}
 
-\makeatletter
-\newcounter{elimination@steps}
-\newcolumntype{R}[1]{>{\raggedleft\arraybackslash$}p{#1}<{$}}
-\def\elimination@num@rights{}
-\def\elimination@num@variables{}
-\def\elimination@col@width{}
-\newenvironment{elimination}[4][0]
-{
-    \setcounter{elimination@steps}{0}
-    \def\elimination@num@rights{#1}
-    \def\elimination@num@variables{#2}
-    \def\elimination@col@width{#3}
-    \renewcommand{\arraystretch}{#4}
-    \start@align\@ne\st@rredtrue\m@ne
+
+\newcolumntype{C}{>{$}c<{$}}
+\AtBeginDocument{
+\heavyrulewidth=.08em
+\lightrulewidth=.05em
+\cmidrulewidth=.03em
+\belowrulesep=.65ex
+\belowbottomsep=0pt
+\aboverulesep=.4ex
+\abovetopsep=0pt
+\cmidrulesep=\doublerulesep
+\cmidrulekern=.5em
+\defaultaddspace=.5em
 }
-{
-    \endalign
-    \ignorespacesafterend
-}
-\newcommand{\eliminationstep}[2]
-{
-    \ifnum\value{elimination@steps}>0\sim\quad\fi
-    \left[
-        \ifnum\elimination@num@rights>0
-            \begin{array}
-            {@{}*{\elimination@num@variables}{R{\elimination@col@width}}
-            |@{}*{\elimination@num@rights}{R{\elimination@col@width}}}
-        \else
-            \begin{array}
-            {@{}*{\elimination@num@variables}{R{\elimination@col@width}}}
-        \fi
-            #1
-        \end{array}
-    \right]
-    &
-    \begin{array}{l}
-        #2
-    \end{array}
-    \addtocounter{elimination@steps}{1}
-}
-\makeatother
-% Document formatting
-\setlength{\parindent}{0mm}
-\setlength{\parskip}{1.5mm}
+
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
 
 \begin{document}
 

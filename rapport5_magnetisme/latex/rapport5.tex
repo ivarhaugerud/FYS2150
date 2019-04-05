@@ -20,6 +20,7 @@
 %
 \documentclass[%
  reprint,
+nofootinbib,
 %superscriptaddress,
 %groupedaddress,
 %unsortedaddress,
@@ -30,9 +31,7 @@
 %nofootinbib,
 %nobibnotes,
 %bibnotes,
- amsmath,amssymb,
- aps,
- norsk,
+aps,
 %pra,
 %prb,
 %rmp,
@@ -42,45 +41,51 @@
 ]{revtex4-1}
 
 \usepackage[utf8]{inputenc}
-\usepackage[norsk]{babel}
-\usepackage{varioref}
+\usepackage[english]{babel}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{ mathrsfs }
+\usepackage{amssymb}
 \usepackage{graphicx}% Include figure files
-\usepackage{enumitem}
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
-\usepackage[margin=0.9in]{geometry}
-\usepackage[mathlines]{lineno}% Enable numbering of text and display math
-%\linenumbers\relax % Commence numbering lines
-
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage[colorlinks]{hyperref}
-\usepackage{relsize}
-\usepackage{graphicx,verbatim,amsfonts,geometry}
 \usepackage{amsmath}
-\newcommand*\diff{\mathop{}\!\mathrm{d}}
-\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
-\usepackage{ulem}
-\usepackage{amssymb}
-\usepackage{multirow}
-\usepackage{soul}
-\usepackage{dsfont}
-% allows for temporary adjustment of side margins
-\usepackage{chngpage}
-% just makes the table prettier (see \toprule, \bottomrule, etc. commands below)
+\usepackage{varioref}
+\usepackage{booktabs}
+\usepackage[bottom]{footmisc}
+
+\usepackage{physics}
+
+\usepackage{algpseudocode}
+\usepackage{listings}
+
 \usepackage{booktabs}
 
-\usepackage{commath}
-\usepackage{wrapfig}
-\usepackage[free-standing-units=true]{siunitx}
-\DeclareSIUnit\year{yr}
-\usepackage{gensymb}
-\newcommand{\ROM}[1]{%
+\usepackage{tikz}
+
+\newcommand{\RN}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
-\usepackage{physics}
-\usepackage{caption}
-\usepackage{bm}
-\usepackage{gensymb}
+
+
+\newcolumntype{C}{>{$}c<{$}}
+\AtBeginDocument{
+\heavyrulewidth=.08em
+\lightrulewidth=.05em
+\cmidrulewidth=.03em
+\belowrulesep=.65ex
+\belowbottomsep=0pt
+\aboverulesep=.4ex
+\abovetopsep=0pt
+\cmidrulesep=\doublerulesep
+\cmidrulekern=.5em
+\defaultaddspace=.5em
+}
+
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
 %\usepackage[showframe,%Uncomment any one of the following lines to test
 %%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
 %%text={7in,10in},centering,
